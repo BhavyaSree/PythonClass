@@ -1,0 +1,51 @@
+site_name: Python Class
+site_author: Bhavya Sree Bindela
+site_description: >-
+  Python tutorial
+theme:
+  name: material
+  custom_dir: material
+  features:
+    - tabs
+plugins:
+ - mknotebooks:
+    execute: false
+markdown_extensions:
+  - codehilite:
+      linenums: true
+  - admonition
+  - pymdownx.betterem
+  - pymdownx.superfences
+  - markdown.extensions.footnotes
+  - markdown.extensions.attr_list
+  - markdown.extensions.def_list
+  - markdown.extensions.tables
+  - markdown.extensions.abbr
+  - markdown.extensions.md_in_html
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/BhavyaSree
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/u/bhavyabindela
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/bhavyabindela
+repo_name: BhavyaSree/PythonClass
+repo_url: https://github.com/BhavyaSree/PythonClass
+edit_uri: ""
+# Page tree
+nav:
+  - Home: README.md
+  - Getting started: 1.Introduction.md
+  - Strings & Lists: 2.Strings & Lists.md
+  - Dictonaries, Sets & Tuples: 3.Dictonaries, Sets & Tuples.md 
+  - Operators: 4.Operators.md
+  - Conditional Statements: 5.Conditional Statements.md
+  - Assesments:
+    - Statements: 6.Statements Assesment test.md
+  - Notebooks:
+    - Day 1: Notebooks/Day1.ipynb 
+    - Day 2: Notebooks/Day2.ipynb 
+    - Day 3: Notebooks/Day3.ipynb
+  - Resources:
+    - Tools Used: external-resources/index.md
