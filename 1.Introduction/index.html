@@ -761,8 +761,8 @@ machine language in the sense, everything will be in binary.</p>
 <li>string</li>
 </ul>
 <h3 id="to-know-the-type-of-variable">To know the type of variable</h3>
-<div class="highlight"><pre><span></span><code>x = &#39;bhavya&#39;
-type(x)
+<div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="s1">&#39;bhavya&#39;</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </code></pre></div>
 
 <h3 id="symbol">+ Symbol</h3>
@@ -781,45 +781,45 @@ type(x)
 <li>True</li>
 <li>False</li>
 </ul>
-<div class="highlight"><pre><span></span><code>2 &gt; 3
+<div class="highlight"><pre><span></span><code><span class="mi">2</span> <span class="o">&gt;</span> <span class="mi">3</span>
 
-False
+<span class="kc">False</span>
 </code></pre></div>
 
 <h3 id="numbers">Numbers</h3>
-<p><div class="highlight"><pre><span></span><code>2 + 3
-2 - 3
-2 * 3
-2 ** 3
-2 ** 0.5
+<p><div class="highlight"><pre><span></span><code><span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span>
+<span class="mi">2</span> <span class="o">-</span> <span class="mi">3</span>
+<span class="mi">2</span> <span class="o">*</span> <span class="mi">3</span>
+<span class="mi">2</span> <span class="o">**</span> <span class="mi">3</span>
+<span class="mi">2</span> <span class="o">**</span> <span class="mf">0.5</span>
 
-round((0.1+0.2),1)
+<span class="nb">round</span><span class="p">((</span><span class="mf">0.1</span><span class="o">+</span><span class="mf">0.2</span><span class="p">),</span><span class="mi">1</span><span class="p">)</span>
 </code></pre></div>
 Order of precendence - PAMDES If there are operators with same precendence - calculate from left to right</p>
 <h3 id="string-formatting">String formatting</h3>
 <p><strong>Formatting with .format() method</strong></p>
-<div class="highlight"><pre><span></span><code>print(&#39;This is our new {}&#39;, format(&#39;string&#39;))
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;This is our new </span><span class="si">{}</span><span class="s1">&#39;</span><span class="p">,</span> <span class="nb">format</span><span class="p">(</span><span class="s1">&#39;string&#39;</span><span class="p">))</span>
 
-print(&#39;These are the strings inline, {},{},{}&#39;, format(&#39;first&#39;, &#39;second&#39;, &#39;third&#39;))
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;These are the strings inline, </span><span class="si">{}</span><span class="s1">,</span><span class="si">{}</span><span class="s1">,</span><span class="si">{}</span><span class="s1">&#39;</span><span class="p">,</span> <span class="nb">format</span><span class="p">(</span><span class="s1">&#39;first&#39;</span><span class="p">,</span> <span class="s1">&#39;second&#39;</span><span class="p">,</span> <span class="s1">&#39;third&#39;</span><span class="p">))</span>
 
-print(&#39;These are the strings inline, {0},{1},{2}&#39;, format(&#39;first&#39;, &#39;second&#39;, &#39;third&#39;))
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;These are the strings inline, </span><span class="si">{0}</span><span class="s1">,</span><span class="si">{1}</span><span class="s1">,</span><span class="si">{2}</span><span class="s1">&#39;</span><span class="p">,</span> <span class="nb">format</span><span class="p">(</span><span class="s1">&#39;first&#39;</span><span class="p">,</span> <span class="s1">&#39;second&#39;</span><span class="p">,</span> <span class="s1">&#39;third&#39;</span><span class="p">))</span>
 
-print(&#39;These are the strings inline, {f},{s},{t}&#39;, format(f =&#39;first&#39;, s=&#39;second&#39;, t=&#39;third&#39;))
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;These are the strings inline, </span><span class="si">{f}</span><span class="s1">,</span><span class="si">{s}</span><span class="s1">,</span><span class="si">{t}</span><span class="s1">&#39;</span><span class="p">,</span> <span class="nb">format</span><span class="p">(</span><span class="n">f</span> <span class="o">=</span><span class="s1">&#39;first&#39;</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="s1">&#39;second&#39;</span><span class="p">,</span> <span class="n">t</span><span class="o">=</span><span class="s1">&#39;third&#39;</span><span class="p">))</span>
 </code></pre></div>
 
 <p><strong>Float formatting follows "{value:width.precision f}"</strong></p>
-<div class="highlight"><pre><span></span><code>result = 100/777
+<div class="highlight"><pre><span></span><code><span class="n">result</span> <span class="o">=</span> <span class="mi">100</span><span class="o">/</span><span class="mi">777</span>
 
-print(&quot;The result was {r}&quot;.format(r=result))
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The result was </span><span class="si">{r}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">r</span><span class="o">=</span><span class="n">result</span><span class="p">))</span>
 
-print(&quot;The result was {r:1.3f}&quot;.format(r=result))
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The result was </span><span class="si">{r:1.3f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">r</span><span class="o">=</span><span class="n">result</span><span class="p">))</span>
 </code></pre></div>
 
 <p><strong>f-strings (formatted string literals) method</strong></p>
-<div class="highlight"><pre><span></span><code>name = &quot;Bhavya&quot;
-age = 28
+<div class="highlight"><pre><span></span><code><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Bhavya&quot;</span>
+<span class="n">age</span> <span class="o">=</span> <span class="mi">28</span>
 
-print(f&#39;{name} is {age} years old.&#39;)
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{name}</span><span class="s1"> is </span><span class="si">{age}</span><span class="s1"> years old.&#39;</span><span class="p">)</span>
 </code></pre></div>
                 
               

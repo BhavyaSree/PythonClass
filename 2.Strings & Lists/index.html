@@ -639,8 +639,11 @@
 </ul>
 <h2 id="lists">Lists</h2>
 <p>Collection of objects</p>
-<p><code>mylist = [1, 2.3, 'Hi']</code></p>
-<p><code>nestedlist = [1, 2.3, 'Hi', [1, 2]]</code></p>
+<div class="highlight"><pre><span></span><code><span class="n">mylist</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mf">2.3</span><span class="p">,</span> <span class="s1">&#39;Hi&#39;</span><span class="p">]</span>
+
+<span class="n">nestedlist</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mf">2.3</span><span class="p">,</span> <span class="s1">&#39;Hi&#39;</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]]</span>
+</code></pre></div>
+
 <h3 id="list-slicing">List Slicing</h3>
 <ul>
 <li>can get the elements of a list using index.</li>
@@ -660,10 +663,10 @@ The start index will be included, while the end index is not.<br />
 step indicates the step size between the elements</p>
 </li>
 </ul>
-<div class="highlight"><pre><span></span><code>mylist = [1, 2, 3, 4, 5, 6, 7]
-mylist[3:5]
+<div class="highlight"><pre><span></span><code><span class="n">mylist</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span>
+<span class="n">mylist</span><span class="p">[</span><span class="mi">3</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span>
 
-[4,5]
+<span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
 </code></pre></div>
 
 <h3 id="list-manipulation">List Manipulation</h3>
@@ -673,16 +676,16 @@ mylist[3:5]
 <li>Remove element from the list.<br />
 <code>del(list[i])</code></li>
 </ul>
-<div class="highlight"><pre><span></span><code>x = [a, b, c]  
-address allocating  
-y = x  
-y[1] = z 
+<div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">]</span>  
+<span class="n">address</span> <span class="n">allocating</span>  
+<span class="n">y</span> <span class="o">=</span> <span class="n">x</span>  
+<span class="n">y</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">z</span> 
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>x = [a, b, c]
-y = list(x)
-y = x[:]
-y[1] = z
+<div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">x</span><span class="p">[:]</span>
+<span class="n">y</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">z</span>
 </code></pre></div>
 
 <h3 id="popular-list-methods">Popular List Methods</h3>

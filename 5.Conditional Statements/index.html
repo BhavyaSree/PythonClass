@@ -819,52 +819,52 @@
 <p>Python relies on indentation to define the scope of the code.</p>
 <h3 id="if">if</h3>
 <p>if statement is return using teh if keyboard.</p>
-<div class="highlight"><pre><span></span><code>if a &gt; b:
-  print(&#39;a is greater than b)
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;a is greater than b)</span>
 </code></pre></div>
 
 <h3 id="elif">Elif</h3>
 <p>elif keywords says that "if the previous conditions were not true, then try this condition".</p>
-<div class="highlight"><pre><span></span><code>if a &gt; b:
-  print(&#39;a is greater than b)
-elif a == b:
-  print(&#39;a is equal to b)
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;a is greater than b)</span>
+<span class="k">elif</span> <span class="n">a</span> <span class="o">==</span> <span class="n">b</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;a is equal to b)</span>
 </code></pre></div>
 
 <h3 id="else">Else</h3>
 <p>else keyword catches anything which isn't caught by the preceding conditions.</p>
-<div class="highlight"><pre><span></span><code>if a &gt; b:
-  print(&#39;a is greater than b)
-elif a == b:
-  print(&#39;a is equal to b)
-else:
-  print(&#39;a is less than b)
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;a is greater than b)</span>
+<span class="k">elif</span> <span class="n">a</span> <span class="o">==</span> <span class="n">b</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;a is equal to b)</span>
+<span class="k">else</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;a is less than b)</span>
 </code></pre></div>
 
 <h3 id="short-hand-if">Short Hand If</h3>
-<div class="highlight"><pre><span></span><code>if a &gt; b: print(&#39;a is greater than b&#39;)
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;a is greater than b&#39;</span><span class="p">)</span>
 </code></pre></div>
 
 <h3 id="short-hand-ifelse">Short Hand If...Else</h3>
-<div class="highlight"><pre><span></span><code>print(&quot;A&quot;) if a &gt; b else print(&quot;B&quot;)
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;A&quot;</span><span class="p">)</span> <span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span> <span class="k">else</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;B&quot;</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>print(&quot;A&quot;) if a &gt; b else print(&quot;=&quot;) if a == b else print(&quot;B&quot;)
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;A&quot;</span><span class="p">)</span> <span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span> <span class="k">else</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span><span class="p">)</span> <span class="k">if</span> <span class="n">a</span> <span class="o">==</span> <span class="n">b</span> <span class="k">else</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;B&quot;</span><span class="p">)</span>
 </code></pre></div>
 
 <h3 id="nested-if">Nested if</h3>
-<div class="highlight"><pre><span></span><code>if x &gt; 10:
-  print(&quot;Above ten,&quot;)
-  if x &gt; 20:
-    print(&quot;and also above 20!&quot;)
-  else:
-    print(&quot;but not above 20.&quot;)
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Above ten,&quot;</span><span class="p">)</span>
+  <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">20</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;and also above 20!&quot;</span><span class="p">)</span>
+  <span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;but not above 20.&quot;</span><span class="p">)</span>
 </code></pre></div>
 
 <h3 id="pass-statement">Pass statement</h3>
 <p>When we don't have any operation to perform after checking the condition, we can use just pass keyword.</p>
-<div class="highlight"><pre><span></span><code>if a &gt; b:
-  pass
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">:</span>
+  <span class="k">pass</span>
 </code></pre></div>
 
 <h2 id="loops">Loops</h2>
@@ -873,51 +873,51 @@ else:
 * For loop</p>
 <h2 id="while-loop">While Loop</h2>
 <p>We can execute set of commands or statements as long as the condition is true</p>
-<div class="highlight"><pre><span></span><code>x = 1
-while (x &lt; 5):
-  print(x)
-  x += 1
+<div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">while</span> <span class="p">(</span><span class="n">x</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">):</span>
+  <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+  <span class="n">x</span> <span class="o">+=</span> <span class="mi">1</span>
 </code></pre></div>
 
 <p>Break - stops the loop even if the while condition is true</p>
-<div class="highlight"><pre><span></span><code>x = 1
-while (x &lt; 5):
-  print(x)
-  if x == 3:
-    break
-  x += 1
+<div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">while</span> <span class="p">(</span><span class="n">x</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">):</span>
+  <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+  <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+    <span class="k">break</span>
+  <span class="n">x</span> <span class="o">+=</span> <span class="mi">1</span>
 </code></pre></div>
 
 <p>continue - continue statement stops the current iteration and continues with the next</p>
-<div class="highlight"><pre><span></span><code>x = 1
-while (x &lt; 5):
-  x += 1
-  if x == 3:
-    continue
-  print(x)
+<div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">while</span> <span class="p">(</span><span class="n">x</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">):</span>
+  <span class="n">x</span> <span class="o">+=</span> <span class="mi">1</span>
+  <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+    <span class="k">continue</span>
+  <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </code></pre></div>
 
 <h2 id="for-loop">For Loop</h2>
 <p>For loop iterates over an object</p>
-<div class="highlight"><pre><span></span><code>mylist = [1,2,3]
-for x in mylist:
-  print (x)
+<div class="highlight"><pre><span></span><code><span class="n">mylist</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">mylist</span><span class="p">:</span>
+  <span class="nb">print</span> <span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </code></pre></div>
 
 <p>break - breaks the loop before it has looped all the elements</p>
-<div class="highlight"><pre><span></span><code>mylist = [1,2,3]
-for x in mylist:
-  if x == 2:
-    break
-  print (x)
+<div class="highlight"><pre><span></span><code><span class="n">mylist</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">mylist</span><span class="p">:</span>
+  <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+    <span class="k">break</span>
+  <span class="nb">print</span> <span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </code></pre></div>
 
 <p>continue - stops the current iteration of the loop and continues with the next </p>
-<div class="highlight"><pre><span></span><code>mylist = [1,2,3]
-for x in mylist:
-  if x == 2:
-    continue
-  print (x)
+<div class="highlight"><pre><span></span><code><span class="n">mylist</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">mylist</span><span class="p">:</span>
+  <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+    <span class="k">continue</span>
+  <span class="nb">print</span> <span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </code></pre></div>
 
 <h2 id="useful-built-in-functions">Useful Built-in functions</h2>
@@ -925,101 +925,101 @@ for x in mylist:
 <p>range() - range function returns a sequence of numbers starting from 0 by default and increments by 1, and ends at a specific number</p>
 <p>range(5) -- sequence of numbers from 0 to 4, excluding 5.
 range(2,10,2)  -- first parameter will be start point, second indicates stop point, third indicates step size.</p>
-<div class="highlight"><pre><span></span><code>mylist = list(range(5))
-mylist
-[0,1,2,3,4] 
+<div class="highlight"><pre><span></span><code><span class="n">mylist</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+<span class="n">mylist</span>
+<span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span> 
 </code></pre></div>
 
 <h4 id="using-for-loop">Using for loop</h4>
-<div class="highlight"><pre><span></span><code>for x in range(2,6):
-  print(x)
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">6</span><span class="p">):</span>
+  <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </code></pre></div>
 
 <h3 id="enumerate">enumerate</h3>
 <p>enumerate function adds counter to the iterable</p>
-<div class="highlight"><pre><span></span><code>word = &#39;abcde&#39;
+<div class="highlight"><pre><span></span><code><span class="n">word</span> <span class="o">=</span> <span class="s1">&#39;abcde&#39;</span>
 
-for item in enumerate(word):
-  print item
+<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
+  <span class="nb">print</span> <span class="n">item</span>
 
-Result :
-(0,a)
-(1,b)
-(2,c)
-(3,d)
-(4,e)
+<span class="n">Result</span> <span class="p">:</span>
+<span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">a</span><span class="p">)</span>
+<span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
+<span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">c</span><span class="p">)</span>
+<span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="n">d</span><span class="p">)</span>
+<span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="n">e</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>word = &#39;abcde&#39;
+<div class="highlight"><pre><span></span><code><span class="n">word</span> <span class="o">=</span> <span class="s1">&#39;abcde&#39;</span>
 
-for item in enumerate(word, 2):
-  print item
+<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="mi">2</span><span class="p">):</span>
+  <span class="nb">print</span> <span class="n">item</span>
 
-Result :
-(2,a)
-(3,b)
-(4,c)
-(5,d)
-(6,e)
+<span class="n">Result</span> <span class="p">:</span>
+<span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">a</span><span class="p">)</span>
+<span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
+<span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="n">c</span><span class="p">)</span>
+<span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="n">d</span><span class="p">)</span>
+<span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="n">e</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>word = &#39;abcde&#39;
+<div class="highlight"><pre><span></span><code><span class="n">word</span> <span class="o">=</span> <span class="s1">&#39;abcde&#39;</span>
 
-for (index,letter) in enumerate(word):
-  print index
+<span class="k">for</span> <span class="p">(</span><span class="n">index</span><span class="p">,</span><span class="n">letter</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
+  <span class="nb">print</span> <span class="n">index</span>
 
-Result :
-0
-1
-2
-3
-4
+<span class="n">Result</span> <span class="p">:</span>
+<span class="mi">0</span>
+<span class="mi">1</span>
+<span class="mi">2</span>
+<span class="mi">3</span>
+<span class="mi">4</span>
 </code></pre></div>
 
 <h3 id="zip-function">Zip function</h3>
 <p>Zip function returns a zip object. First iterable of the first object will be paired with first iterable of the second object.</p>
-<div class="highlight"><pre><span></span><code>mylist1 = [1,2,3]
-mylist2 = [a,b,c]
+<div class="highlight"><pre><span></span><code><span class="n">mylist1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">mylist2</span> <span class="o">=</span> <span class="p">[</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">]</span>
 
-for item in zip(mylist1,mylist2):
-  print (item)
+<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">mylist1</span><span class="p">,</span><span class="n">mylist2</span><span class="p">):</span>
+  <span class="nb">print</span> <span class="p">(</span><span class="n">item</span><span class="p">)</span>
 
-Result:
-(1,a)
-(2,b)
-(3,c)
+<span class="n">Result</span><span class="p">:</span>
+<span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">a</span><span class="p">)</span>
+<span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
+<span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="n">c</span><span class="p">)</span>
 </code></pre></div>
 
 <h2 id="list-comprehensions">List Comprehensions</h2>
 <p>List Comprehensions is the way to define and create lists based on the existing lists</p>
-<div class="highlight"><pre><span></span><code>myString = &#39;Hello&#39;
+<div class="highlight"><pre><span></span><code><span class="n">myString</span> <span class="o">=</span> <span class="s1">&#39;Hello&#39;</span>
 
-mylist = []
+<span class="n">mylist</span> <span class="o">=</span> <span class="p">[]</span>
 
-for letter in myString:
-    mylist.append(letter)
+<span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">myString</span><span class="p">:</span>
+    <span class="n">mylist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">letter</span><span class="p">)</span>
 
-mylist
-[&#39;H&#39;, &#39;e&#39;, &#39;l&#39;, &#39;l&#39;, &#39;o&#39;]
+<span class="n">mylist</span>
+<span class="p">[</span><span class="s1">&#39;H&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">,</span> <span class="s1">&#39;l&#39;</span><span class="p">,</span> <span class="s1">&#39;l&#39;</span><span class="p">,</span> <span class="s1">&#39;o&#39;</span><span class="p">]</span>
 </code></pre></div>
 
 <h3 id="using-list-comprehensions">Using List Comprehensions</h3>
-<div class="highlight"><pre><span></span><code>mylist = [x for x in &#39;word&#39;]
+<div class="highlight"><pre><span></span><code><span class="n">mylist</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="s1">&#39;word&#39;</span><span class="p">]</span>
 
-mylist
-[&#39;w&#39;, &#39;o&#39;, &#39;r&#39;, &#39;d&#39;]
+<span class="n">mylist</span>
+<span class="p">[</span><span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">]</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>mylist = [x for x in range(0,11) if x%2 == 0]
+<div class="highlight"><pre><span></span><code><span class="n">mylist</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">11</span><span class="p">)</span> <span class="k">if</span> <span class="n">x</span><span class="o">%</span><span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span>
 
-mylist
-[0, 2, 4, 6, 8, 10]
+<span class="n">mylist</span>
+<span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>mylist = [x*y for x in [2,4,6] for y in [1,10,100]]
+<div class="highlight"><pre><span></span><code><span class="n">mylist</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span><span class="o">*</span><span class="n">y</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">100</span><span class="p">]]</span>
 
-mylist
-[2, 20, 200, 4, 40, 400, 6, 60, 600]
+<span class="n">mylist</span>
+<span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">400</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">600</span><span class="p">]</span>
 </code></pre></div>
                 
               
