@@ -18,5 +18,5 @@ python -m mkdocs serve
 
 * Publish to GitHub
 ```shell
-python -m mkdocs gh-pages
+python -m mkdocs gh-deploy
 ```
