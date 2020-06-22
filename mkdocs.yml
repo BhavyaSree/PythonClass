@@ -40,16 +40,16 @@ edit_uri: ""
 # Page tree
 nav:
   - Home: README.md
-  - Getting started: 1.Introduction.md
-  - Strings & Lists: 2.Strings & Lists.md
-  - Dictonaries, Sets & Tuples: 3.Dictonaries, Sets & Tuples.md 
-  - Operators: 4.Operators.md
-  - Conditional Statements: 5.Conditional Statements.md
-  - Methods and Functions: 7.Methods and Functions.md
-  - Function Arguments: 9.FunctionArguments.md
+  - Getting started: 1.introduction.md
+  - Strings & Lists: 2.strings-lists.md
+  - Dictonaries, Sets & Tuples: 3.dictonaries-sets-tuples.md 
+  - Operators: 4.operators.md
+  - Conditional Statements: 5.conditional-statements.md
+  - Methods and Functions: 7.methods-and-functions.md
+  - Function Arguments: 9.function-arguments.md
   - Assesments:
-    - Statements: 6.Statements Assesment test.md
-    - Functions: 8.Functions Assesment.md
+    - Statements: 6.statements-assesment.md
+    - Functions: 8.functions-assesment.md
   - Notebooks:
     - Day 1: Notebooks/Day1.ipynb 
     - Day 2: Notebooks/Day2.ipynb 
