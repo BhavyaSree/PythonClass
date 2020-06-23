@@ -47,6 +47,7 @@ nav:
   - Conditional Statements: 5.conditional-statements.md
   - Methods and Functions: 7.methods-and-functions.md
   - Function Arguments: 9.function-arguments.md
+  - Map Filter and Lambda Functions: 10.map-filter-lambda.md
   - Assesments:
     - Statements: 6.statements-assesment.md
     - Functions: 8.functions-assesment.md
