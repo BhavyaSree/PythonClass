@@ -873,20 +873,28 @@
 <p>Python relies on indentation to define the scope of the code.</p>
 <h3 id="if">if</h3>
 <p>if statement is return using teh if keyboard.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">:</span>
   <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;a is greater than b)</span>
 </code></pre></div>
 
+</div>
 <h3 id="elif">Elif</h3>
 <p>elif keywords says that "if the previous conditions were not true, then try this condition".</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">:</span>
   <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;a is greater than b)</span>
 <span class="k">elif</span> <span class="n">a</span> <span class="o">==</span> <span class="n">b</span><span class="p">:</span>
   <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;a is equal to b)</span>
 </code></pre></div>
 
+</div>
 <h3 id="else">Else</h3>
 <p>else keyword catches anything which isn't caught by the preceding conditions.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">:</span>
   <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;a is greater than b)</span>
 <span class="k">elif</span> <span class="n">a</span> <span class="o">==</span> <span class="n">b</span><span class="p">:</span>
@@ -895,18 +903,26 @@
   <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;a is less than b)</span>
 </code></pre></div>
 
+</div>
 <h3 id="short-hand-if">Short Hand If</h3>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;a is greater than b&#39;</span><span class="p">)</span>
 </code></pre></div>
 
+</div>
 <h3 id="short-hand-ifelse">Short Hand If...Else</h3>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;A&quot;</span><span class="p">)</span> <span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span> <span class="k">else</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;B&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;A&quot;</span><span class="p">)</span> <span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span> <span class="k">else</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span><span class="p">)</span> <span class="k">if</span> <span class="n">a</span> <span class="o">==</span> <span class="n">b</span> <span class="k">else</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;B&quot;</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;A&quot;</span><span class="p">)</span> <span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span> <span class="k">else</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span><span class="p">)</span> <span class="k">if</span> <span class="n">a</span> <span class="o">==</span> <span class="n">b</span> <span class="k">else</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;B&quot;</span><span class="p">)</span>
-</code></pre></div>
-
+</div>
 <h3 id="nested-if">Nested if</h3>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">:</span>
   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Above ten,&quot;</span><span class="p">)</span>
   <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">20</span><span class="p">:</span>
@@ -915,25 +931,34 @@
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;but not above 20.&quot;</span><span class="p">)</span>
 </code></pre></div>
 
+</div>
 <h3 id="pass-statement">Pass statement</h3>
 <p>When we don't have any operation to perform after checking the condition, we can use just pass keyword.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">:</span>
   <span class="k">pass</span>
 </code></pre></div>
 
+</div>
 <h2 id="loops">Loops</h2>
 <p>Python has two loop commands
 * While loop
 * For loop</p>
 <h2 id="while-loop">While Loop</h2>
 <p>We can execute set of commands or statements as long as the condition is true</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="k">while</span> <span class="p">(</span><span class="n">x</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">):</span>
   <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
   <span class="n">x</span> <span class="o">+=</span> <span class="mi">1</span>
 </code></pre></div>
 
+</div>
 <p>Break - stops the loop even if the while condition is true</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="k">while</span> <span class="p">(</span><span class="n">x</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">):</span>
   <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
@@ -942,7 +967,10 @@
   <span class="n">x</span> <span class="o">+=</span> <span class="mi">1</span>
 </code></pre></div>
 
+</div>
 <p>continue - continue statement stops the current iteration and continues with the next</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="k">while</span> <span class="p">(</span><span class="n">x</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">):</span>
   <span class="n">x</span> <span class="o">+=</span> <span class="mi">1</span>
@@ -951,14 +979,20 @@
   <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </code></pre></div>
 
+</div>
 <h2 id="for-loop">For Loop</h2>
 <p>For loop iterates over an object</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="n">mylist</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
 <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">mylist</span><span class="p">:</span>
   <span class="nb">print</span> <span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </code></pre></div>
 
+</div>
 <p>break - breaks the loop before it has looped all the elements</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="n">mylist</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
 <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">mylist</span><span class="p">:</span>
   <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
@@ -966,7 +1000,10 @@
   <span class="nb">print</span> <span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </code></pre></div>
 
+</div>
 <p>continue - stops the current iteration of the loop and continues with the next </p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="n">mylist</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
 <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">mylist</span><span class="p">:</span>
   <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
@@ -974,23 +1011,32 @@
   <span class="nb">print</span> <span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </code></pre></div>
 
+</div>
 <h2 id="useful-built-in-functions">Useful Built-in functions</h2>
 <h3 id="range-function">range function</h3>
 <p>range() - range function returns a sequence of numbers starting from 0 by default and increments by 1, and ends at a specific number</p>
 <p>range(5) -- sequence of numbers from 0 to 4, excluding 5.
 range(2,10,2)  -- first parameter will be start point, second indicates stop point, third indicates step size.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="n">mylist</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
 <span class="n">mylist</span>
 <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span> 
 </code></pre></div>
 
+</div>
 <h4 id="using-for-loop">Using for loop</h4>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">6</span><span class="p">):</span>
   <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </code></pre></div>
 
+</div>
 <h3 id="enumerate">enumerate</h3>
 <p>enumerate function adds counter to the iterable</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="n">word</span> <span class="o">=</span> <span class="s1">&#39;abcde&#39;</span>
 
 <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
@@ -1004,6 +1050,9 @@ range(2,10,2)  -- first parameter will be start point, second indicates stop poi
 <span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="n">e</span><span class="p">)</span>
 </code></pre></div>
 
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="n">word</span> <span class="o">=</span> <span class="s1">&#39;abcde&#39;</span>
 
 <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="mi">2</span><span class="p">):</span>
@@ -1017,6 +1066,9 @@ range(2,10,2)  -- first parameter will be start point, second indicates stop poi
 <span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="n">e</span><span class="p">)</span>
 </code></pre></div>
 
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="n">word</span> <span class="o">=</span> <span class="s1">&#39;abcde&#39;</span>
 
 <span class="k">for</span> <span class="p">(</span><span class="n">index</span><span class="p">,</span><span class="n">letter</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
@@ -1030,8 +1082,11 @@ range(2,10,2)  -- first parameter will be start point, second indicates stop poi
 <span class="mi">4</span>
 </code></pre></div>
 
+</div>
 <h3 id="zip-function">Zip function</h3>
 <p>Zip function returns a zip object. First iterable of the first object will be paired with first iterable of the second object.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="n">mylist1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
 <span class="n">mylist2</span> <span class="o">=</span> <span class="p">[</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">]</span>
 
@@ -1044,8 +1099,11 @@ range(2,10,2)  -- first parameter will be start point, second indicates stop poi
 <span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="n">c</span><span class="p">)</span>
 </code></pre></div>
 
+</div>
 <h2 id="list-comprehensions">List Comprehensions</h2>
 <p>List Comprehensions is the way to define and create lists based on the existing lists</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="n">myString</span> <span class="o">=</span> <span class="s1">&#39;Hello&#39;</span>
 
 <span class="n">mylist</span> <span class="o">=</span> <span class="p">[]</span>
@@ -1053,28 +1111,39 @@ range(2,10,2)  -- first parameter will be start point, second indicates stop poi
 <span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">myString</span><span class="p">:</span>
     <span class="n">mylist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">letter</span><span class="p">)</span>
 
-<span class="n">mylist</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">mylist</span><span class="p">)</span>
 <span class="p">[</span><span class="s1">&#39;H&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">,</span> <span class="s1">&#39;l&#39;</span><span class="p">,</span> <span class="s1">&#39;l&#39;</span><span class="p">,</span> <span class="s1">&#39;o&#39;</span><span class="p">]</span>
 </code></pre></div>
 
+</div>
 <h3 id="using-list-comprehensions">Using List Comprehensions</h3>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="n">mylist</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="s1">&#39;word&#39;</span><span class="p">]</span>
 
-<span class="n">mylist</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">mylist</span><span class="p">)</span>
 <span class="p">[</span><span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">]</span>
 </code></pre></div>
 
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="n">mylist</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">11</span><span class="p">)</span> <span class="k">if</span> <span class="n">x</span><span class="o">%</span><span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span>
 
-<span class="n">mylist</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">mylist</span><span class="p">)</span>
 <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
 </code></pre></div>
 
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="n">mylist</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span><span class="o">*</span><span class="n">y</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">100</span><span class="p">]]</span>
 
-<span class="n">mylist</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">mylist</span><span class="p">)</span>
 <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">400</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">600</span><span class="p">]</span>
 </code></pre></div>
+
+</div>
                 
               
               

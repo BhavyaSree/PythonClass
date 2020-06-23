@@ -643,6 +643,8 @@
 <p>If we are not sure on number of arguments that will be passed into our function, then we use * sign before the parameter name while defining the function.</p>
 <p>If the number of arguments is unknown, just add * before the parameter name.
 In this manner, the function accepts the tuple of elements as arguments and access the elements accordingly.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">myfun</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span> 
     <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">args</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
@@ -650,6 +652,9 @@ In this manner, the function accepts the tuple of elements as arguments and acce
 <span class="n">myfun</span><span class="p">(</span><span class="mi">40</span><span class="p">,</span><span class="mi">60</span><span class="p">,</span><span class="mi">40</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">60</span><span class="p">,</span><span class="mi">70</span><span class="p">)</span>
 </code></pre></div>
 
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">myfunc</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
     <span class="n">mylist</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">args</span><span class="p">:</span>
@@ -660,19 +665,25 @@ In this manner, the function accepts the tuple of elements as arguments and acce
 <span class="n">myfunc</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">)</span>
 </code></pre></div>
 
+</div>
 <h2 id="keyword-arguments">keyword Arguments</h2>
 <p>We can also send the arguments as key = value pair.<br />
 In this case, the order of the arguments does not matter.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">my_function</span><span class="p">(</span><span class="n">child3</span><span class="p">,</span> <span class="n">child2</span><span class="p">,</span> <span class="n">child1</span><span class="p">):</span>
   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The youngest child is &quot;</span> <span class="o">+</span> <span class="n">child3</span><span class="p">)</span>
 
 <span class="n">my_function</span><span class="p">(</span><span class="n">child1</span> <span class="o">=</span> <span class="s2">&quot;Emil&quot;</span><span class="p">,</span> <span class="n">child2</span> <span class="o">=</span> <span class="s2">&quot;Tobias&quot;</span><span class="p">,</span> <span class="n">child3</span> <span class="o">=</span> <span class="s2">&quot;Linus&quot;</span><span class="p">)</span>
 </code></pre></div>
 
+</div>
 <h2 id="arbitary-keyword-arguments">Arbitary Keyword Arguments</h2>
 <p>Arbitary Keyword Arguments are shortened as **kwargs in python documentation.</p>
 <p>If we are not sure on number of keyword arguments that will be passed into our function, then we use ** sign before the parameter name while defining the function.</p>
 <p>In this manner, function will accept dictionary items and can access elements accordingly.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">myfunc</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">kwargs</span><span class="p">)</span>
     <span class="k">if</span> <span class="s1">&#39;fruit&#39;</span> <span class="ow">in</span> <span class="n">kwargs</span><span class="p">:</span>
@@ -683,14 +694,20 @@ In this case, the order of the arguments does not matter.</p>
 <span class="n">myfunc</span><span class="p">(</span><span class="n">fruit</span><span class="o">=</span><span class="s1">&#39;apple&#39;</span><span class="p">,</span> <span class="n">veggie</span><span class="o">=</span><span class="s1">&#39;lettuce&#39;</span><span class="p">)</span>
 </code></pre></div>
 
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">myfunc</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;I would like </span><span class="si">{}</span><span class="s1"> </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">kwargs</span><span class="p">[</span><span class="s1">&#39;food&#39;</span><span class="p">]))</span>
 
 <span class="n">myfunc</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="n">fruit</span><span class="o">=</span><span class="s1">&#39;orange&#39;</span><span class="p">,</span> <span class="n">food</span><span class="o">=</span><span class="s1">&#39;eggs&#39;</span><span class="p">,</span> <span class="n">animal</span><span class="o">=</span><span class="s1">&#39;dog&#39;</span><span class="p">)</span>
 </code></pre></div>
 
+</div>
 <h2 id="passing-a-list-as-an-argument">Passing a List as an argument.</h2>
 <p>We can pass any type of data as argument to a function, that will be treated as same data type inside the function.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">my_function</span><span class="p">(</span><span class="n">food</span><span class="p">):</span>
   <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">food</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
@@ -700,8 +717,11 @@ In this case, the order of the arguments does not matter.</p>
 <span class="n">my_function</span><span class="p">(</span><span class="n">fruits</span><span class="p">)</span>
 </code></pre></div>
 
+</div>
 <h2 id="recursion">Recursion</h2>
 <p>Recursion of function indicates calling function by itself. </p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">recursion_fun</span><span class="p">(</span><span class="n">k</span><span class="p">):</span>
   <span class="k">if</span><span class="p">(</span><span class="n">k</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">):</span>
     <span class="n">result</span> <span class="o">=</span> <span class="n">k</span> <span class="o">+</span> <span class="n">recursion_fun</span><span class="p">(</span><span class="n">k</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
@@ -714,6 +734,7 @@ In this case, the order of the arguments does not matter.</p>
 <span class="n">recursion_fun</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 </code></pre></div>
 
+</div>
 <p>In this case, recursion_fun is a function that is defined to call itself. 
 Here, K value decrements by -1 everytime and recursion stops when the k value is not greater than 0.</p>
 <p>In the above example, the operation will be as follows</p>

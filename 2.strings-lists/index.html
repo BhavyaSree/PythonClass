@@ -677,20 +677,54 @@
                   <h1>Strings & Lists</h1>
                 
                 <h2 id="strings">Strings</h2>
-<ul>
-<li>len(string) -- to know the length of the string.  </li>
-<li>string[index] -- to get specific character from the string.  </li>
-<li>string[start:end]  -- to get the group of characters from start index position to end index position of string.  </li>
-<li>string[start:end:step]</li>
-</ul>
+<p>Collection of Characters</p>
 <h3 id="popular-string-methods">Popular string methods</h3>
-<ul>
-<li>string[::-1]  -- reverses the string.</li>
-<li>string.upper()  -- coverts the string characters to upper case.</li>
-<li>string.lower() -- converts the string characters to lower case.</li>
-<li>string.split() -- to split the string, by default split function splits the string based on white space.</li>
-<li>string.split(character) - to split the string based on a specific character</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th>Methods</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>len(string)</td>
+<td>to know the length of the string.</td>
+</tr>
+<tr>
+<td>string[index]</td>
+<td>to get specific character from the string.</td>
+</tr>
+<tr>
+<td>string[start:end]</td>
+<td>to get the group of characters from start index position to end index position of string.</td>
+</tr>
+<tr>
+<td>string[start:end:step]</td>
+<td>to get the group of characters from start index position to end index position of string based on the step size. By default step size will be 1</td>
+</tr>
+<tr>
+<td>string[::-1]</td>
+<td>reverses the string.</td>
+</tr>
+<tr>
+<td>string.upper()</td>
+<td>coverts the string characters to upper case.</td>
+</tr>
+<tr>
+<td>string.lower()</td>
+<td>converts the string characters to lower case.</td>
+</tr>
+<tr>
+<td>string.split()</td>
+<td>to split the string, by default split function splits the string based on white space.</td>
+</tr>
+<tr>
+<td>string.split(character)</td>
+<td>to split the string based on a specific character</td>
+</tr>
+</tbody>
+</table>
 <h2 id="lists">Lists</h2>
 <p>Collection of objects</p>
 <div class="highlight"><pre><span></span><code><span class="n">mylist</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mf">2.3</span><span class="p">,</span> <span class="s1">&#39;Hi&#39;</span><span class="p">]</span>
@@ -717,12 +751,16 @@ The start index will be included, while the end index is not.<br />
 step indicates the step size between the elements</p>
 </li>
 </ul>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="n">mylist</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span>
-<span class="n">mylist</span><span class="p">[</span><span class="mi">3</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">mylist</span><span class="p">[</span><span class="mi">3</span><span class="p">:</span><span class="mi">5</span><span class="p">])</span>
 
+<span class="n">result</span><span class="p">:</span>
 <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
 </code></pre></div>
 
+</div>
 <h3 id="list-manipulation">List Manipulation</h3>
 <ul>
 <li>Add elements to the list. <br />
@@ -730,28 +768,70 @@ step indicates the step size between the elements</p>
 <li>Remove element from the list.<br />
 <code>del(list[i])</code></li>
 </ul>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">]</span>  
-<span class="n">address</span> <span class="n">allocating</span>  
+<span class="c1"># address allocating  </span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">x</span>  
 <span class="n">y</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">z</span> 
+
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+<span class="n">result</span><span class="p">:</span>
+<span class="p">[</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">]</span>
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">]</span>
 <span class="n">y</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">x</span><span class="p">[:]</span>
 <span class="n">y</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">z</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+<span class="n">result</span><span class="p">:</span>
+<span class="p">[</span><span class="n">z</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">]</span>
 </code></pre></div>
 
+</div>
 <h3 id="popular-list-methods">Popular List Methods</h3>
-<ul>
-<li>len(list)   -- to know the length of the list  </li>
-<li>list.append(el)  -- to append the element to the list </li>
-<li>list.pop(index)  -- to pop out the element from the list</li>
-<li>list.sort()   -- to sort the elements of the list</li>
-<li>list.reverse()  -- to reverse the elements of the list</li>
-<li>list.max()   -- to get the maximum value of the list</li>
-<li>list.min()  -- to get the minimum value of the list</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th>Methods</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>len(list)</td>
+<td>to know the length of the list</td>
+</tr>
+<tr>
+<td>list.append(el)</td>
+<td>to append the element to the list</td>
+</tr>
+<tr>
+<td>list.pop(index)</td>
+<td>to pop out the element from the list</td>
+</tr>
+<tr>
+<td>list.sort()</td>
+<td>to sort the elements of the list</td>
+</tr>
+<tr>
+<td>list.reverse()</td>
+<td>to reverse the elements of the list</td>
+</tr>
+<tr>
+<td>list.max()</td>
+<td>to get the maximum value of the list</td>
+</tr>
+<tr>
+<td>list.min()</td>
+<td>to get the minimum value of the list</td>
+</tr>
+</tbody>
+</table>
                 
               
               

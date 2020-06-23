@@ -617,6 +617,8 @@
 <div class="highlight"><pre><span></span><code><span class="nb">map</span><span class="p">(</span><span class="n">function</span><span class="p">,</span> <span class="n">iterables</span><span class="p">)</span>
 </code></pre></div></p>
 <p>map applies the function to every element of the list.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">square</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
     <span class="k">return</span><span class="p">(</span><span class="n">num</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
 
@@ -630,6 +632,9 @@
 <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">25</span><span class="p">]</span>
 </code></pre></div>
 
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">myfunc</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
   <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
 
@@ -641,11 +646,11 @@
 <span class="p">[</span><span class="s1">&#39;appleorange&#39;</span><span class="p">,</span> <span class="s1">&#39;bananalemon&#39;</span><span class="p">,</span> <span class="s1">&#39;cherrypineapple&#39;</span><span class="p">]</span>
 </code></pre></div>
 
+</div>
 <h2 id="filter">Filter</h2>
 <p>filter() function returns an iterator when the items are filtered through a function and if the function accepts the item.</p>
-<p><strong>Syntax:</strong>
-<div class="highlight"><pre><span></span><code><span class="nb">filter</span><span class="p">(</span><span class="n">function</span><span class="p">,</span> <span class="n">iterables</span><span class="p">)</span>
-</code></pre></div></p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">check_even</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">num</span><span class="o">%</span><span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span>
 
@@ -659,8 +664,11 @@
 <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
 </code></pre></div>
 
+</div>
 <h2 id="lambda">Lambda</h2>
-<p><div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">square</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">square</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">num</span><span class="o">**</span><span class="mi">2</span>
 
 <span class="c1"># The above function can also be written as </span>
@@ -668,23 +676,33 @@
 
 <span class="nb">print</span><span class="p">(</span><span class="n">square</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
 </code></pre></div>
-when we use the function only once, we will define it as lambda.</p>
+
+</div>
+<p>when we use the function only once, we will define it as lambda.</p>
 <p>lambda is nothing is but a simple anonymous function.</p>
 <p><strong>Syntax:</strong>
 <div class="highlight"><pre><span></span><code><span class="k">lambda</span> <span class="n">arguments</span> <span class="p">:</span> <span class="n">expression</span>
 </code></pre></div>
 lambda function can take any number of arguments, but can only have one expression.</p>
-<p><div class="highlight"><pre><span></span><code><span class="n">square</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">num</span><span class="p">:</span> <span class="n">num</span><span class="o">**</span><span class="mi">2</span>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><span class="n">square</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">num</span><span class="p">:</span> <span class="n">num</span><span class="o">**</span><span class="mi">2</span>
 
 <span class="n">square</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 </code></pre></div>
-As lambda is anonymous, we generally won't give any name for it. <br />
+
+</div>
+<p>As lambda is anonymous, we generally won't give any name for it. <br />
 We will use lambda expression in map and filter functions as below</p>
-<div class="highlight"><pre><span></span><code><span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">num</span><span class="p">:</span> <span class="n">num</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="n">my_nums</span><span class="p">))</span>
-
-<span class="nb">list</span><span class="p">(</span><span class="nb">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">num</span><span class="p">:</span> <span class="n">num</span><span class="o">%</span><span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="n">mynums</span><span class="p">))</span>
-</code></pre></div>
-
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>```python
+list(map(lambda num: num**2, my_nums))</p>
+<p>list(filter(lambda num: num%2 == 0, my_nums))</p>
+</div>
+<p>```</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
 <div class="highlight"><pre><span></span><code><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Andy&#39;</span><span class="p">,</span><span class="s1">&#39;Eve&#39;</span><span class="p">,</span><span class="s1">&#39;Sally&#39;</span><span class="p">]</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">name</span><span class="p">:</span> <span class="n">name</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">names</span><span class="p">)))</span>
@@ -697,6 +715,20 @@ We will use lambda expression in map and filter functions as below</p>
 <span class="n">Result</span><span class="p">:</span> 
 <span class="p">[</span><span class="s1">&#39;ydnA&#39;</span><span class="p">,</span> <span class="s1">&#39;evE&#39;</span><span class="p">,</span> <span class="s1">&#39;yllaS&#39;</span><span class="p">]</span>
 </code></pre></div>
+
+</div>
+<p>The power of lambda is better shown when we use anonymous function inside another function</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">myfunc</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+  <span class="k">return</span> <span class="k">lambda</span> <span class="n">a</span> <span class="p">:</span> <span class="n">a</span> <span class="o">*</span> <span class="n">n</span>
+
+<span class="n">mydoubler</span> <span class="o">=</span> <span class="n">myfunc</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">mydoubler</span><span class="p">(</span><span class="mi">11</span><span class="p">))</span>
+</code></pre></div>
+
+</div>
                 
               
               
