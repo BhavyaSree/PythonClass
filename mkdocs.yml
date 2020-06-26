@@ -57,5 +57,6 @@ nav:
     - Day 1: Notebooks/Day1.ipynb 
     - Day 2: Notebooks/Day2.ipynb 
     - Day 3: Notebooks/Day3.ipynb
+    - TicTacToe : Notebooks/TicTacToe.ipynb
   - Resources:
     - Tools Used: external-resources/index.md
