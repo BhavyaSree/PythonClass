@@ -778,13 +778,13 @@ Here, K value decrements by -1 everytime and recursion stops when the k value is
 <p>In the above example, the operation will be as follows</p>
 <ol>
 <li><code>recusrion_fun</code> when <code>k=2</code><br />
-<code>result = 2 + rescursion(1)</code>
-This will wait for the result of recursion(1), once recursion(1) returns a result, that will be added to 2 and total result will be printed.  </li>
+<code>result = 2 + rescursion_fun(1)</code>
+This will wait for the result of <code>recursion_fun(1)</code>, once <code>recursion_fun(1)</code> returns a result, that will be added to 2 and total result will be printed.  </li>
 <li><code>recursion_fun</code> when <code>k=1</code><br />
-<code>result = 1 + recusrion(0)</code>
-<code>recursion(0)</code> result will be returned as 0 and this won't be printed as there is no print result in else part.<br />
-result of the <code>recusrion(1)</code> will be printed as 1 (1+0) and result will be returned.<br />
-Now, the result of <code>recursion(2)</code> will be 3 (2+1) and this will result be printed and returned to the function.  </li>
+<code>result = 1 + recusrion_fun(0)</code>
+<code>recursion_fun(0)</code> result will be returned as 0 and this won't be printed as there is no print result in else part.<br />
+result of the <code>recusrion_fun(1)</code> will be printed as 1 (1+0) and result will be returned.<br />
+Now, the result of <code>recursion_fun(2)</code> will be 3 (2+1) and this will result be printed and returned to the function.  </li>
 </ol>
                 
               
