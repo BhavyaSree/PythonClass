@@ -19,7 +19,7 @@
     
     
       
-        <title>Scope of Variables - Python Class</title>
+        <title>Object Oriented - Classes & Objects - Python Class</title>
       
     
     
@@ -59,7 +59,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#scope-of-the-variables" class="md-skip">
+        <a href="#object-oriented" class="md-skip">
           Skip to content
         </a>
       
@@ -87,7 +87,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Scope of Variables
+              Object Oriented - Classes & Objects
             
           </span>
         </div>
@@ -342,6 +342,18 @@
       
       
 
+
+  <li class="md-nav__item">
+    <a href="../11.variables-scope/" title="Scope of Variables" class="md-nav__link">
+      Scope of Variables
+    </a>
+  </li>
+
+    
+      
+      
+      
+
   
 
 
@@ -349,25 +361,21 @@
     
     <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
-      
-    
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Scope of Variables
+        Object Oriented - Classes & Objects
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
         </span>
       </label>
     
-    <a href="./" title="Scope of Variables" class="md-nav__link md-nav__link--active">
-      Scope of Variables
+    <a href="./" title="Object Oriented - Classes & Objects" class="md-nav__link md-nav__link--active">
+      Object Oriented - Classes & Objects
     </a>
     
       
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
-  
-    
   
   
     <label class="md-nav__title" for="__toc">
@@ -379,16 +387,51 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#global-keyword" class="md-nav__link">
-    Global Keyword
+  <a href="#object-oriented" class="md-nav__link">
+    Object Oriented
   </a>
   
-    <nav class="md-nav" aria-label="Global Keyword">
+    <nav class="md-nav" aria-label="Object Oriented">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#modifying-the-global-variable-from-inside-the-function" class="md-nav__link">
-    Modifying the Global variable from inside the function
+  <a href="#the-__init__-function" class="md-nav__link">
+    The __init__() function
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#class-object-attribute" class="md-nav__link">
+    Class Object Attribute
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#object-methods" class="md-nav__link">
+    Object Methods
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modify-object-properties" class="md-nav__link">
+    Modify Object Properties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete-object-properties" class="md-nav__link">
+    Delete Object properties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete-an-object" class="md-nav__link">
+    Delete an Object
   </a>
   
 </li>
@@ -402,18 +445,6 @@
   
 </nav>
     
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../13.object-oriented/" title="Object Oriented - Classes & Objects" class="md-nav__link">
-      Object Oriented - Classes & Objects
-    </a>
   </li>
 
     
@@ -617,8 +648,6 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon">
@@ -629,16 +658,51 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#global-keyword" class="md-nav__link">
-    Global Keyword
+  <a href="#object-oriented" class="md-nav__link">
+    Object Oriented
   </a>
   
-    <nav class="md-nav" aria-label="Global Keyword">
+    <nav class="md-nav" aria-label="Object Oriented">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#modifying-the-global-variable-from-inside-the-function" class="md-nav__link">
-    Modifying the Global variable from inside the function
+  <a href="#the-__init__-function" class="md-nav__link">
+    The __init__() function
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#class-object-attribute" class="md-nav__link">
+    Class Object Attribute
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#object-methods" class="md-nav__link">
+    Object Methods
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modify-object-properties" class="md-nav__link">
+    Modify Object Properties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete-object-properties" class="md-nav__link">
+    Delete Object properties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete-an-object" class="md-nav__link">
+    Delete an Object
   </a>
   
 </li>
@@ -664,137 +728,131 @@
                   
                 
                 
-                <h1 id="scope-of-the-variables">Scope of the variables</h1>
-<p>Scope of the variable is resolved by LEGB rule in python</p>
-<p>L - Local
-E - Enclosing function locals
-G - Global
-B - Built-in</p>
+                  <h1>Object Oriented - Classes & Objects</h1>
+                
+                <h2 id="object-oriented">Object Oriented</h2>
+<p>In python, Programmers can create their own objects that have methods and attributes.</p>
+<p>In general, Object Oriented programming allows us to create a code that is repeatable and organized.</p>
+<p>Class is like an object constructor or a "blueprint" for creating objects.  </p>
 <div class="admonition example">
-<p class="admonition-title">Local</p>
-<div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="mi">25</span>
-
-<span class="k">def</span> <span class="nf">printer</span><span class="p">():</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="mi">50</span>
-    <span class="k">return</span> <span class="n">x</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<span class="o">&gt;&gt;</span> <span class="mi">25</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">printer</span><span class="p">())</span>
-<span class="o">&gt;&gt;</span> <span class="mi">50</span>
+<p class="admonition-title">Create a Class</p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">myclass</span><span class="p">:</span>  
+  <span class="n">x</span> <span class="o">=</span> <span class="mi">10</span> 
 </code></pre></div>
 
 </div>
+<p>We can use class myclass to create objects</p>
 <div class="admonition example">
-<p class="admonition-title">Local</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Global</span>
-<span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;THIS IS A GLOBAL STRING&#39;</span>
-
-<span class="k">def</span> <span class="nf">greet</span><span class="p">():</span>
-    <span class="c1"># Enclosing</span>
-    <span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;Sammy&#39;</span>
-
-    <span class="k">def</span> <span class="nf">hello</span><span class="p">():</span>
-        <span class="c1"># Local</span>
-        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;I&#39;m Local&quot;</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello &#39;</span><span class="o">+</span><span class="n">name</span><span class="p">)</span>
-
-    <span class="n">hello</span><span class="p">()</span>
-
-<span class="n">greet</span><span class="p">()</span>
+<p class="admonition-title">Create a Object</p>
+<p>Creating the object o1 and print the value of x</p>
+<div class="highlight"><pre><span></span><code><span class="n">o1</span> <span class="o">=</span> <span class="n">myclass</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">o1</span><span class="o">.</span><span class="n">x</span><span class="p">)</span>
 
 <span class="n">Result</span><span class="p">:</span>
-<span class="o">&gt;&gt;</span> <span class="n">Hello</span> <span class="n">I</span><span class="s1">&#39;m Local</span>
+<span class="mi">10</span>
 </code></pre></div>
 
 </div>
-<div class="admonition example">
-<p class="admonition-title">Enclosing function locals</p>
-<div class="highlight"><pre><span></span><code><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;THIS IS A GLOBAL STRING&#39;</span>
-
-<span class="k">def</span> <span class="nf">greet</span><span class="p">():</span>
-    <span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;Sammy&#39;</span>
-
-    <span class="k">def</span> <span class="nf">hello</span><span class="p">():</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello &#39;</span><span class="o">+</span><span class="n">name</span><span class="p">)</span>
-
-    <span class="n">hello</span><span class="p">()</span>
-
-<span class="n">greet</span><span class="p">()</span>
-
-<span class="n">Result</span><span class="p">:</span>
-<span class="o">&gt;&gt;</span> <span class="n">Hello</span> <span class="n">sammy</span>
-</code></pre></div>
-
-</div>
-<div class="admonition example">
-<p class="admonition-title">Global</p>
-<div class="highlight"><pre><span></span><code><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;THIS IS A GLOBAL STRING&#39;</span>
-
-<span class="k">def</span> <span class="nf">greet</span><span class="p">():</span>
-
-    <span class="k">def</span> <span class="nf">hello</span><span class="p">():</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello &#39;</span><span class="o">+</span><span class="n">name</span><span class="p">)</span>
-
-    <span class="n">hello</span><span class="p">()</span>
-
-<span class="n">greet</span><span class="p">()</span>
-
-<span class="n">Result</span><span class="p">:</span>
-<span class="o">&gt;&gt;</span> <span class="n">Hello</span> <span class="n">THIS</span> <span class="n">IS</span> <span class="n">A</span> <span class="n">GLOBAL</span> <span class="n">STRING</span>
-</code></pre></div>
-
-</div>
-<div class="admonition example">
-<p class="admonition-title">built-in</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;</span> <span class="nb">len</span>
-<span class="o">&gt;&gt;</span> <span class="n">help</span><span class="p">(</span><span class="nb">len</span><span class="p">)</span>
-</code></pre></div>
-
-</div>
-<h2 id="global-keyword">Global Keyword</h2>
-<p>Global keyword allows you to modify the variable outside of the current scope. <br />
-It is used to create a global variable and make changes to the variable in a local context.</p>
-<p><strong>The basic rules for global keyword in Python are:</strong></p>
-<ul>
-<li>When we create a variable inside a function, it is local by default.</li>
-<li>When we define a variable outside of a function, it is global by default. You don't have to use global keyword.</li>
-<li>We use global keyword to read and write a global variable inside a function.</li>
-<li>Use of global keyword outside a function has no effect.</li>
-</ul>
-<h4 id="modifying-the-global-variable-from-inside-the-function">Modifying the Global variable from inside the function</h4>
+<h3 id="the-__init__-function">The <code>__init__()</code> function</h3>
+<p>In order to understand the meaning of classes and how objects can be created using classes, we need to understand the built-in <code>__init__()</code> function.</p>
+<p><code>__init__</code> is the constructor of the class. This will be called automatically, when we create object of the class.  </p>
+<p>All classes will have <code>__init__()</code> function, which will be executed when the class is being initiated.
+This <code>__init__()</code> function assign properties of a class to the object.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="n">c</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1"># global variable</span>
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Person</span><span class="p">:</span>
+  <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">age</span> <span class="o">=</span> <span class="n">age</span>
 
-<span class="k">def</span> <span class="nf">add</span><span class="p">():</span>
-    <span class="n">c</span> <span class="o">=</span> <span class="n">c</span> <span class="o">+</span> <span class="mi">2</span> <span class="c1"># increment c by 2</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+<span class="n">p1</span> <span class="o">=</span> <span class="n">Person</span><span class="p">(</span><span class="s2">&quot;Bhavya&quot;</span><span class="p">,</span> <span class="mi">29</span><span class="p">)</span>
 
-<span class="n">add</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">p1</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">p1</span><span class="o">.</span><span class="n">age</span><span class="p">)</span>
 
 <span class="n">Result</span><span class="p">:</span>
-<span class="o">&gt;&gt;</span> <span class="ne">UnboundLocalError</span><span class="p">:</span> <span class="n">local</span> <span class="n">variable</span> <span class="s1">&#39;c&#39;</span> <span class="n">referenced</span> <span class="n">before</span> <span class="n">assignment</span>
+<span class="n">Bhavya</span>
+<span class="mi">29</span>
 </code></pre></div>
 
 </div>
-<p>In order to modify the global variable from inside the function, we need to call the global variable inside the function.</p>
+<p><code>The __init__() function is called automatically every time the class is being used to create a new object.</code></p>
+<p><code>The self parameter is a reference to the current instance of the class, and is used to access variables that belong to the class.</code></p>
+<h3 id="class-object-attribute">Class Object Attribute</h3>
+<p>Generally, Attribute is the characteristic of an object. We can specify some characteristics or properties that will be same for any objects of that particular class.</p>
 <div class="admonition example">
-<p class="admonition-title">Modifying the Global variable inside the function</p>
-<div class="highlight"><pre><span></span><code><span class="n">c</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># global variable</span>
+<p class="admonition-title">Class Object Attribute</p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Circle</span><span class="p">():</span>
 
-<span class="k">def</span> <span class="nf">add</span><span class="p">():</span>
-    <span class="k">global</span> <span class="n">c</span>
-    <span class="n">c</span> <span class="o">=</span> <span class="n">c</span> <span class="o">+</span> <span class="mi">2</span> <span class="c1"># increment by 2</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Inside add():&quot;</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
+<span class="c1"># Class object attribute</span>
+<span class="n">pi</span> <span class="o">=</span> <span class="mf">3.14</span>
 
-<span class="n">add</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;In main:&quot;</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
+<span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">radius</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">radius</span> <span class="o">=</span> <span class="n">radius</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">area</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">radius</span> <span class="o">**</span> <span class="mi">2</span>
+</code></pre></div>
+
+</div>
+<h3 id="object-methods">Object Methods</h3>
+<p>Objects can also have methods. Methods in objects are functions that belong to that particular object.</p>
+<div class="admonition example">
+<p class="admonition-title">Create a method in the class person</p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Person</span><span class="p">:</span>
+  <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">age</span> <span class="o">=</span> <span class="n">age</span>
+
+  <span class="k">def</span> <span class="nf">myfunc</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello my name is &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+
+<span class="n">p1</span> <span class="o">=</span> <span class="n">Person</span><span class="p">(</span><span class="s2">&quot;Bhavya&quot;</span><span class="p">,</span> <span class="mi">29</span><span class="p">)</span>
+<span class="n">p1</span><span class="o">.</span><span class="n">myfunc</span><span class="p">()</span>
 
 <span class="n">Result</span><span class="p">:</span>
-<span class="o">&gt;&gt;</span> <span class="n">Inside</span> <span class="n">add</span><span class="p">():</span> <span class="mi">2</span>
-<span class="o">&gt;&gt;</span> <span class="n">In</span> <span class="n">main</span><span class="p">:</span> <span class="mi">2</span>
+<span class="n">Hello</span> <span class="n">my</span> <span class="n">name</span> <span class="ow">is</span> <span class="n">Bhavya</span>
+</code></pre></div>
+
+</div>
+<h3 id="modify-object-properties">Modify Object Properties</h3>
+<p>We can always modify the object properties.</p>
+<div class="admonition example">
+<p class="admonition-title">Modifying the age of the person from 29 to 30</p>
+</div>
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Person</span><span class="p">:</span>
+  <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">age</span> <span class="o">=</span> <span class="n">age</span>
+
+<span class="n">p1</span> <span class="o">=</span> <span class="n">Person</span><span class="p">(</span><span class="s2">&quot;Bhavya&quot;</span><span class="p">,</span> <span class="mi">29</span><span class="p">)</span>
+<span class="n">p1</span><span class="o">.</span><span class="n">age</span> <span class="o">=</span> <span class="mi">30</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">p1</span><span class="o">.</span><span class="n">age</span><span class="p">)</span>
+
+<span class="n">Result</span><span class="p">:</span>
+<span class="mi">30</span>
+</code></pre></div>
+
+<h3 id="delete-object-properties">Delete Object properties</h3>
+<p>We can delete properties of a particular object.</p>
+<div class="admonition example">
+<p class="admonition-title">Deleting the age of person p1</p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Person</span><span class="p">:</span>
+  <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">age</span> <span class="o">=</span> <span class="n">age</span>
+
+<span class="n">p1</span> <span class="o">=</span> <span class="n">Person</span><span class="p">(</span><span class="s2">&quot;Bhavya&quot;</span><span class="p">,</span> <span class="mi">29</span><span class="p">)</span>
+<span class="k">del</span> <span class="n">p1</span><span class="o">.</span><span class="n">age</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">p1</span><span class="o">.</span><span class="n">age</span><span class="p">)</span>
+</code></pre></div>
+
+</div>
+<h3 id="delete-an-object">Delete an Object</h3>
+<p>To delete an object we use del keyword</p>
+<div class="admonition example">
+<p class="admonition-title">Deleting the person p1</p>
+<div class="highlight"><pre><span></span><code><span class="k">del</span> <span class="n">p1</span>
 </code></pre></div>
 
 </div>
@@ -816,7 +874,7 @@ It is used to create a global variable and make changes to the variable in a loc
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../10.map-filter-lambda/" title="Map Filter and Lambda Functions" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../11.variables-scope/" title="Scope of Variables" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -825,19 +883,19 @@ It is used to create a global variable and make changes to the variable in a loc
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Map Filter and Lambda Functions
+                Scope of Variables
               </div>
             </div>
           </a>
         
         
-          <a href="../13.object-oriented/" title="Object Oriented - Classes & Objects" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../6.statements-assesment/" title="Statements" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Object Oriented - Classes & Objects
+                Statements
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">

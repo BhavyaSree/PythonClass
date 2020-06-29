@@ -19,7 +19,7 @@
     
     
       
-        <title>Day 2 - Python Class</title>
+        <title>Classes,attributes&methods - Python Class</title>
       
     
     
@@ -82,7 +82,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Day 2
+              Classes,attributes&methods
             
           </span>
         </div>
@@ -114,16 +114,14 @@
         
           
 
-  
-
-<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
       
         
   <li class="md-tabs__item">
     
-      <a href="../.." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link md-tabs__link--active">
         Home
       </a>
     
@@ -168,7 +166,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../Day1/" class="md-tabs__link md-tabs__link--active">
+        <a href="../Day1/" class="md-tabs__link">
           Notebooks
         </a>
       
@@ -429,12 +427,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-13" type="checkbox" id="nav-13" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-13" type="checkbox" id="nav-13">
     
     <label class="md-nav__link" for="nav-13">
       Notebooks
@@ -468,18 +464,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-    <a href="./" title="Day 2" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../Day2/" title="Day 2" class="md-nav__link">
       Day 2
     </a>
-    
   </li>
 
         
@@ -570,7 +559,7 @@
                   
                 
                 
-                  <h1>Day 2</h1>
+                  <h1>Classes,attributes&methods</h1>
                 
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
@@ -604,7 +593,21 @@
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
-<div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">circle</span><span class="p">():</span>
+
+    <span class="n">pi</span> <span class="o">=</span> <span class="mf">3.14</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">radius</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">radius</span> <span class="o">=</span> <span class="n">radius</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">diameter</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">radius</span>
+
+    <span class="k">def</span> <span class="nf">area</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">area_circle</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">radius</span> <span class="o">**</span> <span class="mi">2</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">area_circle</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">circumference</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">circumference_circle</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">radius</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">circumference_circle</span><span class="p">)</span>
 </code></pre></div>
 
 </div>
@@ -613,7 +616,7 @@
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
-<div class="highlight"><pre><span></span><code><span class="n">y</span> <span class="o">=</span> <span class="n">x</span>
+<div class="highlight"><pre><span></span><code><span class="n">c1</span> <span class="o">=</span> <span class="n">circle</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 </code></pre></div>
 
 </div>
@@ -622,7 +625,99 @@
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
-<div class="highlight"><pre><span></span><code><span class="n">y</span>
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">c1</span><span class="o">.</span><span class="n">radius</span><span class="p">)</span>
+</code></pre></div>
+
+</div>
+
+<div class="output_wrapper" markdown="1">
+<div class="output" markdown="1">
+
+
+<div class="output_area" markdown="1">
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>5
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+</div>
+</div>
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">c1</span><span class="o">.</span><span class="n">diameter</span><span class="p">)</span>
+</code></pre></div>
+
+</div>
+
+<div class="output_wrapper" markdown="1">
+<div class="output" markdown="1">
+
+
+<div class="output_area" markdown="1">
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>10
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="n">c1</span><span class="o">.</span><span class="n">area</span><span class="p">()</span>
+</code></pre></div>
+
+</div>
+
+<div class="output_wrapper" markdown="1">
+<div class="output" markdown="1">
+
+
+<div class="output_area" markdown="1">
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>78.5
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+</div>
+</div>
+<div class="highlight"><pre><span></span><code><span class="n">c1</span><span class="o">.</span><span class="n">circumference</span><span class="p">()</span>
+</code></pre></div>
+
+</div>
+
+<div class="output_wrapper" markdown="1">
+<div class="output" markdown="1">
+
+
+<div class="output_area" markdown="1">
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>31.400000000000002
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="n">c1</span><span class="o">.</span><span class="n">pi</span>
 </code></pre></div>
 
 </div>
@@ -635,7 +730,7 @@
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[1, 2, 3]</pre>
+<pre>3.14</pre>
 </div>
 
 </div>
@@ -667,41 +762,6 @@
       
         
 <footer class="md-footer">
-  
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
-        
-          <a href="../Day1/" title="Day 1" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-            </div>
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Previous
-                </span>
-                Day 1
-              </div>
-            </div>
-          </a>
-        
-        
-          <a href="../Day3/" title="Day 3" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                Day 3
-              </div>
-            </div>
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
-    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
