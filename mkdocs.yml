@@ -49,6 +49,7 @@ nav:
   - Function Arguments: 9.function-arguments.md
   - Map Filter and Lambda Functions: 10.map-filter-lambda.md
   - Scope of Variables: 11.variables-scope.md
+  - Object Oriented - Classes & Objects: 12.object-oriented.md
   - Assesments:
     - Statements: 6.statements-assesment.md
     - Functions: 8.functions-assesment.md
