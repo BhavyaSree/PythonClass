@@ -798,19 +798,14 @@ Child class is also called derived class.</p>
 </div>
 <p>When you add the <code>__init__()</code> function, the child class will no longer inherit the parent's <code>__init__()</code> function.</p>
 <p>To keep the inheritance of the parent's <code>__init__()</code> function, add a call to the parent's <code>__init__()</code> function.</p>
-<p>!!! example "Calling the parent's <code>__init__()</code> function</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">```python</span>
-<span class="err">class Student(Person):</span>
-<span class="err">  def __init__(self, fname, lname):</span>
-<span class="err">    Person.__init__(self, fname, lname)</span>
-<span class="err">```</span>
+<div class="admonition example">
+<p class="admonition-title">Calling the parent's <code>__init__()</code> function</p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Student</span><span class="p">(</span><span class="n">Person</span><span class="p">):</span>
+  <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fname</span><span class="p">,</span> <span class="n">lname</span><span class="p">):</span>
+    <span class="n">Person</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fname</span><span class="p">,</span> <span class="n">lname</span><span class="p">)</span>
 </code></pre></div>
-</td></tr></table>
 
+</div>
 <h3 id="super-function">Super() function</h3>
 <p>Super() function in python allows the child class to inherit all the properties and methods from it's parent class.</p>
 <div class="admonition example">
