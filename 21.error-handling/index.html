@@ -19,7 +19,7 @@
     
     
       
-        <title>Functions - Python Class</title>
+        <title>Error Handling - Python Class</title>
       
     
     
@@ -58,6 +58,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#exception-handling" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -82,7 +87,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Functions
+              Error Handling
             
           </span>
         </div>
@@ -114,16 +119,14 @@
         
           
 
-  
-
-<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
       
         
   <li class="md-tabs__item">
     
-      <a href=".." class="md-tabs__link">
+      <a href=".." class="md-tabs__link md-tabs__link--active">
         Home
       </a>
     
@@ -173,7 +176,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../6.statements-assesment/" class="md-tabs__link md-tabs__link--active">
+        <a href="../6.statements-assesment/" class="md-tabs__link">
           Assesments
         </a>
       
@@ -465,11 +468,84 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../21.error-handling/" title="Error Handling" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Error Handling
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Error Handling" class="md-nav__link md-nav__link--active">
       Error Handling
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#exception-handling" class="md-nav__link">
+    Exception Handling
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#many-exceptions" class="md-nav__link">
+    Many Exceptions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#else" class="md-nav__link">
+    Else
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#finally" class="md-nav__link">
+    Finally
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#continue-and-break" class="md-nav__link">
+    Continue and Break
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#raise-an-exception" class="md-nav__link">
+    Raise an exception
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
     
@@ -489,12 +565,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-21" type="checkbox" id="nav-21" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-21" type="checkbox" id="nav-21">
     
     <label class="md-nav__link" for="nav-21">
       Assesments
@@ -528,18 +602,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-    <a href="./" title="Functions" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../8.functions-assesment/" title="Functions" class="md-nav__link">
       Functions
     </a>
-    
   </li>
 
         
@@ -699,6 +766,71 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#exception-handling" class="md-nav__link">
+    Exception Handling
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#many-exceptions" class="md-nav__link">
+    Many Exceptions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#else" class="md-nav__link">
+    Else
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#finally" class="md-nav__link">
+    Finally
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#continue-and-break" class="md-nav__link">
+    Continue and Break
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#raise-an-exception" class="md-nav__link">
+    Raise an exception
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -708,72 +840,138 @@
                   
                 
                 
-                  <h1>Functions</h1>
+                  <h1>Error Handling</h1>
                 
-                <div class="admonition question">
-<p class="admonition-title">1. Write a function that computes the volume of a sphere given its radius.</p>
-<p>The volume of a sphere is given as
-$$
-\frac{4}{3} πr^3
-$$</p>
-</div>
-<div class="admonition answer">
-<p class="admonition-title">Answer</p>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">vol</span><span class="p">(</span><span class="n">rad</span><span class="p">):</span>
-    <span class="n">volume</span> <span class="o">=</span> <span class="p">(</span><span class="mi">4</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span><span class="o">*</span><span class="mf">3.14</span><span class="o">*</span><span class="n">rad</span><span class="o">*</span><span class="n">rad</span><span class="o">*</span><span class="n">rad</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">volume</span><span class="p">)</span>
+                <ul>
+<li><code>try</code>: This is the block of the code to be attempted(may lead to an error).</li>
+<li><code>except</code>: Block of code will execute in case there is an error in try block.</li>
+<li><code>finally</code>: A final block of code to be executed, regardless of an error.</li>
+</ul>
+<h3 id="exception-handling">Exception Handling</h3>
+<p>When an error occurs, python will normally stop and generate an error message.<br />
+These exceptions can be handled using <code>try</code> statement.</p>
+<div class="admonition example">
+<p class="admonition-title">Without error handling</p>
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 
-<span class="n">vol</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">Output</span><span class="p">:</span>
+<span class="ne">NameError</span><span class="p">:</span> <span class="n">name</span> <span class="s1">&#39;x&#39;</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">defined</span>
 </code></pre></div>
 
 </div>
-<div class="admonition question">
-<p class="admonition-title">2. Write a function that checks whether a number is in a given range (inclusive of high and low)</p>
-</div>
-<div class="admonition answer">
-<p class="admonition-title">Answer</p>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">num_check</span><span class="p">(</span><span class="n">num</span><span class="p">,</span><span class="n">low</span><span class="p">,</span><span class="n">high</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">low</span><span class="p">,</span><span class="n">high</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{num}</span><span class="s1"> is in the range between </span><span class="si">{low}</span><span class="s1"> and </span><span class="si">{high}</span><span class="s1">&#39;</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{num}</span><span class="s1"> is out of range&#39;</span><span class="p">)</span>
+<div class="admonition example">
+<p class="admonition-title">With error handling</p>
+<div class="highlight"><pre><span></span><code><span class="k">try</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="k">except</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;An exception occurred&quot;</span><span class="p">)</span>
 
-<span class="n">num_check</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">7</span><span class="p">)</span>
-</code></pre></div>
-
-<p>To return only boolean value</p>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">num_bool</span><span class="p">(</span><span class="n">num</span><span class="p">,</span><span class="n">low</span><span class="p">,</span><span class="n">high</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">low</span><span class="p">,</span><span class="n">high</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
-
-<span class="n">num_bool</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">7</span><span class="p">)</span>
+<span class="n">Output</span><span class="p">:</span>
+<span class="n">An</span> <span class="n">exception</span> <span class="n">occured</span>
 </code></pre></div>
 
 </div>
-<div class="admonition question">
-<p class="admonition-title">3. Write a Python function that takes a list and returns a new list with unique elements of the first list.</p>
-<div class="highlight"><pre><span></span><code>Sample List : [1,1,1,1,2,2,3,3,3,3,4,5]
-Unique List : [1, 2, 3, 4, 5]
+<p>Without the try block, the program will crash and raise an error.</p>
+<p>With try block, since the try block raises an error, the except block will be executed.</p>
+<h3 id="many-exceptions">Many Exceptions</h3>
+<p>We can define as many exception blocks as we want e.g. if we want to execute a special block of code for a special kind of error.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><span class="k">try</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="k">except</span> <span class="ne">NameError</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Variable x is not defined&quot;</span><span class="p">)</span>
+<span class="k">except</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Something else went wrong&quot;</span><span class="p">)</span>
+
+<span class="n">Output</span><span class="p">:</span>
+<span class="n">Variable</span> <span class="n">x</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">defined</span>
 </code></pre></div>
 
 </div>
-<div class="admonition question">
-<p class="admonition-title">4. Write a Python function to multiply all the numbers in a list.</p>
-<div class="highlight"><pre><span></span><code>Sample List : [1, 2, 3, -4]
-Expected Output : -24
+<h3 id="else">Else</h3>
+<p>We can use <code>else</code> keyword to define a block of code to be executed if no errors were raised.</p>
+<div class="admonition example">
+<p class="admonition-title">Using else block</p>
+<div class="highlight"><pre><span></span><code><span class="k">try</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Python&quot;</span><span class="p">)</span>
+<span class="k">except</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Something went wrong&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Nothing went wrong&quot;</span><span class="p">)</span>
 </code></pre></div>
 
 </div>
-<div class="admonition question">
-<p class="admonition-title">5. Write a Python function that accepts a string and calculates the number of upper case letters and lower case letters.</p>
-<div class="highlight"><pre><span></span><code>Sample String : &#39;Hello Mr. Rogers, how are you this fine Tuesday?&#39;
-Expected Output : 
-No. of Upper case characters : 4
-No. of Lower case Characters : 33
+<h3 id="finally">Finally</h3>
+<p>The <code>finally</code> block, if specified, will be executed regardless if the try block raises an error or not.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><span class="k">try</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="k">except</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Something went wrong&quot;</span><span class="p">)</span>
+<span class="k">finally</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The &#39;try except&#39; is finished&quot;</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="admonition hint">
-<p class="admonition-title">Hint: Two string methods that might prove useful: .isupper() and .islower()</p>
 </div>
+<h3 id="continue-and-break">Continue and Break</h3>
+<p>We can use continue and break statements, when we are using try..except blocks in a loop.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+  <span class="k">try</span><span class="p">:</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Please provide number: &#39;</span><span class="p">))</span>
+  <span class="k">except</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Whoops! That is not a number&#39;</span><span class="p">)</span>
+    <span class="k">continue</span>
+  <span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Yes Thank You&#39;</span><span class="p">)</span>
+    <span class="k">break</span>
+  <span class="k">finally</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;End of try/except/finally&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;I will always run at the end!&#39;</span><span class="p">)</span>
+
+<span class="n">Output</span><span class="p">:</span>
+<span class="n">Please</span> <span class="n">provide</span> <span class="n">number</span><span class="p">:</span> <span class="n">b</span>
+<span class="n">Whoops</span><span class="err">!</span> <span class="n">That</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">a</span> <span class="n">number</span>
+<span class="n">End</span> <span class="n">of</span> <span class="k">try</span><span class="o">/</span><span class="k">except</span><span class="o">/</span><span class="k">finally</span>
+<span class="n">I</span> <span class="n">will</span> <span class="n">always</span> <span class="n">run</span> <span class="n">at</span> <span class="n">the</span> <span class="n">end</span><span class="err">!</span>
+<span class="n">Please</span> <span class="n">provide</span> <span class="n">number</span><span class="p">:</span> <span class="mi">1</span>
+<span class="n">Yes</span> <span class="n">Thank</span> <span class="n">You</span>
+<span class="n">End</span> <span class="n">of</span> <span class="k">try</span><span class="o">/</span><span class="k">except</span><span class="o">/</span><span class="k">finally</span>
+<span class="n">I</span> <span class="n">will</span> <span class="n">always</span> <span class="n">run</span> <span class="n">at</span> <span class="n">the</span> <span class="n">end</span><span class="err">!</span>
+</code></pre></div>
+
+</div>
+<h2 id="raise-an-exception">Raise an exception</h2>
+<p>As a python developer, we can choose to throw an exception if a condition occurs</p>
+<p>To throw or raise an exception, we use <code>raise</code> keyword.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+
+<span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+  <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;Sorry, no numbers below zero&quot;</span><span class="p">)</span>
+
+<span class="n">Output</span><span class="p">:</span>
+<span class="ne">Exception</span><span class="p">:</span> <span class="n">Sorry</span><span class="p">,</span> <span class="n">no</span> <span class="n">numbers</span> <span class="n">below</span> <span class="n">zero</span>
+</code></pre></div>
+
+</div>
+<p>The above program raises an error and stop the program if x is lower than 0.</p>
+<p>We can define the kind of error to raise, and the text to print to the user.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;Bhavya&quot;</span>
+
+<span class="k">if</span> <span class="ow">not</span> <span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="ow">is</span> <span class="nb">int</span><span class="p">:</span>
+  <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;Only integers are allowed&quot;</span><span class="p">)</span>
+
+<span class="n">Output</span><span class="p">:</span>
+<span class="ne">TypeError</span><span class="p">:</span> <span class="n">Only</span> <span class="n">integers</span> <span class="n">are</span> <span class="n">allowed</span>
+</code></pre></div>
+
 </div>
                 
               
@@ -793,7 +991,7 @@ No. of Lower case Characters : 33
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../6.statements-assesment/" title="Statements" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../20.regular-expressions/" title="Regular Expressions" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -802,19 +1000,19 @@ No. of Lower case Characters : 33
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Statements
+                Regular Expressions
               </div>
             </div>
           </a>
         
         
-          <a href="../12.tic-tac-toe/" title="TicTacToe Project" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../22.file-handling/" title="Files" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                TicTacToe Project
+                Files
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
