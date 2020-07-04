@@ -52,6 +52,15 @@ nav:
   - Object Oriented - Classes & Objects: 13.object-oriented.md
   - Inheritance: 14.inheritance.md
   - Polymorphism: 15.polymorphism.md
+  - Special Methods in Classes: 16.special-methods-in-classes.md
+  - Modules: 17.modules.md
+  - Dates: 18.dates.md
+  - Math: 19.math-module.md
+  - Regular Expressions: 20.regular-expressions.md
+  - Error Handling: 21.error-handling.md
+  - Files: 22.file-handling.md
+  - Decorators: 23.decorators.md
+  - Generators: 24.generators.md
   - Assesments:
     - Statements: 6.statements-assesment.md
     - Functions: 8.functions-assesment.md
