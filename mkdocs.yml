@@ -64,7 +64,8 @@ nav:
   - Assesments:
     - Statements: 6.statements-assesment.md
     - Functions: 8.functions-assesment.md
-    - TicTacToe Project : 12.tic-tac-toe.md
+    - TicTacToe Project: 12.tic-tac-toe.md
+    - Final: 25.final-assesment.md
   - Notebooks:
     - Day 1: Notebooks/Day1.ipynb 
     - Day 2: Notebooks/Day2.ipynb 
