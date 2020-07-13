@@ -19,7 +19,7 @@
     
     
       
-        <title>Day 2 - Python Class</title>
+        <title>Turtle - Python Class</title>
       
     
     
@@ -82,7 +82,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Day 2
+              Turtle
             
           </span>
         </div>
@@ -114,16 +114,14 @@
         
           
 
-  
-
-<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
       
         
   <li class="md-tabs__item">
     
-      <a href="../.." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link md-tabs__link--active">
         Home
       </a>
     
@@ -190,7 +188,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../Day1/" class="md-tabs__link md-tabs__link--active">
+        <a href="../Day1/" class="md-tabs__link">
           Notebooks
         </a>
       
@@ -595,12 +593,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-24" type="checkbox" id="nav-24" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-24" type="checkbox" id="nav-24">
     
     <label class="md-nav__link" for="nav-24">
       Notebooks
@@ -634,18 +630,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-    <a href="./" title="Day 2" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../Day2/" title="Day 2" class="md-nav__link">
       Day 2
     </a>
-    
   </li>
 
         
@@ -796,7 +785,7 @@
                   
                 
                 
-                  <h1>Day 2</h1>
+                  <h1>Turtle</h1>
                 
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
@@ -830,7 +819,7 @@
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
-<div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">turtle</span>
 </code></pre></div>
 
 </div>
@@ -839,16 +828,7 @@
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
-<div class="highlight"><pre><span></span><code><span class="n">y</span> <span class="o">=</span> <span class="n">x</span>
-</code></pre></div>
-
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="highlight"><pre><span></span><code><span class="n">y</span>
+<div class="highlight"><pre><span></span><code><span class="n">python_turtle</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Turtle</span><span class="p">()</span>
 </code></pre></div>
 
 </div>
@@ -858,12 +838,124 @@
 
 
 <div class="output_area" markdown="1">
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">Terminator</span>                                Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-12-5d3790bdf1a6&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>python_turtle <span class="ansi-blue-fg">=</span> turtle<span class="ansi-blue-fg">.</span>Turtle<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
 
+<span class="ansi-green-fg">/Applications/anaconda3/lib/python3.7/turtle.py</span> in <span class="ansi-cyan-fg">__init__</span><span class="ansi-blue-fg">(self, shape, undobuffersize, visible)</span>
+<span class="ansi-green-intense-fg ansi-bold">   3814</span>                            shape<span class="ansi-blue-fg">=</span>shape<span class="ansi-blue-fg">,</span>
+<span class="ansi-green-intense-fg ansi-bold">   3815</span>                            undobuffersize<span class="ansi-blue-fg">=</span>undobuffersize<span class="ansi-blue-fg">,</span>
+<span class="ansi-green-fg">-&gt; 3816</span><span class="ansi-red-fg">                            visible=visible)
+</span><span class="ansi-green-intense-fg ansi-bold">   3817</span> 
+<span class="ansi-green-intense-fg ansi-bold">   3818</span> Pen <span class="ansi-blue-fg">=</span> Turtle
 
-<div class="output_text output_subarea output_execute_result">
-<pre>[1, 2, 3]</pre>
+<span class="ansi-green-fg">/Applications/anaconda3/lib/python3.7/turtle.py</span> in <span class="ansi-cyan-fg">__init__</span><span class="ansi-blue-fg">(self, canvas, shape, undobuffersize, visible)</span>
+<span class="ansi-green-intense-fg ansi-bold">   2555</span>         self<span class="ansi-blue-fg">.</span>_undobuffersize <span class="ansi-blue-fg">=</span> undobuffersize
+<span class="ansi-green-intense-fg ansi-bold">   2556</span>         self<span class="ansi-blue-fg">.</span>undobuffer <span class="ansi-blue-fg">=</span> Tbuffer<span class="ansi-blue-fg">(</span>undobuffersize<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-fg">-&gt; 2557</span><span class="ansi-red-fg">         </span>self<span class="ansi-blue-fg">.</span>_update<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   2558</span> 
+<span class="ansi-green-intense-fg ansi-bold">   2559</span>     <span class="ansi-green-fg">def</span> reset<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+
+<span class="ansi-green-fg">/Applications/anaconda3/lib/python3.7/turtle.py</span> in <span class="ansi-cyan-fg">_update</span><span class="ansi-blue-fg">(self)</span>
+<span class="ansi-green-intense-fg ansi-bold">   2658</span>             <span class="ansi-green-fg">return</span>
+<span class="ansi-green-intense-fg ansi-bold">   2659</span>         <span class="ansi-green-fg">elif</span> screen<span class="ansi-blue-fg">.</span>_tracing <span class="ansi-blue-fg">==</span> <span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">-&gt; 2660</span><span class="ansi-red-fg">             </span>self<span class="ansi-blue-fg">.</span>_update_data<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   2661</span>             self<span class="ansi-blue-fg">.</span>_drawturtle<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   2662</span>             screen<span class="ansi-blue-fg">.</span>_update<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>                  <span class="ansi-red-fg"># TurtleScreenBase</span>
+
+<span class="ansi-green-fg">/Applications/anaconda3/lib/python3.7/turtle.py</span> in <span class="ansi-cyan-fg">_update_data</span><span class="ansi-blue-fg">(self)</span>
+<span class="ansi-green-intense-fg ansi-bold">   2644</span> 
+<span class="ansi-green-intense-fg ansi-bold">   2645</span>     <span class="ansi-green-fg">def</span> _update_data<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">-&gt; 2646</span><span class="ansi-red-fg">         </span>self<span class="ansi-blue-fg">.</span>screen<span class="ansi-blue-fg">.</span>_incrementudc<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   2647</span>         <span class="ansi-green-fg">if</span> self<span class="ansi-blue-fg">.</span>screen<span class="ansi-blue-fg">.</span>_updatecounter <span class="ansi-blue-fg">!=</span> <span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">   2648</span>             <span class="ansi-green-fg">return</span>
+
+<span class="ansi-green-fg">/Applications/anaconda3/lib/python3.7/turtle.py</span> in <span class="ansi-cyan-fg">_incrementudc</span><span class="ansi-blue-fg">(self)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1290</span>         <span class="ansi-green-fg">if</span> <span class="ansi-green-fg">not</span> TurtleScreen<span class="ansi-blue-fg">.</span>_RUNNING<span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">   1291</span>             TurtleScreen<span class="ansi-blue-fg">.</span>_RUNNING <span class="ansi-blue-fg">=</span> <span class="ansi-green-fg">True</span>
+<span class="ansi-green-fg">-&gt; 1292</span><span class="ansi-red-fg">             </span><span class="ansi-green-fg">raise</span> Terminator
+<span class="ansi-green-intense-fg ansi-bold">   1293</span>         <span class="ansi-green-fg">if</span> self<span class="ansi-blue-fg">.</span>_tracing <span class="ansi-blue-fg">&gt;</span> <span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">   1294</span>             self<span class="ansi-blue-fg">.</span>_updatecounter <span class="ansi-blue-fg">+=</span> <span class="ansi-cyan-fg">1</span>
+
+<span class="ansi-red-fg">Terminator</span>: </pre>
+</div>
 </div>
 
+</div>
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="n">python_turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">python_turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">python_turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">python_turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">python_turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">python_turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">python_turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+</code></pre></div>
+
+</div>
+
+<div class="output_wrapper" markdown="1">
+<div class="output" markdown="1">
+
+
+<div class="output_area" markdown="1">
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">TclError</span>                                  Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-13-0d147f584327&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>python_turtle<span class="ansi-blue-fg">.</span>forward<span class="ansi-blue-fg">(</span><span class="ansi-cyan-fg">100</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      2</span> python_turtle<span class="ansi-blue-fg">.</span>right<span class="ansi-blue-fg">(</span><span class="ansi-cyan-fg">90</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      3</span> python_turtle<span class="ansi-blue-fg">.</span>forward<span class="ansi-blue-fg">(</span><span class="ansi-cyan-fg">100</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      4</span> python_turtle<span class="ansi-blue-fg">.</span>right<span class="ansi-blue-fg">(</span><span class="ansi-cyan-fg">90</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      5</span> python_turtle<span class="ansi-blue-fg">.</span>forward<span class="ansi-blue-fg">(</span><span class="ansi-cyan-fg">100</span><span class="ansi-blue-fg">)</span>
+
+<span class="ansi-green-fg">/Applications/anaconda3/lib/python3.7/turtle.py</span> in <span class="ansi-cyan-fg">forward</span><span class="ansi-blue-fg">(self, distance)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1635</span>         <span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">-</span><span class="ansi-cyan-fg">50.00</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">0.00</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1636</span>         &#34;&#34;&#34;
+<span class="ansi-green-fg">-&gt; 1637</span><span class="ansi-red-fg">         </span>self<span class="ansi-blue-fg">.</span>_go<span class="ansi-blue-fg">(</span>distance<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1638</span> 
+<span class="ansi-green-intense-fg ansi-bold">   1639</span>     <span class="ansi-green-fg">def</span> back<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> distance<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+
+<span class="ansi-green-fg">/Applications/anaconda3/lib/python3.7/turtle.py</span> in <span class="ansi-cyan-fg">_go</span><span class="ansi-blue-fg">(self, distance)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1603</span>         <span class="ansi-blue-fg">&#34;&#34;&#34;move turtle forward by specified distance&#34;&#34;&#34;</span>
+<span class="ansi-green-intense-fg ansi-bold">   1604</span>         ende <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>_position <span class="ansi-blue-fg">+</span> self<span class="ansi-blue-fg">.</span>_orient <span class="ansi-blue-fg">*</span> distance
+<span class="ansi-green-fg">-&gt; 1605</span><span class="ansi-red-fg">         </span>self<span class="ansi-blue-fg">.</span>_goto<span class="ansi-blue-fg">(</span>ende<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1606</span> 
+<span class="ansi-green-intense-fg ansi-bold">   1607</span>     <span class="ansi-green-fg">def</span> _rotate<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> angle<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+
+<span class="ansi-green-fg">/Applications/anaconda3/lib/python3.7/turtle.py</span> in <span class="ansi-cyan-fg">_goto</span><span class="ansi-blue-fg">(self, end)</span>
+<span class="ansi-green-intense-fg ansi-bold">   3156</span>                       (self.currentLineItem,
+<span class="ansi-green-intense-fg ansi-bold">   3157</span>                       self<span class="ansi-blue-fg">.</span>currentLine<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">:</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">,</span>
+<span class="ansi-green-fg">-&gt; 3158</span><span class="ansi-red-fg">                       </span>screen<span class="ansi-blue-fg">.</span>_pointlist<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">.</span>currentLineItem<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span>
+<span class="ansi-green-intense-fg ansi-bold">   3159</span>                       self.items[:])
+<span class="ansi-green-intense-fg ansi-bold">   3160</span>                       )
+
+<span class="ansi-green-fg">/Applications/anaconda3/lib/python3.7/turtle.py</span> in <span class="ansi-cyan-fg">_pointlist</span><span class="ansi-blue-fg">(self, item)</span>
+<span class="ansi-green-intense-fg ansi-bold">    753</span>         (9.9999999999999982, 0.0)]
+<span class="ansi-green-intense-fg ansi-bold">    754</span>         &gt;&gt;&gt; &#34;&#34;&#34;
+<span class="ansi-green-fg">--&gt; 755</span><span class="ansi-red-fg">         </span>cl <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>cv<span class="ansi-blue-fg">.</span>coords<span class="ansi-blue-fg">(</span>item<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    756</span>         pl <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">(</span>cl<span class="ansi-blue-fg">[</span>i<span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">-</span>cl<span class="ansi-blue-fg">[</span>i<span class="ansi-blue-fg">+</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span> <span class="ansi-green-fg">for</span> i <span class="ansi-green-fg">in</span> range<span class="ansi-blue-fg">(</span><span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">,</span> len<span class="ansi-blue-fg">(</span>cl<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span> <span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">]</span>
+<span class="ansi-green-intense-fg ansi-bold">    757</span>         <span class="ansi-green-fg">return</span>  pl
+
+<span class="ansi-green-fg">&lt;string&gt;</span> in <span class="ansi-cyan-fg">coords</span><span class="ansi-blue-fg">(self, *args, **kw)</span>
+
+<span class="ansi-green-fg">/Applications/anaconda3/lib/python3.7/tkinter/__init__.py</span> in <span class="ansi-cyan-fg">coords</span><span class="ansi-blue-fg">(self, *args)</span>
+<span class="ansi-green-intense-fg ansi-bold">   2467</span>         return [self.tk.getdouble(x) for x in
+<span class="ansi-green-intense-fg ansi-bold">   2468</span>                            self.tk.splitlist(
+<span class="ansi-green-fg">-&gt; 2469</span><span class="ansi-red-fg">                    self.tk.call((self._w, &#39;coords&#39;) + args))]
+</span><span class="ansi-green-intense-fg ansi-bold">   2470</span>     <span class="ansi-green-fg">def</span> _create<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> itemType<span class="ansi-blue-fg">,</span> args<span class="ansi-blue-fg">,</span> kw<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span> <span class="ansi-red-fg"># Args: (val, val, ..., cnf={})</span>
+<span class="ansi-green-intense-fg ansi-bold">   2471</span>         <span class="ansi-blue-fg">&#34;&#34;&#34;Internal function.&#34;&#34;&#34;</span>
+
+<span class="ansi-red-fg">TclError</span>: invalid command name &#34;.!canvas&#34;</pre>
+</div>
 </div>
 
 </div>
@@ -876,8 +968,18 @@
 </code></pre></div>
 
 </div>
+</div>
+</div>
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
 
 </div>
+
 </div>
                 
               
