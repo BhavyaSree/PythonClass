@@ -72,5 +72,9 @@ nav:
     - Day 3: Notebooks/Day3.ipynb
     - TicTacToe : Notebooks/TicTacToe.ipynb
     - Object Oriented : Notebooks/Classes,attributes&methods.ipynb
+    - Binary Search: Notebooks/binary-search.ipynb
+    - Sequential Search: Notebooks/sequential-search.ipynb
+    - Bubble Sort: Notebooks/bubble-sort.ipynb
+    - Selection Sort: Notebooks/selection-sort.ipynb
   - Resources:
     - Tools Used: external-resources/index.md
