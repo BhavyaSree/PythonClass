@@ -76,5 +76,6 @@ nav:
     - Sequential Search: Notebooks/sequential-search.ipynb
     - Bubble Sort: Notebooks/bubble-sort.ipynb
     - Selection Sort: Notebooks/selection-sort.ipynb
+    - Turtle: Notebooks/turtle.ipynb
   - Resources:
     - Tools Used: external-resources/index.md
