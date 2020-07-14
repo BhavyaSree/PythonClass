@@ -81,5 +81,6 @@ nav:
     - Binary and Decimal Conversions: Notebooks/7.binary,decimal.ipynb
     - Turtle: Notebooks/8.turtle.ipynb
     - Generating Password: Notebooks/9.password-generator.ipynb
+    - Final: Notebooks/FinalAssesment.ipynb
   - Resources:
     - Tools Used: external-resources/index.md
