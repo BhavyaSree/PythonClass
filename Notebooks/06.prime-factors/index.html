@@ -19,7 +19,7 @@
     
     
       
-        <title>Generating Password - Python Class</title>
+        <title>Prime Factors - Python Class</title>
       
     
     
@@ -82,7 +82,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Generating Password
+              Prime Factors
             
           </span>
         </div>
@@ -684,7 +684,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../1.binary-search/" title="Binary Search" class="md-nav__link">
+    <a href="../01.binary-search/" title="Binary Search" class="md-nav__link">
       Binary Search
     </a>
   </li>
@@ -696,7 +696,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../2.sequential-search/" title="Sequential Search" class="md-nav__link">
+    <a href="../02.sequential-search/" title="Sequential Search" class="md-nav__link">
       Sequential Search
     </a>
   </li>
@@ -708,7 +708,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../3.bubble-sort/" title="Bubble Sort" class="md-nav__link">
+    <a href="../03.bubble-sort/" title="Bubble Sort" class="md-nav__link">
       Bubble Sort
     </a>
   </li>
@@ -720,7 +720,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../4.selection-sort/" title="Selection Sort" class="md-nav__link">
+    <a href="../04.selection-sort/" title="Selection Sort" class="md-nav__link">
       Selection Sort
     </a>
   </li>
@@ -732,44 +732,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../5.fibonacci-sequence/" title="Fibonacci Sequence" class="md-nav__link">
+    <a href="../05.fibonacci-sequence/" title="Fibonacci Sequence" class="md-nav__link">
       Fibonacci Sequence
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../6.prime-factors/" title="Prime Factors" class="md-nav__link">
-      Prime Factors
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../7.binary%2Cdecimal/" title="Binary and Decimal Conversions" class="md-nav__link">
-      Binary and Decimal Conversions
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../8.turtle/" title="Turtle" class="md-nav__link">
-      Turtle
     </a>
   </li>
 
@@ -786,10 +750,106 @@
     <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
     
-    <a href="./" title="Generating Password" class="md-nav__link md-nav__link--active">
-      Generating Password
+    <a href="./" title="Prime Factors" class="md-nav__link md-nav__link--active">
+      Prime Factors
     </a>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../07.binary%2Cdecimal/" title="Binary and Decimal Conversions" class="md-nav__link">
+      Binary and Decimal Conversions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../08.turtle/" title="Turtle" class="md-nav__link">
+      Turtle
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../09.password-generator/" title="Generating Password" class="md-nav__link">
+      Generating Password
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../10.count-vowels/" title="Count Vowels" class="md-nav__link">
+      Count Vowels
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../11.palindrome/" title="Palindrome" class="md-nav__link">
+      Palindrome
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../12.count-words-in-a-string/" title="Count words" class="md-nav__link">
+      Count words
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../13.half-pyramid/" title="Downward Half Pyramid" class="md-nav__link">
+      Downward Half Pyramid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../14.pyramid/" title="Pyramid" class="md-nav__link">
+      Pyramid
+    </a>
   </li>
 
         
@@ -868,7 +928,7 @@
                   
                 
                 
-                  <h1>Generating Password</h1>
+                  <h1>Prime Factors</h1>
                 
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
@@ -902,22 +962,100 @@
 <div class="cell border-box-sizing text_cell rendered">
 <p><div class="inner_cell" markdown="1">
 <div class="text_cell_render border-box-sizing rendered_html" markdown="1"></p>
-<h2>Generate a password of specific length with no duplicate characters in the password</h2>
+<h2>Prime Number</h2>
 <p></div>
 </div></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
-<div class="highlight"><pre><span></span><code><span class="c1">## random.sample(population, k) </span>
-<span class="c1">### Chooses k unique random elements from a population sequence or set.</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">isprime</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
 
-<span class="kn">import</span> <span class="nn">random</span>
+    <span class="k">for</span> <span class="n">divisor</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">n</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="n">divisor</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">False</span>
+    <span class="k">return</span> <span class="kc">True</span>
+</code></pre></div>
 
-<span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;abcdefghijklmnopqrstuvwxyz01234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&amp;*()?&#39;</span>
-<span class="n">length</span> <span class="o">=</span> <span class="mi">8</span>
-<span class="n">p</span> <span class="o">=</span>  <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">length</span><span class="p">))</span>
-<span class="nb">print</span> <span class="p">(</span><span class="n">p</span><span class="p">)</span>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="n">primetest</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
+</code></pre></div>
+
+</div>
+
+<div class="output_wrapper" markdown="1">
+<div class="output" markdown="1">
+
+
+<div class="output_area" markdown="1">
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>True</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="n">primetest</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</code></pre></div>
+
+</div>
+
+<div class="output_wrapper" markdown="1">
+<div class="output" markdown="1">
+
+
+<div class="output_area" markdown="1">
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>False</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<p><div class="inner_cell" markdown="1">
+<div class="text_cell_render border-box-sizing rendered_html" markdown="1"></p>
+<h3>Write a python program to write prime factors of a number</h3>
+<p></div>
+</div></p>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">primefactors</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">n</span><span class="p">):</span>
+        <span class="k">while</span> <span class="n">n</span> <span class="o">%</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">isprime</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+                <span class="nb">print</span> <span class="p">(</span><span class="n">i</span><span class="p">)</span>
+                <span class="n">n</span> <span class="o">=</span> <span class="n">n</span> <span class="o">/</span> <span class="n">i</span>
+</code></pre></div>
+
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="n">primefactors</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
 </code></pre></div>
 
 </div>
@@ -928,7 +1066,11 @@
 
 <div class="output_area" markdown="1">
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>ilQZkyHb
+<pre>2
+2
+2
+5
+5
 </pre>
 </div>
 </div>
@@ -943,79 +1085,6 @@
 </div>
 <div class="highlight"><pre><span></span><code>
 </code></pre></div>
-
-</div>
-
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="highlight"><pre><span></span><code><span class="c1">## random.choice(seq)</span>
-<span class="c1">### Choose a random element from a non-empty sequence.</span>
-
-<span class="kn">import</span> <span class="nn">string</span>
-<span class="kn">import</span> <span class="nn">random</span>
-
-<span class="k">def</span> <span class="nf">pw_gen</span><span class="p">(</span><span class="n">size</span> <span class="o">=</span> <span class="mi">8</span><span class="p">,</span> <span class="n">chars</span><span class="o">=</span><span class="n">string</span><span class="o">.</span><span class="n">ascii_letters</span> <span class="o">+</span> <span class="n">string</span><span class="o">.</span><span class="n">digits</span> <span class="o">+</span> <span class="n">string</span><span class="o">.</span><span class="n">punctuation</span><span class="p">):</span>
-    <span class="k">return</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">chars</span><span class="p">)</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">size</span><span class="p">))</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">pw_gen</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;How many characters in your password?&#39;</span><span class="p">))))</span>
-</code></pre></div>
-
-</div>
-
-<div class="output_wrapper" markdown="1">
-<div class="output" markdown="1">
-
-
-<div class="output_area" markdown="1">
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>How many characters in your password?5
-XqqQ3
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-</div>
-</div>
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-</div>
-
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">string</span>
-<span class="kn">import</span> <span class="nn">random</span>
-
-<span class="k">def</span> <span class="nf">pw_gen</span><span class="p">(</span><span class="n">size</span> <span class="o">=</span> <span class="mi">8</span><span class="p">,</span> <span class="n">chars</span><span class="o">=</span><span class="n">string</span><span class="o">.</span><span class="n">ascii_letters</span> <span class="o">+</span> <span class="n">string</span><span class="o">.</span><span class="n">digits</span> <span class="o">+</span> <span class="n">string</span><span class="o">.</span><span class="n">punctuation</span><span class="p">):</span>
-    <span class="k">return</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">chars</span><span class="p">,</span> <span class="n">size</span><span class="p">))</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">pw_gen</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;How many characters in your password?&#39;</span><span class="p">))))</span>
-</code></pre></div>
-
-</div>
-
-<div class="output_wrapper" markdown="1">
-<div class="output" markdown="1">
-
-
-<div class="output_area" markdown="1">
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>How many characters in your password?5
-?/m*e
-</pre>
-</div>
-</div>
-
-</div>
-</div>
 
 </div>
                 

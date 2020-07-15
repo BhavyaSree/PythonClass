@@ -19,7 +19,7 @@
     
     
       
-        <title>Fibonacci Sequence - Python Class</title>
+        <title>Turtle - Python Class</title>
       
     
     
@@ -82,7 +82,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Fibonacci Sequence
+              Turtle
             
           </span>
         </div>
@@ -684,7 +684,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../1.binary-search/" title="Binary Search" class="md-nav__link">
+    <a href="../01.binary-search/" title="Binary Search" class="md-nav__link">
       Binary Search
     </a>
   </li>
@@ -696,7 +696,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../2.sequential-search/" title="Sequential Search" class="md-nav__link">
+    <a href="../02.sequential-search/" title="Sequential Search" class="md-nav__link">
       Sequential Search
     </a>
   </li>
@@ -708,7 +708,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../3.bubble-sort/" title="Bubble Sort" class="md-nav__link">
+    <a href="../03.bubble-sort/" title="Bubble Sort" class="md-nav__link">
       Bubble Sort
     </a>
   </li>
@@ -720,8 +720,44 @@
 
 
   <li class="md-nav__item">
-    <a href="../4.selection-sort/" title="Selection Sort" class="md-nav__link">
+    <a href="../04.selection-sort/" title="Selection Sort" class="md-nav__link">
       Selection Sort
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../05.fibonacci-sequence/" title="Fibonacci Sequence" class="md-nav__link">
+      Fibonacci Sequence
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../06.prime-factors/" title="Prime Factors" class="md-nav__link">
+      Prime Factors
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../07.binary%2Cdecimal/" title="Binary and Decimal Conversions" class="md-nav__link">
+      Binary and Decimal Conversions
     </a>
   </li>
 
@@ -738,8 +774,8 @@
     <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
     
-    <a href="./" title="Fibonacci Sequence" class="md-nav__link md-nav__link--active">
-      Fibonacci Sequence
+    <a href="./" title="Turtle" class="md-nav__link md-nav__link--active">
+      Turtle
     </a>
     
   </li>
@@ -751,44 +787,68 @@
 
 
   <li class="md-nav__item">
-    <a href="../6.prime-factors/" title="Prime Factors" class="md-nav__link">
-      Prime Factors
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../7.binary%2Cdecimal/" title="Binary and Decimal Conversions" class="md-nav__link">
-      Binary and Decimal Conversions
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../8.turtle/" title="Turtle" class="md-nav__link">
-      Turtle
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../9.password-generator/" title="Generating Password" class="md-nav__link">
+    <a href="../09.password-generator/" title="Generating Password" class="md-nav__link">
       Generating Password
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../10.count-vowels/" title="Count Vowels" class="md-nav__link">
+      Count Vowels
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../11.palindrome/" title="Palindrome" class="md-nav__link">
+      Palindrome
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../12.count-words-in-a-string/" title="Count words" class="md-nav__link">
+      Count words
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../13.half-pyramid/" title="Downward Half Pyramid" class="md-nav__link">
+      Downward Half Pyramid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../14.pyramid/" title="Pyramid" class="md-nav__link">
+      Pyramid
     </a>
   </li>
 
@@ -868,7 +928,7 @@
                   
                 
                 
-                  <h1>Fibonacci Sequence</h1>
+                  <h1>Turtle</h1>
                 
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
@@ -899,37 +959,10 @@
 }());
 </script>
 
-<div class="cell border-box-sizing text_cell rendered">
-<p><div class="inner_cell" markdown="1">
-<div class="text_cell_render border-box-sizing rendered_html" markdown="1"></p>
-<h2>Fibonacci Sequence</h2>
-<p>A Fibonacci sequence is the integer sequence of 0, 1, 1, 2, 3, 5, 8....</p>
-<p>The first two terms are 0 and 1. All other terms are obtained by adding the preceding two terms. This means to say the nth term is the sum of (n-1)th and (n-2)th term.
-</div>
-</div></p>
-</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
-<div class="highlight"><pre><span></span><code><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;How many terms do you want? &quot;</span><span class="p">))</span>
-
-<span class="c1">## Initializing first two terms</span>
-<span class="n">n1</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">n2</span> <span class="o">=</span> <span class="mi">1</span>
-
-<span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
-
-<span class="k">if</span> <span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">0</span> <span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Please enter a positive number&#39;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Fibonacci sequence:&quot;</span><span class="p">)</span>
-    <span class="k">while</span> <span class="n">count</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">n1</span><span class="p">)</span>
-        <span class="n">nth</span> <span class="o">=</span> <span class="n">n1</span> <span class="o">+</span> <span class="n">n2</span>
-        <span class="c1"># update values</span>
-        <span class="n">n1</span> <span class="o">=</span> <span class="n">n2</span>
-        <span class="n">n2</span> <span class="o">=</span> <span class="n">nth</span>
-        <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">turtle</span>
 </code></pre></div>
 
 </div>
@@ -938,103 +971,55 @@
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
-<div class="highlight"><pre><span></span><code><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;How many terms do you want? &quot;</span><span class="p">))</span>
-
-<span class="c1">## Initializing first two terms</span>
-<span class="n">n1</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">n2</span> <span class="o">=</span> <span class="mi">1</span>
-
-<span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
-
-<span class="k">if</span> <span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">0</span> <span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Please enter a positive number&#39;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Fibonacci sequence:&quot;</span><span class="p">)</span>
-    <span class="k">while</span> <span class="n">count</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">n1</span><span class="p">)</span>
-        <span class="n">n1</span><span class="p">,</span> <span class="n">n2</span> <span class="o">=</span> <span class="n">n2</span><span class="p">,</span> <span class="n">n1</span><span class="o">+</span><span class="n">n2</span>
-        <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+<div class="highlight"><pre><span></span><code><span class="n">python_turtle</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Turtle</span><span class="p">()</span>
 </code></pre></div>
 
 </div>
 
-<div class="output_wrapper" markdown="1">
-<div class="output" markdown="1">
-
-
-<div class="output_area" markdown="1">
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>How many terms do you want? 6
-Fibonacci sequence:
-0
-1
-1
-2
-3
-5
-</pre>
 </div>
-</div>
-
-</div>
-</div>
-
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
-</div>
-</div>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">fibonacci</span> <span class="p">(</span><span class="n">n</span><span class="p">):</span>
-    <span class="n">n1</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="n">n2</span> <span class="o">=</span> <span class="mi">1</span>
-
-    <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
-
-    <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">0</span> <span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Please provide a positive number&#39;</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Fibonacci sequence:&quot;</span><span class="p">)</span>
-        <span class="k">while</span> <span class="n">count</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="n">n1</span><span class="p">)</span>
-            <span class="n">n1</span><span class="p">,</span> <span class="n">n2</span> <span class="o">=</span> <span class="n">n2</span><span class="p">,</span> <span class="n">n1</span><span class="o">+</span><span class="n">n2</span>
-            <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">turtle1</span><span class="p">():</span>
+    <span class="n">python_turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">python_turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+    <span class="n">python_turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">python_turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+    <span class="n">python_turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">python_turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+    <span class="n">python_turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
 </code></pre></div>
 
 </div>
 
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
-<div class="highlight"><pre><span></span><code><span class="n">fibonacci</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">turtle1</span><span class="p">()</span>
+<span class="n">python_turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">turtle1</span><span class="p">()</span>
 </code></pre></div>
 
 </div>
 
-<div class="output_wrapper" markdown="1">
-<div class="output" markdown="1">
-
-
-<div class="output_area" markdown="1">
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Fibonacci sequence:
-0
-1
-1
-2
-</pre>
 </div>
-</div>
-
-</div>
-</div>
-
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
+<div class="highlight"><pre><span></span><code><span class="n">turtle</span><span class="o">.</span><span class="n">Screen</span><span class="p">()</span><span class="o">.</span><span class="n">exitonclick</span><span class="p">()</span>
+</code></pre></div>
+
 </div>
+
 </div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
 <div class="highlight"><pre><span></span><code>
 </code></pre></div>
+
+</div>
 
 </div>
                 

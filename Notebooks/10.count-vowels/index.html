@@ -19,7 +19,7 @@
     
     
       
-        <title>Sequential Search - Python Class</title>
+        <title>Count Vowels - Python Class</title>
       
     
     
@@ -82,7 +82,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Sequential Search
+              Count Vowels
             
           </span>
         </div>
@@ -684,8 +684,104 @@
 
 
   <li class="md-nav__item">
-    <a href="../1.binary-search/" title="Binary Search" class="md-nav__link">
+    <a href="../01.binary-search/" title="Binary Search" class="md-nav__link">
       Binary Search
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../02.sequential-search/" title="Sequential Search" class="md-nav__link">
+      Sequential Search
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../03.bubble-sort/" title="Bubble Sort" class="md-nav__link">
+      Bubble Sort
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../04.selection-sort/" title="Selection Sort" class="md-nav__link">
+      Selection Sort
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../05.fibonacci-sequence/" title="Fibonacci Sequence" class="md-nav__link">
+      Fibonacci Sequence
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../06.prime-factors/" title="Prime Factors" class="md-nav__link">
+      Prime Factors
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../07.binary%2Cdecimal/" title="Binary and Decimal Conversions" class="md-nav__link">
+      Binary and Decimal Conversions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../08.turtle/" title="Turtle" class="md-nav__link">
+      Turtle
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../09.password-generator/" title="Generating Password" class="md-nav__link">
+      Generating Password
     </a>
   </li>
 
@@ -702,8 +798,8 @@
     <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
     
-    <a href="./" title="Sequential Search" class="md-nav__link md-nav__link--active">
-      Sequential Search
+    <a href="./" title="Count Vowels" class="md-nav__link md-nav__link--active">
+      Count Vowels
     </a>
     
   </li>
@@ -715,8 +811,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../3.bubble-sort/" title="Bubble Sort" class="md-nav__link">
-      Bubble Sort
+    <a href="../11.palindrome/" title="Palindrome" class="md-nav__link">
+      Palindrome
     </a>
   </li>
 
@@ -727,8 +823,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../4.selection-sort/" title="Selection Sort" class="md-nav__link">
-      Selection Sort
+    <a href="../12.count-words-in-a-string/" title="Count words" class="md-nav__link">
+      Count words
     </a>
   </li>
 
@@ -739,8 +835,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../5.fibonacci-sequence/" title="Fibonacci Sequence" class="md-nav__link">
-      Fibonacci Sequence
+    <a href="../13.half-pyramid/" title="Downward Half Pyramid" class="md-nav__link">
+      Downward Half Pyramid
     </a>
   </li>
 
@@ -751,44 +847,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../6.prime-factors/" title="Prime Factors" class="md-nav__link">
-      Prime Factors
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../7.binary%2Cdecimal/" title="Binary and Decimal Conversions" class="md-nav__link">
-      Binary and Decimal Conversions
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../8.turtle/" title="Turtle" class="md-nav__link">
-      Turtle
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../9.password-generator/" title="Generating Password" class="md-nav__link">
-      Generating Password
+    <a href="../14.pyramid/" title="Pyramid" class="md-nav__link">
+      Pyramid
     </a>
   </li>
 
@@ -868,7 +928,7 @@
                   
                 
                 
-                  <h1>Sequential Search</h1>
+                  <h1>Count Vowels</h1>
                 
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
@@ -902,26 +962,25 @@
 <div class="cell border-box-sizing text_cell rendered">
 <p><div class="inner_cell" markdown="1">
 <div class="text_cell_render border-box-sizing rendered_html" markdown="1"></p>
-<h2>Write a Python program for sequential search</h2>
-<p>In computer science, linear search or sequential search is a method for finding a particular value in a list that checks each element in sequence until the desired element is found or the list is exhausted. The list need not be ordered.
-</div>
+<h2>Enter a string and the program counts the number of vowels in the text.</h2>
+<p></div>
 </div></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">sequential_search</span><span class="p">(</span><span class="n">list_items</span><span class="p">,</span> <span class="n">item</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">count_vowels</span><span class="p">(</span><span class="n">string</span><span class="p">):</span>
 
-    <span class="n">ind</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="n">found</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="n">vowels</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;i&#39;</span><span class="p">,</span><span class="s1">&#39;o&#39;</span><span class="p">,</span><span class="s1">&#39;u&#39;</span><span class="p">,</span><span class="s1">&#39;A&#39;</span><span class="p">,</span><span class="s1">&#39;E&#39;</span><span class="p">,</span><span class="s1">&#39;I&#39;</span><span class="p">,</span><span class="s1">&#39;O&#39;</span><span class="p">,</span><span class="s1">&#39;U&#39;</span><span class="p">]</span>
 
-    <span class="k">while</span> <span class="n">ind</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">list_items</span><span class="p">)</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">found</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">list_items</span><span class="p">[</span><span class="n">ind</span><span class="p">]</span> <span class="o">==</span> <span class="n">item</span><span class="p">:</span>
-            <span class="n">found</span> <span class="o">=</span> <span class="kc">True</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="n">ind</span> <span class="o">=</span> <span class="n">ind</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
 
-    <span class="k">return</span> <span class="n">found</span><span class="p">,</span> <span class="n">ind</span>
+    <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">string</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">vowel</span> <span class="ow">in</span> <span class="n">vowels</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">char</span> <span class="o">==</span> <span class="n">vowel</span><span class="p">:</span>
+                <span class="n">count</span> <span class="o">+=</span><span class="mi">1</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Number of vowels in the given string is&#39;</span><span class="p">,</span> <span class="n">count</span><span class="p">)</span>
 </code></pre></div>
 
 </div>
@@ -930,16 +989,7 @@
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
-<div class="highlight"><pre><span></span><code><span class="n">mylist</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
-</code></pre></div>
-
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="highlight"><pre><span></span><code><span class="n">sequential_search</span><span class="p">(</span><span class="n">mylist</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">count_vowels</span><span class="p">(</span><span class="s1">&#39;Hi&#39;</span><span class="p">)</span>
 </code></pre></div>
 
 </div>
@@ -949,12 +999,10 @@
 
 
 <div class="output_area" markdown="1">
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>(True, 3)</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Number of vowels in the given string is 1
+</pre>
 </div>
-
 </div>
 
 </div>
@@ -963,36 +1011,63 @@
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
-<div class="highlight"><pre><span></span><code><span class="n">sequential_search</span><span class="p">(</span><span class="n">mylist</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
-</code></pre></div>
-
-</div>
-
-<div class="output_wrapper" markdown="1">
-<div class="output" markdown="1">
-
-
-<div class="output_area" markdown="1">
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>(True, 4)</pre>
-</div>
-
-</div>
-
 </div>
 </div>
-
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
 <div class="highlight"><pre><span></span><code>
 </code></pre></div>
 
 </div>
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">count_vowels</span><span class="p">(</span><span class="n">string</span><span class="p">):</span>
+
+    <span class="n">vowels</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;i&#39;</span><span class="p">,</span><span class="s1">&#39;o&#39;</span><span class="p">,</span><span class="s1">&#39;u&#39;</span><span class="p">]</span>
+    <span class="n">lower_string</span> <span class="o">=</span> <span class="n">string</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+
+    <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">lower_string</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">vowel</span> <span class="ow">in</span> <span class="n">vowels</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">char</span> <span class="o">==</span> <span class="n">vowel</span><span class="p">:</span>
+                <span class="n">count</span> <span class="o">+=</span><span class="mi">1</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Number of vowels in the given string is&#39;</span><span class="p">,</span> <span class="n">count</span><span class="p">)</span>
+</code></pre></div>
+
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="n">count_vowels</span><span class="p">(</span><span class="s1">&#39;HI&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+</div>
+
+<div class="output_wrapper" markdown="1">
+<div class="output" markdown="1">
+
+
+<div class="output_area" markdown="1">
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Number of vowels in the given string is 1
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+</div>
+</div>
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
 
 </div>
                 
