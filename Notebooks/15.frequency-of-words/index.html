@@ -19,7 +19,7 @@
     
     
       
-        <title>Sequential Search - Python Class</title>
+        <title>Frequency of words - Python Class</title>
       
     
     
@@ -82,7 +82,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Sequential Search
+              Frequency of words
             
           </span>
         </div>
@@ -708,18 +708,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-    <a href="./" title="Sequential Search" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../02.sequential-search/" title="Sequential Search" class="md-nav__link">
       Sequential Search
     </a>
-    
   </li>
 
         
@@ -871,11 +864,18 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../15.frequency-of-words/" title="Frequency of words" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+    <a href="./" title="Frequency of words" class="md-nav__link md-nav__link--active">
       Frequency of words
     </a>
+    
   </li>
 
         
@@ -954,7 +954,7 @@
                   
                 
                 
-                  <h1>Sequential Search</h1>
+                  <h1>Frequency of words</h1>
                 
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
@@ -988,26 +988,38 @@
 <div class="cell border-box-sizing text_cell rendered">
 <p><div class="inner_cell" markdown="1">
 <div class="text_cell_render border-box-sizing rendered_html" markdown="1"></p>
-<h2>Write a Python program for sequential search</h2>
-<p>In computer science, linear search or sequential search is a method for finding a particular value in a list that checks each element in sequence until the desired element is found or the list is exhausted. The list need not be ordered.
+<h2>Write a program to compute the frequency of the words from the input. The output should output after sorting the key alphanumerically.</h2>
+<p>Suppose the following input is supplied to the program:<br />
+<strong>New to Python or choosing between Python 2 and Python 3? Read Python 2 or Python 3.</strong></p>
+<p>Then, the output should be:<br />
+2:2<br />
+3.:1<br />
+3?:1<br />
+New:1<br />
+Python:5<br />
+Read:1<br />
+and:1<br />
+between:1<br />
+choosing:1<br />
+or:2<br />
+to:1<br />
 </div>
 </div></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">sequential_search</span><span class="p">(</span><span class="n">list_items</span><span class="p">,</span> <span class="n">item</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">frequency</span><span class="p">(</span><span class="nb">input</span><span class="p">):</span>
+    <span class="n">freq</span> <span class="o">=</span> <span class="p">{}</span>
 
-    <span class="n">ind</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="n">found</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="nb">input</span><span class="o">.</span><span class="n">split</span><span class="p">():</span>
+        <span class="n">freq</span><span class="p">[</span><span class="n">word</span><span class="p">]</span> <span class="o">=</span> <span class="n">freq</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
 
-    <span class="k">while</span> <span class="n">ind</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">list_items</span><span class="p">)</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">found</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">list_items</span><span class="p">[</span><span class="n">ind</span><span class="p">]</span> <span class="o">==</span> <span class="n">item</span><span class="p">:</span>
-            <span class="n">found</span> <span class="o">=</span> <span class="kc">True</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="n">ind</span> <span class="o">=</span> <span class="n">ind</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="n">words</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">freq</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+    <span class="n">words</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
 
-    <span class="k">return</span> <span class="n">found</span><span class="p">,</span> <span class="n">ind</span>
+    <span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="n">words</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{w}</span><span class="s1">:</span><span class="si">{freq[w]}</span><span class="s1">&#39;</span><span class="p">)</span>
 </code></pre></div>
 
 </div>
@@ -1016,16 +1028,7 @@
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
-<div class="highlight"><pre><span></span><code><span class="n">mylist</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
-</code></pre></div>
-
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="highlight"><pre><span></span><code><span class="n">sequential_search</span><span class="p">(</span><span class="n">mylist</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">frequency</span><span class="p">(</span><span class="s1">&#39;New to Python or choosing between Python 2 and Python 3? Read Python 2 or Python 3.&#39;</span><span class="p">)</span>
 </code></pre></div>
 
 </div>
@@ -1035,49 +1038,23 @@
 
 
 <div class="output_area" markdown="1">
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>(True, 3)</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="highlight"><pre><span></span><code><span class="n">sequential_search</span><span class="p">(</span><span class="n">mylist</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
-</code></pre></div>
-
-</div>
-
-<div class="output_wrapper" markdown="1">
-<div class="output" markdown="1">
-
-
-<div class="output_area" markdown="1">
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>(True, 4)</pre>
-</div>
-
-</div>
-
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>2:2
+3.:1
+3?:1
+New:1
+Python:5
+Read:1
+and:1
+between:1
+choosing:1
+or:2
+to:1
+</pre>
 </div>
 </div>
 
 </div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
 </div>
 
 </div>
