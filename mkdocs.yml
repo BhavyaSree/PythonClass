@@ -63,6 +63,7 @@ nav:
   - Files: 22.file-handling.md
   - Decorators: 23.decorators.md
   - Generators: 24.generators.md
+  - Web Scraping: 26.web-scraping.md
   - Assesments:
     - Statements: 6.statements-assesment.md
     - Functions: 8.functions-assesment.md
