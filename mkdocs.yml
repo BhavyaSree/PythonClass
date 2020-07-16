@@ -89,6 +89,7 @@ nav:
     - Count words: Notebooks/12.count-words-in-a-string.ipynb
     - Downward Half Pyramid: Notebooks/13.half-pyramid.ipynb
     - Pyramid: Notebooks/14.pyramid.ipynb
+    - Frequency of words: Notebooks/15.frequency-of-words.ipynb
     - Final: Notebooks/FinalAssesment.ipynb
   - Resources:
     - Tools Used: external-resources/index.md
