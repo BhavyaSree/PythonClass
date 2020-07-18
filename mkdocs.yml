@@ -75,6 +75,7 @@ nav:
     - Day 3: Notebooks/Day3.ipynb
     - TicTacToe : Notebooks/TicTacToe.ipynb
     - Object Oriented : Notebooks/Classes,attributes&methods.ipynb
+    - Assesment Solutions: Notebooks/FinalAssesment.ipynb
     - Binary Search: Notebooks/01.binary-search.ipynb
     - Sequential Search: Notebooks/02.sequential-search.ipynb
     - Bubble Sort: Notebooks/03.bubble-sort.ipynb
@@ -90,6 +91,10 @@ nav:
     - Downward Half Pyramid: Notebooks/13.half-pyramid.ipynb
     - Pyramid: Notebooks/14.pyramid.ipynb
     - Frequency of words: Notebooks/15.frequency-of-words.ipynb
-    - Final: Notebooks/FinalAssesment.ipynb
+    - Web Scraping: Notebooks/16.web-scraping.ipynb
+    - Web Scraping - Books: Notebooks/17.books-scrape.ipynb
+    - Web Scraping - Quotes: Notebooks/18.scrape-quotes.ipynb
+    - Images: Notebooks/19.images.ipynb
+    - Images - Exercise: Notebooks/20.image-exercise.ipynb
   - Resources:
     - Tools Used: external-resources/index.md
