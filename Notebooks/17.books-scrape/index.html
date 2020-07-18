@@ -1,0 +1,3596 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Python tutorial">
+      
+      
+      
+        <meta name="author" content="Bhavya Sree Bindela">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.3.1">
+    
+    
+      
+        <title>Web Scraping - Books - Python Class</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.fe0cca5b.min.css">
+      
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../css/ansi-colours.css">
+    
+      <link rel="stylesheet" href="../../css/jupyter-cells.css">
+    
+      <link rel="stylesheet" href="../../css/pandas-dataframe.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../.." title="Python Class" class="md-header-nav__button md-logo" aria-label="Python Class">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Python Class
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Web Scraping - Books
+            
+          </span>
+        </div>
+      
+    </div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/BhavyaSree/PythonClass" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    BhavyaSree/PythonClass
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+          
+
+  
+
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../.." class="md-tabs__link">
+        Home
+      </a>
+    
+  </li>
+
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../6.statements-assesment/" class="md-tabs__link">
+          Assesments
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../Day1/" class="md-tabs__link md-tabs__link--active">
+          Notebooks
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../external-resources/" class="md-tabs__link">
+          Resources
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Python Class" class="md-nav__button md-logo" aria-label="Python Class">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Python Class
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/BhavyaSree/PythonClass" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    BhavyaSree/PythonClass
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../1.introduction/" title="Getting started" class="md-nav__link">
+      Getting started
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../2.strings-lists/" title="Strings & Lists" class="md-nav__link">
+      Strings & Lists
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../3.dictonaries-sets-tuples/" title="Dictonaries, Sets & Tuples" class="md-nav__link">
+      Dictonaries, Sets & Tuples
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../4.operators/" title="Operators" class="md-nav__link">
+      Operators
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../5.conditional-statements/" title="Conditional Statements" class="md-nav__link">
+      Conditional Statements
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../7.methods-and-functions/" title="Methods and Functions" class="md-nav__link">
+      Methods and Functions
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../9.function-arguments/" title="Function Arguments" class="md-nav__link">
+      Function Arguments
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../10.map-filter-lambda/" title="Map Filter and Lambda Functions" class="md-nav__link">
+      Map Filter and Lambda Functions
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../11.variables-scope/" title="Scope of Variables" class="md-nav__link">
+      Scope of Variables
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../13.object-oriented/" title="Object Oriented - Classes & Objects" class="md-nav__link">
+      Object Oriented - Classes & Objects
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../14.inheritance/" title="Inheritance" class="md-nav__link">
+      Inheritance
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../15.polymorphism/" title="Polymorphism" class="md-nav__link">
+      Polymorphism
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../16.special-methods-in-classes/" title="Special Methods in Classes" class="md-nav__link">
+      Special Methods in Classes
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../17.modules/" title="Modules" class="md-nav__link">
+      Modules
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../18.dates/" title="Dates" class="md-nav__link">
+      Dates
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../19.math-module/" title="Math" class="md-nav__link">
+      Math
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../20.regular-expressions/" title="Regular Expressions" class="md-nav__link">
+      Regular Expressions
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../21.error-handling/" title="Error Handling" class="md-nav__link">
+      Error Handling
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../22.file-handling/" title="Files" class="md-nav__link">
+      Files
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../23.decorators/" title="Decorators" class="md-nav__link">
+      Decorators
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../24.generators/" title="Generators" class="md-nav__link">
+      Generators
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../26.web-scraping/" title="Web Scraping" class="md-nav__link">
+      Web Scraping
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-24" type="checkbox" id="nav-24">
+    
+    <label class="md-nav__link" for="nav-24">
+      Assesments
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Assesments" data-md-level="1">
+      <label class="md-nav__title" for="nav-24">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Assesments
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../6.statements-assesment/" title="Statements" class="md-nav__link">
+      Statements
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../8.functions-assesment/" title="Functions" class="md-nav__link">
+      Functions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../12.tic-tac-toe/" title="TicTacToe Project" class="md-nav__link">
+      TicTacToe Project
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../25.final-assesment/" title="Final" class="md-nav__link">
+      Final
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-25" type="checkbox" id="nav-25" checked>
+    
+    <label class="md-nav__link" for="nav-25">
+      Notebooks
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Notebooks" data-md-level="1">
+      <label class="md-nav__title" for="nav-25">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Notebooks
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Day1/" title="Day 1" class="md-nav__link">
+      Day 1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Day2/" title="Day 2" class="md-nav__link">
+      Day 2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Day3/" title="Day 3" class="md-nav__link">
+      Day 3
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../TicTacToe/" title="TicTacToe" class="md-nav__link">
+      TicTacToe
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Classes%2Cattributes%26methods/" title="Object Oriented" class="md-nav__link">
+      Object Oriented
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../FinalAssesment/" title="Assesment Solutions" class="md-nav__link">
+      Assesment Solutions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../01.binary-search/" title="Binary Search" class="md-nav__link">
+      Binary Search
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../02.sequential-search/" title="Sequential Search" class="md-nav__link">
+      Sequential Search
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../03.bubble-sort/" title="Bubble Sort" class="md-nav__link">
+      Bubble Sort
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../04.selection-sort/" title="Selection Sort" class="md-nav__link">
+      Selection Sort
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../05.fibonacci-sequence/" title="Fibonacci Sequence" class="md-nav__link">
+      Fibonacci Sequence
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../06.prime-factors/" title="Prime Factors" class="md-nav__link">
+      Prime Factors
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../07.binary%2Cdecimal/" title="Binary and Decimal Conversions" class="md-nav__link">
+      Binary and Decimal Conversions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../08.turtle/" title="Turtle" class="md-nav__link">
+      Turtle
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../09.password-generator/" title="Generating Password" class="md-nav__link">
+      Generating Password
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../10.count-vowels/" title="Count Vowels" class="md-nav__link">
+      Count Vowels
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../11.palindrome/" title="Palindrome" class="md-nav__link">
+      Palindrome
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../12.count-words-in-a-string/" title="Count words" class="md-nav__link">
+      Count words
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../13.half-pyramid/" title="Downward Half Pyramid" class="md-nav__link">
+      Downward Half Pyramid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../14.pyramid/" title="Pyramid" class="md-nav__link">
+      Pyramid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../15.frequency-of-words/" title="Frequency of words" class="md-nav__link">
+      Frequency of words
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../16.web-scraping/" title="Web Scraping" class="md-nav__link">
+      Web Scraping
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+    <a href="./" title="Web Scraping - Books" class="md-nav__link md-nav__link--active">
+      Web Scraping - Books
+    </a>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../18.scrape-quotes/" title="Web Scraping - Quotes" class="md-nav__link">
+      Web Scraping - Quotes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../19.images/" title="Images" class="md-nav__link">
+      Images
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../20.image-exercise/" title="Images - Exercise" class="md-nav__link">
+      Images - Exercise
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-26" type="checkbox" id="nav-26">
+    
+    <label class="md-nav__link" for="nav-26">
+      Resources
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Resources" data-md-level="1">
+      <label class="md-nav__title" for="nav-26">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Resources
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../external-resources/" title="Tools Used" class="md-nav__link">
+      Tools Used
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  
+                
+                
+                  <h1>Web Scraping - Books</h1>
+                
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+<script>
+(function() {
+  function addWidgetsRenderer() {
+    var mimeElement = document.querySelector('script[type="application/vnd.jupyter.widget-view+json"]');
+    var scriptElement = document.createElement('script');
+    var widgetRendererSrc = 'https://unpkg.com/@jupyter-widgets/html-manager@*/dist/embed-amd.js';
+    var widgetState;
+
+    // Fallback for older version:
+    try {
+      widgetState = mimeElement && JSON.parse(mimeElement.innerHTML);
+
+      if (widgetState && (widgetState.version_major < 2 || !widgetState.version_major)) {
+        widgetRendererSrc = 'jupyter-js-widgets@*/dist/embed.js';
+      }
+    } catch(e) {}
+
+    scriptElement.src = widgetRendererSrc;
+    document.body.appendChild(scriptElement);
+  }
+
+  document.addEventListener('DOMContentLoaded', addWidgetsRenderer);
+}());
+</script>
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Goal : To get the titles of books which have 2 star rating</span>
+</code></pre></div>
+
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">requests</span>
+</code></pre></div>
+
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">bs4</span>
+</code></pre></div>
+
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="s1">&#39;http://books.toscrape.com/catalogue/page-2.html&#39;</span>
+</code></pre></div>
+
+</div>
+
+<div class="output_wrapper" markdown="1">
+<div class="output" markdown="1">
+
+
+<div class="output_area" markdown="1">
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;http://books.toscrape.com/catalogue/page-2.html&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="s1">&#39;http://books.toscrape.com/catalogue/page-3.html&#39;</span>
+</code></pre></div>
+
+</div>
+
+<div class="output_wrapper" markdown="1">
+<div class="output" markdown="1">
+
+
+<div class="output_area" markdown="1">
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;http://books.toscrape.com/catalogue/page-3.html&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="n">base_url</span> <span class="o">=</span> <span class="s1">&#39;http://books.toscrape.com/catalogue/page-</span><span class="si">{}</span><span class="s1">.html&#39;</span>
+</code></pre></div>
+
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="n">base_url</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre></div>
+
+</div>
+
+<div class="output_wrapper" markdown="1">
+<div class="output" markdown="1">
+
+
+<div class="output_area" markdown="1">
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;http://books.toscrape.com/catalogue/page-2.html&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">51</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">base_url</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
+</code></pre></div>
+
+</div>
+
+<div class="output_wrapper" markdown="1">
+<div class="output" markdown="1">
+
+
+<div class="output_area" markdown="1">
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>http://books.toscrape.com/catalogue/page-1.html
+http://books.toscrape.com/catalogue/page-2.html
+http://books.toscrape.com/catalogue/page-3.html
+http://books.toscrape.com/catalogue/page-4.html
+http://books.toscrape.com/catalogue/page-5.html
+http://books.toscrape.com/catalogue/page-6.html
+http://books.toscrape.com/catalogue/page-7.html
+http://books.toscrape.com/catalogue/page-8.html
+http://books.toscrape.com/catalogue/page-9.html
+http://books.toscrape.com/catalogue/page-10.html
+http://books.toscrape.com/catalogue/page-11.html
+http://books.toscrape.com/catalogue/page-12.html
+http://books.toscrape.com/catalogue/page-13.html
+http://books.toscrape.com/catalogue/page-14.html
+http://books.toscrape.com/catalogue/page-15.html
+http://books.toscrape.com/catalogue/page-16.html
+http://books.toscrape.com/catalogue/page-17.html
+http://books.toscrape.com/catalogue/page-18.html
+http://books.toscrape.com/catalogue/page-19.html
+http://books.toscrape.com/catalogue/page-20.html
+http://books.toscrape.com/catalogue/page-21.html
+http://books.toscrape.com/catalogue/page-22.html
+http://books.toscrape.com/catalogue/page-23.html
+http://books.toscrape.com/catalogue/page-24.html
+http://books.toscrape.com/catalogue/page-25.html
+http://books.toscrape.com/catalogue/page-26.html
+http://books.toscrape.com/catalogue/page-27.html
+http://books.toscrape.com/catalogue/page-28.html
+http://books.toscrape.com/catalogue/page-29.html
+http://books.toscrape.com/catalogue/page-30.html
+http://books.toscrape.com/catalogue/page-31.html
+http://books.toscrape.com/catalogue/page-32.html
+http://books.toscrape.com/catalogue/page-33.html
+http://books.toscrape.com/catalogue/page-34.html
+http://books.toscrape.com/catalogue/page-35.html
+http://books.toscrape.com/catalogue/page-36.html
+http://books.toscrape.com/catalogue/page-37.html
+http://books.toscrape.com/catalogue/page-38.html
+http://books.toscrape.com/catalogue/page-39.html
+http://books.toscrape.com/catalogue/page-40.html
+http://books.toscrape.com/catalogue/page-41.html
+http://books.toscrape.com/catalogue/page-42.html
+http://books.toscrape.com/catalogue/page-43.html
+http://books.toscrape.com/catalogue/page-44.html
+http://books.toscrape.com/catalogue/page-45.html
+http://books.toscrape.com/catalogue/page-46.html
+http://books.toscrape.com/catalogue/page-47.html
+http://books.toscrape.com/catalogue/page-48.html
+http://books.toscrape.com/catalogue/page-49.html
+http://books.toscrape.com/catalogue/page-50.html
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="n">result</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;http://books.toscrape.com/catalogue/page-1.html&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="n">soup</span> <span class="o">=</span> <span class="n">bs4</span><span class="o">.</span><span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">text</span><span class="p">,</span> <span class="s1">&#39;lxml&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="n">soup</span>
+</code></pre></div>
+
+</div>
+
+<div class="output_wrapper" markdown="1">
+<div class="output" markdown="1">
+
+
+<div class="output_area" markdown="1">
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;!DOCTYPE html&gt;
+&lt;!--[if lt IE 7]&gt;      &lt;html lang=&#34;en-us&#34; class=&#34;no-js lt-ie9 lt-ie8 lt-ie7&#34;&gt; &lt;![endif]--&gt;&lt;!--[if IE 7]&gt;         &lt;html lang=&#34;en-us&#34; class=&#34;no-js lt-ie9 lt-ie8&#34;&gt; &lt;![endif]--&gt;&lt;!--[if IE 8]&gt;         &lt;html lang=&#34;en-us&#34; class=&#34;no-js lt-ie9&#34;&gt; &lt;![endif]--&gt;&lt;!--[if gt IE 8]&gt;&lt;!--&gt;&lt;html class=&#34;no-js&#34; lang=&#34;en-us&#34;&gt; &lt;!--&lt;![endif]--&gt;
+&lt;head&gt;
+&lt;title&gt;
+    All products | Books to Scrape - Sandbox
+&lt;/title&gt;
+&lt;meta content=&#34;text/html; charset=utf-8&#34; http-equiv=&#34;content-type&#34;/&gt;
+&lt;meta content=&#34;24th Jun 2016 09:30&#34; name=&#34;created&#34;/&gt;
+&lt;meta content=&#34;&#34; name=&#34;description&#34;/&gt;
+&lt;meta content=&#34;width=device-width&#34; name=&#34;viewport&#34;/&gt;
+&lt;meta content=&#34;NOARCHIVE,NOCACHE&#34; name=&#34;robots&#34;/&gt;
+&lt;!-- Le HTML5 shim, for IE6-8 support of HTML elements --&gt;
+&lt;!--[if lt IE 9]&gt;
+        &lt;script src=&#34;//html5shim.googlecode.com/svn/trunk/html5.js&#34;&gt;&lt;/script&gt;
+        &lt;![endif]--&gt;
+&lt;link href=&#34;../static/oscar/favicon.ico&#34; rel=&#34;shortcut icon&#34;/&gt;
+&lt;link href=&#34;../static/oscar/css/styles.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;/&gt;
+&lt;link href=&#34;../static/oscar/js/bootstrap-datetimepicker/bootstrap-datetimepicker.css&#34; rel=&#34;stylesheet&#34;/&gt;
+&lt;link href=&#34;../static/oscar/css/datetimepicker.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;/&gt;
+&lt;/head&gt;
+&lt;body class=&#34;default&#34; id=&#34;default&#34;&gt;
+&lt;header class=&#34;header container-fluid&#34;&gt;
+&lt;div class=&#34;page_inner&#34;&gt;
+&lt;div class=&#34;row&#34;&gt;
+&lt;div class=&#34;col-sm-8 h1&#34;&gt;&lt;a href=&#34;../index.html&#34;&gt;Books to Scrape&lt;/a&gt;&lt;small&gt; We love being scraped!&lt;/small&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/header&gt;
+&lt;div class=&#34;container-fluid page&#34;&gt;
+&lt;div class=&#34;page_inner&#34;&gt;
+&lt;ul class=&#34;breadcrumb&#34;&gt;
+&lt;li&gt;
+&lt;a href=&#34;../index.html&#34;&gt;Home&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class=&#34;active&#34;&gt;All products&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;row&#34;&gt;
+&lt;aside class=&#34;sidebar col-sm-4 col-md-3&#34;&gt;
+&lt;div id=&#34;promotions_left&#34;&gt;
+&lt;/div&gt;
+&lt;div class=&#34;side_categories&#34;&gt;
+&lt;ul class=&#34;nav nav-list&#34;&gt;
+&lt;li&gt;
+&lt;a href=&#34;category/books_1/index.html&#34;&gt;
+
+                                Books
+
+                        &lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;category/books/travel_2/index.html&#34;&gt;
+
+                                Travel
+
+                        &lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;category/books/mystery_3/index.html&#34;&gt;
+
+                                Mystery
+
+                        &lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;category/books/historical-fiction_4/index.html&#34;&gt;
+
+                                Historical Fiction
+
+                        &lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;category/books/sequential-art_5/index.html&#34;&gt;
+
+                                Sequential Art
+
+                        &lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;category/books/classics_6/index.html&#34;&gt;
+
+                                Classics
+
+                        &lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;category/books/philosophy_7/index.html&#34;&gt;
+
+                                Philosophy
+
+                        &lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;category/books/romance_8/index.html&#34;&gt;
+
+                                Romance
+
+                        &lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;category/books/womens-fiction_9/index.html&#34;&gt;
+
+                                Womens Fiction
+
+                        &lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;category/books/fiction_10/index.html&#34;&gt;
+
+                                Fiction
+
+                        &lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;category/books/childrens_11/index.html&#34;&gt;
+
+                                Childrens
+
+                        &lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;category/books/religion_12/index.html&#34;&gt;
+
+                                Religion
+
+                        &lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;category/books/nonfiction_13/index.html&#34;&gt;
+
+                                Nonfiction
+
+                        &lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;category/books/music_14/index.html&#34;&gt;
+
+                                Music
+
+                        &lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;category/books/default_15/index.html&#34;&gt;
+
+                                Default
+
+                        &lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;category/books/science-fiction_16/index.html&#34;&gt;
+
+                                Science Fiction
+
+                        &lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;category/books/sports-and-games_17/index.html&#34;&gt;
+
+                                Sports and Games
+
+                        &lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;category/books/add-a-comment_18/index.html&#34;&gt;
+
+                                Add a comment
+
+                        &lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;category/books/fantasy_19/index.html&#34;&gt;
+
+                                Fantasy
+
+                        &lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;category/books/new-adult_20/index.html&#34;&gt;
+
+                                New Adult
+
+                        &lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;category/books/young-adult_21/index.html&#34;&gt;
+
+                                Young Adult
+
+                        &lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;category/books/science_22/index.html&#34;&gt;
+
+                                Science
+
+                        &lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;category/books/poetry_23/index.html&#34;&gt;
+
+                                Poetry
+
+                        &lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;category/books/paranormal_24/index.html&#34;&gt;
+
+                                Paranormal
+
+                        &lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;category/books/art_25/index.html&#34;&gt;
+
+                                Art
+
+                        &lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;category/books/psychology_26/index.html&#34;&gt;
+
+                                Psychology
+
+                        &lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;category/books/autobiography_27/index.html&#34;&gt;
+
+                                Autobiography
+
+                        &lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;category/books/parenting_28/index.html&#34;&gt;
+
+                                Parenting
+
+                        &lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;category/books/adult-fiction_29/index.html&#34;&gt;
+
+                                Adult Fiction
+
+                        &lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;category/books/humor_30/index.html&#34;&gt;
+
+                                Humor
+
+                        &lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;category/books/horror_31/index.html&#34;&gt;
+
+                                Horror
+
+                        &lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;category/books/history_32/index.html&#34;&gt;
+
+                                History
+
+                        &lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;category/books/food-and-drink_33/index.html&#34;&gt;
+
+                                Food and Drink
+
+                        &lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;category/books/christian-fiction_34/index.html&#34;&gt;
+
+                                Christian Fiction
+
+                        &lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;category/books/business_35/index.html&#34;&gt;
+
+                                Business
+
+                        &lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;category/books/biography_36/index.html&#34;&gt;
+
+                                Biography
+
+                        &lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;category/books/thriller_37/index.html&#34;&gt;
+
+                                Thriller
+
+                        &lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;category/books/contemporary_38/index.html&#34;&gt;
+
+                                Contemporary
+
+                        &lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;category/books/spirituality_39/index.html&#34;&gt;
+
+                                Spirituality
+
+                        &lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;category/books/academic_40/index.html&#34;&gt;
+
+                                Academic
+
+                        &lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;category/books/self-help_41/index.html&#34;&gt;
+
+                                Self Help
+
+                        &lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;category/books/historical_42/index.html&#34;&gt;
+
+                                Historical
+
+                        &lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;category/books/christian_43/index.html&#34;&gt;
+
+                                Christian
+
+                        &lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;category/books/suspense_44/index.html&#34;&gt;
+
+                                Suspense
+
+                        &lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;category/books/short-stories_45/index.html&#34;&gt;
+
+                                Short Stories
+
+                        &lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;category/books/novels_46/index.html&#34;&gt;
+
+                                Novels
+
+                        &lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;category/books/health_47/index.html&#34;&gt;
+
+                                Health
+
+                        &lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;category/books/politics_48/index.html&#34;&gt;
+
+                                Politics
+
+                        &lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;category/books/cultural_49/index.html&#34;&gt;
+
+                                Cultural
+
+                        &lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;category/books/erotica_50/index.html&#34;&gt;
+
+                                Erotica
+
+                        &lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;category/books/crime_51/index.html&#34;&gt;
+
+                                Crime
+
+                        &lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/aside&gt;
+&lt;div class=&#34;col-sm-8 col-md-9&#34;&gt;
+&lt;div class=&#34;page-header action&#34;&gt;
+&lt;h1&gt;All products&lt;/h1&gt;
+&lt;/div&gt;
+&lt;div id=&#34;messages&#34;&gt;
+&lt;/div&gt;
+&lt;div id=&#34;promotions&#34;&gt;
+&lt;/div&gt;
+&lt;form class=&#34;form-horizontal&#34; method=&#34;get&#34;&gt;
+&lt;div style=&#34;display:none&#34;&gt;
+&lt;/div&gt;
+&lt;strong&gt;1000&lt;/strong&gt; results - showing &lt;strong&gt;1&lt;/strong&gt; to &lt;strong&gt;20&lt;/strong&gt;.
+
+
+
+
+    &lt;/form&gt;
+&lt;section&gt;
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;&lt;strong&gt;Warning!&lt;/strong&gt; This is a demo website for web scraping purposes. Prices and ratings here were randomly assigned and have no real meaning.&lt;/div&gt;
+&lt;div&gt;
+&lt;ol class=&#34;row&#34;&gt;
+&lt;li class=&#34;col-xs-6 col-sm-4 col-md-3 col-lg-3&#34;&gt;
+&lt;article class=&#34;product_pod&#34;&gt;
+&lt;div class=&#34;image_container&#34;&gt;
+&lt;a href=&#34;a-light-in-the-attic_1000/index.html&#34;&gt;&lt;img alt=&#34;A Light in the Attic&#34; class=&#34;thumbnail&#34; src=&#34;../media/cache/2c/da/2cdad67c44b002e7ead0cc35693c0e8b.jpg&#34;/&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;p class=&#34;star-rating Three&#34;&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;/p&gt;
+&lt;h3&gt;&lt;a href=&#34;a-light-in-the-attic_1000/index.html&#34; title=&#34;A Light in the Attic&#34;&gt;A Light in the ...&lt;/a&gt;&lt;/h3&gt;
+&lt;div class=&#34;product_price&#34;&gt;
+&lt;p class=&#34;price_color&#34;&gt;Â£51.77&lt;/p&gt;
+&lt;p class=&#34;instock availability&#34;&gt;
+&lt;i class=&#34;icon-ok&#34;&gt;&lt;/i&gt;
+
+        In stock
+
+&lt;/p&gt;
+&lt;form&gt;
+&lt;button class=&#34;btn btn-primary btn-block&#34; data-loading-text=&#34;Adding...&#34; type=&#34;submit&#34;&gt;Add to basket&lt;/button&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;/article&gt;
+&lt;/li&gt;
+&lt;li class=&#34;col-xs-6 col-sm-4 col-md-3 col-lg-3&#34;&gt;
+&lt;article class=&#34;product_pod&#34;&gt;
+&lt;div class=&#34;image_container&#34;&gt;
+&lt;a href=&#34;tipping-the-velvet_999/index.html&#34;&gt;&lt;img alt=&#34;Tipping the Velvet&#34; class=&#34;thumbnail&#34; src=&#34;../media/cache/26/0c/260c6ae16bce31c8f8c95daddd9f4a1c.jpg&#34;/&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;p class=&#34;star-rating One&#34;&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;/p&gt;
+&lt;h3&gt;&lt;a href=&#34;tipping-the-velvet_999/index.html&#34; title=&#34;Tipping the Velvet&#34;&gt;Tipping the Velvet&lt;/a&gt;&lt;/h3&gt;
+&lt;div class=&#34;product_price&#34;&gt;
+&lt;p class=&#34;price_color&#34;&gt;Â£53.74&lt;/p&gt;
+&lt;p class=&#34;instock availability&#34;&gt;
+&lt;i class=&#34;icon-ok&#34;&gt;&lt;/i&gt;
+
+        In stock
+
+&lt;/p&gt;
+&lt;form&gt;
+&lt;button class=&#34;btn btn-primary btn-block&#34; data-loading-text=&#34;Adding...&#34; type=&#34;submit&#34;&gt;Add to basket&lt;/button&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;/article&gt;
+&lt;/li&gt;
+&lt;li class=&#34;col-xs-6 col-sm-4 col-md-3 col-lg-3&#34;&gt;
+&lt;article class=&#34;product_pod&#34;&gt;
+&lt;div class=&#34;image_container&#34;&gt;
+&lt;a href=&#34;soumission_998/index.html&#34;&gt;&lt;img alt=&#34;Soumission&#34; class=&#34;thumbnail&#34; src=&#34;../media/cache/3e/ef/3eef99c9d9adef34639f510662022830.jpg&#34;/&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;p class=&#34;star-rating One&#34;&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;/p&gt;
+&lt;h3&gt;&lt;a href=&#34;soumission_998/index.html&#34; title=&#34;Soumission&#34;&gt;Soumission&lt;/a&gt;&lt;/h3&gt;
+&lt;div class=&#34;product_price&#34;&gt;
+&lt;p class=&#34;price_color&#34;&gt;Â£50.10&lt;/p&gt;
+&lt;p class=&#34;instock availability&#34;&gt;
+&lt;i class=&#34;icon-ok&#34;&gt;&lt;/i&gt;
+
+        In stock
+
+&lt;/p&gt;
+&lt;form&gt;
+&lt;button class=&#34;btn btn-primary btn-block&#34; data-loading-text=&#34;Adding...&#34; type=&#34;submit&#34;&gt;Add to basket&lt;/button&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;/article&gt;
+&lt;/li&gt;
+&lt;li class=&#34;col-xs-6 col-sm-4 col-md-3 col-lg-3&#34;&gt;
+&lt;article class=&#34;product_pod&#34;&gt;
+&lt;div class=&#34;image_container&#34;&gt;
+&lt;a href=&#34;sharp-objects_997/index.html&#34;&gt;&lt;img alt=&#34;Sharp Objects&#34; class=&#34;thumbnail&#34; src=&#34;../media/cache/32/51/3251cf3a3412f53f339e42cac2134093.jpg&#34;/&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;p class=&#34;star-rating Four&#34;&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;/p&gt;
+&lt;h3&gt;&lt;a href=&#34;sharp-objects_997/index.html&#34; title=&#34;Sharp Objects&#34;&gt;Sharp Objects&lt;/a&gt;&lt;/h3&gt;
+&lt;div class=&#34;product_price&#34;&gt;
+&lt;p class=&#34;price_color&#34;&gt;Â£47.82&lt;/p&gt;
+&lt;p class=&#34;instock availability&#34;&gt;
+&lt;i class=&#34;icon-ok&#34;&gt;&lt;/i&gt;
+
+        In stock
+
+&lt;/p&gt;
+&lt;form&gt;
+&lt;button class=&#34;btn btn-primary btn-block&#34; data-loading-text=&#34;Adding...&#34; type=&#34;submit&#34;&gt;Add to basket&lt;/button&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;/article&gt;
+&lt;/li&gt;
+&lt;li class=&#34;col-xs-6 col-sm-4 col-md-3 col-lg-3&#34;&gt;
+&lt;article class=&#34;product_pod&#34;&gt;
+&lt;div class=&#34;image_container&#34;&gt;
+&lt;a href=&#34;sapiens-a-brief-history-of-humankind_996/index.html&#34;&gt;&lt;img alt=&#34;Sapiens: A Brief History of Humankind&#34; class=&#34;thumbnail&#34; src=&#34;../media/cache/be/a5/bea5697f2534a2f86a3ef27b5a8c12a6.jpg&#34;/&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;p class=&#34;star-rating Five&#34;&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;/p&gt;
+&lt;h3&gt;&lt;a href=&#34;sapiens-a-brief-history-of-humankind_996/index.html&#34; title=&#34;Sapiens: A Brief History of Humankind&#34;&gt;Sapiens: A Brief History ...&lt;/a&gt;&lt;/h3&gt;
+&lt;div class=&#34;product_price&#34;&gt;
+&lt;p class=&#34;price_color&#34;&gt;Â£54.23&lt;/p&gt;
+&lt;p class=&#34;instock availability&#34;&gt;
+&lt;i class=&#34;icon-ok&#34;&gt;&lt;/i&gt;
+
+        In stock
+
+&lt;/p&gt;
+&lt;form&gt;
+&lt;button class=&#34;btn btn-primary btn-block&#34; data-loading-text=&#34;Adding...&#34; type=&#34;submit&#34;&gt;Add to basket&lt;/button&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;/article&gt;
+&lt;/li&gt;
+&lt;li class=&#34;col-xs-6 col-sm-4 col-md-3 col-lg-3&#34;&gt;
+&lt;article class=&#34;product_pod&#34;&gt;
+&lt;div class=&#34;image_container&#34;&gt;
+&lt;a href=&#34;the-requiem-red_995/index.html&#34;&gt;&lt;img alt=&#34;The Requiem Red&#34; class=&#34;thumbnail&#34; src=&#34;../media/cache/68/33/68339b4c9bc034267e1da611ab3b34f8.jpg&#34;/&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;p class=&#34;star-rating One&#34;&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;/p&gt;
+&lt;h3&gt;&lt;a href=&#34;the-requiem-red_995/index.html&#34; title=&#34;The Requiem Red&#34;&gt;The Requiem Red&lt;/a&gt;&lt;/h3&gt;
+&lt;div class=&#34;product_price&#34;&gt;
+&lt;p class=&#34;price_color&#34;&gt;Â£22.65&lt;/p&gt;
+&lt;p class=&#34;instock availability&#34;&gt;
+&lt;i class=&#34;icon-ok&#34;&gt;&lt;/i&gt;
+
+        In stock
+
+&lt;/p&gt;
+&lt;form&gt;
+&lt;button class=&#34;btn btn-primary btn-block&#34; data-loading-text=&#34;Adding...&#34; type=&#34;submit&#34;&gt;Add to basket&lt;/button&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;/article&gt;
+&lt;/li&gt;
+&lt;li class=&#34;col-xs-6 col-sm-4 col-md-3 col-lg-3&#34;&gt;
+&lt;article class=&#34;product_pod&#34;&gt;
+&lt;div class=&#34;image_container&#34;&gt;
+&lt;a href=&#34;the-dirty-little-secrets-of-getting-your-dream-job_994/index.html&#34;&gt;&lt;img alt=&#34;The Dirty Little Secrets of Getting Your Dream Job&#34; class=&#34;thumbnail&#34; src=&#34;../media/cache/92/27/92274a95b7c251fea59a2b8a78275ab4.jpg&#34;/&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;p class=&#34;star-rating Four&#34;&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;/p&gt;
+&lt;h3&gt;&lt;a href=&#34;the-dirty-little-secrets-of-getting-your-dream-job_994/index.html&#34; title=&#34;The Dirty Little Secrets of Getting Your Dream Job&#34;&gt;The Dirty Little Secrets ...&lt;/a&gt;&lt;/h3&gt;
+&lt;div class=&#34;product_price&#34;&gt;
+&lt;p class=&#34;price_color&#34;&gt;Â£33.34&lt;/p&gt;
+&lt;p class=&#34;instock availability&#34;&gt;
+&lt;i class=&#34;icon-ok&#34;&gt;&lt;/i&gt;
+
+        In stock
+
+&lt;/p&gt;
+&lt;form&gt;
+&lt;button class=&#34;btn btn-primary btn-block&#34; data-loading-text=&#34;Adding...&#34; type=&#34;submit&#34;&gt;Add to basket&lt;/button&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;/article&gt;
+&lt;/li&gt;
+&lt;li class=&#34;col-xs-6 col-sm-4 col-md-3 col-lg-3&#34;&gt;
+&lt;article class=&#34;product_pod&#34;&gt;
+&lt;div class=&#34;image_container&#34;&gt;
+&lt;a href=&#34;the-coming-woman-a-novel-based-on-the-life-of-the-infamous-feminist-victoria-woodhull_993/index.html&#34;&gt;&lt;img alt=&#34;The Coming Woman: A Novel Based on the Life of the Infamous Feminist, Victoria Woodhull&#34; class=&#34;thumbnail&#34; src=&#34;../media/cache/3d/54/3d54940e57e662c4dd1f3ff00c78cc64.jpg&#34;/&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;p class=&#34;star-rating Three&#34;&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;/p&gt;
+&lt;h3&gt;&lt;a href=&#34;the-coming-woman-a-novel-based-on-the-life-of-the-infamous-feminist-victoria-woodhull_993/index.html&#34; title=&#34;The Coming Woman: A Novel Based on the Life of the Infamous Feminist, Victoria Woodhull&#34;&gt;The Coming Woman: A ...&lt;/a&gt;&lt;/h3&gt;
+&lt;div class=&#34;product_price&#34;&gt;
+&lt;p class=&#34;price_color&#34;&gt;Â£17.93&lt;/p&gt;
+&lt;p class=&#34;instock availability&#34;&gt;
+&lt;i class=&#34;icon-ok&#34;&gt;&lt;/i&gt;
+
+        In stock
+
+&lt;/p&gt;
+&lt;form&gt;
+&lt;button class=&#34;btn btn-primary btn-block&#34; data-loading-text=&#34;Adding...&#34; type=&#34;submit&#34;&gt;Add to basket&lt;/button&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;/article&gt;
+&lt;/li&gt;
+&lt;li class=&#34;col-xs-6 col-sm-4 col-md-3 col-lg-3&#34;&gt;
+&lt;article class=&#34;product_pod&#34;&gt;
+&lt;div class=&#34;image_container&#34;&gt;
+&lt;a href=&#34;the-boys-in-the-boat-nine-americans-and-their-epic-quest-for-gold-at-the-1936-berlin-olympics_992/index.html&#34;&gt;&lt;img alt=&#34;The Boys in the Boat: Nine Americans and Their Epic Quest for Gold at the 1936 Berlin Olympics&#34; class=&#34;thumbnail&#34; src=&#34;../media/cache/66/88/66883b91f6804b2323c8369331cb7dd1.jpg&#34;/&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;p class=&#34;star-rating Four&#34;&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;/p&gt;
+&lt;h3&gt;&lt;a href=&#34;the-boys-in-the-boat-nine-americans-and-their-epic-quest-for-gold-at-the-1936-berlin-olympics_992/index.html&#34; title=&#34;The Boys in the Boat: Nine Americans and Their Epic Quest for Gold at the 1936 Berlin Olympics&#34;&gt;The Boys in the ...&lt;/a&gt;&lt;/h3&gt;
+&lt;div class=&#34;product_price&#34;&gt;
+&lt;p class=&#34;price_color&#34;&gt;Â£22.60&lt;/p&gt;
+&lt;p class=&#34;instock availability&#34;&gt;
+&lt;i class=&#34;icon-ok&#34;&gt;&lt;/i&gt;
+
+        In stock
+
+&lt;/p&gt;
+&lt;form&gt;
+&lt;button class=&#34;btn btn-primary btn-block&#34; data-loading-text=&#34;Adding...&#34; type=&#34;submit&#34;&gt;Add to basket&lt;/button&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;/article&gt;
+&lt;/li&gt;
+&lt;li class=&#34;col-xs-6 col-sm-4 col-md-3 col-lg-3&#34;&gt;
+&lt;article class=&#34;product_pod&#34;&gt;
+&lt;div class=&#34;image_container&#34;&gt;
+&lt;a href=&#34;the-black-maria_991/index.html&#34;&gt;&lt;img alt=&#34;The Black Maria&#34; class=&#34;thumbnail&#34; src=&#34;../media/cache/58/46/5846057e28022268153beff6d352b06c.jpg&#34;/&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;p class=&#34;star-rating One&#34;&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;/p&gt;
+&lt;h3&gt;&lt;a href=&#34;the-black-maria_991/index.html&#34; title=&#34;The Black Maria&#34;&gt;The Black Maria&lt;/a&gt;&lt;/h3&gt;
+&lt;div class=&#34;product_price&#34;&gt;
+&lt;p class=&#34;price_color&#34;&gt;Â£52.15&lt;/p&gt;
+&lt;p class=&#34;instock availability&#34;&gt;
+&lt;i class=&#34;icon-ok&#34;&gt;&lt;/i&gt;
+
+        In stock
+
+&lt;/p&gt;
+&lt;form&gt;
+&lt;button class=&#34;btn btn-primary btn-block&#34; data-loading-text=&#34;Adding...&#34; type=&#34;submit&#34;&gt;Add to basket&lt;/button&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;/article&gt;
+&lt;/li&gt;
+&lt;li class=&#34;col-xs-6 col-sm-4 col-md-3 col-lg-3&#34;&gt;
+&lt;article class=&#34;product_pod&#34;&gt;
+&lt;div class=&#34;image_container&#34;&gt;
+&lt;a href=&#34;starving-hearts-triangular-trade-trilogy-1_990/index.html&#34;&gt;&lt;img alt=&#34;Starving Hearts (Triangular Trade Trilogy, #1)&#34; class=&#34;thumbnail&#34; src=&#34;../media/cache/be/f4/bef44da28c98f905a3ebec0b87be8530.jpg&#34;/&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;p class=&#34;star-rating Two&#34;&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;/p&gt;
+&lt;h3&gt;&lt;a href=&#34;starving-hearts-triangular-trade-trilogy-1_990/index.html&#34; title=&#34;Starving Hearts (Triangular Trade Trilogy, #1)&#34;&gt;Starving Hearts (Triangular Trade ...&lt;/a&gt;&lt;/h3&gt;
+&lt;div class=&#34;product_price&#34;&gt;
+&lt;p class=&#34;price_color&#34;&gt;Â£13.99&lt;/p&gt;
+&lt;p class=&#34;instock availability&#34;&gt;
+&lt;i class=&#34;icon-ok&#34;&gt;&lt;/i&gt;
+
+        In stock
+
+&lt;/p&gt;
+&lt;form&gt;
+&lt;button class=&#34;btn btn-primary btn-block&#34; data-loading-text=&#34;Adding...&#34; type=&#34;submit&#34;&gt;Add to basket&lt;/button&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;/article&gt;
+&lt;/li&gt;
+&lt;li class=&#34;col-xs-6 col-sm-4 col-md-3 col-lg-3&#34;&gt;
+&lt;article class=&#34;product_pod&#34;&gt;
+&lt;div class=&#34;image_container&#34;&gt;
+&lt;a href=&#34;shakespeares-sonnets_989/index.html&#34;&gt;&lt;img alt=&#34;Shakespeare&#39;s Sonnets&#34; class=&#34;thumbnail&#34; src=&#34;../media/cache/10/48/1048f63d3b5061cd2f424d20b3f9b666.jpg&#34;/&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;p class=&#34;star-rating Four&#34;&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;/p&gt;
+&lt;h3&gt;&lt;a href=&#34;shakespeares-sonnets_989/index.html&#34; title=&#34;Shakespeare&#39;s Sonnets&#34;&gt;Shakespeare&#39;s Sonnets&lt;/a&gt;&lt;/h3&gt;
+&lt;div class=&#34;product_price&#34;&gt;
+&lt;p class=&#34;price_color&#34;&gt;Â£20.66&lt;/p&gt;
+&lt;p class=&#34;instock availability&#34;&gt;
+&lt;i class=&#34;icon-ok&#34;&gt;&lt;/i&gt;
+
+        In stock
+
+&lt;/p&gt;
+&lt;form&gt;
+&lt;button class=&#34;btn btn-primary btn-block&#34; data-loading-text=&#34;Adding...&#34; type=&#34;submit&#34;&gt;Add to basket&lt;/button&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;/article&gt;
+&lt;/li&gt;
+&lt;li class=&#34;col-xs-6 col-sm-4 col-md-3 col-lg-3&#34;&gt;
+&lt;article class=&#34;product_pod&#34;&gt;
+&lt;div class=&#34;image_container&#34;&gt;
+&lt;a href=&#34;set-me-free_988/index.html&#34;&gt;&lt;img alt=&#34;Set Me Free&#34; class=&#34;thumbnail&#34; src=&#34;../media/cache/5b/88/5b88c52633f53cacf162c15f4f823153.jpg&#34;/&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;p class=&#34;star-rating Five&#34;&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;/p&gt;
+&lt;h3&gt;&lt;a href=&#34;set-me-free_988/index.html&#34; title=&#34;Set Me Free&#34;&gt;Set Me Free&lt;/a&gt;&lt;/h3&gt;
+&lt;div class=&#34;product_price&#34;&gt;
+&lt;p class=&#34;price_color&#34;&gt;Â£17.46&lt;/p&gt;
+&lt;p class=&#34;instock availability&#34;&gt;
+&lt;i class=&#34;icon-ok&#34;&gt;&lt;/i&gt;
+
+        In stock
+
+&lt;/p&gt;
+&lt;form&gt;
+&lt;button class=&#34;btn btn-primary btn-block&#34; data-loading-text=&#34;Adding...&#34; type=&#34;submit&#34;&gt;Add to basket&lt;/button&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;/article&gt;
+&lt;/li&gt;
+&lt;li class=&#34;col-xs-6 col-sm-4 col-md-3 col-lg-3&#34;&gt;
+&lt;article class=&#34;product_pod&#34;&gt;
+&lt;div class=&#34;image_container&#34;&gt;
+&lt;a href=&#34;scott-pilgrims-precious-little-life-scott-pilgrim-1_987/index.html&#34;&gt;&lt;img alt=&#34;Scott Pilgrim&#39;s Precious Little Life (Scott Pilgrim #1)&#34; class=&#34;thumbnail&#34; src=&#34;../media/cache/94/b1/94b1b8b244bce9677c2f29ccc890d4d2.jpg&#34;/&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;p class=&#34;star-rating Five&#34;&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;/p&gt;
+&lt;h3&gt;&lt;a href=&#34;scott-pilgrims-precious-little-life-scott-pilgrim-1_987/index.html&#34; title=&#34;Scott Pilgrim&#39;s Precious Little Life (Scott Pilgrim #1)&#34;&gt;Scott Pilgrim&#39;s Precious Little ...&lt;/a&gt;&lt;/h3&gt;
+&lt;div class=&#34;product_price&#34;&gt;
+&lt;p class=&#34;price_color&#34;&gt;Â£52.29&lt;/p&gt;
+&lt;p class=&#34;instock availability&#34;&gt;
+&lt;i class=&#34;icon-ok&#34;&gt;&lt;/i&gt;
+
+        In stock
+
+&lt;/p&gt;
+&lt;form&gt;
+&lt;button class=&#34;btn btn-primary btn-block&#34; data-loading-text=&#34;Adding...&#34; type=&#34;submit&#34;&gt;Add to basket&lt;/button&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;/article&gt;
+&lt;/li&gt;
+&lt;li class=&#34;col-xs-6 col-sm-4 col-md-3 col-lg-3&#34;&gt;
+&lt;article class=&#34;product_pod&#34;&gt;
+&lt;div class=&#34;image_container&#34;&gt;
+&lt;a href=&#34;rip-it-up-and-start-again_986/index.html&#34;&gt;&lt;img alt=&#34;Rip it Up and Start Again&#34; class=&#34;thumbnail&#34; src=&#34;../media/cache/81/c4/81c4a973364e17d01f217e1188253d5e.jpg&#34;/&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;p class=&#34;star-rating Five&#34;&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;/p&gt;
+&lt;h3&gt;&lt;a href=&#34;rip-it-up-and-start-again_986/index.html&#34; title=&#34;Rip it Up and Start Again&#34;&gt;Rip it Up and ...&lt;/a&gt;&lt;/h3&gt;
+&lt;div class=&#34;product_price&#34;&gt;
+&lt;p class=&#34;price_color&#34;&gt;Â£35.02&lt;/p&gt;
+&lt;p class=&#34;instock availability&#34;&gt;
+&lt;i class=&#34;icon-ok&#34;&gt;&lt;/i&gt;
+
+        In stock
+
+&lt;/p&gt;
+&lt;form&gt;
+&lt;button class=&#34;btn btn-primary btn-block&#34; data-loading-text=&#34;Adding...&#34; type=&#34;submit&#34;&gt;Add to basket&lt;/button&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;/article&gt;
+&lt;/li&gt;
+&lt;li class=&#34;col-xs-6 col-sm-4 col-md-3 col-lg-3&#34;&gt;
+&lt;article class=&#34;product_pod&#34;&gt;
+&lt;div class=&#34;image_container&#34;&gt;
+&lt;a href=&#34;our-band-could-be-your-life-scenes-from-the-american-indie-underground-1981-1991_985/index.html&#34;&gt;&lt;img alt=&#34;Our Band Could Be Your Life: Scenes from the American Indie Underground, 1981-1991&#34; class=&#34;thumbnail&#34; src=&#34;../media/cache/54/60/54607fe8945897cdcced0044103b10b6.jpg&#34;/&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;p class=&#34;star-rating Three&#34;&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;/p&gt;
+&lt;h3&gt;&lt;a href=&#34;our-band-could-be-your-life-scenes-from-the-american-indie-underground-1981-1991_985/index.html&#34; title=&#34;Our Band Could Be Your Life: Scenes from the American Indie Underground, 1981-1991&#34;&gt;Our Band Could Be ...&lt;/a&gt;&lt;/h3&gt;
+&lt;div class=&#34;product_price&#34;&gt;
+&lt;p class=&#34;price_color&#34;&gt;Â£57.25&lt;/p&gt;
+&lt;p class=&#34;instock availability&#34;&gt;
+&lt;i class=&#34;icon-ok&#34;&gt;&lt;/i&gt;
+
+        In stock
+
+&lt;/p&gt;
+&lt;form&gt;
+&lt;button class=&#34;btn btn-primary btn-block&#34; data-loading-text=&#34;Adding...&#34; type=&#34;submit&#34;&gt;Add to basket&lt;/button&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;/article&gt;
+&lt;/li&gt;
+&lt;li class=&#34;col-xs-6 col-sm-4 col-md-3 col-lg-3&#34;&gt;
+&lt;article class=&#34;product_pod&#34;&gt;
+&lt;div class=&#34;image_container&#34;&gt;
+&lt;a href=&#34;olio_984/index.html&#34;&gt;&lt;img alt=&#34;Olio&#34; class=&#34;thumbnail&#34; src=&#34;../media/cache/55/33/553310a7162dfbc2c6d19a84da0df9e1.jpg&#34;/&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;p class=&#34;star-rating One&#34;&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;/p&gt;
+&lt;h3&gt;&lt;a href=&#34;olio_984/index.html&#34; title=&#34;Olio&#34;&gt;Olio&lt;/a&gt;&lt;/h3&gt;
+&lt;div class=&#34;product_price&#34;&gt;
+&lt;p class=&#34;price_color&#34;&gt;Â£23.88&lt;/p&gt;
+&lt;p class=&#34;instock availability&#34;&gt;
+&lt;i class=&#34;icon-ok&#34;&gt;&lt;/i&gt;
+
+        In stock
+
+&lt;/p&gt;
+&lt;form&gt;
+&lt;button class=&#34;btn btn-primary btn-block&#34; data-loading-text=&#34;Adding...&#34; type=&#34;submit&#34;&gt;Add to basket&lt;/button&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;/article&gt;
+&lt;/li&gt;
+&lt;li class=&#34;col-xs-6 col-sm-4 col-md-3 col-lg-3&#34;&gt;
+&lt;article class=&#34;product_pod&#34;&gt;
+&lt;div class=&#34;image_container&#34;&gt;
+&lt;a href=&#34;mesaerion-the-best-science-fiction-stories-1800-1849_983/index.html&#34;&gt;&lt;img alt=&#34;Mesaerion: The Best Science Fiction Stories 1800-1849&#34; class=&#34;thumbnail&#34; src=&#34;../media/cache/09/a3/09a3aef48557576e1a85ba7efea8ecb7.jpg&#34;/&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;p class=&#34;star-rating One&#34;&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;/p&gt;
+&lt;h3&gt;&lt;a href=&#34;mesaerion-the-best-science-fiction-stories-1800-1849_983/index.html&#34; title=&#34;Mesaerion: The Best Science Fiction Stories 1800-1849&#34;&gt;Mesaerion: The Best Science ...&lt;/a&gt;&lt;/h3&gt;
+&lt;div class=&#34;product_price&#34;&gt;
+&lt;p class=&#34;price_color&#34;&gt;Â£37.59&lt;/p&gt;
+&lt;p class=&#34;instock availability&#34;&gt;
+&lt;i class=&#34;icon-ok&#34;&gt;&lt;/i&gt;
+
+        In stock
+
+&lt;/p&gt;
+&lt;form&gt;
+&lt;button class=&#34;btn btn-primary btn-block&#34; data-loading-text=&#34;Adding...&#34; type=&#34;submit&#34;&gt;Add to basket&lt;/button&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;/article&gt;
+&lt;/li&gt;
+&lt;li class=&#34;col-xs-6 col-sm-4 col-md-3 col-lg-3&#34;&gt;
+&lt;article class=&#34;product_pod&#34;&gt;
+&lt;div class=&#34;image_container&#34;&gt;
+&lt;a href=&#34;libertarianism-for-beginners_982/index.html&#34;&gt;&lt;img alt=&#34;Libertarianism for Beginners&#34; class=&#34;thumbnail&#34; src=&#34;../media/cache/0b/bc/0bbcd0a6f4bcd81ccb1049a52736406e.jpg&#34;/&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;p class=&#34;star-rating Two&#34;&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;/p&gt;
+&lt;h3&gt;&lt;a href=&#34;libertarianism-for-beginners_982/index.html&#34; title=&#34;Libertarianism for Beginners&#34;&gt;Libertarianism for Beginners&lt;/a&gt;&lt;/h3&gt;
+&lt;div class=&#34;product_price&#34;&gt;
+&lt;p class=&#34;price_color&#34;&gt;Â£51.33&lt;/p&gt;
+&lt;p class=&#34;instock availability&#34;&gt;
+&lt;i class=&#34;icon-ok&#34;&gt;&lt;/i&gt;
+
+        In stock
+
+&lt;/p&gt;
+&lt;form&gt;
+&lt;button class=&#34;btn btn-primary btn-block&#34; data-loading-text=&#34;Adding...&#34; type=&#34;submit&#34;&gt;Add to basket&lt;/button&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;/article&gt;
+&lt;/li&gt;
+&lt;li class=&#34;col-xs-6 col-sm-4 col-md-3 col-lg-3&#34;&gt;
+&lt;article class=&#34;product_pod&#34;&gt;
+&lt;div class=&#34;image_container&#34;&gt;
+&lt;a href=&#34;its-only-the-himalayas_981/index.html&#34;&gt;&lt;img alt=&#34;It&#39;s Only the Himalayas&#34; class=&#34;thumbnail&#34; src=&#34;../media/cache/27/a5/27a53d0bb95bdd88288eaf66c9230d7e.jpg&#34;/&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;p class=&#34;star-rating Two&#34;&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;/p&gt;
+&lt;h3&gt;&lt;a href=&#34;its-only-the-himalayas_981/index.html&#34; title=&#34;It&#39;s Only the Himalayas&#34;&gt;It&#39;s Only the Himalayas&lt;/a&gt;&lt;/h3&gt;
+&lt;div class=&#34;product_price&#34;&gt;
+&lt;p class=&#34;price_color&#34;&gt;Â£45.17&lt;/p&gt;
+&lt;p class=&#34;instock availability&#34;&gt;
+&lt;i class=&#34;icon-ok&#34;&gt;&lt;/i&gt;
+
+        In stock
+
+&lt;/p&gt;
+&lt;form&gt;
+&lt;button class=&#34;btn btn-primary btn-block&#34; data-loading-text=&#34;Adding...&#34; type=&#34;submit&#34;&gt;Add to basket&lt;/button&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;/article&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div&gt;
+&lt;ul class=&#34;pager&#34;&gt;
+&lt;li class=&#34;current&#34;&gt;
+
+                Page 1 of 50
+
+            &lt;/li&gt;
+&lt;li class=&#34;next&#34;&gt;&lt;a href=&#34;page-2.html&#34;&gt;next&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;!-- /row --&gt;
+&lt;/div&gt;&lt;!-- /page_inner --&gt;
+&lt;/div&gt;&lt;!-- /container-fluid --&gt;
+&lt;footer class=&#34;footer container-fluid&#34;&gt;
+&lt;/footer&gt;
+&lt;!-- jQuery --&gt;
+&lt;script src=&#34;http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js&#34;&gt;&lt;/script&gt;
+&lt;script&gt;window.jQuery || document.write(&#39;&lt;script src=&#34;../static/oscar/js/jquery/jquery-1.9.1.min.js&#34;&gt;&lt;\/script&gt;&#39;)&lt;/script&gt;
+&lt;!-- Twitter Bootstrap --&gt;
+&lt;script src=&#34;../static/oscar/js/bootstrap3/bootstrap.min.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;
+&lt;!-- Oscar --&gt;
+&lt;script charset=&#34;utf-8&#34; src=&#34;../static/oscar/js/oscar/ui.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;
+&lt;script charset=&#34;utf-8&#34; src=&#34;../static/oscar/js/bootstrap-datetimepicker/bootstrap-datetimepicker.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;
+&lt;script charset=&#34;utf-8&#34; src=&#34;../static/oscar/js/bootstrap-datetimepicker/locales/bootstrap-datetimepicker.all.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;
+&lt;script type=&#34;text/javascript&#34;&gt;
+            $(function() {
+
+
+
+    oscar.init();
+
+    oscar.search.init();
+
+            });
+        &lt;/script&gt;
+&lt;!-- Version: N/A --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="n">soup</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s1">&#39;.product_pod&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+</div>
+
+<div class="output_wrapper" markdown="1">
+<div class="output" markdown="1">
+
+
+<div class="output_area" markdown="1">
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&lt;article class=&#34;product_pod&#34;&gt;
+ &lt;div class=&#34;image_container&#34;&gt;
+ &lt;a href=&#34;a-light-in-the-attic_1000/index.html&#34;&gt;&lt;img alt=&#34;A Light in the Attic&#34; class=&#34;thumbnail&#34; src=&#34;../media/cache/2c/da/2cdad67c44b002e7ead0cc35693c0e8b.jpg&#34;/&gt;&lt;/a&gt;
+ &lt;/div&gt;
+ &lt;p class=&#34;star-rating Three&#34;&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;/p&gt;
+ &lt;h3&gt;&lt;a href=&#34;a-light-in-the-attic_1000/index.html&#34; title=&#34;A Light in the Attic&#34;&gt;A Light in the ...&lt;/a&gt;&lt;/h3&gt;
+ &lt;div class=&#34;product_price&#34;&gt;
+ &lt;p class=&#34;price_color&#34;&gt;Â£51.77&lt;/p&gt;
+ &lt;p class=&#34;instock availability&#34;&gt;
+ &lt;i class=&#34;icon-ok&#34;&gt;&lt;/i&gt;
+
+         In stock
+
+ &lt;/p&gt;
+ &lt;form&gt;
+ &lt;button class=&#34;btn btn-primary btn-block&#34; data-loading-text=&#34;Adding...&#34; type=&#34;submit&#34;&gt;Add to basket&lt;/button&gt;
+ &lt;/form&gt;
+ &lt;/div&gt;
+ &lt;/article&gt;,
+ &lt;article class=&#34;product_pod&#34;&gt;
+ &lt;div class=&#34;image_container&#34;&gt;
+ &lt;a href=&#34;tipping-the-velvet_999/index.html&#34;&gt;&lt;img alt=&#34;Tipping the Velvet&#34; class=&#34;thumbnail&#34; src=&#34;../media/cache/26/0c/260c6ae16bce31c8f8c95daddd9f4a1c.jpg&#34;/&gt;&lt;/a&gt;
+ &lt;/div&gt;
+ &lt;p class=&#34;star-rating One&#34;&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;/p&gt;
+ &lt;h3&gt;&lt;a href=&#34;tipping-the-velvet_999/index.html&#34; title=&#34;Tipping the Velvet&#34;&gt;Tipping the Velvet&lt;/a&gt;&lt;/h3&gt;
+ &lt;div class=&#34;product_price&#34;&gt;
+ &lt;p class=&#34;price_color&#34;&gt;Â£53.74&lt;/p&gt;
+ &lt;p class=&#34;instock availability&#34;&gt;
+ &lt;i class=&#34;icon-ok&#34;&gt;&lt;/i&gt;
+
+         In stock
+
+ &lt;/p&gt;
+ &lt;form&gt;
+ &lt;button class=&#34;btn btn-primary btn-block&#34; data-loading-text=&#34;Adding...&#34; type=&#34;submit&#34;&gt;Add to basket&lt;/button&gt;
+ &lt;/form&gt;
+ &lt;/div&gt;
+ &lt;/article&gt;,
+ &lt;article class=&#34;product_pod&#34;&gt;
+ &lt;div class=&#34;image_container&#34;&gt;
+ &lt;a href=&#34;soumission_998/index.html&#34;&gt;&lt;img alt=&#34;Soumission&#34; class=&#34;thumbnail&#34; src=&#34;../media/cache/3e/ef/3eef99c9d9adef34639f510662022830.jpg&#34;/&gt;&lt;/a&gt;
+ &lt;/div&gt;
+ &lt;p class=&#34;star-rating One&#34;&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;/p&gt;
+ &lt;h3&gt;&lt;a href=&#34;soumission_998/index.html&#34; title=&#34;Soumission&#34;&gt;Soumission&lt;/a&gt;&lt;/h3&gt;
+ &lt;div class=&#34;product_price&#34;&gt;
+ &lt;p class=&#34;price_color&#34;&gt;Â£50.10&lt;/p&gt;
+ &lt;p class=&#34;instock availability&#34;&gt;
+ &lt;i class=&#34;icon-ok&#34;&gt;&lt;/i&gt;
+
+         In stock
+
+ &lt;/p&gt;
+ &lt;form&gt;
+ &lt;button class=&#34;btn btn-primary btn-block&#34; data-loading-text=&#34;Adding...&#34; type=&#34;submit&#34;&gt;Add to basket&lt;/button&gt;
+ &lt;/form&gt;
+ &lt;/div&gt;
+ &lt;/article&gt;,
+ &lt;article class=&#34;product_pod&#34;&gt;
+ &lt;div class=&#34;image_container&#34;&gt;
+ &lt;a href=&#34;sharp-objects_997/index.html&#34;&gt;&lt;img alt=&#34;Sharp Objects&#34; class=&#34;thumbnail&#34; src=&#34;../media/cache/32/51/3251cf3a3412f53f339e42cac2134093.jpg&#34;/&gt;&lt;/a&gt;
+ &lt;/div&gt;
+ &lt;p class=&#34;star-rating Four&#34;&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;/p&gt;
+ &lt;h3&gt;&lt;a href=&#34;sharp-objects_997/index.html&#34; title=&#34;Sharp Objects&#34;&gt;Sharp Objects&lt;/a&gt;&lt;/h3&gt;
+ &lt;div class=&#34;product_price&#34;&gt;
+ &lt;p class=&#34;price_color&#34;&gt;Â£47.82&lt;/p&gt;
+ &lt;p class=&#34;instock availability&#34;&gt;
+ &lt;i class=&#34;icon-ok&#34;&gt;&lt;/i&gt;
+
+         In stock
+
+ &lt;/p&gt;
+ &lt;form&gt;
+ &lt;button class=&#34;btn btn-primary btn-block&#34; data-loading-text=&#34;Adding...&#34; type=&#34;submit&#34;&gt;Add to basket&lt;/button&gt;
+ &lt;/form&gt;
+ &lt;/div&gt;
+ &lt;/article&gt;,
+ &lt;article class=&#34;product_pod&#34;&gt;
+ &lt;div class=&#34;image_container&#34;&gt;
+ &lt;a href=&#34;sapiens-a-brief-history-of-humankind_996/index.html&#34;&gt;&lt;img alt=&#34;Sapiens: A Brief History of Humankind&#34; class=&#34;thumbnail&#34; src=&#34;../media/cache/be/a5/bea5697f2534a2f86a3ef27b5a8c12a6.jpg&#34;/&gt;&lt;/a&gt;
+ &lt;/div&gt;
+ &lt;p class=&#34;star-rating Five&#34;&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;/p&gt;
+ &lt;h3&gt;&lt;a href=&#34;sapiens-a-brief-history-of-humankind_996/index.html&#34; title=&#34;Sapiens: A Brief History of Humankind&#34;&gt;Sapiens: A Brief History ...&lt;/a&gt;&lt;/h3&gt;
+ &lt;div class=&#34;product_price&#34;&gt;
+ &lt;p class=&#34;price_color&#34;&gt;Â£54.23&lt;/p&gt;
+ &lt;p class=&#34;instock availability&#34;&gt;
+ &lt;i class=&#34;icon-ok&#34;&gt;&lt;/i&gt;
+
+         In stock
+
+ &lt;/p&gt;
+ &lt;form&gt;
+ &lt;button class=&#34;btn btn-primary btn-block&#34; data-loading-text=&#34;Adding...&#34; type=&#34;submit&#34;&gt;Add to basket&lt;/button&gt;
+ &lt;/form&gt;
+ &lt;/div&gt;
+ &lt;/article&gt;,
+ &lt;article class=&#34;product_pod&#34;&gt;
+ &lt;div class=&#34;image_container&#34;&gt;
+ &lt;a href=&#34;the-requiem-red_995/index.html&#34;&gt;&lt;img alt=&#34;The Requiem Red&#34; class=&#34;thumbnail&#34; src=&#34;../media/cache/68/33/68339b4c9bc034267e1da611ab3b34f8.jpg&#34;/&gt;&lt;/a&gt;
+ &lt;/div&gt;
+ &lt;p class=&#34;star-rating One&#34;&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;/p&gt;
+ &lt;h3&gt;&lt;a href=&#34;the-requiem-red_995/index.html&#34; title=&#34;The Requiem Red&#34;&gt;The Requiem Red&lt;/a&gt;&lt;/h3&gt;
+ &lt;div class=&#34;product_price&#34;&gt;
+ &lt;p class=&#34;price_color&#34;&gt;Â£22.65&lt;/p&gt;
+ &lt;p class=&#34;instock availability&#34;&gt;
+ &lt;i class=&#34;icon-ok&#34;&gt;&lt;/i&gt;
+
+         In stock
+
+ &lt;/p&gt;
+ &lt;form&gt;
+ &lt;button class=&#34;btn btn-primary btn-block&#34; data-loading-text=&#34;Adding...&#34; type=&#34;submit&#34;&gt;Add to basket&lt;/button&gt;
+ &lt;/form&gt;
+ &lt;/div&gt;
+ &lt;/article&gt;,
+ &lt;article class=&#34;product_pod&#34;&gt;
+ &lt;div class=&#34;image_container&#34;&gt;
+ &lt;a href=&#34;the-dirty-little-secrets-of-getting-your-dream-job_994/index.html&#34;&gt;&lt;img alt=&#34;The Dirty Little Secrets of Getting Your Dream Job&#34; class=&#34;thumbnail&#34; src=&#34;../media/cache/92/27/92274a95b7c251fea59a2b8a78275ab4.jpg&#34;/&gt;&lt;/a&gt;
+ &lt;/div&gt;
+ &lt;p class=&#34;star-rating Four&#34;&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;/p&gt;
+ &lt;h3&gt;&lt;a href=&#34;the-dirty-little-secrets-of-getting-your-dream-job_994/index.html&#34; title=&#34;The Dirty Little Secrets of Getting Your Dream Job&#34;&gt;The Dirty Little Secrets ...&lt;/a&gt;&lt;/h3&gt;
+ &lt;div class=&#34;product_price&#34;&gt;
+ &lt;p class=&#34;price_color&#34;&gt;Â£33.34&lt;/p&gt;
+ &lt;p class=&#34;instock availability&#34;&gt;
+ &lt;i class=&#34;icon-ok&#34;&gt;&lt;/i&gt;
+
+         In stock
+
+ &lt;/p&gt;
+ &lt;form&gt;
+ &lt;button class=&#34;btn btn-primary btn-block&#34; data-loading-text=&#34;Adding...&#34; type=&#34;submit&#34;&gt;Add to basket&lt;/button&gt;
+ &lt;/form&gt;
+ &lt;/div&gt;
+ &lt;/article&gt;,
+ &lt;article class=&#34;product_pod&#34;&gt;
+ &lt;div class=&#34;image_container&#34;&gt;
+ &lt;a href=&#34;the-coming-woman-a-novel-based-on-the-life-of-the-infamous-feminist-victoria-woodhull_993/index.html&#34;&gt;&lt;img alt=&#34;The Coming Woman: A Novel Based on the Life of the Infamous Feminist, Victoria Woodhull&#34; class=&#34;thumbnail&#34; src=&#34;../media/cache/3d/54/3d54940e57e662c4dd1f3ff00c78cc64.jpg&#34;/&gt;&lt;/a&gt;
+ &lt;/div&gt;
+ &lt;p class=&#34;star-rating Three&#34;&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;/p&gt;
+ &lt;h3&gt;&lt;a href=&#34;the-coming-woman-a-novel-based-on-the-life-of-the-infamous-feminist-victoria-woodhull_993/index.html&#34; title=&#34;The Coming Woman: A Novel Based on the Life of the Infamous Feminist, Victoria Woodhull&#34;&gt;The Coming Woman: A ...&lt;/a&gt;&lt;/h3&gt;
+ &lt;div class=&#34;product_price&#34;&gt;
+ &lt;p class=&#34;price_color&#34;&gt;Â£17.93&lt;/p&gt;
+ &lt;p class=&#34;instock availability&#34;&gt;
+ &lt;i class=&#34;icon-ok&#34;&gt;&lt;/i&gt;
+
+         In stock
+
+ &lt;/p&gt;
+ &lt;form&gt;
+ &lt;button class=&#34;btn btn-primary btn-block&#34; data-loading-text=&#34;Adding...&#34; type=&#34;submit&#34;&gt;Add to basket&lt;/button&gt;
+ &lt;/form&gt;
+ &lt;/div&gt;
+ &lt;/article&gt;,
+ &lt;article class=&#34;product_pod&#34;&gt;
+ &lt;div class=&#34;image_container&#34;&gt;
+ &lt;a href=&#34;the-boys-in-the-boat-nine-americans-and-their-epic-quest-for-gold-at-the-1936-berlin-olympics_992/index.html&#34;&gt;&lt;img alt=&#34;The Boys in the Boat: Nine Americans and Their Epic Quest for Gold at the 1936 Berlin Olympics&#34; class=&#34;thumbnail&#34; src=&#34;../media/cache/66/88/66883b91f6804b2323c8369331cb7dd1.jpg&#34;/&gt;&lt;/a&gt;
+ &lt;/div&gt;
+ &lt;p class=&#34;star-rating Four&#34;&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;/p&gt;
+ &lt;h3&gt;&lt;a href=&#34;the-boys-in-the-boat-nine-americans-and-their-epic-quest-for-gold-at-the-1936-berlin-olympics_992/index.html&#34; title=&#34;The Boys in the Boat: Nine Americans and Their Epic Quest for Gold at the 1936 Berlin Olympics&#34;&gt;The Boys in the ...&lt;/a&gt;&lt;/h3&gt;
+ &lt;div class=&#34;product_price&#34;&gt;
+ &lt;p class=&#34;price_color&#34;&gt;Â£22.60&lt;/p&gt;
+ &lt;p class=&#34;instock availability&#34;&gt;
+ &lt;i class=&#34;icon-ok&#34;&gt;&lt;/i&gt;
+
+         In stock
+
+ &lt;/p&gt;
+ &lt;form&gt;
+ &lt;button class=&#34;btn btn-primary btn-block&#34; data-loading-text=&#34;Adding...&#34; type=&#34;submit&#34;&gt;Add to basket&lt;/button&gt;
+ &lt;/form&gt;
+ &lt;/div&gt;
+ &lt;/article&gt;,
+ &lt;article class=&#34;product_pod&#34;&gt;
+ &lt;div class=&#34;image_container&#34;&gt;
+ &lt;a href=&#34;the-black-maria_991/index.html&#34;&gt;&lt;img alt=&#34;The Black Maria&#34; class=&#34;thumbnail&#34; src=&#34;../media/cache/58/46/5846057e28022268153beff6d352b06c.jpg&#34;/&gt;&lt;/a&gt;
+ &lt;/div&gt;
+ &lt;p class=&#34;star-rating One&#34;&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;/p&gt;
+ &lt;h3&gt;&lt;a href=&#34;the-black-maria_991/index.html&#34; title=&#34;The Black Maria&#34;&gt;The Black Maria&lt;/a&gt;&lt;/h3&gt;
+ &lt;div class=&#34;product_price&#34;&gt;
+ &lt;p class=&#34;price_color&#34;&gt;Â£52.15&lt;/p&gt;
+ &lt;p class=&#34;instock availability&#34;&gt;
+ &lt;i class=&#34;icon-ok&#34;&gt;&lt;/i&gt;
+
+         In stock
+
+ &lt;/p&gt;
+ &lt;form&gt;
+ &lt;button class=&#34;btn btn-primary btn-block&#34; data-loading-text=&#34;Adding...&#34; type=&#34;submit&#34;&gt;Add to basket&lt;/button&gt;
+ &lt;/form&gt;
+ &lt;/div&gt;
+ &lt;/article&gt;,
+ &lt;article class=&#34;product_pod&#34;&gt;
+ &lt;div class=&#34;image_container&#34;&gt;
+ &lt;a href=&#34;starving-hearts-triangular-trade-trilogy-1_990/index.html&#34;&gt;&lt;img alt=&#34;Starving Hearts (Triangular Trade Trilogy, #1)&#34; class=&#34;thumbnail&#34; src=&#34;../media/cache/be/f4/bef44da28c98f905a3ebec0b87be8530.jpg&#34;/&gt;&lt;/a&gt;
+ &lt;/div&gt;
+ &lt;p class=&#34;star-rating Two&#34;&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;/p&gt;
+ &lt;h3&gt;&lt;a href=&#34;starving-hearts-triangular-trade-trilogy-1_990/index.html&#34; title=&#34;Starving Hearts (Triangular Trade Trilogy, #1)&#34;&gt;Starving Hearts (Triangular Trade ...&lt;/a&gt;&lt;/h3&gt;
+ &lt;div class=&#34;product_price&#34;&gt;
+ &lt;p class=&#34;price_color&#34;&gt;Â£13.99&lt;/p&gt;
+ &lt;p class=&#34;instock availability&#34;&gt;
+ &lt;i class=&#34;icon-ok&#34;&gt;&lt;/i&gt;
+
+         In stock
+
+ &lt;/p&gt;
+ &lt;form&gt;
+ &lt;button class=&#34;btn btn-primary btn-block&#34; data-loading-text=&#34;Adding...&#34; type=&#34;submit&#34;&gt;Add to basket&lt;/button&gt;
+ &lt;/form&gt;
+ &lt;/div&gt;
+ &lt;/article&gt;,
+ &lt;article class=&#34;product_pod&#34;&gt;
+ &lt;div class=&#34;image_container&#34;&gt;
+ &lt;a href=&#34;shakespeares-sonnets_989/index.html&#34;&gt;&lt;img alt=&#34;Shakespeare&#39;s Sonnets&#34; class=&#34;thumbnail&#34; src=&#34;../media/cache/10/48/1048f63d3b5061cd2f424d20b3f9b666.jpg&#34;/&gt;&lt;/a&gt;
+ &lt;/div&gt;
+ &lt;p class=&#34;star-rating Four&#34;&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;/p&gt;
+ &lt;h3&gt;&lt;a href=&#34;shakespeares-sonnets_989/index.html&#34; title=&#34;Shakespeare&#39;s Sonnets&#34;&gt;Shakespeare&#39;s Sonnets&lt;/a&gt;&lt;/h3&gt;
+ &lt;div class=&#34;product_price&#34;&gt;
+ &lt;p class=&#34;price_color&#34;&gt;Â£20.66&lt;/p&gt;
+ &lt;p class=&#34;instock availability&#34;&gt;
+ &lt;i class=&#34;icon-ok&#34;&gt;&lt;/i&gt;
+
+         In stock
+
+ &lt;/p&gt;
+ &lt;form&gt;
+ &lt;button class=&#34;btn btn-primary btn-block&#34; data-loading-text=&#34;Adding...&#34; type=&#34;submit&#34;&gt;Add to basket&lt;/button&gt;
+ &lt;/form&gt;
+ &lt;/div&gt;
+ &lt;/article&gt;,
+ &lt;article class=&#34;product_pod&#34;&gt;
+ &lt;div class=&#34;image_container&#34;&gt;
+ &lt;a href=&#34;set-me-free_988/index.html&#34;&gt;&lt;img alt=&#34;Set Me Free&#34; class=&#34;thumbnail&#34; src=&#34;../media/cache/5b/88/5b88c52633f53cacf162c15f4f823153.jpg&#34;/&gt;&lt;/a&gt;
+ &lt;/div&gt;
+ &lt;p class=&#34;star-rating Five&#34;&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;/p&gt;
+ &lt;h3&gt;&lt;a href=&#34;set-me-free_988/index.html&#34; title=&#34;Set Me Free&#34;&gt;Set Me Free&lt;/a&gt;&lt;/h3&gt;
+ &lt;div class=&#34;product_price&#34;&gt;
+ &lt;p class=&#34;price_color&#34;&gt;Â£17.46&lt;/p&gt;
+ &lt;p class=&#34;instock availability&#34;&gt;
+ &lt;i class=&#34;icon-ok&#34;&gt;&lt;/i&gt;
+
+         In stock
+
+ &lt;/p&gt;
+ &lt;form&gt;
+ &lt;button class=&#34;btn btn-primary btn-block&#34; data-loading-text=&#34;Adding...&#34; type=&#34;submit&#34;&gt;Add to basket&lt;/button&gt;
+ &lt;/form&gt;
+ &lt;/div&gt;
+ &lt;/article&gt;,
+ &lt;article class=&#34;product_pod&#34;&gt;
+ &lt;div class=&#34;image_container&#34;&gt;
+ &lt;a href=&#34;scott-pilgrims-precious-little-life-scott-pilgrim-1_987/index.html&#34;&gt;&lt;img alt=&#34;Scott Pilgrim&#39;s Precious Little Life (Scott Pilgrim #1)&#34; class=&#34;thumbnail&#34; src=&#34;../media/cache/94/b1/94b1b8b244bce9677c2f29ccc890d4d2.jpg&#34;/&gt;&lt;/a&gt;
+ &lt;/div&gt;
+ &lt;p class=&#34;star-rating Five&#34;&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;/p&gt;
+ &lt;h3&gt;&lt;a href=&#34;scott-pilgrims-precious-little-life-scott-pilgrim-1_987/index.html&#34; title=&#34;Scott Pilgrim&#39;s Precious Little Life (Scott Pilgrim #1)&#34;&gt;Scott Pilgrim&#39;s Precious Little ...&lt;/a&gt;&lt;/h3&gt;
+ &lt;div class=&#34;product_price&#34;&gt;
+ &lt;p class=&#34;price_color&#34;&gt;Â£52.29&lt;/p&gt;
+ &lt;p class=&#34;instock availability&#34;&gt;
+ &lt;i class=&#34;icon-ok&#34;&gt;&lt;/i&gt;
+
+         In stock
+
+ &lt;/p&gt;
+ &lt;form&gt;
+ &lt;button class=&#34;btn btn-primary btn-block&#34; data-loading-text=&#34;Adding...&#34; type=&#34;submit&#34;&gt;Add to basket&lt;/button&gt;
+ &lt;/form&gt;
+ &lt;/div&gt;
+ &lt;/article&gt;,
+ &lt;article class=&#34;product_pod&#34;&gt;
+ &lt;div class=&#34;image_container&#34;&gt;
+ &lt;a href=&#34;rip-it-up-and-start-again_986/index.html&#34;&gt;&lt;img alt=&#34;Rip it Up and Start Again&#34; class=&#34;thumbnail&#34; src=&#34;../media/cache/81/c4/81c4a973364e17d01f217e1188253d5e.jpg&#34;/&gt;&lt;/a&gt;
+ &lt;/div&gt;
+ &lt;p class=&#34;star-rating Five&#34;&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;/p&gt;
+ &lt;h3&gt;&lt;a href=&#34;rip-it-up-and-start-again_986/index.html&#34; title=&#34;Rip it Up and Start Again&#34;&gt;Rip it Up and ...&lt;/a&gt;&lt;/h3&gt;
+ &lt;div class=&#34;product_price&#34;&gt;
+ &lt;p class=&#34;price_color&#34;&gt;Â£35.02&lt;/p&gt;
+ &lt;p class=&#34;instock availability&#34;&gt;
+ &lt;i class=&#34;icon-ok&#34;&gt;&lt;/i&gt;
+
+         In stock
+
+ &lt;/p&gt;
+ &lt;form&gt;
+ &lt;button class=&#34;btn btn-primary btn-block&#34; data-loading-text=&#34;Adding...&#34; type=&#34;submit&#34;&gt;Add to basket&lt;/button&gt;
+ &lt;/form&gt;
+ &lt;/div&gt;
+ &lt;/article&gt;,
+ &lt;article class=&#34;product_pod&#34;&gt;
+ &lt;div class=&#34;image_container&#34;&gt;
+ &lt;a href=&#34;our-band-could-be-your-life-scenes-from-the-american-indie-underground-1981-1991_985/index.html&#34;&gt;&lt;img alt=&#34;Our Band Could Be Your Life: Scenes from the American Indie Underground, 1981-1991&#34; class=&#34;thumbnail&#34; src=&#34;../media/cache/54/60/54607fe8945897cdcced0044103b10b6.jpg&#34;/&gt;&lt;/a&gt;
+ &lt;/div&gt;
+ &lt;p class=&#34;star-rating Three&#34;&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;/p&gt;
+ &lt;h3&gt;&lt;a href=&#34;our-band-could-be-your-life-scenes-from-the-american-indie-underground-1981-1991_985/index.html&#34; title=&#34;Our Band Could Be Your Life: Scenes from the American Indie Underground, 1981-1991&#34;&gt;Our Band Could Be ...&lt;/a&gt;&lt;/h3&gt;
+ &lt;div class=&#34;product_price&#34;&gt;
+ &lt;p class=&#34;price_color&#34;&gt;Â£57.25&lt;/p&gt;
+ &lt;p class=&#34;instock availability&#34;&gt;
+ &lt;i class=&#34;icon-ok&#34;&gt;&lt;/i&gt;
+
+         In stock
+
+ &lt;/p&gt;
+ &lt;form&gt;
+ &lt;button class=&#34;btn btn-primary btn-block&#34; data-loading-text=&#34;Adding...&#34; type=&#34;submit&#34;&gt;Add to basket&lt;/button&gt;
+ &lt;/form&gt;
+ &lt;/div&gt;
+ &lt;/article&gt;,
+ &lt;article class=&#34;product_pod&#34;&gt;
+ &lt;div class=&#34;image_container&#34;&gt;
+ &lt;a href=&#34;olio_984/index.html&#34;&gt;&lt;img alt=&#34;Olio&#34; class=&#34;thumbnail&#34; src=&#34;../media/cache/55/33/553310a7162dfbc2c6d19a84da0df9e1.jpg&#34;/&gt;&lt;/a&gt;
+ &lt;/div&gt;
+ &lt;p class=&#34;star-rating One&#34;&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;/p&gt;
+ &lt;h3&gt;&lt;a href=&#34;olio_984/index.html&#34; title=&#34;Olio&#34;&gt;Olio&lt;/a&gt;&lt;/h3&gt;
+ &lt;div class=&#34;product_price&#34;&gt;
+ &lt;p class=&#34;price_color&#34;&gt;Â£23.88&lt;/p&gt;
+ &lt;p class=&#34;instock availability&#34;&gt;
+ &lt;i class=&#34;icon-ok&#34;&gt;&lt;/i&gt;
+
+         In stock
+
+ &lt;/p&gt;
+ &lt;form&gt;
+ &lt;button class=&#34;btn btn-primary btn-block&#34; data-loading-text=&#34;Adding...&#34; type=&#34;submit&#34;&gt;Add to basket&lt;/button&gt;
+ &lt;/form&gt;
+ &lt;/div&gt;
+ &lt;/article&gt;,
+ &lt;article class=&#34;product_pod&#34;&gt;
+ &lt;div class=&#34;image_container&#34;&gt;
+ &lt;a href=&#34;mesaerion-the-best-science-fiction-stories-1800-1849_983/index.html&#34;&gt;&lt;img alt=&#34;Mesaerion: The Best Science Fiction Stories 1800-1849&#34; class=&#34;thumbnail&#34; src=&#34;../media/cache/09/a3/09a3aef48557576e1a85ba7efea8ecb7.jpg&#34;/&gt;&lt;/a&gt;
+ &lt;/div&gt;
+ &lt;p class=&#34;star-rating One&#34;&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;/p&gt;
+ &lt;h3&gt;&lt;a href=&#34;mesaerion-the-best-science-fiction-stories-1800-1849_983/index.html&#34; title=&#34;Mesaerion: The Best Science Fiction Stories 1800-1849&#34;&gt;Mesaerion: The Best Science ...&lt;/a&gt;&lt;/h3&gt;
+ &lt;div class=&#34;product_price&#34;&gt;
+ &lt;p class=&#34;price_color&#34;&gt;Â£37.59&lt;/p&gt;
+ &lt;p class=&#34;instock availability&#34;&gt;
+ &lt;i class=&#34;icon-ok&#34;&gt;&lt;/i&gt;
+
+         In stock
+
+ &lt;/p&gt;
+ &lt;form&gt;
+ &lt;button class=&#34;btn btn-primary btn-block&#34; data-loading-text=&#34;Adding...&#34; type=&#34;submit&#34;&gt;Add to basket&lt;/button&gt;
+ &lt;/form&gt;
+ &lt;/div&gt;
+ &lt;/article&gt;,
+ &lt;article class=&#34;product_pod&#34;&gt;
+ &lt;div class=&#34;image_container&#34;&gt;
+ &lt;a href=&#34;libertarianism-for-beginners_982/index.html&#34;&gt;&lt;img alt=&#34;Libertarianism for Beginners&#34; class=&#34;thumbnail&#34; src=&#34;../media/cache/0b/bc/0bbcd0a6f4bcd81ccb1049a52736406e.jpg&#34;/&gt;&lt;/a&gt;
+ &lt;/div&gt;
+ &lt;p class=&#34;star-rating Two&#34;&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;/p&gt;
+ &lt;h3&gt;&lt;a href=&#34;libertarianism-for-beginners_982/index.html&#34; title=&#34;Libertarianism for Beginners&#34;&gt;Libertarianism for Beginners&lt;/a&gt;&lt;/h3&gt;
+ &lt;div class=&#34;product_price&#34;&gt;
+ &lt;p class=&#34;price_color&#34;&gt;Â£51.33&lt;/p&gt;
+ &lt;p class=&#34;instock availability&#34;&gt;
+ &lt;i class=&#34;icon-ok&#34;&gt;&lt;/i&gt;
+
+         In stock
+
+ &lt;/p&gt;
+ &lt;form&gt;
+ &lt;button class=&#34;btn btn-primary btn-block&#34; data-loading-text=&#34;Adding...&#34; type=&#34;submit&#34;&gt;Add to basket&lt;/button&gt;
+ &lt;/form&gt;
+ &lt;/div&gt;
+ &lt;/article&gt;,
+ &lt;article class=&#34;product_pod&#34;&gt;
+ &lt;div class=&#34;image_container&#34;&gt;
+ &lt;a href=&#34;its-only-the-himalayas_981/index.html&#34;&gt;&lt;img alt=&#34;It&#39;s Only the Himalayas&#34; class=&#34;thumbnail&#34; src=&#34;../media/cache/27/a5/27a53d0bb95bdd88288eaf66c9230d7e.jpg&#34;/&gt;&lt;/a&gt;
+ &lt;/div&gt;
+ &lt;p class=&#34;star-rating Two&#34;&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+ &lt;/p&gt;
+ &lt;h3&gt;&lt;a href=&#34;its-only-the-himalayas_981/index.html&#34; title=&#34;It&#39;s Only the Himalayas&#34;&gt;It&#39;s Only the Himalayas&lt;/a&gt;&lt;/h3&gt;
+ &lt;div class=&#34;product_price&#34;&gt;
+ &lt;p class=&#34;price_color&#34;&gt;Â£45.17&lt;/p&gt;
+ &lt;p class=&#34;instock availability&#34;&gt;
+ &lt;i class=&#34;icon-ok&#34;&gt;&lt;/i&gt;
+
+         In stock
+
+ &lt;/p&gt;
+ &lt;form&gt;
+ &lt;button class=&#34;btn btn-primary btn-block&#34; data-loading-text=&#34;Adding...&#34; type=&#34;submit&#34;&gt;Add to basket&lt;/button&gt;
+ &lt;/form&gt;
+ &lt;/div&gt;
+ &lt;/article&gt;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="nb">len</span><span class="p">(</span><span class="n">soup</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s1">&#39;.product_pod&#39;</span><span class="p">))</span>
+</code></pre></div>
+
+</div>
+
+<div class="output_wrapper" markdown="1">
+<div class="output" markdown="1">
+
+
+<div class="output_area" markdown="1">
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>20</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="n">soup</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s1">&#39;.product_pod&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+</code></pre></div>
+
+</div>
+
+<div class="output_wrapper" markdown="1">
+<div class="output" markdown="1">
+
+
+<div class="output_area" markdown="1">
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;article class=&#34;product_pod&#34;&gt;
+&lt;div class=&#34;image_container&#34;&gt;
+&lt;a href=&#34;a-light-in-the-attic_1000/index.html&#34;&gt;&lt;img alt=&#34;A Light in the Attic&#34; class=&#34;thumbnail&#34; src=&#34;../media/cache/2c/da/2cdad67c44b002e7ead0cc35693c0e8b.jpg&#34;/&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;p class=&#34;star-rating Three&#34;&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;i class=&#34;icon-star&#34;&gt;&lt;/i&gt;
+&lt;/p&gt;
+&lt;h3&gt;&lt;a href=&#34;a-light-in-the-attic_1000/index.html&#34; title=&#34;A Light in the Attic&#34;&gt;A Light in the ...&lt;/a&gt;&lt;/h3&gt;
+&lt;div class=&#34;product_price&#34;&gt;
+&lt;p class=&#34;price_color&#34;&gt;Â£51.77&lt;/p&gt;
+&lt;p class=&#34;instock availability&#34;&gt;
+&lt;i class=&#34;icon-ok&#34;&gt;&lt;/i&gt;
+
+        In stock
+
+&lt;/p&gt;
+&lt;form&gt;
+&lt;button class=&#34;btn btn-primary btn-block&#34; data-loading-text=&#34;Adding...&#34; type=&#34;submit&#34;&gt;Add to basket&lt;/button&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;/article&gt;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="n">output</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s1">&#39;.product_pod&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+</code></pre></div>
+
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="s1">&#39;star-rating Two&#39;</span> <span class="ow">in</span> <span class="nb">str</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
+</code></pre></div>
+
+</div>
+
+<div class="output_wrapper" markdown="1">
+<div class="output" markdown="1">
+
+
+<div class="output_area" markdown="1">
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>False</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="nb">type</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
+</code></pre></div>
+
+</div>
+
+<div class="output_wrapper" markdown="1">
+<div class="output" markdown="1">
+
+
+<div class="output_area" markdown="1">
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>bs4.element.Tag</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="n">output</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s1">&#39;.star-rating.Two&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+</div>
+
+<div class="output_wrapper" markdown="1">
+<div class="output" markdown="1">
+
+
+<div class="output_area" markdown="1">
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="n">output</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s1">&#39;.star-rating.Two&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="p">[]</span>
+</code></pre></div>
+
+</div>
+
+<div class="output_wrapper" markdown="1">
+<div class="output" markdown="1">
+
+
+<div class="output_area" markdown="1">
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>True</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="n">output</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+</code></pre></div>
+
+</div>
+
+<div class="output_wrapper" markdown="1">
+<div class="output" markdown="1">
+
+
+<div class="output_area" markdown="1">
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;a href=&#34;a-light-in-the-attic_1000/index.html&#34; title=&#34;A Light in the Attic&#34;&gt;A Light in the ...&lt;/a&gt;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="n">output</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)[</span><span class="mi">1</span><span class="p">][</span><span class="s1">&#39;title&#39;</span><span class="p">]</span>
+</code></pre></div>
+
+</div>
+
+<div class="output_wrapper" markdown="1">
+<div class="output" markdown="1">
+
+
+<div class="output_area" markdown="1">
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;A Light in the Attic&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;My name is </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s1">&#39;Bhavya&#39;</span><span class="p">))</span>
+</code></pre></div>
+
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="n">titles</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="n">base_url</span> <span class="o">=</span> <span class="s1">&#39;http://books.toscrape.com/catalogue/page-</span><span class="si">{}</span><span class="s1">.html&#39;</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">51</span><span class="p">):</span>
+    <span class="n">scrape_url</span> <span class="o">=</span> <span class="n">base_url</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+
+    <span class="n">result</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">scrape_url</span><span class="p">)</span>
+    <span class="n">soup</span> <span class="o">=</span> <span class="n">bs4</span><span class="o">.</span><span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">text</span><span class="p">,</span> <span class="s1">&#39;lxml&#39;</span><span class="p">)</span>
+    <span class="n">books</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s1">&#39;.product_pod&#39;</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">book</span> <span class="ow">in</span> <span class="n">books</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">book</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s1">&#39;.star-rating.Two&#39;</span><span class="p">))</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">title</span> <span class="o">=</span> <span class="n">book</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)[</span><span class="mi">1</span><span class="p">][</span><span class="s1">&#39;title&#39;</span><span class="p">]</span>
+            <span class="n">titles</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">title</span><span class="p">)</span>
+</code></pre></div>
+
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="n">titles</span>
+</code></pre></div>
+
+</div>
+
+<div class="output_wrapper" markdown="1">
+<div class="output" markdown="1">
+
+
+<div class="output_area" markdown="1">
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;Starving Hearts (Triangular Trade Trilogy, #1)&#39;,
+ &#39;Libertarianism for Beginners&#39;,
+ &#34;It&#39;s Only the Himalayas&#34;,
+ &#39;How Music Works&#39;,
+ &#39;Maude (1883-1993):She Grew Up with the country&#39;,
+ &#34;You can&#39;t bury them all: Poems&#34;,
+ &#39;Reasons to Stay Alive&#39;,
+ &#39;Without Borders (Wanderlove #1)&#39;,
+ &#39;Soul Reader&#39;,
+ &#39;Security&#39;,
+ &#39;Saga, Volume 5 (Saga (Collected Editions) #5)&#39;,
+ &#39;Reskilling America: Learning to Labor in the Twenty-First Century&#39;,
+ &#39;Political Suicide: Missteps, Peccadilloes, Bad Calls, Backroom Hijinx, Sordid Pasts, Rotten Breaks, and Just Plain Dumb Mistakes in the Annals of American Politics&#39;,
+ &#39;Obsidian (Lux #1)&#39;,
+ &#39;My Paris Kitchen: Recipes and Stories&#39;,
+ &#39;Masks and Shadows&#39;,
+ &#39;Lumberjanes, Vol. 2: Friendship to the Max (Lumberjanes #5-8)&#39;,
+ &#39;Lumberjanes Vol. 3: A Terrible Plan (Lumberjanes #9-12)&#39;,
+ &#39;Judo: Seven Steps to Black Belt (an Introductory Guide for Beginners)&#39;,
+ &#39;I Hate Fairyland, Vol. 1: Madly Ever After (I Hate Fairyland (Compilations) #1-5)&#39;,
+ &#39;Giant Days, Vol. 2 (Giant Days #5-8)&#39;,
+ &#39;Everydata: The Misinformation Hidden in the Little Data You Consume Every Day&#39;,
+ &#34;Don&#39;t Be a Jerk: And Other Practical Advice from Dogen, Japan&#39;s Greatest Zen Master&#34;,
+ &#39;Bossypants&#39;,
+ &#39;Bitch Planet, Vol. 1: Extraordinary Machine (Bitch Planet (Collected Editions))&#39;,
+ &#39;Avatar: The Last Airbender: Smoke and Shadow, Part 3 (Smoke and Shadow #3)&#39;,
+ &#39;Tuesday Nights in 1980&#39;,
+ &#39;The Psychopath Test: A Journey Through the Madness Industry&#39;,
+ &#39;The Power of Now: A Guide to Spiritual Enlightenment&#39;,
+ &#34;The Omnivore&#39;s Dilemma: A Natural History of Four Meals&#34;,
+ &#39;The Love and Lemons Cookbook: An Apple-to-Zucchini Celebration of Impromptu Cooking&#39;,
+ &#39;The Girl on the Train&#39;,
+ &#39;The Emerald Mystery&#39;,
+ &#39;The Argonauts&#39;,
+ &#39;Suddenly in Love (Lake Haven #1)&#39;,
+ &#39;Soft Apocalypse&#39;,
+ &#34;So You&#39;ve Been Publicly Shamed&#34;,
+ &#39;Shoe Dog: A Memoir by the Creator of NIKE&#39;,
+ &#39;Louisa: The Extraordinary Life of Mrs. Adams&#39;,
+ &#39;Large Print Heart of the Pride&#39;,
+ &#39;Grumbles&#39;,
+ &#39;Chasing Heaven: What Dying Taught Me About Living&#39;,
+ &#39;Becoming Wise: An Inquiry into the Mystery and Art of Living&#39;,
+ &#39;Beauty Restored (Riley Family Legacy Novellas #3)&#39;,
+ &#39;Batman: The Long Halloween (Batman)&#39;,
+ &#34;Ayumi&#39;s Violin&#34;,
+ &#39;Wild Swans&#39;,
+ &#34;What&#39;s It Like in Space?: Stories from Astronauts Who&#39;ve Been There&#34;,
+ &#39;Until Friday Night (The Field Party #1)&#39;,
+ &#39;Unbroken: A World War II Story of Survival, Resilience, and Redemption&#39;,
+ &#39;Twenty Yawns&#39;,
+ &#39;Through the Woods&#39;,
+ &#39;This Is Where It Ends&#39;,
+ &#39;The Year of Magical Thinking&#39;,
+ &#39;The Last Mile (Amos Decker #2)&#39;,
+ &#39;The Immortal Life of Henrietta Lacks&#39;,
+ &#39;The Hidden Oracle (The Trials of Apollo #1)&#39;,
+ &#39;The Guilty (Will Robie #4)&#39;,
+ &#39;Red Hood/Arsenal, Vol. 1: Open for Business (Red Hood/Arsenal #1)&#39;,
+ &#39;Once Was a Time&#39;,
+ &#39;No Dream Is Too High: Life Lessons From a Man Who Walked on the Moon&#39;,
+ &#39;Naruto (3-in-1 Edition), Vol. 14: Includes Vols. 40, 41 &amp; 42 (Naruto: Omnibus #14)&#39;,
+ &#39;More Than Music (Chasing the Dream #1)&#39;,
+ &#39;Lowriders to the Center of the Earth (Lowriders in Space #2)&#39;,
+ &#39;Eat Fat, Get Thin&#39;,
+ &#39;Doctor Sleep (The Shining #2)&#39;,
+ &#39;Crazy Love: Overwhelmed by a Relentless God&#39;,
+ &#39;Carrie&#39;,
+ &#39;Batman: Europa&#39;,
+ &#39;Angels Walking (Angels Walking #1)&#39;,
+ &#39;Adulthood Is a Myth: A &#34;Sarah\&#39;s Scribbles&#34; Collection&#39;,
+ &#39;A Study in Scarlet (Sherlock Holmes #1)&#39;,
+ &#39;A Series of Catastrophes and Miracles: A True Story of Love, Science, and Cancer&#39;,
+ &#34;A People&#39;s History of the United States&#34;,
+ &#39;My Kitchen Year: 136 Recipes That Saved My Life&#39;,
+ &#39;The Lonely City: Adventures in the Art of Being Alone&#39;,
+ &#39;The Dinner Party&#39;,
+ &#39;Stars Above (The Lunar Chronicles #4.5)&#39;,
+ &#39;Love, Lies and Spies&#39;,
+ &#39;Troublemaker: Surviving Hollywood and Scientology&#39;,
+ &#39;The Widow&#39;,
+ &#39;Setting the World on Fire: The Brief, Astonishing Life of St. Catherine of Siena&#39;,
+ &#39;Mothering Sunday&#39;,
+ &#39;Lilac Girls&#39;,
+ &#39;10% Happier: How I Tamed the Voice in My Head, Reduced Stress Without Losing My Edge, and Found Self-Help That Actually Works&#39;,
+ &#39;Underlying Notes&#39;,
+ &#39;The Flowers Lied&#39;,
+ &#39;Modern Day Fables&#39;,
+ &#34;Chernobyl 01:23:40: The Incredible True Story of the World&#39;s Worst Nuclear Disaster&#34;,
+ &#39;23 Degrees South: A Tropical Tale of Changing Whether...&#39;,
+ &#39;When Breath Becomes Air&#39;,
+ &#39;Vagabonding: An Uncommon Guide to the Art of Long-Term World Travel&#39;,
+ &#39;The Martian (The Martian #1)&#39;,
+ &#34;Miller&#39;s Valley&#34;,
+ &#34;Love That Boy: What Two Presidents, Eight Road Trips, and My Son Taught Me About a Parent&#39;s Expectations&#34;,
+ &#39;Left Behind (Left Behind #1)&#39;,
+ &#39;Howl and Other Poems&#39;,
+ &#34;Heaven is for Real: A Little Boy&#39;s Astounding Story of His Trip to Heaven and Back&#34;,
+ &#34;Brazen: The Courage to Find the You That&#39;s Been Hiding&#34;,
+ &#39;32 Yolks&#39;,
+ &#39;Wildlife of New York: A Five-Borough Coloring Book&#39;,
+ &#39;Unreasonable Hope: Finding Faith in the God Who Brings Purpose to Your Pain&#39;,
+ &#39;The Art Book&#39;,
+ &#39;Steal Like an Artist: 10 Things Nobody Told You About Being Creative&#39;,
+ &#39;Raymie Nightingale&#39;,
+ &#39;Like Never Before (Walker Family #2)&#39;,
+ &#39;How to Be a Domestic Goddess: Baking and the Art of Comfort Cooking&#39;,
+ &#39;Finding God in the Ruins: How God Redeems Pain&#39;,
+ &#39;Chronicles, Vol. 1&#39;,
+ &#39;A Summer In Europe&#39;,
+ &#39;The Rise and Fall of the Third Reich: A History of Nazi Germany&#39;,
+ &#39;The Makings of a Fatherless Child&#39;,
+ &#39;The Fellowship of the Ring (The Lord of the Rings #1)&#39;,
+ &#34;Tell the Wolves I&#39;m Home&#34;,
+ &#39;In the Woods (Dublin Murder Squad #1)&#39;,
+ &#39;Give It Back&#39;,
+ &#39;Why Save the Bankers?: And Other Essays on Our Economic and Political Crisis&#39;,
+ &#39;The Raven King (The Raven Cycle #4)&#39;,
+ &#39;The Expatriates&#39;,
+ &#39;The 5th Wave (The 5th Wave #1)&#39;,
+ &#39;Peak: Secrets from the New Science of Expertise&#39;,
+ &#39;Logan Kade (Fallen Crest High #5.5)&#39;,
+ &#34;I Know Why the Caged Bird Sings (Maya Angelou&#39;s Autobiography #1)&#34;,
+ &#39;Drama&#39;,
+ &#34;America&#39;s War for the Greater Middle East: A Military History&#34;,
+ &#39;A Game of Thrones (A Song of Ice and Fire #1)&#39;,
+ &#34;The Pilgrim&#39;s Progress&#34;,
+ &#39;The Hound of the Baskervilles (Sherlock Holmes #5)&#39;,
+ &#34;The Geography of Bliss: One Grump&#39;s Search for the Happiest Places in the World&#34;,
+ &#39;The Demonists (Demonist #1)&#39;,
+ &#39;The Demon Prince of Momochi House, Vol. 4 (The Demon Prince of Momochi House #4)&#39;,
+ &#39;Misery&#39;,
+ &#39;Far From True (Promise Falls Trilogy #2)&#39;,
+ &#39;Confessions of a Shopaholic (Shopaholic #1)&#39;,
+ &#39;Vegan Vegetarian Omnivore: Dinner for Everyone at the Table&#39;,
+ &#39;Two Boys Kissing&#39;,
+ &#39;Twilight (Twilight #1)&#39;,
+ &#39;Twenties Girl&#39;,
+ &#39;The Tipping Point: How Little Things Can Make a Big Difference&#39;,
+ &#39;The Stand&#39;,
+ &#39;The Picture of Dorian Gray&#39;,
+ &#39;The Name of God is Mercy&#39;,
+ &#34;The Lover&#39;s Dictionary&#34;,
+ &#39;The Last Painting of Sara de Vos&#39;,
+ &#39;The Guns of August&#39;,
+ &#39;The Girl Who Played with Fire (Millennium Trilogy #2)&#39;,
+ &#39;The Da Vinci Code (Robert Langdon #2)&#39;,
+ &#39;The Cat in the Hat (Beginner Books B-1)&#39;,
+ &#39;The Book Thief&#39;,
+ &#39;The Autobiography of Malcolm X&#39;,
+ &#34;Surely You&#39;re Joking, Mr. Feynman!: Adventures of a Curious Character&#34;,
+ &#39;Soldier (Talon #3)&#39;,
+ &#39;Shopaholic &amp; Baby (Shopaholic #5)&#39;,
+ &#39;Seven Days in the Art World&#39;,
+ &#39;Rework&#39;,
+ &#39;Packing for Mars: The Curious Science of Life in the Void&#39;,
+ &#39;Orange Is the New Black&#39;,
+ &#39;One for the Money (Stephanie Plum #1)&#39;,
+ &#39;Midnight Riot (Peter Grant/ Rivers of London - books #1)&#39;,
+ &#39;Me Talk Pretty One Day&#39;,
+ &#39;Manuscript Found in Accra&#39;,
+ &#39;Lust &amp; Wonder&#39;,
+ &#34;Life, the Universe and Everything (Hitchhiker&#39;s Guide to the Galaxy #3)&#34;,
+ &#39;Life After Life&#39;,
+ &#39;I Am Malala: The Girl Who Stood Up for Education and Was Shot by the Taliban&#39;,
+ &#39;House of Lost Worlds: Dinosaurs, Dynasties, and the Story of Life on Earth&#39;,
+ &#39;Horrible Bear!&#39;,
+ &#39;Holidays on Ice&#39;,
+ &#39;Girl in the Blue Coat&#39;,
+ &#39;Fruits Basket, Vol. 3 (Fruits Basket #3)&#39;,
+ &#39;Cosmos&#39;,
+ &#39;Civilization and Its Discontents&#39;,
+ &#34;Catastrophic Happiness: Finding Joy in Childhood&#39;s Messy Years&#34;,
+ &#39;Career of Evil (Cormoran Strike #3)&#39;,
+ &#39;Born to Run: A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen&#39;,
+ &#34;Best of My Love (Fool&#39;s Gold #20)&#34;,
+ &#39;Beowulf&#39;,
+ &#39;Awkward&#39;,
+ &#39;And Then There Were None&#39;,
+ &#39;A Storm of Swords (A Song of Ice and Fire #3)&#39;,
+ &#39;The Suffragettes (Little Black Classics, #96)&#39;,
+ &#39;Vampire Girl (Vampire Girl #1)&#39;,
+ &#39;Three Wishes (River of Time: California #1)&#39;,
+ &#39;The Wicked + The Divine, Vol. 1: The Faust Act (The Wicked + The Divine)&#39;,
+ &#39;The Little Prince&#39;,
+ &#39;The Last Girl (The Dominion Trilogy #1)&#39;,
+ &#39;Taking Shots (Assassins #1)&#39;,
+ &#39;Settling the Score (The Summer Games #1)&#39;,
+ &#39;Rhythm, Chord &amp; Malykhin&#39;,
+ &#39;One Second (Seven #7)&#39;,
+ &#34;Old Records Never Die: One Man&#39;s Quest for His Vinyl and His Past&#34;,
+ &#39;Of Mice and Men&#39;,
+ &#39;My Perfect Mistake (Over the Top #1)&#39;,
+ &#39;Meditations&#39;,
+ &#39;Frankenstein&#39;,
+ &#39;Emma&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="nb">len</span><span class="p">(</span><span class="n">titles</span><span class="p">)</span>
+</code></pre></div>
+
+</div>
+
+<div class="output_wrapper" markdown="1">
+<div class="output" markdown="1">
+
+
+<div class="output_area" markdown="1">
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>196</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="n">base_url</span> <span class="o">=</span> <span class="s1">&#39;http://books.toscrape.com/catalogue/page-</span><span class="si">{}</span><span class="s1">.html&#39;</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">51</span><span class="p">):</span>
+    <span class="n">scrape_url</span> <span class="o">=</span> <span class="n">base_url</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+
+    <span class="n">result</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">scrape_url</span><span class="p">)</span>
+    <span class="n">soup</span> <span class="o">=</span> <span class="n">bs4</span><span class="o">.</span><span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">text</span><span class="p">,</span> <span class="s1">&#39;lxml&#39;</span><span class="p">)</span>
+    <span class="n">books</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s1">&#39;.product_pod&#39;</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">book</span> <span class="ow">in</span> <span class="n">books</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">book</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s1">&#39;.star-rating.Two&#39;</span><span class="p">))</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">title</span> <span class="o">=</span> <span class="n">book</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)[</span><span class="mi">1</span><span class="p">][</span><span class="s1">&#39;title&#39;</span><span class="p">]</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">title</span><span class="p">)</span>
+</code></pre></div>
+
+</div>
+
+<div class="output_wrapper" markdown="1">
+<div class="output" markdown="1">
+
+
+<div class="output_area" markdown="1">
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Starving Hearts (Triangular Trade Trilogy, #1)
+Libertarianism for Beginners
+It&#39;s Only the Himalayas
+How Music Works
+Maude (1883-1993):She Grew Up with the country
+You can&#39;t bury them all: Poems
+Reasons to Stay Alive
+Without Borders (Wanderlove #1)
+Soul Reader
+Security
+Saga, Volume 5 (Saga (Collected Editions) #5)
+Reskilling America: Learning to Labor in the Twenty-First Century
+Political Suicide: Missteps, Peccadilloes, Bad Calls, Backroom Hijinx, Sordid Pasts, Rotten Breaks, and Just Plain Dumb Mistakes in the Annals of American Politics
+Obsidian (Lux #1)
+My Paris Kitchen: Recipes and Stories
+Masks and Shadows
+Lumberjanes, Vol. 2: Friendship to the Max (Lumberjanes #5-8)
+Lumberjanes Vol. 3: A Terrible Plan (Lumberjanes #9-12)
+Judo: Seven Steps to Black Belt (an Introductory Guide for Beginners)
+I Hate Fairyland, Vol. 1: Madly Ever After (I Hate Fairyland (Compilations) #1-5)
+Giant Days, Vol. 2 (Giant Days #5-8)
+Everydata: The Misinformation Hidden in the Little Data You Consume Every Day
+Don&#39;t Be a Jerk: And Other Practical Advice from Dogen, Japan&#39;s Greatest Zen Master
+Bossypants
+Bitch Planet, Vol. 1: Extraordinary Machine (Bitch Planet (Collected Editions))
+Avatar: The Last Airbender: Smoke and Shadow, Part 3 (Smoke and Shadow #3)
+Tuesday Nights in 1980
+The Psychopath Test: A Journey Through the Madness Industry
+The Power of Now: A Guide to Spiritual Enlightenment
+The Omnivore&#39;s Dilemma: A Natural History of Four Meals
+The Love and Lemons Cookbook: An Apple-to-Zucchini Celebration of Impromptu Cooking
+The Girl on the Train
+The Emerald Mystery
+The Argonauts
+Suddenly in Love (Lake Haven #1)
+Soft Apocalypse
+So You&#39;ve Been Publicly Shamed
+Shoe Dog: A Memoir by the Creator of NIKE
+Louisa: The Extraordinary Life of Mrs. Adams
+Large Print Heart of the Pride
+Grumbles
+Chasing Heaven: What Dying Taught Me About Living
+Becoming Wise: An Inquiry into the Mystery and Art of Living
+Beauty Restored (Riley Family Legacy Novellas #3)
+Batman: The Long Halloween (Batman)
+Ayumi&#39;s Violin
+Wild Swans
+What&#39;s It Like in Space?: Stories from Astronauts Who&#39;ve Been There
+Until Friday Night (The Field Party #1)
+Unbroken: A World War II Story of Survival, Resilience, and Redemption
+Twenty Yawns
+Through the Woods
+This Is Where It Ends
+The Year of Magical Thinking
+The Last Mile (Amos Decker #2)
+The Immortal Life of Henrietta Lacks
+The Hidden Oracle (The Trials of Apollo #1)
+The Guilty (Will Robie #4)
+Red Hood/Arsenal, Vol. 1: Open for Business (Red Hood/Arsenal #1)
+Once Was a Time
+No Dream Is Too High: Life Lessons From a Man Who Walked on the Moon
+Naruto (3-in-1 Edition), Vol. 14: Includes Vols. 40, 41 &amp; 42 (Naruto: Omnibus #14)
+More Than Music (Chasing the Dream #1)
+Lowriders to the Center of the Earth (Lowriders in Space #2)
+Eat Fat, Get Thin
+Doctor Sleep (The Shining #2)
+Crazy Love: Overwhelmed by a Relentless God
+Carrie
+Batman: Europa
+Angels Walking (Angels Walking #1)
+Adulthood Is a Myth: A &#34;Sarah&#39;s Scribbles&#34; Collection
+A Study in Scarlet (Sherlock Holmes #1)
+A Series of Catastrophes and Miracles: A True Story of Love, Science, and Cancer
+A People&#39;s History of the United States
+My Kitchen Year: 136 Recipes That Saved My Life
+The Lonely City: Adventures in the Art of Being Alone
+The Dinner Party
+Stars Above (The Lunar Chronicles #4.5)
+Love, Lies and Spies
+Troublemaker: Surviving Hollywood and Scientology
+The Widow
+Setting the World on Fire: The Brief, Astonishing Life of St. Catherine of Siena
+Mothering Sunday
+Lilac Girls
+10% Happier: How I Tamed the Voice in My Head, Reduced Stress Without Losing My Edge, and Found Self-Help That Actually Works
+Underlying Notes
+The Flowers Lied
+Modern Day Fables
+Chernobyl 01:23:40: The Incredible True Story of the World&#39;s Worst Nuclear Disaster
+23 Degrees South: A Tropical Tale of Changing Whether...
+When Breath Becomes Air
+Vagabonding: An Uncommon Guide to the Art of Long-Term World Travel
+The Martian (The Martian #1)
+Miller&#39;s Valley
+Love That Boy: What Two Presidents, Eight Road Trips, and My Son Taught Me About a Parent&#39;s Expectations
+Left Behind (Left Behind #1)
+Howl and Other Poems
+Heaven is for Real: A Little Boy&#39;s Astounding Story of His Trip to Heaven and Back
+Brazen: The Courage to Find the You That&#39;s Been Hiding
+32 Yolks
+Wildlife of New York: A Five-Borough Coloring Book
+Unreasonable Hope: Finding Faith in the God Who Brings Purpose to Your Pain
+The Art Book
+Steal Like an Artist: 10 Things Nobody Told You About Being Creative
+Raymie Nightingale
+Like Never Before (Walker Family #2)
+How to Be a Domestic Goddess: Baking and the Art of Comfort Cooking
+Finding God in the Ruins: How God Redeems Pain
+Chronicles, Vol. 1
+A Summer In Europe
+The Rise and Fall of the Third Reich: A History of Nazi Germany
+The Makings of a Fatherless Child
+The Fellowship of the Ring (The Lord of the Rings #1)
+Tell the Wolves I&#39;m Home
+In the Woods (Dublin Murder Squad #1)
+Give It Back
+Why Save the Bankers?: And Other Essays on Our Economic and Political Crisis
+The Raven King (The Raven Cycle #4)
+The Expatriates
+The 5th Wave (The 5th Wave #1)
+Peak: Secrets from the New Science of Expertise
+Logan Kade (Fallen Crest High #5.5)
+I Know Why the Caged Bird Sings (Maya Angelou&#39;s Autobiography #1)
+Drama
+America&#39;s War for the Greater Middle East: A Military History
+A Game of Thrones (A Song of Ice and Fire #1)
+The Pilgrim&#39;s Progress
+The Hound of the Baskervilles (Sherlock Holmes #5)
+The Geography of Bliss: One Grump&#39;s Search for the Happiest Places in the World
+The Demonists (Demonist #1)
+The Demon Prince of Momochi House, Vol. 4 (The Demon Prince of Momochi House #4)
+Misery
+Far From True (Promise Falls Trilogy #2)
+Confessions of a Shopaholic (Shopaholic #1)
+Vegan Vegetarian Omnivore: Dinner for Everyone at the Table
+Two Boys Kissing
+Twilight (Twilight #1)
+Twenties Girl
+The Tipping Point: How Little Things Can Make a Big Difference
+The Stand
+The Picture of Dorian Gray
+The Name of God is Mercy
+The Lover&#39;s Dictionary
+The Last Painting of Sara de Vos
+The Guns of August
+The Girl Who Played with Fire (Millennium Trilogy #2)
+The Da Vinci Code (Robert Langdon #2)
+The Cat in the Hat (Beginner Books B-1)
+The Book Thief
+The Autobiography of Malcolm X
+Surely You&#39;re Joking, Mr. Feynman!: Adventures of a Curious Character
+Soldier (Talon #3)
+Shopaholic &amp; Baby (Shopaholic #5)
+Seven Days in the Art World
+Rework
+Packing for Mars: The Curious Science of Life in the Void
+Orange Is the New Black
+One for the Money (Stephanie Plum #1)
+Midnight Riot (Peter Grant/ Rivers of London - books #1)
+Me Talk Pretty One Day
+Manuscript Found in Accra
+Lust &amp; Wonder
+Life, the Universe and Everything (Hitchhiker&#39;s Guide to the Galaxy #3)
+Life After Life
+I Am Malala: The Girl Who Stood Up for Education and Was Shot by the Taliban
+House of Lost Worlds: Dinosaurs, Dynasties, and the Story of Life on Earth
+Horrible Bear!
+Holidays on Ice
+Girl in the Blue Coat
+Fruits Basket, Vol. 3 (Fruits Basket #3)
+Cosmos
+Civilization and Its Discontents
+Catastrophic Happiness: Finding Joy in Childhood&#39;s Messy Years
+Career of Evil (Cormoran Strike #3)
+Born to Run: A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen
+Best of My Love (Fool&#39;s Gold #20)
+Beowulf
+Awkward
+And Then There Were None
+A Storm of Swords (A Song of Ice and Fire #3)
+The Suffragettes (Little Black Classics, #96)
+Vampire Girl (Vampire Girl #1)
+Three Wishes (River of Time: California #1)
+The Wicked + The Divine, Vol. 1: The Faust Act (The Wicked + The Divine)
+The Little Prince
+The Last Girl (The Dominion Trilogy #1)
+Taking Shots (Assassins #1)
+Settling the Score (The Summer Games #1)
+Rhythm, Chord &amp; Malykhin
+One Second (Seven #7)
+Old Records Never Die: One Man&#39;s Quest for His Vinyl and His Past
+Of Mice and Men
+My Perfect Mistake (Over the Top #1)
+Meditations
+Frankenstein
+Emma
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+</div>
+</div>
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+</div>
+
+</div>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.d710d30a.min.js"></script>
+      <script src="../../assets/javascripts/bundle.5532dfb7.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: ["tabs"],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.7a2ea5ba.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+        <script src="../../javascripts/extra.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+    
+  </body>
+</html>
