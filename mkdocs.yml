@@ -96,5 +96,9 @@ nav:
     - Web Scraping - Quotes: Notebooks/18.scrape-quotes.ipynb
     - Images: Notebooks/19.images.ipynb
     - Images - Exercise: Notebooks/20.image-exercise.ipynb
+    - CSV Files: Notebooks/21.csv-files.ipynb
+    - PDF Files: Notebooks/22.pdf-files.ipynb
+    - PDF and CSV Exercise: Notebooks/23.pdf-and-csv-puzzle-exercise.ipynb
+    - Emails: Notebooks/24.emails.ipynb
   - Resources:
     - Tools Used: external-resources/index.md
