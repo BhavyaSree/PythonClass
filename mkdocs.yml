@@ -102,5 +102,6 @@ nav:
     - PDF Files: Notebooks/22.pdf-files.ipynb
     - PDF and CSV Exercise: Notebooks/23.pdf-and-csv-puzzle-exercise.ipynb
     - Emails: Notebooks/24.emails.ipynb
+    - NumPy-Arrays: Notebooks/25.numpy.ipynb
   - Resources:
     - Tools Used: external-resources/index.md
