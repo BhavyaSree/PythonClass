@@ -65,6 +65,7 @@ nav:
   - Generators: 24.generators.md
   - Web Scraping: 26.web-scraping.md
   - Emails: 27.emails.md
+  - NumPy: 28.NumPy.md
   - Assesments:
     - Statements: 6.statements-assesment.md
     - Functions: 8.functions-assesment.md
