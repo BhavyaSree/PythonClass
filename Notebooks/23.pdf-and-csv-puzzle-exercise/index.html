@@ -1,0 +1,5969 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Python tutorial">
+      
+      
+      
+        <meta name="author" content="Bhavya Sree Bindela">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.3.1">
+    
+    
+      
+        <title>PDF and CSV Exercise - Python Class</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.fe0cca5b.min.css">
+      
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../css/ansi-colours.css">
+    
+      <link rel="stylesheet" href="../../css/jupyter-cells.css">
+    
+      <link rel="stylesheet" href="../../css/pandas-dataframe.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#pdfs-and-spreadsheets-puzzle-exercise" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../.." title="Python Class" class="md-header-nav__button md-logo" aria-label="Python Class">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Python Class
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              PDF and CSV Exercise
+            
+          </span>
+        </div>
+      
+    </div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/BhavyaSree/PythonClass" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    BhavyaSree/PythonClass
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+          
+
+  
+
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../.." class="md-tabs__link">
+        Home
+      </a>
+    
+  </li>
+
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../6.statements-assesment/" class="md-tabs__link">
+          Assesments
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../Day1/" class="md-tabs__link md-tabs__link--active">
+          Notebooks
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../external-resources/" class="md-tabs__link">
+          Resources
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Python Class" class="md-nav__button md-logo" aria-label="Python Class">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Python Class
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/BhavyaSree/PythonClass" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    BhavyaSree/PythonClass
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../1.introduction/" title="Getting started" class="md-nav__link">
+      Getting started
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../2.strings-lists/" title="Strings & Lists" class="md-nav__link">
+      Strings & Lists
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../3.dictonaries-sets-tuples/" title="Dictonaries, Sets & Tuples" class="md-nav__link">
+      Dictonaries, Sets & Tuples
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../4.operators/" title="Operators" class="md-nav__link">
+      Operators
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../5.conditional-statements/" title="Conditional Statements" class="md-nav__link">
+      Conditional Statements
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../7.methods-and-functions/" title="Methods and Functions" class="md-nav__link">
+      Methods and Functions
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../9.function-arguments/" title="Function Arguments" class="md-nav__link">
+      Function Arguments
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../10.map-filter-lambda/" title="Map Filter and Lambda Functions" class="md-nav__link">
+      Map Filter and Lambda Functions
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../11.variables-scope/" title="Scope of Variables" class="md-nav__link">
+      Scope of Variables
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../13.object-oriented/" title="Object Oriented - Classes & Objects" class="md-nav__link">
+      Object Oriented - Classes & Objects
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../14.inheritance/" title="Inheritance" class="md-nav__link">
+      Inheritance
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../15.polymorphism/" title="Polymorphism" class="md-nav__link">
+      Polymorphism
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../16.special-methods-in-classes/" title="Special Methods in Classes" class="md-nav__link">
+      Special Methods in Classes
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../17.modules/" title="Modules" class="md-nav__link">
+      Modules
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../18.dates/" title="Dates" class="md-nav__link">
+      Dates
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../19.math-module/" title="Math" class="md-nav__link">
+      Math
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../20.regular-expressions/" title="Regular Expressions" class="md-nav__link">
+      Regular Expressions
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../21.error-handling/" title="Error Handling" class="md-nav__link">
+      Error Handling
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../22.file-handling/" title="Files" class="md-nav__link">
+      Files
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../23.decorators/" title="Decorators" class="md-nav__link">
+      Decorators
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../24.generators/" title="Generators" class="md-nav__link">
+      Generators
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../26.web-scraping/" title="Web Scraping" class="md-nav__link">
+      Web Scraping
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../27.emails/" title="Emails" class="md-nav__link">
+      Emails
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-25" type="checkbox" id="nav-25">
+    
+    <label class="md-nav__link" for="nav-25">
+      Assesments
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Assesments" data-md-level="1">
+      <label class="md-nav__title" for="nav-25">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Assesments
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../6.statements-assesment/" title="Statements" class="md-nav__link">
+      Statements
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../8.functions-assesment/" title="Functions" class="md-nav__link">
+      Functions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../12.tic-tac-toe/" title="TicTacToe Project" class="md-nav__link">
+      TicTacToe Project
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../25.final-assesment/" title="Final" class="md-nav__link">
+      Final
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-26" type="checkbox" id="nav-26" checked>
+    
+    <label class="md-nav__link" for="nav-26">
+      Notebooks
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Notebooks" data-md-level="1">
+      <label class="md-nav__title" for="nav-26">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Notebooks
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Day1/" title="Day 1" class="md-nav__link">
+      Day 1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Day2/" title="Day 2" class="md-nav__link">
+      Day 2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Day3/" title="Day 3" class="md-nav__link">
+      Day 3
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../TicTacToe/" title="TicTacToe" class="md-nav__link">
+      TicTacToe
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Classes%2Cattributes%26methods/" title="Object Oriented" class="md-nav__link">
+      Object Oriented
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../FinalAssesment/" title="Assesment Solutions" class="md-nav__link">
+      Assesment Solutions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../01.binary-search/" title="Binary Search" class="md-nav__link">
+      Binary Search
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../02.sequential-search/" title="Sequential Search" class="md-nav__link">
+      Sequential Search
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../03.bubble-sort/" title="Bubble Sort" class="md-nav__link">
+      Bubble Sort
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../04.selection-sort/" title="Selection Sort" class="md-nav__link">
+      Selection Sort
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../05.fibonacci-sequence/" title="Fibonacci Sequence" class="md-nav__link">
+      Fibonacci Sequence
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../06.prime-factors/" title="Prime Factors" class="md-nav__link">
+      Prime Factors
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../07.binary%2Cdecimal/" title="Binary and Decimal Conversions" class="md-nav__link">
+      Binary and Decimal Conversions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../08.turtle/" title="Turtle" class="md-nav__link">
+      Turtle
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../09.password-generator/" title="Generating Password" class="md-nav__link">
+      Generating Password
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../10.count-vowels/" title="Count Vowels" class="md-nav__link">
+      Count Vowels
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../11.palindrome/" title="Palindrome" class="md-nav__link">
+      Palindrome
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../12.count-words-in-a-string/" title="Count words" class="md-nav__link">
+      Count words
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../13.half-pyramid/" title="Downward Half Pyramid" class="md-nav__link">
+      Downward Half Pyramid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../14.pyramid/" title="Pyramid" class="md-nav__link">
+      Pyramid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../15.frequency-of-words/" title="Frequency of words" class="md-nav__link">
+      Frequency of words
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../16.web-scraping/" title="Web Scraping" class="md-nav__link">
+      Web Scraping
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../17.books-scrape/" title="Web Scraping - Books" class="md-nav__link">
+      Web Scraping - Books
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../18.scrape-quotes/" title="Web Scraping - Quotes" class="md-nav__link">
+      Web Scraping - Quotes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../19.images/" title="Images" class="md-nav__link">
+      Images
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../20.image-exercise/" title="Images - Exercise" class="md-nav__link">
+      Images - Exercise
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../21.csv-files/" title="CSV Files" class="md-nav__link">
+      CSV Files
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../22.pdf-files/" title="PDF Files" class="md-nav__link">
+      PDF Files
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="PDF and CSV Exercise" class="md-nav__link md-nav__link--active">
+      PDF and CSV Exercise
+    </a>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../24.emails/" title="Emails" class="md-nav__link">
+      Emails
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-27" type="checkbox" id="nav-27">
+    
+    <label class="md-nav__link" for="nav-27">
+      Resources
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Resources" data-md-level="1">
+      <label class="md-nav__title" for="nav-27">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Resources
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../external-resources/" title="Tools Used" class="md-nav__link">
+      Tools Used
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  
+                
+                
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+<script>
+(function() {
+  function addWidgetsRenderer() {
+    var mimeElement = document.querySelector('script[type="application/vnd.jupyter.widget-view+json"]');
+    var scriptElement = document.createElement('script');
+    var widgetRendererSrc = 'https://unpkg.com/@jupyter-widgets/html-manager@*/dist/embed-amd.js';
+    var widgetState;
+
+    // Fallback for older version:
+    try {
+      widgetState = mimeElement && JSON.parse(mimeElement.innerHTML);
+
+      if (widgetState && (widgetState.version_major < 2 || !widgetState.version_major)) {
+        widgetRendererSrc = 'jupyter-js-widgets@*/dist/embed.js';
+      }
+    } catch(e) {}
+
+    scriptElement.src = widgetRendererSrc;
+    document.body.appendChild(scriptElement);
+  }
+
+  document.addEventListener('DOMContentLoaded', addWidgetsRenderer);
+}());
+</script>
+
+<div class="cell border-box-sizing text_cell rendered">
+<p><div class="inner_cell" markdown="1">
+<div class="text_cell_render border-box-sizing rendered_html" markdown="1"></p>
+<h1 id="pdfs-and-spreadsheets-puzzle-exercise">PDFs and Spreadsheets Puzzle Exercise</h1>
+<p>Let's test your skills, the files needed for this puzzle exercise</p>
+<p>You will need to work with two files for this exercise and solve the following tasks:</p>
+<ul>
+<li>Task One: Use Python to extract the Google Drive link from the .csv file. (Hint: Its along the diagonal from top left to bottom right).</li>
+<li>Task Two: Download the PDF from the Google Drive link (we already downloaded it for you just in case you can't download from Google Drive) and find the phone number that is in the document. Note: There are different ways of formatting a phone number!
+</div>
+</div></li>
+</ul>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<p><div class="inner_cell" markdown="1">
+<div class="text_cell_render border-box-sizing rendered_html" markdown="1"></p>
+<h2>Task One: Grab the Google Drive Link from .csv File</h2>
+<p></div>
+</div></p>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">csv</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;find_the_link.csv&#39;</span><span class="p">)</span>
+<span class="n">csv_reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+<span class="n">data_lines</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">csv_reader</span><span class="p">)</span>
+<span class="n">data_lines</span>
+</code></pre></div>
+
+</div>
+
+<div class="output_wrapper" markdown="1">
+<div class="output" markdown="1">
+
+
+<div class="output_area" markdown="1">
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[[&#39;h&#39;,
+  &#39;53&#39;,
+  &#39;24&#39;,
+  &#39;46&#39;,
+  &#39;4&#39;,
+  &#39;11&#39;,
+  &#39;3&#39;,
+  &#39;35&#39;,
+  &#39;17&#39;,
+  &#39;52&#39;,
+  &#39;9&#39;,
+  &#39;60&#39;,
+  &#39;26&#39;,
+  &#39;60&#39;,
+  &#39;72&#39;,
+  &#39;39&#39;,
+  &#39;11&#39;,
+  &#39;80&#39;,
+  &#39;86&#39;,
+  &#39;66&#39;,
+  &#39;59&#39;,
+  &#39;9&#39;,
+  &#39;41&#39;,
+  &#39;33&#39;,
+  &#39;11&#39;,
+  &#39;42&#39;,
+  &#39;69&#39;,
+  &#39;74&#39;,
+  &#39;91&#39;,
+  &#39;61&#39;,
+  &#39;5&#39;,
+  &#39;69&#39;,
+  &#39;17&#39;,
+  &#39;17&#39;,
+  &#39;78&#39;,
+  &#39;6&#39;,
+  &#39;51&#39;,
+  &#39;54&#39;,
+  &#39;54&#39;,
+  &#39;94&#39;,
+  &#39;47&#39;,
+  &#39;37&#39;,
+  &#39;0&#39;,
+  &#39;16&#39;,
+  &#39;71&#39;,
+  &#39;6&#39;,
+  &#39;83&#39;,
+  &#39;7&#39;,
+  &#39;6&#39;,
+  &#39;38&#39;,
+  &#39;61&#39;,
+  &#39;18&#39;,
+  &#39;68&#39;,
+  &#39;15&#39;,
+  &#39;2&#39;,
+  &#39;81&#39;,
+  &#39;49&#39;,
+  &#39;5&#39;,
+  &#39;17&#39;,
+  &#39;21&#39;,
+  &#39;36&#39;,
+  &#39;63&#39;,
+  &#39;38&#39;,
+  &#39;24&#39;,
+  &#39;3&#39;,
+  &#39;99&#39;],
+ [&#39;85&#39;,
+  &#39;t&#39;,
+  &#39;31&#39;,
+  &#39;54&#39;,
+  &#39;60&#39;,
+  &#39;22&#39;,
+  &#39;77&#39;,
+  &#39;39&#39;,
+  &#39;93&#39;,
+  &#39;38&#39;,
+  &#39;31&#39;,
+  &#39;16&#39;,
+  &#39;29&#39;,
+  &#39;27&#39;,
+  &#39;8&#39;,
+  &#39;35&#39;,
+  &#39;0&#39;,
+  &#39;54&#39;,
+  &#39;84&#39;,
+  &#39;21&#39;,
+  &#39;47&#39;,
+  &#39;37&#39;,
+  &#39;66&#39;,
+  &#39;83&#39;,
+  &#39;26&#39;,
+  &#39;22&#39;,
+  &#39;68&#39;,
+  &#39;25&#39;,
+  &#39;44&#39;,
+  &#39;81&#39;,
+  &#39;27&#39;,
+  &#39;68&#39;,
+  &#39;17&#39;,
+  &#39;63&#39;,
+  &#39;13&#39;,
+  &#39;99&#39;,
+  &#39;38&#39;,
+  &#39;43&#39;,
+  &#39;87&#39;,
+  &#39;83&#39;,
+  &#39;73&#39;,
+  &#39;88&#39;,
+  &#39;67&#39;,
+  &#39;5&#39;,
+  &#39;12&#39;,
+  &#39;10&#39;,
+  &#39;7&#39;,
+  &#39;58&#39;,
+  &#39;64&#39;,
+  &#39;56&#39;,
+  &#39;53&#39;,
+  &#39;88&#39;,
+  &#39;96&#39;,
+  &#39;20&#39;,
+  &#39;7&#39;,
+  &#39;85&#39;,
+  &#39;94&#39;,
+  &#39;23&#39;,
+  &#39;14&#39;,
+  &#39;79&#39;,
+  &#39;24&#39;,
+  &#39;27&#39;,
+  &#39;90&#39;,
+  &#39;40&#39;,
+  &#39;27&#39;,
+  &#39;8&#39;],
+ [&#39;22&#39;,
+  &#39;98&#39;,
+  &#39;t&#39;,
+  &#39;83&#39;,
+  &#39;33&#39;,
+  &#39;53&#39;,
+  &#39;66&#39;,
+  &#39;13&#39;,
+  &#39;81&#39;,
+  &#39;53&#39;,
+  &#39;60&#39;,
+  &#39;52&#39;,
+  &#39;45&#39;,
+  &#39;51&#39;,
+  &#39;39&#39;,
+  &#39;98&#39;,
+  &#39;14&#39;,
+  &#39;94&#39;,
+  &#39;68&#39;,
+  &#39;5&#39;,
+  &#39;99&#39;,
+  &#39;62&#39;,
+  &#39;68&#39;,
+  &#39;95&#39;,
+  &#39;50&#39;,
+  &#39;81&#39;,
+  &#39;64&#39;,
+  &#39;58&#39;,
+  &#39;96&#39;,
+  &#39;1&#39;,
+  &#39;71&#39;,
+  &#39;4&#39;,
+  &#39;60&#39;,
+  &#39;57&#39;,
+  &#39;84&#39;,
+  &#39;39&#39;,
+  &#39;5&#39;,
+  &#39;24&#39;,
+  &#39;79&#39;,
+  &#39;19&#39;,
+  &#39;86&#39;,
+  &#39;20&#39;,
+  &#39;15&#39;,
+  &#39;55&#39;,
+  &#39;68&#39;,
+  &#39;26&#39;,
+  &#39;81&#39;,
+  &#39;78&#39;,
+  &#39;3&#39;,
+  &#39;2&#39;,
+  &#39;24&#39;,
+  &#39;64&#39;,
+  &#39;17&#39;,
+  &#39;86&#39;,
+  &#39;3&#39;,
+  &#39;16&#39;,
+  &#39;89&#39;,
+  &#39;81&#39;,
+  &#39;33&#39;,
+  &#39;70&#39;,
+  &#39;42&#39;,
+  &#39;5&#39;,
+  &#39;31&#39;,
+  &#39;42&#39;,
+  &#39;45&#39;,
+  &#39;42&#39;],
+ [&#39;11&#39;,
+  &#39;58&#39;,
+  &#39;4&#39;,
+  &#39;p&#39;,
+  &#39;59&#39;,
+  &#39;85&#39;,
+  &#39;97&#39;,
+  &#39;35&#39;,
+  &#39;11&#39;,
+  &#39;78&#39;,
+  &#39;75&#39;,
+  &#39;23&#39;,
+  &#39;83&#39;,
+  &#39;37&#39;,
+  &#39;79&#39;,
+  &#39;8&#39;,
+  &#39;82&#39;,
+  &#39;42&#39;,
+  &#39;73&#39;,
+  &#39;9&#39;,
+  &#39;13&#39;,
+  &#39;98&#39;,
+  &#39;57&#39;,
+  &#39;50&#39;,
+  &#39;28&#39;,
+  &#39;41&#39;,
+  &#39;55&#39;,
+  &#39;58&#39;,
+  &#39;33&#39;,
+  &#39;85&#39;,
+  &#39;80&#39;,
+  &#39;69&#39;,
+  &#39;64&#39;,
+  &#39;53&#39;,
+  &#39;87&#39;,
+  &#39;38&#39;,
+  &#39;58&#39;,
+  &#39;48&#39;,
+  &#39;31&#39;,
+  &#39;82&#39;,
+  &#39;56&#39;,
+  &#39;14&#39;,
+  &#39;49&#39;,
+  &#39;8&#39;,
+  &#39;50&#39;,
+  &#39;4&#39;,
+  &#39;5&#39;,
+  &#39;9&#39;,
+  &#39;69&#39;,
+  &#39;33&#39;,
+  &#39;61&#39;,
+  &#39;24&#39;,
+  &#39;61&#39;,
+  &#39;21&#39;,
+  &#39;59&#39;,
+  &#39;1&#39;,
+  &#39;81&#39;,
+  &#39;73&#39;,
+  &#39;13&#39;,
+  &#39;75&#39;,
+  &#39;21&#39;,
+  &#39;13&#39;,
+  &#39;15&#39;,
+  &#39;85&#39;,
+  &#39;71&#39;,
+  &#39;36&#39;],
+ [&#39;0&#39;,
+  &#39;15&#39;,
+  &#39;8&#39;,
+  &#39;77&#39;,
+  &#39;s&#39;,
+  &#39;90&#39;,
+  &#39;42&#39;,
+  &#39;25&#39;,
+  &#39;38&#39;,
+  &#39;93&#39;,
+  &#39;18&#39;,
+  &#39;81&#39;,
+  &#39;6&#39;,
+  &#39;31&#39;,
+  &#39;17&#39;,
+  &#39;3&#39;,
+  &#39;55&#39;,
+  &#39;91&#39;,
+  &#39;46&#39;,
+  &#39;30&#39;,
+  &#39;28&#39;,
+  &#39;6&#39;,
+  &#39;45&#39;,
+  &#39;66&#39;,
+  &#39;97&#39;,
+  &#39;9&#39;,
+  &#39;71&#39;,
+  &#39;31&#39;,
+  &#39;26&#39;,
+  &#39;50&#39;,
+  &#39;86&#39;,
+  &#39;52&#39;,
+  &#39;24&#39;,
+  &#39;93&#39;,
+  &#39;97&#39;,
+  &#39;18&#39;,
+  &#39;71&#39;,
+  &#39;79&#39;,
+  &#39;61&#39;,
+  &#39;9&#39;,
+  &#39;19&#39;,
+  &#39;67&#39;,
+  &#39;74&#39;,
+  &#39;48&#39;,
+  &#39;54&#39;,
+  &#39;30&#39;,
+  &#39;69&#39;,
+  &#39;1&#39;,
+  &#39;43&#39;,
+  &#39;11&#39;,
+  &#39;8&#39;,
+  &#39;97&#39;,
+  &#39;52&#39;,
+  &#39;22&#39;,
+  &#39;66&#39;,
+  &#39;81&#39;,
+  &#39;55&#39;,
+  &#39;53&#39;,
+  &#39;5&#39;,
+  &#39;91&#39;,
+  &#39;30&#39;,
+  &#39;14&#39;,
+  &#39;62&#39;,
+  &#39;27&#39;,
+  &#39;27&#39;,
+  &#39;33&#39;],
+ [&#39;47&#39;,
+  &#39;43&#39;,
+  &#39;36&#39;,
+  &#39;38&#39;,
+  &#39;37&#39;,
+  &#39;:&#39;,
+  &#39;77&#39;,
+  &#39;69&#39;,
+  &#39;20&#39;,
+  &#39;51&#39;,
+  &#39;87&#39;,
+  &#39;31&#39;,
+  &#39;45&#39;,
+  &#39;50&#39;,
+  &#39;43&#39;,
+  &#39;48&#39;,
+  &#39;72&#39;,
+  &#39;47&#39;,
+  &#39;88&#39;,
+  &#39;29&#39;,
+  &#39;25&#39;,
+  &#39;62&#39;,
+  &#39;97&#39;,
+  &#39;70&#39;,
+  &#39;44&#39;,
+  &#39;87&#39;,
+  &#39;76&#39;,
+  &#39;89&#39;,
+  &#39;99&#39;,
+  &#39;93&#39;,
+  &#39;6&#39;,
+  &#39;21&#39;,
+  &#39;68&#39;,
+  &#39;45&#39;,
+  &#39;57&#39;,
+  &#39;40&#39;,
+  &#39;74&#39;,
+  &#39;46&#39;,
+  &#39;71&#39;,
+  &#39;98&#39;,
+  &#39;29&#39;,
+  &#39;8&#39;,
+  &#39;40&#39;,
+  &#39;89&#39;,
+  &#39;90&#39;,
+  &#39;96&#39;,
+  &#39;90&#39;,
+  &#39;32&#39;,
+  &#39;11&#39;,
+  &#39;84&#39;,
+  &#39;87&#39;,
+  &#39;35&#39;,
+  &#39;88&#39;,
+  &#39;75&#39;,
+  &#39;75&#39;,
+  &#39;17&#39;,
+  &#39;74&#39;,
+  &#39;86&#39;,
+  &#39;46&#39;,
+  &#39;96&#39;,
+  &#39;86&#39;,
+  &#39;10&#39;,
+  &#39;14&#39;,
+  &#39;9&#39;,
+  &#39;56&#39;,
+  &#39;0&#39;],
+ [&#39;43&#39;,
+  &#39;73&#39;,
+  &#39;30&#39;,
+  &#39;67&#39;,
+  &#39;47&#39;,
+  &#39;7&#39;,
+  &#39;/&#39;,
+  &#39;88&#39;,
+  &#39;38&#39;,
+  &#39;83&#39;,
+  &#39;36&#39;,
+  &#39;26&#39;,
+  &#39;1&#39;,
+  &#39;69&#39;,
+  &#39;69&#39;,
+  &#39;89&#39;,
+  &#39;96&#39;,
+  &#39;77&#39;,
+  &#39;10&#39;,
+  &#39;5&#39;,
+  &#39;68&#39;,
+  &#39;43&#39;,
+  &#39;19&#39;,
+  &#39;65&#39;,
+  &#39;25&#39;,
+  &#39;48&#39;,
+  &#39;25&#39;,
+  &#39;33&#39;,
+  &#39;29&#39;,
+  &#39;14&#39;,
+  &#39;19&#39;,
+  &#39;87&#39;,
+  &#39;20&#39;,
+  &#39;20&#39;,
+  &#39;35&#39;,
+  &#39;65&#39;,
+  &#39;4&#39;,
+  &#39;89&#39;,
+  &#39;1&#39;,
+  &#39;62&#39;,
+  &#39;40&#39;,
+  &#39;7&#39;,
+  &#39;9&#39;,
+  &#39;98&#39;,
+  &#39;18&#39;,
+  &#39;3&#39;,
+  &#39;58&#39;,
+  &#39;22&#39;,
+  &#39;41&#39;,
+  &#39;95&#39;,
+  &#39;73&#39;,
+  &#39;29&#39;,
+  &#39;8&#39;,
+  &#39;34&#39;,
+  &#39;75&#39;,
+  &#39;38&#39;,
+  &#39;76&#39;,
+  &#39;10&#39;,
+  &#39;62&#39;,
+  &#39;67&#39;,
+  &#39;74&#39;,
+  &#39;90&#39;,
+  &#39;60&#39;,
+  &#39;94&#39;,
+  &#39;4&#39;,
+  &#39;97&#39;],
+ [&#39;26&#39;,
+  &#39;59&#39;,
+  &#39;40&#39;,
+  &#39;91&#39;,
+  &#39;5&#39;,
+  &#39;93&#39;,
+  &#39;0&#39;,
+  &#39;/&#39;,
+  &#39;74&#39;,
+  &#39;80&#39;,
+  &#39;13&#39;,
+  &#39;67&#39;,
+  &#39;15&#39;,
+  &#39;42&#39;,
+  &#39;93&#39;,
+  &#39;3&#39;,
+  &#39;10&#39;,
+  &#39;61&#39;,
+  &#39;9&#39;,
+  &#39;13&#39;,
+  &#39;38&#39;,
+  &#39;68&#39;,
+  &#39;60&#39;,
+  &#39;34&#39;,
+  &#39;37&#39;,
+  &#39;32&#39;,
+  &#39;17&#39;,
+  &#39;60&#39;,
+  &#39;95&#39;,
+  &#39;92&#39;,
+  &#39;44&#39;,
+  &#39;33&#39;,
+  &#39;99&#39;,
+  &#39;69&#39;,
+  &#39;4&#39;,
+  &#39;16&#39;,
+  &#39;80&#39;,
+  &#39;87&#39;,
+  &#39;7&#39;,
+  &#39;9&#39;,
+  &#39;43&#39;,
+  &#39;73&#39;,
+  &#39;64&#39;,
+  &#39;9&#39;,
+  &#39;25&#39;,
+  &#39;12&#39;,
+  &#39;65&#39;,
+  &#39;59&#39;,
+  &#39;1&#39;,
+  &#39;84&#39;,
+  &#39;73&#39;,
+  &#39;40&#39;,
+  &#39;78&#39;,
+  &#39;10&#39;,
+  &#39;64&#39;,
+  &#39;59&#39;,
+  &#39;58&#39;,
+  &#39;25&#39;,
+  &#39;53&#39;,
+  &#39;71&#39;,
+  &#39;72&#39;,
+  &#39;92&#39;,
+  &#39;51&#39;,
+  &#39;15&#39;,
+  &#39;26&#39;,
+  &#39;76&#39;],
+ [&#39;33&#39;,
+  &#39;13&#39;,
+  &#39;17&#39;,
+  &#39;66&#39;,
+  &#39;84&#39;,
+  &#39;74&#39;,
+  &#39;77&#39;,
+  &#39;8&#39;,
+  &#39;d&#39;,
+  &#39;44&#39;,
+  &#39;53&#39;,
+  &#39;14&#39;,
+  &#39;63&#39;,
+  &#39;17&#39;,
+  &#39;62&#39;,
+  &#39;77&#39;,
+  &#39;75&#39;,
+  &#39;61&#39;,
+  &#39;75&#39;,
+  &#39;28&#39;,
+  &#39;57&#39;,
+  &#39;12&#39;,
+  &#39;1&#39;,
+  &#39;36&#39;,
+  &#39;62&#39;,
+  &#39;63&#39;,
+  &#39;8&#39;,
+  &#39;12&#39;,
+  &#39;24&#39;,
+  &#39;85&#39;,
+  &#39;80&#39;,
+  &#39;26&#39;,
+  &#39;18&#39;,
+  &#39;19&#39;,
+  &#39;1&#39;,
+  &#39;13&#39;,
+  &#39;47&#39;,
+  &#39;74&#39;,
+  &#39;72&#39;,
+  &#39;83&#39;,
+  &#39;46&#39;,
+  &#39;53&#39;,
+  &#39;25&#39;,
+  &#39;89&#39;,
+  &#39;74&#39;,
+  &#39;57&#39;,
+  &#39;54&#39;,
+  &#39;12&#39;,
+  &#39;38&#39;,
+  &#39;83&#39;,
+  &#39;38&#39;,
+  &#39;67&#39;,
+  &#39;94&#39;,
+  &#39;75&#39;,
+  &#39;26&#39;,
+  &#39;86&#39;,
+  &#39;91&#39;,
+  &#39;30&#39;,
+  &#39;66&#39;,
+  &#39;75&#39;,
+  &#39;53&#39;,
+  &#39;46&#39;,
+  &#39;60&#39;,
+  &#39;78&#39;,
+  &#39;50&#39;,
+  &#39;47&#39;],
+ [&#39;34&#39;,
+  &#39;76&#39;,
+  &#39;15&#39;,
+  &#39;58&#39;,
+  &#39;37&#39;,
+  &#39;61&#39;,
+  &#39;96&#39;,
+  &#39;57&#39;,
+  &#39;6&#39;,
+  &#39;r&#39;,
+  &#39;98&#39;,
+  &#39;60&#39;,
+  &#39;64&#39;,
+  &#39;32&#39;,
+  &#39;0&#39;,
+  &#39;68&#39;,
+  &#39;32&#39;,
+  &#39;41&#39;,
+  &#39;72&#39;,
+  &#39;99&#39;,
+  &#39;13&#39;,
+  &#39;29&#39;,
+  &#39;88&#39;,
+  &#39;59&#39;,
+  &#39;45&#39;,
+  &#39;85&#39;,
+  &#39;93&#39;,
+  &#39;19&#39;,
+  &#39;39&#39;,
+  &#39;5&#39;,
+  &#39;2&#39;,
+  &#39;35&#39;,
+  &#39;80&#39;,
+  &#39;11&#39;,
+  &#39;35&#39;,
+  &#39;34&#39;,
+  &#39;3&#39;,
+  &#39;55&#39;,
+  &#39;27&#39;,
+  &#39;3&#39;,
+  &#39;3&#39;,
+  &#39;57&#39;,
+  &#39;90&#39;,
+  &#39;75&#39;,
+  &#39;54&#39;,
+  &#39;85&#39;,
+  &#39;6&#39;,
+  &#39;10&#39;,
+  &#39;7&#39;,
+  &#39;95&#39;,
+  &#39;9&#39;,
+  &#39;30&#39;,
+  &#39;25&#39;,
+  &#39;25&#39;,
+  &#39;87&#39;,
+  &#39;1&#39;,
+  &#39;55&#39;,
+  &#39;9&#39;,
+  &#39;1&#39;,
+  &#39;76&#39;,
+  &#39;90&#39;,
+  &#39;6&#39;,
+  &#39;60&#39;,
+  &#39;87&#39;,
+  &#39;33&#39;,
+  &#39;86&#39;],
+ [&#39;67&#39;,
+  &#39;30&#39;,
+  &#39;97&#39;,
+  &#39;49&#39;,
+  &#39;27&#39;,
+  &#39;14&#39;,
+  &#39;17&#39;,
+  &#39;28&#39;,
+  &#39;60&#39;,
+  &#39;74&#39;,
+  &#39;i&#39;,
+  &#39;21&#39;,
+  &#39;24&#39;,
+  &#39;66&#39;,
+  &#39;83&#39;,
+  &#39;25&#39;,
+  &#39;99&#39;,
+  &#39;62&#39;,
+  &#39;89&#39;,
+  &#39;27&#39;,
+  &#39;85&#39;,
+  &#39;48&#39;,
+  &#39;23&#39;,
+  &#39;93&#39;,
+  &#39;12&#39;,
+  &#39;9&#39;,
+  &#39;13&#39;,
+  &#39;70&#39;,
+  &#39;41&#39;,
+  &#39;21&#39;,
+  &#39;85&#39;,
+  &#39;12&#39;,
+  &#39;3&#39;,
+  &#39;39&#39;,
+  &#39;71&#39;,
+  &#39;36&#39;,
+  &#39;84&#39;,
+  &#39;55&#39;,
+  &#39;30&#39;,
+  &#39;4&#39;,
+  &#39;48&#39;,
+  &#39;75&#39;,
+  &#39;47&#39;,
+  &#39;89&#39;,
+  &#39;39&#39;,
+  &#39;97&#39;,
+  &#39;56&#39;,
+  &#39;38&#39;,
+  &#39;23&#39;,
+  &#39;84&#39;,
+  &#39;58&#39;,
+  &#39;72&#39;,
+  &#39;79&#39;,
+  &#39;22&#39;,
+  &#39;13&#39;,
+  &#39;23&#39;,
+  &#39;14&#39;,
+  &#39;29&#39;,
+  &#39;2&#39;,
+  &#39;31&#39;,
+  &#39;11&#39;,
+  &#39;42&#39;,
+  &#39;94&#39;,
+  &#39;3&#39;,
+  &#39;34&#39;,
+  &#39;52&#39;],
+ [&#39;95&#39;,
+  &#39;42&#39;,
+  &#39;42&#39;,
+  &#39;95&#39;,
+  &#39;95&#39;,
+  &#39;20&#39;,
+  &#39;9&#39;,
+  &#39;29&#39;,
+  &#39;65&#39;,
+  &#39;26&#39;,
+  &#39;13&#39;,
+  &#39;v&#39;,
+  &#39;82&#39;,
+  &#39;66&#39;,
+  &#39;67&#39;,
+  &#39;96&#39;,
+  &#39;48&#39;,
+  &#39;7&#39;,
+  &#39;36&#39;,
+  &#39;89&#39;,
+  &#39;73&#39;,
+  &#39;98&#39;,
+  &#39;3&#39;,
+  &#39;23&#39;,
+  &#39;50&#39;,
+  &#39;89&#39;,
+  &#39;42&#39;,
+  &#39;75&#39;,
+  &#39;84&#39;,
+  &#39;6&#39;,
+  &#39;73&#39;,
+  &#39;5&#39;,
+  &#39;93&#39;,
+  &#39;83&#39;,
+  &#39;1&#39;,
+  &#39;39&#39;,
+  &#39;22&#39;,
+  &#39;33&#39;,
+  &#39;76&#39;,
+  &#39;61&#39;,
+  &#39;49&#39;,
+  &#39;53&#39;,
+  &#39;66&#39;,
+  &#39;23&#39;,
+  &#39;81&#39;,
+  &#39;63&#39;,
+  &#39;50&#39;,
+  &#39;97&#39;,
+  &#39;13&#39;,
+  &#39;51&#39;,
+  &#39;47&#39;,
+  &#39;13&#39;,
+  &#39;12&#39;,
+  &#39;44&#39;,
+  &#39;71&#39;,
+  &#39;42&#39;,
+  &#39;7&#39;,
+  &#39;59&#39;,
+  &#39;70&#39;,
+  &#39;96&#39;,
+  &#39;37&#39;,
+  &#39;30&#39;,
+  &#39;3&#39;,
+  &#39;1&#39;,
+  &#39;78&#39;,
+  &#39;16&#39;],
+ [&#39;96&#39;,
+  &#39;28&#39;,
+  &#39;68&#39;,
+  &#39;65&#39;,
+  &#39;40&#39;,
+  &#39;12&#39;,
+  &#39;36&#39;,
+  &#39;15&#39;,
+  &#39;39&#39;,
+  &#39;57&#39;,
+  &#39;35&#39;,
+  &#39;49&#39;,
+  &#39;e&#39;,
+  &#39;4&#39;,
+  &#39;65&#39;,
+  &#39;73&#39;,
+  &#39;75&#39;,
+  &#39;77&#39;,
+  &#39;29&#39;,
+  &#39;64&#39;,
+  &#39;35&#39;,
+  &#39;70&#39;,
+  &#39;11&#39;,
+  &#39;1&#39;,
+  &#39;2&#39;,
+  &#39;88&#39;,
+  &#39;95&#39;,
+  &#39;22&#39;,
+  &#39;44&#39;,
+  &#39;50&#39;,
+  &#39;82&#39;,
+  &#39;98&#39;,
+  &#39;50&#39;,
+  &#39;53&#39;,
+  &#39;14&#39;,
+  &#39;28&#39;,
+  &#39;39&#39;,
+  &#39;50&#39;,
+  &#39;12&#39;,
+  &#39;18&#39;,
+  &#39;59&#39;,
+  &#39;41&#39;,
+  &#39;68&#39;,
+  &#39;7&#39;,
+  &#39;81&#39;,
+  &#39;69&#39;,
+  &#39;57&#39;,
+  &#39;68&#39;,
+  &#39;48&#39;,
+  &#39;74&#39;,
+  &#39;45&#39;,
+  &#39;7&#39;,
+  &#39;11&#39;,
+  &#39;14&#39;,
+  &#39;23&#39;,
+  &#39;58&#39;,
+  &#39;10&#39;,
+  &#39;16&#39;,
+  &#39;49&#39;,
+  &#39;64&#39;,
+  &#39;62&#39;,
+  &#39;27&#39;,
+  &#39;40&#39;,
+  &#39;84&#39;,
+  &#39;12&#39;,
+  &#39;68&#39;],
+ [&#39;80&#39;,
+  &#39;10&#39;,
+  &#39;31&#39;,
+  &#39;78&#39;,
+  &#39;64&#39;,
+  &#39;18&#39;,
+  &#39;88&#39;,
+  &#39;41&#39;,
+  &#39;98&#39;,
+  &#39;89&#39;,
+  &#39;99&#39;,
+  &#39;69&#39;,
+  &#39;36&#39;,
+  &#39;.&#39;,
+  &#39;56&#39;,
+  &#39;44&#39;,
+  &#39;30&#39;,
+  &#39;85&#39;,
+  &#39;7&#39;,
+  &#39;74&#39;,
+  &#39;71&#39;,
+  &#39;9&#39;,
+  &#39;84&#39;,
+  &#39;91&#39;,
+  &#39;25&#39;,
+  &#39;78&#39;,
+  &#39;0&#39;,
+  &#39;28&#39;,
+  &#39;4&#39;,
+  &#39;97&#39;,
+  &#39;3&#39;,
+  &#39;63&#39;,
+  &#39;1&#39;,
+  &#39;74&#39;,
+  &#39;55&#39;,
+  &#39;74&#39;,
+  &#39;22&#39;,
+  &#39;21&#39;,
+  &#39;49&#39;,
+  &#39;65&#39;,
+  &#39;6&#39;,
+  &#39;23&#39;,
+  &#39;50&#39;,
+  &#39;72&#39;,
+  &#39;43&#39;,
+  &#39;51&#39;,
+  &#39;4&#39;,
+  &#39;29&#39;,
+  &#39;2&#39;,
+  &#39;92&#39;,
+  &#39;20&#39;,
+  &#39;96&#39;,
+  &#39;72&#39;,
+  &#39;69&#39;,
+  &#39;34&#39;,
+  &#39;7&#39;,
+  &#39;8&#39;,
+  &#39;32&#39;,
+  &#39;59&#39;,
+  &#39;78&#39;,
+  &#39;75&#39;,
+  &#39;66&#39;,
+  &#39;98&#39;,
+  &#39;90&#39;,
+  &#39;58&#39;,
+  &#39;20&#39;],
+ [&#39;0&#39;,
+  &#39;67&#39;,
+  &#39;15&#39;,
+  &#39;39&#39;,
+  &#39;97&#39;,
+  &#39;49&#39;,
+  &#39;72&#39;,
+  &#39;53&#39;,
+  &#39;56&#39;,
+  &#39;29&#39;,
+  &#39;18&#39;,
+  &#39;67&#39;,
+  &#39;39&#39;,
+  &#39;20&#39;,
+  &#39;g&#39;,
+  &#39;66&#39;,
+  &#39;61&#39;,
+  &#39;29&#39;,
+  &#39;67&#39;,
+  &#39;93&#39;,
+  &#39;13&#39;,
+  &#39;97&#39;,
+  &#39;64&#39;,
+  &#39;63&#39;,
+  &#39;92&#39;,
+  &#39;78&#39;,
+  &#39;68&#39;,
+  &#39;25&#39;,
+  &#39;87&#39;,
+  &#39;32&#39;,
+  &#39;82&#39;,
+  &#39;36&#39;,
+  &#39;63&#39;,
+  &#39;6&#39;,
+  &#39;29&#39;,
+  &#39;60&#39;,
+  &#39;11&#39;,
+  &#39;59&#39;,
+  &#39;13&#39;,
+  &#39;16&#39;,
+  &#39;14&#39;,
+  &#39;88&#39;,
+  &#39;96&#39;,
+  &#39;39&#39;,
+  &#39;47&#39;,
+  &#39;68&#39;,
+  &#39;44&#39;,
+  &#39;13&#39;,
+  &#39;2&#39;,
+  &#39;34&#39;,
+  &#39;20&#39;,
+  &#39;29&#39;,
+  &#39;89&#39;,
+  &#39;3&#39;,
+  &#39;99&#39;,
+  &#39;74&#39;,
+  &#39;75&#39;,
+  &#39;41&#39;,
+  &#39;77&#39;,
+  &#39;62&#39;,
+  &#39;34&#39;,
+  &#39;12&#39;,
+  &#39;90&#39;,
+  &#39;32&#39;,
+  &#39;18&#39;,
+  &#39;74&#39;],
+ [&#39;49&#39;,
+  &#39;56&#39;,
+  &#39;7&#39;,
+  &#39;76&#39;,
+  &#39;3&#39;,
+  &#39;54&#39;,
+  &#39;65&#39;,
+  &#39;76&#39;,
+  &#39;68&#39;,
+  &#39;89&#39;,
+  &#39;60&#39;,
+  &#39;19&#39;,
+  &#39;51&#39;,
+  &#39;93&#39;,
+  &#39;13&#39;,
+  &#39;o&#39;,
+  &#39;25&#39;,
+  &#39;18&#39;,
+  &#39;29&#39;,
+  &#39;49&#39;,
+  &#39;88&#39;,
+  &#39;31&#39;,
+  &#39;25&#39;,
+  &#39;98&#39;,
+  &#39;70&#39;,
+  &#39;83&#39;,
+  &#39;64&#39;,
+  &#39;26&#39;,
+  &#39;89&#39;,
+  &#39;74&#39;,
+  &#39;91&#39;,
+  &#39;30&#39;,
+  &#39;5&#39;,
+  &#39;56&#39;,
+  &#39;39&#39;,
+  &#39;25&#39;,
+  &#39;2&#39;,
+  &#39;74&#39;,
+  &#39;83&#39;,
+  &#39;98&#39;,
+  &#39;44&#39;,
+  &#39;71&#39;,
+  &#39;98&#39;,
+  &#39;69&#39;,
+  &#39;66&#39;,
+  &#39;13&#39;,
+  &#39;20&#39;,
+  &#39;28&#39;,
+  &#39;2&#39;,
+  &#39;42&#39;,
+  &#39;91&#39;,
+  &#39;63&#39;,
+  &#39;74&#39;,
+  &#39;6&#39;,
+  &#39;52&#39;,
+  &#39;54&#39;,
+  &#39;82&#39;,
+  &#39;54&#39;,
+  &#39;83&#39;,
+  &#39;39&#39;,
+  &#39;10&#39;,
+  &#39;70&#39;,
+  &#39;50&#39;,
+  &#39;53&#39;,
+  &#39;47&#39;,
+  &#39;68&#39;],
+ [&#39;68&#39;,
+  &#39;62&#39;,
+  &#39;73&#39;,
+  &#39;17&#39;,
+  &#39;3&#39;,
+  &#39;84&#39;,
+  &#39;97&#39;,
+  &#39;56&#39;,
+  &#39;12&#39;,
+  &#39;65&#39;,
+  &#39;46&#39;,
+  &#39;24&#39;,
+  &#39;40&#39;,
+  &#39;81&#39;,
+  &#39;18&#39;,
+  &#39;25&#39;,
+  &#39;o&#39;,
+  &#39;93&#39;,
+  &#39;29&#39;,
+  &#39;44&#39;,
+  &#39;28&#39;,
+  &#39;11&#39;,
+  &#39;45&#39;,
+  &#39;44&#39;,
+  &#39;28&#39;,
+  &#39;97&#39;,
+  &#39;79&#39;,
+  &#39;35&#39;,
+  &#39;4&#39;,
+  &#39;9&#39;,
+  &#39;83&#39;,
+  &#39;4&#39;,
+  &#39;20&#39;,
+  &#39;21&#39;,
+  &#39;22&#39;,
+  &#39;53&#39;,
+  &#39;36&#39;,
+  &#39;74&#39;,
+  &#39;43&#39;,
+  &#39;55&#39;,
+  &#39;19&#39;,
+  &#39;76&#39;,
+  &#39;52&#39;,
+  &#39;92&#39;,
+  &#39;34&#39;,
+  &#39;78&#39;,
+  &#39;23&#39;,
+  &#39;33&#39;,
+  &#39;30&#39;,
+  &#39;21&#39;,
+  &#39;96&#39;,
+  &#39;31&#39;,
+  &#39;69&#39;,
+  &#39;60&#39;,
+  &#39;63&#39;,
+  &#39;97&#39;,
+  &#39;90&#39;,
+  &#39;42&#39;,
+  &#39;61&#39;,
+  &#39;25&#39;,
+  &#39;83&#39;,
+  &#39;78&#39;,
+  &#39;10&#39;,
+  &#39;31&#39;,
+  &#39;58&#39;,
+  &#39;95&#39;],
+ [&#39;78&#39;,
+  &#39;84&#39;,
+  &#39;3&#39;,
+  &#39;55&#39;,
+  &#39;56&#39;,
+  &#39;17&#39;,
+  &#39;83&#39;,
+  &#39;59&#39;,
+  &#39;74&#39;,
+  &#39;8&#39;,
+  &#39;46&#39;,
+  &#39;10&#39;,
+  &#39;30&#39;,
+  &#39;78&#39;,
+  &#39;75&#39;,
+  &#39;27&#39;,
+  &#39;24&#39;,
+  &#39;g&#39;,
+  &#39;54&#39;,
+  &#39;71&#39;,
+  &#39;1&#39;,
+  &#39;23&#39;,
+  &#39;47&#39;,
+  &#39;3&#39;,
+  &#39;72&#39;,
+  &#39;64&#39;,
+  &#39;55&#39;,
+  &#39;35&#39;,
+  &#39;21&#39;,
+  &#39;69&#39;,
+  &#39;10&#39;,
+  &#39;45&#39;,
+  &#39;25&#39;,
+  &#39;10&#39;,
+  &#39;57&#39;,
+  &#39;41&#39;,
+  &#39;95&#39;,
+  &#39;48&#39;,
+  &#39;97&#39;,
+  &#39;17&#39;,
+  &#39;52&#39;,
+  &#39;27&#39;,
+  &#39;47&#39;,
+  &#39;89&#39;,
+  &#39;55&#39;,
+  &#39;62&#39;,
+  &#39;38&#39;,
+  &#39;34&#39;,
+  &#39;29&#39;,
+  &#39;42&#39;,
+  &#39;32&#39;,
+  &#39;81&#39;,
+  &#39;11&#39;,
+  &#39;79&#39;,
+  &#39;83&#39;,
+  &#39;85&#39;,
+  &#39;44&#39;,
+  &#39;86&#39;,
+  &#39;59&#39;,
+  &#39;21&#39;,
+  &#39;22&#39;,
+  &#39;80&#39;,
+  &#39;20&#39;,
+  &#39;73&#39;,
+  &#39;1&#39;,
+  &#39;47&#39;],
+ [&#39;89&#39;,
+  &#39;51&#39;,
+  &#39;33&#39;,
+  &#39;16&#39;,
+  &#39;51&#39;,
+  &#39;38&#39;,
+  &#39;64&#39;,
+  &#39;29&#39;,
+  &#39;32&#39;,
+  &#39;82&#39;,
+  &#39;61&#39;,
+  &#39;38&#39;,
+  &#39;16&#39;,
+  &#39;11&#39;,
+  &#39;97&#39;,
+  &#39;29&#39;,
+  &#39;37&#39;,
+  &#39;94&#39;,
+  &#39;l&#39;,
+  &#39;92&#39;,
+  &#39;18&#39;,
+  &#39;0&#39;,
+  &#39;62&#39;,
+  &#39;0&#39;,
+  &#39;12&#39;,
+  &#39;40&#39;,
+  &#39;6&#39;,
+  &#39;1&#39;,
+  &#39;27&#39;,
+  &#39;74&#39;,
+  &#39;22&#39;,
+  &#39;44&#39;,
+  &#39;72&#39;,
+  &#39;77&#39;,
+  &#39;30&#39;,
+  &#39;36&#39;,
+  &#39;89&#39;,
+  &#39;0&#39;,
+  &#39;84&#39;,
+  &#39;44&#39;,
+  &#39;94&#39;,
+  &#39;1&#39;,
+  &#39;84&#39;,
+  &#39;96&#39;,
+  &#39;21&#39;,
+  &#39;17&#39;,
+  &#39;99&#39;,
+  &#39;91&#39;,
+  &#39;18&#39;,
+  &#39;5&#39;,
+  &#39;36&#39;,
+  &#39;50&#39;,
+  &#39;85&#39;,
+  &#39;51&#39;,
+  &#39;81&#39;,
+  &#39;8&#39;,
+  &#39;99&#39;,
+  &#39;39&#39;,
+  &#39;54&#39;,
+  &#39;80&#39;,
+  &#39;8&#39;,
+  &#39;40&#39;,
+  &#39;56&#39;,
+  &#39;35&#39;,
+  &#39;74&#39;,
+  &#39;98&#39;],
+ [&#39;25&#39;,
+  &#39;49&#39;,
+  &#39;44&#39;,
+  &#39;14&#39;,
+  &#39;73&#39;,
+  &#39;92&#39;,
+  &#39;59&#39;,
+  &#39;92&#39;,
+  &#39;62&#39;,
+  &#39;74&#39;,
+  &#39;40&#39;,
+  &#39;9&#39;,
+  &#39;37&#39;,
+  &#39;78&#39;,
+  &#39;96&#39;,
+  &#39;31&#39;,
+  &#39;92&#39;,
+  &#39;5&#39;,
+  &#39;52&#39;,
+  &#39;e&#39;,
+  &#39;77&#39;,
+  &#39;75&#39;,
+  &#39;81&#39;,
+  &#39;5&#39;,
+  &#39;54&#39;,
+  &#39;75&#39;,
+  &#39;10&#39;,
+  &#39;51&#39;,
+  &#39;85&#39;,
+  &#39;87&#39;,
+  &#39;1&#39;,
+  &#39;81&#39;,
+  &#39;70&#39;,
+  &#39;86&#39;,
+  &#39;87&#39;,
+  &#39;75&#39;,
+  &#39;58&#39;,
+  &#39;85&#39;,
+  &#39;65&#39;,
+  &#39;46&#39;,
+  &#39;0&#39;,
+  &#39;46&#39;,
+  &#39;36&#39;,
+  &#39;61&#39;,
+  &#39;62&#39;,
+  &#39;37&#39;,
+  &#39;69&#39;,
+  &#39;96&#39;,
+  &#39;70&#39;,
+  &#39;10&#39;,
+  &#39;6&#39;,
+  &#39;31&#39;,
+  &#39;61&#39;,
+  &#39;6&#39;,
+  &#39;81&#39;,
+  &#39;52&#39;,
+  &#39;64&#39;,
+  &#39;63&#39;,
+  &#39;94&#39;,
+  &#39;4&#39;,
+  &#39;86&#39;,
+  &#39;22&#39;,
+  &#39;50&#39;,
+  &#39;64&#39;,
+  &#39;14&#39;,
+  &#39;86&#39;],
+ [&#39;23&#39;,
+  &#39;13&#39;,
+  &#39;55&#39;,
+  &#39;56&#39;,
+  &#39;67&#39;,
+  &#39;59&#39;,
+  &#39;30&#39;,
+  &#39;26&#39;,
+  &#39;43&#39;,
+  &#39;29&#39;,
+  &#39;62&#39;,
+  &#39;66&#39;,
+  &#39;39&#39;,
+  &#39;41&#39;,
+  &#39;91&#39;,
+  &#39;91&#39;,
+  &#39;23&#39;,
+  &#39;22&#39;,
+  &#39;95&#39;,
+  &#39;78&#39;,
+  &#39;.&#39;,
+  &#39;69&#39;,
+  &#39;62&#39;,
+  &#39;54&#39;,
+  &#39;8&#39;,
+  &#39;50&#39;,
+  &#39;22&#39;,
+  &#39;32&#39;,
+  &#39;42&#39;,
+  &#39;53&#39;,
+  &#39;36&#39;,
+  &#39;20&#39;,
+  &#39;95&#39;,
+  &#39;77&#39;,
+  &#39;39&#39;,
+  &#39;97&#39;,
+  &#39;49&#39;,
+  &#39;26&#39;,
+  &#39;83&#39;,
+  &#39;54&#39;,
+  &#39;53&#39;,
+  &#39;58&#39;,
+  &#39;57&#39;,
+  &#39;5&#39;,
+  &#39;0&#39;,
+  &#39;65&#39;,
+  &#39;28&#39;,
+  &#39;67&#39;,
+  &#39;12&#39;,
+  &#39;25&#39;,
+  &#39;68&#39;,
+  &#39;70&#39;,
+  &#39;73&#39;,
+  &#39;13&#39;,
+  &#39;93&#39;,
+  &#39;49&#39;,
+  &#39;25&#39;,
+  &#39;88&#39;,
+  &#39;36&#39;,
+  &#39;97&#39;,
+  &#39;5&#39;,
+  &#39;24&#39;,
+  &#39;24&#39;,
+  &#39;61&#39;,
+  &#39;18&#39;,
+  &#39;95&#39;],
+ [&#39;58&#39;,
+  &#39;8&#39;,
+  &#39;97&#39;,
+  &#39;14&#39;,
+  &#39;85&#39;,
+  &#39;12&#39;,
+  &#39;1&#39;,
+  &#39;11&#39;,
+  &#39;73&#39;,
+  &#39;81&#39;,
+  &#39;16&#39;,
+  &#39;52&#39;,
+  &#39;53&#39;,
+  &#39;99&#39;,
+  &#39;2&#39;,
+  &#39;56&#39;,
+  &#39;58&#39;,
+  &#39;13&#39;,
+  &#39;64&#39;,
+  &#39;31&#39;,
+  &#39;48&#39;,
+  &#39;c&#39;,
+  &#39;28&#39;,
+  &#39;81&#39;,
+  &#39;92&#39;,
+  &#39;13&#39;,
+  &#39;61&#39;,
+  &#39;70&#39;,
+  &#39;91&#39;,
+  &#39;56&#39;,
+  &#39;7&#39;,
+  &#39;39&#39;,
+  &#39;41&#39;,
+  &#39;64&#39;,
+  &#39;94&#39;,
+  &#39;83&#39;,
+  &#39;3&#39;,
+  &#39;61&#39;,
+  &#39;27&#39;,
+  &#39;10&#39;,
+  &#39;45&#39;,
+  &#39;20&#39;,
+  &#39;75&#39;,
+  &#39;68&#39;,
+  &#39;24&#39;,
+  &#39;91&#39;,
+  &#39;35&#39;,
+  &#39;60&#39;,
+  &#39;52&#39;,
+  &#39;27&#39;,
+  &#39;81&#39;,
+  &#39;8&#39;,
+  &#39;35&#39;,
+  &#39;63&#39;,
+  &#39;16&#39;,
+  &#39;88&#39;,
+  &#39;74&#39;,
+  &#39;93&#39;,
+  &#39;56&#39;,
+  &#39;47&#39;,
+  &#39;16&#39;,
+  &#39;79&#39;,
+  &#39;90&#39;,
+  &#39;83&#39;,
+  &#39;84&#39;,
+  &#39;69&#39;],
+ [&#39;22&#39;,
+  &#39;92&#39;,
+  &#39;48&#39;,
+  &#39;20&#39;,
+  &#39;57&#39;,
+  &#39;73&#39;,
+  &#39;11&#39;,
+  &#39;27&#39;,
+  &#39;7&#39;,
+  &#39;67&#39;,
+  &#39;69&#39;,
+  &#39;90&#39;,
+  &#39;7&#39;,
+  &#39;21&#39;,
+  &#39;2&#39;,
+  &#39;69&#39;,
+  &#39;15&#39;,
+  &#39;66&#39;,
+  &#39;78&#39;,
+  &#39;88&#39;,
+  &#39;66&#39;,
+  &#39;21&#39;,
+  &#39;o&#39;,
+  &#39;40&#39;,
+  &#39;15&#39;,
+  &#39;20&#39;,
+  &#39;32&#39;,
+  &#39;48&#39;,
+  &#39;73&#39;,
+  &#39;27&#39;,
+  &#39;46&#39;,
+  &#39;70&#39;,
+  &#39;30&#39;,
+  &#39;22&#39;,
+  &#39;51&#39;,
+  &#39;73&#39;,
+  &#39;19&#39;,
+  &#39;94&#39;,
+  &#39;48&#39;,
+  &#39;56&#39;,
+  &#39;99&#39;,
+  &#39;20&#39;,
+  &#39;22&#39;,
+  &#39;0&#39;,
+  &#39;5&#39;,
+  &#39;47&#39;,
+  &#39;14&#39;,
+  &#39;65&#39;,
+  &#39;91&#39;,
+  &#39;98&#39;,
+  &#39;96&#39;,
+  &#39;50&#39;,
+  &#39;40&#39;,
+  &#39;6&#39;,
+  &#39;80&#39;,
+  &#39;66&#39;,
+  &#39;36&#39;,
+  &#39;33&#39;,
+  &#39;24&#39;,
+  &#39;73&#39;,
+  &#39;84&#39;,
+  &#39;86&#39;,
+  &#39;25&#39;,
+  &#39;11&#39;,
+  &#39;84&#39;,
+  &#39;26&#39;],
+ [&#39;26&#39;,
+  &#39;68&#39;,
+  &#39;67&#39;,
+  &#39;55&#39;,
+  &#39;93&#39;,
+  &#39;98&#39;,
+  &#39;69&#39;,
+  &#39;98&#39;,
+  &#39;37&#39;,
+  &#39;37&#39;,
+  &#39;14&#39;,
+  &#39;48&#39;,
+  &#39;53&#39;,
+  &#39;32&#39;,
+  &#39;3&#39;,
+  &#39;0&#39;,
+  &#39;75&#39;,
+  &#39;65&#39;,
+  &#39;84&#39;,
+  &#39;38&#39;,
+  &#39;42&#39;,
+  &#39;22&#39;,
+  &#39;83&#39;,
+  &#39;m&#39;,
+  &#39;54&#39;,
+  &#39;51&#39;,
+  &#39;68&#39;,
+  &#39;43&#39;,
+  &#39;56&#39;,
+  &#39;84&#39;,
+  &#39;72&#39;,
+  &#39;65&#39;,
+  &#39;72&#39;,
+  &#39;99&#39;,
+  &#39;16&#39;,
+  &#39;73&#39;,
+  &#39;41&#39;,
+  &#39;4&#39;,
+  &#39;19&#39;,
+  &#39;36&#39;,
+  &#39;71&#39;,
+  &#39;87&#39;,
+  &#39;29&#39;,
+  &#39;30&#39;,
+  &#39;85&#39;,
+  &#39;74&#39;,
+  &#39;32&#39;,
+  &#39;46&#39;,
+  &#39;49&#39;,
+  &#39;85&#39;,
+  &#39;13&#39;,
+  &#39;92&#39;,
+  &#39;14&#39;,
+  &#39;97&#39;,
+  &#39;60&#39;,
+  &#39;69&#39;,
+  &#39;62&#39;,
+  &#39;9&#39;,
+  &#39;43&#39;,
+  &#39;32&#39;,
+  &#39;18&#39;,
+  &#39;95&#39;,
+  &#39;24&#39;,
+  &#39;66&#39;,
+  &#39;98&#39;,
+  &#39;79&#39;],
+ [&#39;61&#39;,
+  &#39;77&#39;,
+  &#39;4&#39;,
+  &#39;29&#39;,
+  &#39;6&#39;,
+  &#39;16&#39;,
+  &#39;3&#39;,
+  &#39;71&#39;,
+  &#39;26&#39;,
+  &#39;20&#39;,
+  &#39;24&#39;,
+  &#39;1&#39;,
+  &#39;60&#39;,
+  &#39;45&#39;,
+  &#39;61&#39;,
+  &#39;99&#39;,
+  &#39;79&#39;,
+  &#39;67&#39;,
+  &#39;65&#39;,
+  &#39;29&#39;,
+  &#39;40&#39;,
+  &#39;24&#39;,
+  &#39;44&#39;,
+  &#39;39&#39;,
+  &#39;/&#39;,
+  &#39;7&#39;,
+  &#39;26&#39;,
+  &#39;28&#39;,
+  &#39;10&#39;,
+  &#39;74&#39;,
+  &#39;30&#39;,
+  &#39;35&#39;,
+  &#39;86&#39;,
+  &#39;78&#39;,
+  &#39;94&#39;,
+  &#39;9&#39;,
+  &#39;61&#39;,
+  &#39;2&#39;,
+  &#39;16&#39;,
+  &#39;30&#39;,
+  &#39;10&#39;,
+  &#39;60&#39;,
+  &#39;56&#39;,
+  &#39;27&#39;,
+  &#39;47&#39;,
+  &#39;11&#39;,
+  &#39;15&#39;,
+  &#39;28&#39;,
+  &#39;21&#39;,
+  &#39;81&#39;,
+  &#39;95&#39;,
+  &#39;49&#39;,
+  &#39;7&#39;,
+  &#39;92&#39;,
+  &#39;91&#39;,
+  &#39;13&#39;,
+  &#39;26&#39;,
+  &#39;52&#39;,
+  &#39;24&#39;,
+  &#39;94&#39;,
+  &#39;27&#39;,
+  &#39;72&#39;,
+  &#39;29&#39;,
+  &#39;86&#39;,
+  &#39;18&#39;,
+  &#39;51&#39;],
+ [&#39;92&#39;,
+  &#39;18&#39;,
+  &#39;21&#39;,
+  &#39;88&#39;,
+  &#39;72&#39;,
+  &#39;26&#39;,
+  &#39;43&#39;,
+  &#39;35&#39;,
+  &#39;62&#39;,
+  &#39;75&#39;,
+  &#39;40&#39;,
+  &#39;92&#39;,
+  &#39;61&#39;,
+  &#39;35&#39;,
+  &#39;52&#39;,
+  &#39;10&#39;,
+  &#39;49&#39;,
+  &#39;77&#39;,
+  &#39;18&#39;,
+  &#39;1&#39;,
+  &#39;28&#39;,
+  &#39;9&#39;,
+  &#39;32&#39;,
+  &#39;96&#39;,
+  &#39;37&#39;,
+  &#39;o&#39;,
+  &#39;48&#39;,
+  &#39;47&#39;,
+  &#39;4&#39;,
+  &#39;57&#39;,
+  &#39;42&#39;,
+  &#39;45&#39;,
+  &#39;93&#39;,
+  &#39;90&#39;,
+  &#39;71&#39;,
+  &#39;24&#39;,
+  &#39;10&#39;,
+  &#39;16&#39;,
+  &#39;41&#39;,
+  &#39;99&#39;,
+  &#39;83&#39;,
+  &#39;15&#39;,
+  &#39;23&#39;,
+  &#39;76&#39;,
+  &#39;48&#39;,
+  &#39;35&#39;,
+  &#39;65&#39;,
+  &#39;37&#39;,
+  &#39;89&#39;,
+  &#39;15&#39;,
+  &#39;9&#39;,
+  &#39;91&#39;,
+  &#39;64&#39;,
+  &#39;61&#39;,
+  &#39;45&#39;,
+  &#39;59&#39;,
+  &#39;24&#39;,
+  &#39;63&#39;,
+  &#39;34&#39;,
+  &#39;1&#39;,
+  &#39;6&#39;,
+  &#39;44&#39;,
+  &#39;93&#39;,
+  &#39;60&#39;,
+  &#39;89&#39;,
+  &#39;50&#39;],
+ [&#39;25&#39;,
+  &#39;5&#39;,
+  &#39;38&#39;,
+  &#39;85&#39;,
+  &#39;25&#39;,
+  &#39;88&#39;,
+  &#39;56&#39;,
+  &#39;71&#39;,
+  &#39;96&#39;,
+  &#39;27&#39;,
+  &#39;93&#39;,
+  &#39;14&#39;,
+  &#39;7&#39;,
+  &#39;2&#39;,
+  &#39;22&#39;,
+  &#39;49&#39;,
+  &#39;93&#39;,
+  &#39;93&#39;,
+  &#39;5&#39;,
+  &#39;56&#39;,
+  &#39;75&#39;,
+  &#39;11&#39;,
+  &#39;36&#39;,
+  &#39;19&#39;,
+  &#39;81&#39;,
+  &#39;11&#39;,
+  &#39;p&#39;,
+  &#39;42&#39;,
+  &#39;54&#39;,
+  &#39;29&#39;,
+  &#39;20&#39;,
+  &#39;31&#39;,
+  &#39;1&#39;,
+  &#39;12&#39;,
+  &#39;40&#39;,
+  &#39;65&#39;,
+  &#39;18&#39;,
+  &#39;2&#39;,
+  &#39;89&#39;,
+  &#39;68&#39;,
+  &#39;77&#39;,
+  &#39;66&#39;,
+  &#39;53&#39;,
+  &#39;95&#39;,
+  &#39;20&#39;,
+  &#39;85&#39;,
+  &#39;7&#39;,
+  &#39;92&#39;,
+  &#39;46&#39;,
+  &#39;44&#39;,
+  &#39;16&#39;,
+  &#39;13&#39;,
+  &#39;59&#39;,
+  &#39;53&#39;,
+  &#39;90&#39;,
+  &#39;64&#39;,
+  &#39;67&#39;,
+  &#39;38&#39;,
+  &#39;79&#39;,
+  &#39;26&#39;,
+  &#39;69&#39;,
+  &#39;13&#39;,
+  &#39;63&#39;,
+  &#39;59&#39;,
+  &#39;1&#39;,
+  &#39;64&#39;],
+ [&#39;2&#39;,
+  &#39;95&#39;,
+  &#39;27&#39;,
+  &#39;12&#39;,
+  &#39;92&#39;,
+  &#39;78&#39;,
+  &#39;73&#39;,
+  &#39;64&#39;,
+  &#39;53&#39;,
+  &#39;92&#39;,
+  &#39;75&#39;,
+  &#39;23&#39;,
+  &#39;81&#39;,
+  &#39;18&#39;,
+  &#39;16&#39;,
+  &#39;66&#39;,
+  &#39;22&#39;,
+  &#39;20&#39;,
+  &#39;13&#39;,
+  &#39;31&#39;,
+  &#39;15&#39;,
+  &#39;30&#39;,
+  &#39;65&#39;,
+  &#39;62&#39;,
+  &#39;46&#39;,
+  &#39;60&#39;,
+  &#39;3&#39;,
+  &#39;e&#39;,
+  &#39;68&#39;,
+  &#39;98&#39;,
+  &#39;86&#39;,
+  &#39;82&#39;,
+  &#39;93&#39;,
+  &#39;12&#39;,
+  &#39;16&#39;,
+  &#39;68&#39;,
+  &#39;78&#39;,
+  &#39;62&#39;,
+  &#39;36&#39;,
+  &#39;15&#39;,
+  &#39;47&#39;,
+  &#39;91&#39;,
+  &#39;17&#39;,
+  &#39;77&#39;,
+  &#39;65&#39;,
+  &#39;98&#39;,
+  &#39;45&#39;,
+  &#39;52&#39;,
+  &#39;69&#39;,
+  &#39;5&#39;,
+  &#39;52&#39;,
+  &#39;50&#39;,
+  &#39;46&#39;,
+  &#39;73&#39;,
+  &#39;17&#39;,
+  &#39;7&#39;,
+  &#39;72&#39;,
+  &#39;84&#39;,
+  &#39;7&#39;,
+  &#39;26&#39;,
+  &#39;52&#39;,
+  &#39;40&#39;,
+  &#39;86&#39;,
+  &#39;36&#39;,
+  &#39;80&#39;,
+  &#39;66&#39;],
+ [&#39;52&#39;,
+  &#39;85&#39;,
+  &#39;6&#39;,
+  &#39;13&#39;,
+  &#39;7&#39;,
+  &#39;57&#39;,
+  &#39;51&#39;,
+  &#39;42&#39;,
+  &#39;66&#39;,
+  &#39;33&#39;,
+  &#39;11&#39;,
+  &#39;78&#39;,
+  &#39;51&#39;,
+  &#39;43&#39;,
+  &#39;21&#39;,
+  &#39;55&#39;,
+  &#39;13&#39;,
+  &#39;38&#39;,
+  &#39;90&#39;,
+  &#39;47&#39;,
+  &#39;73&#39;,
+  &#39;18&#39;,
+  &#39;65&#39;,
+  &#39;80&#39;,
+  &#39;89&#39;,
+  &#39;11&#39;,
+  &#39;85&#39;,
+  &#39;25&#39;,
+  &#39;n&#39;,
+  &#39;48&#39;,
+  &#39;33&#39;,
+  &#39;47&#39;,
+  &#39;33&#39;,
+  &#39;12&#39;,
+  &#39;65&#39;,
+  &#39;28&#39;,
+  &#39;42&#39;,
+  &#39;80&#39;,
+  &#39;89&#39;,
+  &#39;58&#39;,
+  &#39;24&#39;,
+  &#39;65&#39;,
+  &#39;46&#39;,
+  &#39;23&#39;,
+  &#39;20&#39;,
+  &#39;72&#39;,
+  &#39;92&#39;,
+  &#39;51&#39;,
+  &#39;82&#39;,
+  &#39;40&#39;,
+  &#39;85&#39;,
+  &#39;67&#39;,
+  &#39;79&#39;,
+  &#39;50&#39;,
+  &#39;87&#39;,
+  &#39;27&#39;,
+  &#39;31&#39;,
+  &#39;74&#39;,
+  &#39;71&#39;,
+  &#39;84&#39;,
+  &#39;41&#39;,
+  &#39;84&#39;,
+  &#39;55&#39;,
+  &#39;16&#39;,
+  &#39;43&#39;,
+  &#39;61&#39;],
+ [&#39;72&#39;,
+  &#39;58&#39;,
+  &#39;16&#39;,
+  &#39;98&#39;,
+  &#39;95&#39;,
+  &#39;38&#39;,
+  &#39;35&#39;,
+  &#39;17&#39;,
+  &#39;83&#39;,
+  &#39;22&#39;,
+  &#39;37&#39;,
+  &#39;55&#39;,
+  &#39;1&#39;,
+  &#39;18&#39;,
+  &#39;25&#39;,
+  &#39;75&#39;,
+  &#39;0&#39;,
+  &#39;39&#39;,
+  &#39;64&#39;,
+  &#39;35&#39;,
+  &#39;76&#39;,
+  &#39;94&#39;,
+  &#39;3&#39;,
+  &#39;42&#39;,
+  &#39;86&#39;,
+  &#39;97&#39;,
+  &#39;36&#39;,
+  &#39;68&#39;,
+  &#39;49&#39;,
+  &#39;?&#39;,
+  &#39;5&#39;,
+  &#39;23&#39;,
+  &#39;62&#39;,
+  &#39;8&#39;,
+  &#39;79&#39;,
+  &#39;56&#39;,
+  &#39;32&#39;,
+  &#39;30&#39;,
+  &#39;86&#39;,
+  &#39;8&#39;,
+  &#39;13&#39;,
+  &#39;17&#39;,
+  &#39;76&#39;,
+  &#39;43&#39;,
+  &#39;82&#39;,
+  &#39;74&#39;,
+  &#39;82&#39;,
+  &#39;90&#39;,
+  &#39;47&#39;,
+  &#39;6&#39;,
+  &#39;79&#39;,
+  &#39;57&#39;,
+  &#39;95&#39;,
+  &#39;44&#39;,
+  &#39;40&#39;,
+  &#39;9&#39;,
+  &#39;59&#39;,
+  &#39;25&#39;,
+  &#39;75&#39;,
+  &#39;6&#39;,
+  &#39;90&#39;,
+  &#39;39&#39;,
+  &#39;97&#39;,
+  &#39;18&#39;,
+  &#39;38&#39;,
+  &#39;93&#39;],
+ [&#39;48&#39;,
+  &#39;14&#39;,
+  &#39;7&#39;,
+  &#39;47&#39;,
+  &#39;65&#39;,
+  &#39;92&#39;,
+  &#39;98&#39;,
+  &#39;96&#39;,
+  &#39;23&#39;,
+  &#39;3&#39;,
+  &#39;41&#39;,
+  &#39;21&#39;,
+  &#39;17&#39;,
+  &#39;3&#39;,
+  &#39;1&#39;,
+  &#39;99&#39;,
+  &#39;3&#39;,
+  &#39;57&#39;,
+  &#39;13&#39;,
+  &#39;50&#39;,
+  &#39;81&#39;,
+  &#39;58&#39;,
+  &#39;43&#39;,
+  &#39;2&#39;,
+  &#39;33&#39;,
+  &#39;68&#39;,
+  &#39;33&#39;,
+  &#39;72&#39;,
+  &#39;1&#39;,
+  &#39;66&#39;,
+  &#39;i&#39;,
+  &#39;80&#39;,
+  &#39;26&#39;,
+  &#39;11&#39;,
+  &#39;83&#39;,
+  &#39;35&#39;,
+  &#39;29&#39;,
+  &#39;28&#39;,
+  &#39;75&#39;,
+  &#39;38&#39;,
+  &#39;13&#39;,
+  &#39;66&#39;,
+  &#39;71&#39;,
+  &#39;32&#39;,
+  &#39;57&#39;,
+  &#39;67&#39;,
+  &#39;10&#39;,
+  &#39;56&#39;,
+  &#39;46&#39;,
+  &#39;27&#39;,
+  &#39;82&#39;,
+  &#39;9&#39;,
+  &#39;28&#39;,
+  &#39;29&#39;,
+  &#39;99&#39;,
+  &#39;44&#39;,
+  &#39;35&#39;,
+  &#39;22&#39;,
+  &#39;56&#39;,
+  &#39;2&#39;,
+  &#39;99&#39;,
+  &#39;28&#39;,
+  &#39;2&#39;,
+  &#39;29&#39;,
+  &#39;56&#39;,
+  &#39;76&#39;],
+ [&#39;77&#39;,
+  &#39;34&#39;,
+  &#39;47&#39;,
+  &#39;96&#39;,
+  &#39;48&#39;,
+  &#39;73&#39;,
+  &#39;58&#39;,
+  &#39;81&#39;,
+  &#39;28&#39;,
+  &#39;52&#39;,
+  &#39;58&#39;,
+  &#39;1&#39;,
+  &#39;4&#39;,
+  &#39;65&#39;,
+  &#39;57&#39;,
+  &#39;72&#39;,
+  &#39;52&#39;,
+  &#39;66&#39;,
+  &#39;37&#39;,
+  &#39;46&#39;,
+  &#39;51&#39;,
+  &#39;95&#39;,
+  &#39;23&#39;,
+  &#39;0&#39;,
+  &#39;15&#39;,
+  &#39;86&#39;,
+  &#39;7&#39;,
+  &#39;95&#39;,
+  &#39;81&#39;,
+  &#39;63&#39;,
+  &#39;87&#39;,
+  &#39;d&#39;,
+  &#39;46&#39;,
+  &#39;78&#39;,
+  &#39;47&#39;,
+  &#39;83&#39;,
+  &#39;26&#39;,
+  &#39;3&#39;,
+  &#39;6&#39;,
+  &#39;77&#39;,
+  &#39;44&#39;,
+  &#39;3&#39;,
+  &#39;30&#39;,
+  &#39;9&#39;,
+  &#39;43&#39;,
+  &#39;27&#39;,
+  &#39;37&#39;,
+  &#39;37&#39;,
+  &#39;98&#39;,
+  &#39;11&#39;,
+  &#39;78&#39;,
+  &#39;82&#39;,
+  &#39;22&#39;,
+  &#39;36&#39;,
+  &#39;11&#39;,
+  &#39;93&#39;,
+  &#39;53&#39;,
+  &#39;85&#39;,
+  &#39;49&#39;,
+  &#39;4&#39;,
+  &#39;7&#39;,
+  &#39;38&#39;,
+  &#39;24&#39;,
+  &#39;63&#39;,
+  &#39;85&#39;,
+  &#39;11&#39;],
+ [&#39;47&#39;,
+  &#39;8&#39;,
+  &#39;16&#39;,
+  &#39;16&#39;,
+  &#39;52&#39;,
+  &#39;47&#39;,
+  &#39;55&#39;,
+  &#39;31&#39;,
+  &#39;51&#39;,
+  &#39;2&#39;,
+  &#39;18&#39;,
+  &#39;24&#39;,
+  &#39;51&#39;,
+  &#39;8&#39;,
+  &#39;21&#39;,
+  &#39;7&#39;,
+  &#39;6&#39;,
+  &#39;21&#39;,
+  &#39;59&#39;,
+  &#39;91&#39;,
+  &#39;88&#39;,
+  &#39;53&#39;,
+  &#39;67&#39;,
+  &#39;92&#39;,
+  &#39;58&#39;,
+  &#39;99&#39;,
+  &#39;51&#39;,
+  &#39;67&#39;,
+  &#39;9&#39;,
+  &#39;28&#39;,
+  &#39;5&#39;,
+  &#39;87&#39;,
+  &#39;=&#39;,
+  &#39;61&#39;,
+  &#39;23&#39;,
+  &#39;10&#39;,
+  &#39;56&#39;,
+  &#39;4&#39;,
+  &#39;63&#39;,
+  &#39;23&#39;,
+  &#39;28&#39;,
+  &#39;21&#39;,
+  &#39;14&#39;,
+  &#39;18&#39;,
+  &#39;66&#39;,
+  &#39;60&#39;,
+  &#39;58&#39;,
+  &#39;94&#39;,
+  &#39;37&#39;,
+  &#39;65&#39;,
+  &#39;10&#39;,
+  &#39;70&#39;,
+  &#39;79&#39;,
+  &#39;28&#39;,
+  &#39;7&#39;,
+  &#39;27&#39;,
+  &#39;29&#39;,
+  &#39;83&#39;,
+  &#39;93&#39;,
+  &#39;6&#39;,
+  &#39;1&#39;,
+  &#39;27&#39;,
+  &#39;90&#39;,
+  &#39;92&#39;,
+  &#39;27&#39;,
+  &#39;1&#39;],
+ [&#39;56&#39;,
+  &#39;33&#39;,
+  &#39;68&#39;,
+  &#39;16&#39;,
+  &#39;13&#39;,
+  &#39;21&#39;,
+  &#39;83&#39;,
+  &#39;10&#39;,
+  &#39;94&#39;,
+  &#39;95&#39;,
+  &#39;96&#39;,
+  &#39;58&#39;,
+  &#39;16&#39;,
+  &#39;97&#39;,
+  &#39;82&#39;,
+  &#39;24&#39;,
+  &#39;87&#39;,
+  &#39;1&#39;,
+  &#39;19&#39;,
+  &#39;73&#39;,
+  &#39;25&#39;,
+  &#39;17&#39;,
+  &#39;0&#39;,
+  &#39;35&#39;,
+  &#39;79&#39;,
+  &#39;41&#39;,
+  &#39;16&#39;,
+  &#39;58&#39;,
+  &#39;90&#39;,
+  &#39;58&#39;,
+  &#39;81&#39;,
+  &#39;80&#39;,
+  &#39;41&#39;,
+  &#39;1&#39;,
+  &#39;11&#39;,
+  &#39;30&#39;,
+  &#39;97&#39;,
+  &#39;67&#39;,
+  &#39;84&#39;,
+  &#39;49&#39;,
+  &#39;57&#39;,
+  &#39;29&#39;,
+  &#39;46&#39;,
+  &#39;56&#39;,
+  &#39;40&#39;,
+  &#39;21&#39;,
+  &#39;85&#39;,
+  &#39;93&#39;,
+  &#39;10&#39;,
+  &#39;93&#39;,
+  &#39;36&#39;,
+  &#39;67&#39;,
+  &#39;18&#39;,
+  &#39;35&#39;,
+  &#39;46&#39;,
+  &#39;50&#39;,
+  &#39;3&#39;,
+  &#39;57&#39;,
+  &#39;90&#39;,
+  &#39;72&#39;,
+  &#39;4&#39;,
+  &#39;66&#39;,
+  &#39;24&#39;,
+  &#39;69&#39;,
+  &#39;16&#39;,
+  &#39;19&#39;],
+ [&#39;13&#39;,
+  &#39;10&#39;,
+  &#39;91&#39;,
+  &#39;85&#39;,
+  &#39;32&#39;,
+  &#39;71&#39;,
+  &#39;26&#39;,
+  &#39;58&#39;,
+  &#39;91&#39;,
+  &#39;15&#39;,
+  &#39;29&#39;,
+  &#39;7&#39;,
+  &#39;78&#39;,
+  &#39;10&#39;,
+  &#39;51&#39;,
+  &#39;18&#39;,
+  &#39;54&#39;,
+  &#39;40&#39;,
+  &#39;39&#39;,
+  &#39;34&#39;,
+  &#39;33&#39;,
+  &#39;68&#39;,
+  &#39;81&#39;,
+  &#39;63&#39;,
+  &#39;61&#39;,
+  &#39;38&#39;,
+  &#39;68&#39;,
+  &#39;98&#39;,
+  &#39;40&#39;,
+  &#39;72&#39;,
+  &#39;9&#39;,
+  &#39;59&#39;,
+  &#39;50&#39;,
+  &#39;89&#39;,
+  &#39;G&#39;,
+  &#39;28&#39;,
+  &#39;17&#39;,
+  &#39;10&#39;,
+  &#39;12&#39;,
+  &#39;23&#39;,
+  &#39;86&#39;,
+  &#39;74&#39;,
+  &#39;52&#39;,
+  &#39;25&#39;,
+  &#39;76&#39;,
+  &#39;27&#39;,
+  &#39;10&#39;,
+  &#39;20&#39;,
+  &#39;77&#39;,
+  &#39;26&#39;,
+  &#39;20&#39;,
+  &#39;62&#39;,
+  &#39;13&#39;,
+  &#39;80&#39;,
+  &#39;57&#39;,
+  &#39;73&#39;,
+  &#39;67&#39;,
+  &#39;7&#39;,
+  &#39;35&#39;,
+  &#39;8&#39;,
+  &#39;64&#39;,
+  &#39;27&#39;,
+  &#39;99&#39;,
+  &#39;81&#39;,
+  &#39;10&#39;,
+  &#39;66&#39;],
+ [&#39;54&#39;,
+  &#39;0&#39;,
+  &#39;69&#39;,
+  &#39;6&#39;,
+  &#39;70&#39;,
+  &#39;76&#39;,
+  &#39;91&#39;,
+  &#39;1&#39;,
+  &#39;44&#39;,
+  &#39;32&#39;,
+  &#39;17&#39;,
+  &#39;92&#39;,
+  &#39;90&#39;,
+  &#39;8&#39;,
+  &#39;15&#39;,
+  &#39;48&#39;,
+  &#39;80&#39;,
+  &#39;38&#39;,
+  &#39;9&#39;,
+  &#39;89&#39;,
+  &#39;37&#39;,
+  &#39;36&#39;,
+  &#39;92&#39;,
+  &#39;62&#39;,
+  &#39;82&#39;,
+  &#39;8&#39;,
+  &#39;65&#39;,
+  &#39;4&#39;,
+  &#39;70&#39;,
+  &#39;75&#39;,
+  &#39;85&#39;,
+  &#39;95&#39;,
+  &#39;21&#39;,
+  &#39;17&#39;,
+  &#39;21&#39;,
+  &#39;6&#39;,
+  &#39;8&#39;,
+  &#39;56&#39;,
+  &#39;73&#39;,
+  &#39;40&#39;,
+  &#39;9&#39;,
+  &#39;61&#39;,
+  &#39;42&#39;,
+  &#39;7&#39;,
+  &#39;81&#39;,
+  &#39;20&#39;,
+  &#39;23&#39;,
+  &#39;67&#39;,
+  &#39;45&#39;,
+  &#39;59&#39;,
+  &#39;44&#39;,
+  &#39;69&#39;,
+  &#39;78&#39;,
+  &#39;91&#39;,
+  &#39;83&#39;,
+  &#39;45&#39;,
+  &#39;38&#39;,
+  &#39;44&#39;,
+  &#39;27&#39;,
+  &#39;26&#39;,
+  &#39;57&#39;,
+  &#39;4&#39;,
+  &#39;55&#39;,
+  &#39;9&#39;,
+  &#39;84&#39;,
+  &#39;96&#39;],
+ [&#39;81&#39;,
+  &#39;80&#39;,
+  &#39;83&#39;,
+  &#39;83&#39;,
+  &#39;56&#39;,
+  &#39;46&#39;,
+  &#39;84&#39;,
+  &#39;81&#39;,
+  &#39;64&#39;,
+  &#39;45&#39;,
+  &#39;52&#39;,
+  &#39;31&#39;,
+  &#39;60&#39;,
+  &#39;30&#39;,
+  &#39;61&#39;,
+  &#39;97&#39;,
+  &#39;81&#39;,
+  &#39;50&#39;,
+  &#39;48&#39;,
+  &#39;51&#39;,
+  &#39;44&#39;,
+  &#39;96&#39;,
+  &#39;12&#39;,
+  &#39;23&#39;,
+  &#39;52&#39;,
+  &#39;42&#39;,
+  &#39;81&#39;,
+  &#39;10&#39;,
+  &#39;26&#39;,
+  &#39;69&#39;,
+  &#39;37&#39;,
+  &#39;76&#39;,
+  &#39;78&#39;,
+  &#39;86&#39;,
+  &#39;34&#39;,
+  &#39;73&#39;,
+  &#39;S&#39;,
+  &#39;97&#39;,
+  &#39;59&#39;,
+  &#39;99&#39;,
+  &#39;85&#39;,
+  &#39;96&#39;,
+  &#39;80&#39;,
+  &#39;52&#39;,
+  &#39;41&#39;,
+  &#39;16&#39;,
+  &#39;92&#39;,
+  &#39;28&#39;,
+  &#39;18&#39;,
+  &#39;19&#39;,
+  &#39;80&#39;,
+  &#39;70&#39;,
+  &#39;71&#39;,
+  &#39;3&#39;,
+  &#39;63&#39;,
+  &#39;41&#39;,
+  &#39;59&#39;,
+  &#39;83&#39;,
+  &#39;5&#39;,
+  &#39;3&#39;,
+  &#39;72&#39;,
+  &#39;40&#39;,
+  &#39;15&#39;,
+  &#39;75&#39;,
+  &#39;27&#39;,
+  &#39;56&#39;],
+ [&#39;52&#39;,
+  &#39;90&#39;,
+  &#39;46&#39;,
+  &#39;54&#39;,
+  &#39;34&#39;,
+  &#39;61&#39;,
+  &#39;72&#39;,
+  &#39;40&#39;,
+  &#39;42&#39;,
+  &#39;97&#39;,
+  &#39;56&#39;,
+  &#39;62&#39;,
+  &#39;8&#39;,
+  &#39;90&#39;,
+  &#39;72&#39;,
+  &#39;59&#39;,
+  &#39;37&#39;,
+  &#39;67&#39;,
+  &#39;5&#39;,
+  &#39;74&#39;,
+  &#39;93&#39;,
+  &#39;16&#39;,
+  &#39;38&#39;,
+  &#39;91&#39;,
+  &#39;71&#39;,
+  &#39;1&#39;,
+  &#39;61&#39;,
+  &#39;5&#39;,
+  &#39;59&#39;,
+  &#39;96&#39;,
+  &#39;37&#39;,
+  &#39;54&#39;,
+  &#39;72&#39;,
+  &#39;59&#39;,
+  &#39;71&#39;,
+  &#39;85&#39;,
+  &#39;70&#39;,
+  &#39;E&#39;,
+  &#39;0&#39;,
+  &#39;30&#39;,
+  &#39;45&#39;,
+  &#39;68&#39;,
+  &#39;1&#39;,
+  &#39;36&#39;,
+  &#39;43&#39;,
+  &#39;13&#39;,
+  &#39;6&#39;,
+  &#39;14&#39;,
+  &#39;91&#39;,
+  &#39;45&#39;,
+  &#39;10&#39;,
+  &#39;25&#39;,
+  &#39;38&#39;,
+  &#39;46&#39;,
+  &#39;79&#39;,
+  &#39;25&#39;,
+  &#39;66&#39;,
+  &#39;53&#39;,
+  &#39;94&#39;,
+  &#39;43&#39;,
+  &#39;16&#39;,
+  &#39;28&#39;,
+  &#39;48&#39;,
+  &#39;10&#39;,
+  &#39;37&#39;,
+  &#39;65&#39;],
+ [&#39;1&#39;,
+  &#39;30&#39;,
+  &#39;24&#39;,
+  &#39;32&#39;,
+  &#39;76&#39;,
+  &#39;13&#39;,
+  &#39;51&#39;,
+  &#39;44&#39;,
+  &#39;65&#39;,
+  &#39;61&#39;,
+  &#39;26&#39;,
+  &#39;91&#39;,
+  &#39;9&#39;,
+  &#39;96&#39;,
+  &#39;39&#39;,
+  &#39;35&#39;,
+  &#39;34&#39;,
+  &#39;50&#39;,
+  &#39;89&#39;,
+  &#39;68&#39;,
+  &#39;80&#39;,
+  &#39;78&#39;,
+  &#39;58&#39;,
+  &#39;14&#39;,
+  &#39;57&#39;,
+  &#39;31&#39;,
+  &#39;1&#39;,
+  &#39;47&#39;,
+  &#39;72&#39;,
+  &#39;42&#39;,
+  &#39;75&#39;,
+  &#39;60&#39;,
+  &#39;70&#39;,
+  &#39;16&#39;,
+  &#39;54&#39;,
+  &#39;67&#39;,
+  &#39;71&#39;,
+  &#39;0&#39;,
+  &#39;g&#39;,
+  &#39;49&#39;,
+  &#39;10&#39;,
+  &#39;87&#39;,
+  &#39;70&#39;,
+  &#39;89&#39;,
+  &#39;86&#39;,
+  &#39;94&#39;,
+  &#39;95&#39;,
+  &#39;52&#39;,
+  &#39;39&#39;,
+  &#39;74&#39;,
+  &#39;1&#39;,
+  &#39;89&#39;,
+  &#39;15&#39;,
+  &#39;28&#39;,
+  &#39;51&#39;,
+  &#39;94&#39;,
+  &#39;65&#39;,
+  &#39;38&#39;,
+  &#39;54&#39;,
+  &#39;63&#39;,
+  &#39;29&#39;,
+  &#39;88&#39;,
+  &#39;69&#39;,
+  &#39;46&#39;,
+  &#39;33&#39;,
+  &#39;10&#39;],
+ [&#39;84&#39;,
+  &#39;58&#39;,
+  &#39;35&#39;,
+  &#39;83&#39;,
+  &#39;52&#39;,
+  &#39;88&#39;,
+  &#39;97&#39;,
+  &#39;59&#39;,
+  &#39;30&#39;,
+  &#39;49&#39;,
+  &#39;40&#39;,
+  &#39;79&#39;,
+  &#39;53&#39;,
+  &#39;89&#39;,
+  &#39;46&#39;,
+  &#39;48&#39;,
+  &#39;59&#39;,
+  &#39;64&#39;,
+  &#39;50&#39;,
+  &#39;2&#39;,
+  &#39;33&#39;,
+  &#39;29&#39;,
+  &#39;61&#39;,
+  &#39;19&#39;,
+  &#39;78&#39;,
+  &#39;20&#39;,
+  &#39;42&#39;,
+  &#39;34&#39;,
+  &#39;31&#39;,
+  &#39;75&#39;,
+  &#39;49&#39;,
+  &#39;35&#39;,
+  &#39;10&#39;,
+  &#39;56&#39;,
+  &#39;65&#39;,
+  &#39;19&#39;,
+  &#39;58&#39;,
+  &#39;15&#39;,
+  &#39;35&#39;,
+  &#39;g&#39;,
+  &#39;37&#39;,
+  &#39;34&#39;,
+  &#39;52&#39;,
+  &#39;82&#39;,
+  &#39;58&#39;,
+  &#39;4&#39;,
+  &#39;89&#39;,
+  &#39;69&#39;,
+  &#39;44&#39;,
+  &#39;22&#39;,
+  &#39;17&#39;,
+  &#39;95&#39;,
+  &#39;99&#39;,
+  &#39;89&#39;,
+  &#39;57&#39;,
+  &#39;16&#39;,
+  &#39;26&#39;,
+  &#39;30&#39;,
+  &#39;95&#39;,
+  &#39;8&#39;,
+  &#39;10&#39;,
+  &#39;67&#39;,
+  &#39;18&#39;,
+  &#39;52&#39;,
+  &#39;1&#39;,
+  &#39;90&#39;],
+ [&#39;81&#39;,
+  &#39;26&#39;,
+  &#39;39&#39;,
+  &#39;84&#39;,
+  &#39;11&#39;,
+  &#39;69&#39;,
+  &#39;31&#39;,
+  &#39;6&#39;,
+  &#39;13&#39;,
+  &#39;2&#39;,
+  &#39;52&#39;,
+  &#39;20&#39;,
+  &#39;59&#39;,
+  &#39;54&#39;,
+  &#39;75&#39;,
+  &#39;81&#39;,
+  &#39;98&#39;,
+  &#39;66&#39;,
+  &#39;8&#39;,
+  &#39;29&#39;,
+  &#39;41&#39;,
+  &#39;41&#39;,
+  &#39;98&#39;,
+  &#39;49&#39;,
+  &#39;82&#39;,
+  &#39;79&#39;,
+  &#39;45&#39;,
+  &#39;38&#39;,
+  &#39;96&#39;,
+  &#39;78&#39;,
+  &#39;71&#39;,
+  &#39;53&#39;,
+  &#39;84&#39;,
+  &#39;20&#39;,
+  &#39;50&#39;,
+  &#39;32&#39;,
+  &#39;38&#39;,
+  &#39;52&#39;,
+  &#39;16&#39;,
+  &#39;99&#39;,
+  &#39;0&#39;,
+  &#39;45&#39;,
+  &#39;64&#39;,
+  &#39;51&#39;,
+  &#39;19&#39;,
+  &#39;69&#39;,
+  &#39;85&#39;,
+  &#39;95&#39;,
+  &#39;34&#39;,
+  &#39;94&#39;,
+  &#39;75&#39;,
+  &#39;28&#39;,
+  &#39;43&#39;,
+  &#39;66&#39;,
+  &#39;34&#39;,
+  &#39;33&#39;,
+  &#39;19&#39;,
+  &#39;63&#39;,
+  &#39;60&#39;,
+  &#39;26&#39;,
+  &#39;30&#39;,
+  &#39;54&#39;,
+  &#39;93&#39;,
+  &#39;92&#39;,
+  &#39;45&#39;,
+  &#39;81&#39;],
+ [&#39;89&#39;,
+  &#39;6&#39;,
+  &#39;88&#39;,
+  &#39;71&#39;,
+  &#39;63&#39;,
+  &#39;12&#39;,
+  &#39;60&#39;,
+  &#39;84&#39;,
+  &#39;87&#39;,
+  &#39;61&#39;,
+  &#39;49&#39;,
+  &#39;28&#39;,
+  &#39;5&#39;,
+  &#39;67&#39;,
+  &#39;59&#39;,
+  &#39;23&#39;,
+  &#39;25&#39;,
+  &#39;33&#39;,
+  &#39;0&#39;,
+  &#39;12&#39;,
+  &#39;42&#39;,
+  &#39;95&#39;,
+  &#39;32&#39;,
+  &#39;29&#39;,
+  &#39;70&#39;,
+  &#39;76&#39;,
+  &#39;97&#39;,
+  &#39;94&#39;,
+  &#39;74&#39;,
+  &#39;91&#39;,
+  &#39;50&#39;,
+  &#39;3&#39;,
+  &#39;24&#39;,
+  &#39;72&#39;,
+  &#39;8&#39;,
+  &#39;72&#39;,
+  &#39;19&#39;,
+  &#39;74&#39;,
+  &#39;67&#39;,
+  &#39;18&#39;,
+  &#39;47&#39;,
+  &#39;1&#39;,
+  &#39;12&#39;,
+  &#39;30&#39;,
+  &#39;49&#39;,
+  &#39;2&#39;,
+  &#39;45&#39;,
+  &#39;19&#39;,
+  &#39;37&#39;,
+  &#39;62&#39;,
+  &#39;14&#39;,
+  &#39;21&#39;,
+  &#39;38&#39;,
+  &#39;51&#39;,
+  &#39;36&#39;,
+  &#39;30&#39;,
+  &#39;31&#39;,
+  &#39;44&#39;,
+  &#39;81&#39;,
+  &#39;46&#39;,
+  &#39;72&#39;,
+  &#39;90&#39;,
+  &#39;28&#39;,
+  &#39;70&#39;,
+  &#39;54&#39;,
+  &#39;70&#39;],
+ [&#39;29&#39;,
+  &#39;52&#39;,
+  &#39;73&#39;,
+  &#39;76&#39;,
+  &#39;18&#39;,
+  &#39;24&#39;,
+  &#39;25&#39;,
+  &#39;59&#39;,
+  &#39;90&#39;,
+  &#39;9&#39;,
+  &#39;70&#39;,
+  &#39;75&#39;,
+  &#39;17&#39;,
+  &#39;18&#39;,
+  &#39;66&#39;,
+  &#39;4&#39;,
+  &#39;62&#39;,
+  &#39;87&#39;,
+  &#39;32&#39;,
+  &#39;76&#39;,
+  &#39;30&#39;,
+  &#39;28&#39;,
+  &#39;70&#39;,
+  &#39;2&#39;,
+  &#39;74&#39;,
+  &#39;56&#39;,
+  &#39;5&#39;,
+  &#39;35&#39;,
+  &#39;49&#39;,
+  &#39;20&#39;,
+  &#39;37&#39;,
+  &#39;40&#39;,
+  &#39;18&#39;,
+  &#39;80&#39;,
+  &#39;90&#39;,
+  &#39;53&#39;,
+  &#39;22&#39;,
+  &#39;76&#39;,
+  &#39;87&#39;,
+  &#39;32&#39;,
+  &#39;20&#39;,
+  &#39;85&#39;,
+  &#39;8&#39;,
+  &#39;14&#39;,
+  &#39;17&#39;,
+  &#39;15&#39;,
+  &#39;69&#39;,
+  &#39;94&#39;,
+  &#39;79&#39;,
+  &#39;81&#39;,
+  &#39;96&#39;,
+  &#39;3&#39;,
+  &#39;85&#39;,
+  &#39;42&#39;,
+  &#39;80&#39;,
+  &#39;26&#39;,
+  &#39;92&#39;,
+  &#39;46&#39;,
+  &#39;47&#39;,
+  &#39;98&#39;,
+  &#39;56&#39;,
+  &#39;78&#39;,
+  &#39;56&#39;,
+  &#39;59&#39;,
+  &#39;91&#39;,
+  &#39;36&#39;],
+ [&#39;73&#39;,
+  &#39;16&#39;,
+  &#39;76&#39;,
+  &#39;6&#39;,
+  &#39;49&#39;,
+  &#39;33&#39;,
+  &#39;17&#39;,
+  &#39;65&#39;,
+  &#39;89&#39;,
+  &#39;43&#39;,
+  &#39;30&#39;,
+  &#39;72&#39;,
+  &#39;17&#39;,
+  &#39;30&#39;,
+  &#39;79&#39;,
+  &#39;4&#39;,
+  &#39;92&#39;,
+  &#39;85&#39;,
+  &#39;96&#39;,
+  &#39;69&#39;,
+  &#39;36&#39;,
+  &#39;55&#39;,
+  &#39;46&#39;,
+  &#39;66&#39;,
+  &#39;40&#39;,
+  &#39;24&#39;,
+  &#39;35&#39;,
+  &#39;90&#39;,
+  &#39;88&#39;,
+  &#39;73&#39;,
+  &#39;61&#39;,
+  &#39;26&#39;,
+  &#39;54&#39;,
+  &#39;22&#39;,
+  &#39;34&#39;,
+  &#39;4&#39;,
+  &#39;90&#39;,
+  &#39;34&#39;,
+  &#39;63&#39;,
+  &#39;28&#39;,
+  &#39;18&#39;,
+  &#39;5&#39;,
+  &#39;14&#39;,
+  &#39;U&#39;,
+  &#39;12&#39;,
+  &#39;9&#39;,
+  &#39;65&#39;,
+  &#39;27&#39;,
+  &#39;46&#39;,
+  &#39;48&#39;,
+  &#39;57&#39;,
+  &#39;22&#39;,
+  &#39;14&#39;,
+  &#39;40&#39;,
+  &#39;26&#39;,
+  &#39;96&#39;,
+  &#39;18&#39;,
+  &#39;5&#39;,
+  &#39;30&#39;,
+  &#39;26&#39;,
+  &#39;90&#39;,
+  &#39;15&#39;,
+  &#39;66&#39;,
+  &#39;37&#39;,
+  &#39;47&#39;,
+  &#39;78&#39;],
+ [&#39;56&#39;,
+  &#39;55&#39;,
+  &#39;90&#39;,
+  &#39;8&#39;,
+  &#39;59&#39;,
+  &#39;81&#39;,
+  &#39;80&#39;,
+  &#39;95&#39;,
+  &#39;67&#39;,
+  &#39;73&#39;,
+  &#39;73&#39;,
+  &#39;46&#39;,
+  &#39;11&#39;,
+  &#39;91&#39;,
+  &#39;24&#39;,
+  &#39;33&#39;,
+  &#39;67&#39;,
+  &#39;70&#39;,
+  &#39;37&#39;,
+  &#39;56&#39;,
+  &#39;55&#39;,
+  &#39;60&#39;,
+  &#39;70&#39;,
+  &#39;58&#39;,
+  &#39;22&#39;,
+  &#39;70&#39;,
+  &#39;4&#39;,
+  &#39;25&#39;,
+  &#39;15&#39;,
+  &#39;27&#39;,
+  &#39;77&#39;,
+  &#39;88&#39;,
+  &#39;40&#39;,
+  &#39;6&#39;,
+  &#39;15&#39;,
+  &#39;23&#39;,
+  &#39;52&#39;,
+  &#39;55&#39;,
+  &#39;56&#39;,
+  &#39;23&#39;,
+  &#39;0&#39;,
+  &#39;49&#39;,
+  &#39;65&#39;,
+  &#39;45&#39;,
+  &#39;B&#39;,
+  &#39;47&#39;,
+  &#39;67&#39;,
+  &#39;6&#39;,
+  &#39;55&#39;,
+  &#39;39&#39;,
+  &#39;86&#39;,
+  &#39;75&#39;,
+  &#39;96&#39;,
+  &#39;98&#39;,
+  &#39;50&#39;,
+  &#39;31&#39;,
+  &#39;78&#39;,
+  &#39;93&#39;,
+  &#39;56&#39;,
+  &#39;65&#39;,
+  &#39;23&#39;,
+  &#39;94&#39;,
+  &#39;96&#39;,
+  &#39;15&#39;,
+  &#39;31&#39;,
+  &#39;63&#39;],
+ [&#39;76&#39;,
+  &#39;68&#39;,
+  &#39;47&#39;,
+  &#39;72&#39;,
+  &#39;96&#39;,
+  &#39;65&#39;,
+  &#39;27&#39;,
+  &#39;54&#39;,
+  &#39;76&#39;,
+  &#39;10&#39;,
+  &#39;67&#39;,
+  &#39;51&#39;,
+  &#39;38&#39;,
+  &#39;91&#39;,
+  &#39;7&#39;,
+  &#39;55&#39;,
+  &#39;47&#39;,
+  &#39;9&#39;,
+  &#39;25&#39;,
+  &#39;44&#39;,
+  &#39;71&#39;,
+  &#39;92&#39;,
+  &#39;35&#39;,
+  &#39;64&#39;,
+  &#39;20&#39;,
+  &#39;3&#39;,
+  &#39;92&#39;,
+  &#39;36&#39;,
+  &#39;63&#39;,
+  &#39;14&#39;,
+  &#39;39&#39;,
+  &#39;46&#39;,
+  &#39;35&#39;,
+  &#39;14&#39;,
+  &#39;87&#39;,
+  &#39;15&#39;,
+  &#39;39&#39;,
+  &#39;3&#39;,
+  &#39;64&#39;,
+  &#39;95&#39;,
+  &#39;56&#39;,
+  &#39;59&#39;,
+  &#39;19&#39;,
+  &#39;25&#39;,
+  &#39;81&#39;,
+  &#39;4&#39;,
+  &#39;40&#39;,
+  &#39;42&#39;,
+  &#39;39&#39;,
+  &#39;45&#39;,
+  &#39;97&#39;,
+  &#39;1&#39;,
+  &#39;49&#39;,
+  &#39;58&#39;,
+  &#39;93&#39;,
+  &#39;87&#39;,
+  &#39;3&#39;,
+  &#39;41&#39;,
+  &#39;15&#39;,
+  &#39;88&#39;,
+  &#39;35&#39;,
+  &#39;53&#39;,
+  &#39;0&#39;,
+  &#39;35&#39;,
+  &#39;20&#39;,
+  &#39;20&#39;],
+ [&#39;16&#39;,
+  &#39;19&#39;,
+  &#39;51&#39;,
+  &#39;42&#39;,
+  &#39;81&#39;,
+  &#39;49&#39;,
+  &#39;35&#39;,
+  &#39;83&#39;,
+  &#39;36&#39;,
+  &#39;63&#39;,
+  &#39;76&#39;,
+  &#39;70&#39;,
+  &#39;49&#39;,
+  &#39;79&#39;,
+  &#39;11&#39;,
+  &#39;35&#39;,
+  &#39;71&#39;,
+  &#39;71&#39;,
+  &#39;31&#39;,
+  &#39;34&#39;,
+  &#39;4&#39;,
+  &#39;71&#39;,
+  &#39;9&#39;,
+  &#39;24&#39;,
+  &#39;35&#39;,
+  &#39;28&#39;,
+  &#39;39&#39;,
+  &#39;56&#39;,
+  &#39;24&#39;,
+  &#39;2&#39;,
+  &#39;17&#39;,
+  &#39;72&#39;,
+  &#39;73&#39;,
+  &#39;41&#39;,
+  &#39;92&#39;,
+  &#39;16&#39;,
+  &#39;18&#39;,
+  &#39;9&#39;,
+  &#39;53&#39;,
+  &#39;6&#39;,
+  &#39;18&#39;,
+  &#39;10&#39;,
+  &#39;65&#39;,
+  &#39;34&#39;,
+  &#39;79&#39;,
+  &#39;79&#39;,
+  &#39;_&#39;,
+  &#39;50&#39;,
+  &#39;72&#39;,
+  &#39;80&#39;,
+  &#39;28&#39;,
+  &#39;47&#39;,
+  &#39;52&#39;,
+  &#39;7&#39;,
+  &#39;27&#39;,
+  &#39;46&#39;,
+  &#39;0&#39;,
+  &#39;6&#39;,
+  &#39;29&#39;,
+  &#39;91&#39;,
+  &#39;47&#39;,
+  &#39;92&#39;,
+  &#39;94&#39;,
+  &#39;47&#39;,
+  &#39;37&#39;,
+  &#39;75&#39;],
+ [&#39;19&#39;,
+  &#39;4&#39;,
+  &#39;25&#39;,
+  &#39;8&#39;,
+  &#39;60&#39;,
+  &#39;87&#39;,
+  &#39;61&#39;,
+  &#39;91&#39;,
+  &#39;15&#39;,
+  &#39;92&#39;,
+  &#39;46&#39;,
+  &#39;1&#39;,
+  &#39;57&#39;,
+  &#39;92&#39;,
+  &#39;47&#39;,
+  &#39;46&#39;,
+  &#39;9&#39;,
+  &#39;14&#39;,
+  &#39;32&#39;,
+  &#39;21&#39;,
+  &#39;74&#39;,
+  &#39;76&#39;,
+  &#39;47&#39;,
+  &#39;48&#39;,
+  &#39;22&#39;,
+  &#39;95&#39;,
+  &#39;26&#39;,
+  &#39;9&#39;,
+  &#39;17&#39;,
+  &#39;75&#39;,
+  &#39;13&#39;,
+  &#39;79&#39;,
+  &#39;44&#39;,
+  &#39;30&#39;,
+  &#39;15&#39;,
+  &#39;61&#39;,
+  &#39;47&#39;,
+  &#39;6&#39;,
+  &#39;46&#39;,
+  &#39;83&#39;,
+  &#39;52&#39;,
+  &#39;73&#39;,
+  &#39;56&#39;,
+  &#39;74&#39;,
+  &#39;84&#39;,
+  &#39;31&#39;,
+  &#39;82&#39;,
+  &#39;4&#39;,
+  &#39;32&#39;,
+  &#39;7&#39;,
+  &#39;27&#39;,
+  &#39;4&#39;,
+  &#39;43&#39;,
+  &#39;92&#39;,
+  &#39;46&#39;,
+  &#39;62&#39;,
+  &#39;1&#39;,
+  &#39;97&#39;,
+  &#39;16&#39;,
+  &#39;73&#39;,
+  &#39;27&#39;,
+  &#39;68&#39;,
+  &#39;39&#39;,
+  &#39;34&#39;,
+  &#39;70&#39;,
+  &#39;69&#39;],
+ [&#39;24&#39;,
+  &#39;85&#39;,
+  &#39;23&#39;,
+  &#39;49&#39;,
+  &#39;54&#39;,
+  &#39;18&#39;,
+  &#39;90&#39;,
+  &#39;36&#39;,
+  &#39;33&#39;,
+  &#39;73&#39;,
+  &#39;98&#39;,
+  &#39;19&#39;,
+  &#39;16&#39;,
+  &#39;67&#39;,
+  &#39;44&#39;,
+  &#39;12&#39;,
+  &#39;72&#39;,
+  &#39;89&#39;,
+  &#39;85&#39;,
+  &#39;9&#39;,
+  &#39;71&#39;,
+  &#39;9&#39;,
+  &#39;98&#39;,
+  &#39;81&#39;,
+  &#39;34&#39;,
+  &#39;77&#39;,
+  &#39;60&#39;,
+  &#39;10&#39;,
+  &#39;91&#39;,
+  &#39;93&#39;,
+  &#39;63&#39;,
+  &#39;22&#39;,
+  &#39;69&#39;,
+  &#39;63&#39;,
+  &#39;13&#39;,
+  &#39;75&#39;,
+  &#39;6&#39;,
+  &#39;29&#39;,
+  &#39;52&#39;,
+  &#39;23&#39;,
+  &#39;45&#39;,
+  &#39;98&#39;,
+  &#39;55&#39;,
+  &#39;23&#39;,
+  &#39;37&#39;,
+  &#39;66&#39;,
+  &#39;91&#39;,
+  &#39;11&#39;,
+  &#39;x&#39;,
+  &#39;66&#39;,
+  &#39;86&#39;,
+  &#39;0&#39;,
+  &#39;37&#39;,
+  &#39;12&#39;,
+  &#39;44&#39;,
+  &#39;16&#39;,
+  &#39;67&#39;,
+  &#39;93&#39;,
+  &#39;34&#39;,
+  &#39;5&#39;,
+  &#39;69&#39;,
+  &#39;70&#39;,
+  &#39;23&#39;,
+  &#39;40&#39;,
+  &#39;36&#39;,
+  &#39;99&#39;],
+ [&#39;94&#39;,
+  &#39;53&#39;,
+  &#39;29&#39;,
+  &#39;95&#39;,
+  &#39;87&#39;,
+  &#39;91&#39;,
+  &#39;38&#39;,
+  &#39;68&#39;,
+  &#39;83&#39;,
+  &#39;8&#39;,
+  &#39;83&#39;,
+  &#39;18&#39;,
+  &#39;85&#39;,
+  &#39;64&#39;,
+  &#39;62&#39;,
+  &#39;9&#39;,
+  &#39;88&#39;,
+  &#39;81&#39;,
+  &#39;3&#39;,
+  &#39;43&#39;,
+  &#39;78&#39;,
+  &#39;31&#39;,
+  &#39;72&#39;,
+  &#39;68&#39;,
+  &#39;50&#39;,
+  &#39;95&#39;,
+  &#39;20&#39;,
+  &#39;68&#39;,
+  &#39;89&#39;,
+  &#39;56&#39;,
+  &#39;58&#39;,
+  &#39;53&#39;,
+  &#39;31&#39;,
+  &#39;32&#39;,
+  &#39;7&#39;,
+  &#39;71&#39;,
+  &#39;29&#39;,
+  &#39;33&#39;,
+  &#39;66&#39;,
+  &#39;23&#39;,
+  &#39;38&#39;,
+  &#39;96&#39;,
+  &#39;52&#39;,
+  &#39;45&#39;,
+  &#39;86&#39;,
+  &#39;69&#39;,
+  &#39;41&#39;,
+  &#39;46&#39;,
+  &#39;49&#39;,
+  &#39;s&#39;,
+  &#39;87&#39;,
+  &#39;33&#39;,
+  &#39;40&#39;,
+  &#39;52&#39;,
+  &#39;13&#39;,
+  &#39;19&#39;,
+  &#39;89&#39;,
+  &#39;56&#39;,
+  &#39;96&#39;,
+  &#39;97&#39;,
+  &#39;40&#39;,
+  &#39;66&#39;,
+  &#39;10&#39;,
+  &#39;51&#39;,
+  &#39;56&#39;,
+  &#39;19&#39;],
+ [&#39;53&#39;,
+  &#39;57&#39;,
+  &#39;90&#39;,
+  &#39;2&#39;,
+  &#39;83&#39;,
+  &#39;91&#39;,
+  &#39;55&#39;,
+  &#39;85&#39;,
+  &#39;25&#39;,
+  &#39;41&#39;,
+  &#39;76&#39;,
+  &#39;3&#39;,
+  &#39;15&#39;,
+  &#39;77&#39;,
+  &#39;73&#39;,
+  &#39;82&#39;,
+  &#39;13&#39;,
+  &#39;94&#39;,
+  &#39;27&#39;,
+  &#39;41&#39;,
+  &#39;50&#39;,
+  &#39;5&#39;,
+  &#39;55&#39;,
+  &#39;24&#39;,
+  &#39;5&#39;,
+  &#39;21&#39;,
+  &#39;27&#39;,
+  &#39;91&#39;,
+  &#39;2&#39;,
+  &#39;52&#39;,
+  &#39;66&#39;,
+  &#39;13&#39;,
+  &#39;94&#39;,
+  &#39;7&#39;,
+  &#39;95&#39;,
+  &#39;28&#39;,
+  &#39;88&#39;,
+  &#39;11&#39;,
+  &#39;60&#39;,
+  &#39;62&#39;,
+  &#39;15&#39;,
+  &#39;32&#39;,
+  &#39;49&#39;,
+  &#39;19&#39;,
+  &#39;56&#39;,
+  &#39;95&#39;,
+  &#39;88&#39;,
+  &#39;52&#39;,
+  &#39;23&#39;,
+  &#39;94&#39;,
+  &#39;A&#39;,
+  &#39;88&#39;,
+  &#39;95&#39;,
+  &#39;48&#39;,
+  &#39;5&#39;,
+  &#39;48&#39;,
+  &#39;30&#39;,
+  &#39;60&#39;,
+  &#39;35&#39;,
+  &#39;74&#39;,
+  &#39;63&#39;,
+  &#39;20&#39;,
+  &#39;27&#39;,
+  &#39;75&#39;,
+  &#39;57&#39;,
+  &#39;63&#39;],
+ [&#39;6&#39;,
+  &#39;49&#39;,
+  &#39;57&#39;,
+  &#39;86&#39;,
+  &#39;37&#39;,
+  &#39;12&#39;,
+  &#39;65&#39;,
+  &#39;80&#39;,
+  &#39;16&#39;,
+  &#39;9&#39;,
+  &#39;38&#39;,
+  &#39;89&#39;,
+  &#39;50&#39;,
+  &#39;30&#39;,
+  &#39;66&#39;,
+  &#39;89&#39;,
+  &#39;65&#39;,
+  &#39;66&#39;,
+  &#39;39&#39;,
+  &#39;33&#39;,
+  &#39;59&#39;,
+  &#39;40&#39;,
+  &#39;10&#39;,
+  &#39;16&#39;,
+  &#39;98&#39;,
+  &#39;34&#39;,
+  &#39;20&#39;,
+  &#39;83&#39;,
+  &#39;71&#39;,
+  &#39;34&#39;,
+  &#39;7&#39;,
+  &#39;83&#39;,
+  &#39;80&#39;,
+  &#39;27&#39;,
+  &#39;11&#39;,
+  &#39;43&#39;,
+  &#39;94&#39;,
+  &#39;92&#39;,
+  &#39;10&#39;,
+  &#39;69&#39;,
+  &#39;6&#39;,
+  &#39;23&#39;,
+  &#39;90&#39;,
+  &#39;19&#39;,
+  &#39;22&#39;,
+  &#39;18&#39;,
+  &#39;51&#39;,
+  &#39;11&#39;,
+  &#39;39&#39;,
+  &#39;61&#39;,
+  &#39;1&#39;,
+  &#39;J&#39;,
+  &#39;47&#39;,
+  &#39;95&#39;,
+  &#39;41&#39;,
+  &#39;61&#39;,
+  &#39;74&#39;,
+  &#39;83&#39;,
+  &#39;59&#39;,
+  &#39;70&#39;,
+  &#39;35&#39;,
+  &#39;30&#39;,
+  &#39;6&#39;,
+  &#39;43&#39;,
+  &#39;74&#39;,
+  &#39;59&#39;],
+ [&#39;55&#39;,
+  &#39;44&#39;,
+  &#39;50&#39;,
+  &#39;29&#39;,
+  &#39;44&#39;,
+  &#39;62&#39;,
+  &#39;9&#39;,
+  &#39;38&#39;,
+  &#39;9&#39;,
+  &#39;68&#39;,
+  &#39;74&#39;,
+  &#39;59&#39;,
+  &#39;49&#39;,
+  &#39;45&#39;,
+  &#39;8&#39;,
+  &#39;35&#39;,
+  &#39;40&#39;,
+  &#39;94&#39;,
+  &#39;50&#39;,
+  &#39;92&#39;,
+  &#39;26&#39;,
+  &#39;44&#39;,
+  &#39;59&#39;,
+  &#39;5&#39;,
+  &#39;63&#39;,
+  &#39;14&#39;,
+  &#39;95&#39;,
+  &#39;20&#39;,
+  &#39;72&#39;,
+  &#39;62&#39;,
+  &#39;82&#39;,
+  &#39;51&#39;,
+  &#39;23&#39;,
+  &#39;83&#39;,
+  &#39;34&#39;,
+  &#39;33&#39;,
+  &#39;39&#39;,
+  &#39;63&#39;,
+  &#39;13&#39;,
+  &#39;69&#39;,
+  &#39;58&#39;,
+  &#39;85&#39;,
+  &#39;45&#39;,
+  &#39;71&#39;,
+  &#39;38&#39;,
+  &#39;6&#39;,
+  &#39;97&#39;,
+  &#39;76&#39;,
+  &#39;19&#39;,
+  &#39;57&#39;,
+  &#39;93&#39;,
+  &#39;25&#39;,
+  &#39;J&#39;,
+  &#39;38&#39;,
+  &#39;9&#39;,
+  &#39;86&#39;,
+  &#39;27&#39;,
+  &#39;88&#39;,
+  &#39;67&#39;,
+  &#39;40&#39;,
+  &#39;33&#39;,
+  &#39;2&#39;,
+  &#39;55&#39;,
+  &#39;74&#39;,
+  &#39;74&#39;,
+  &#39;32&#39;],
+ [&#39;95&#39;,
+  &#39;30&#39;,
+  &#39;9&#39;,
+  &#39;12&#39;,
+  &#39;70&#39;,
+  &#39;67&#39;,
+  &#39;94&#39;,
+  &#39;79&#39;,
+  &#39;84&#39;,
+  &#39;72&#39;,
+  &#39;6&#39;,
+  &#39;98&#39;,
+  &#39;47&#39;,
+  &#39;67&#39;,
+  &#39;66&#39;,
+  &#39;25&#39;,
+  &#39;72&#39;,
+  &#39;28&#39;,
+  &#39;73&#39;,
+  &#39;44&#39;,
+  &#39;87&#39;,
+  &#39;85&#39;,
+  &#39;25&#39;,
+  &#39;53&#39;,
+  &#39;53&#39;,
+  &#39;61&#39;,
+  &#39;46&#39;,
+  &#39;67&#39;,
+  &#39;87&#39;,
+  &#39;88&#39;,
+  &#39;46&#39;,
+  &#39;63&#39;,
+  &#39;91&#39;,
+  &#39;68&#39;,
+  &#39;40&#39;,
+  &#39;96&#39;,
+  &#39;54&#39;,
+  &#39;76&#39;,
+  &#39;95&#39;,
+  &#39;60&#39;,
+  &#39;37&#39;,
+  &#39;13&#39;,
+  &#39;58&#39;,
+  &#39;13&#39;,
+  &#39;30&#39;,
+  &#39;51&#39;,
+  &#39;11&#39;,
+  &#39;86&#39;,
+  &#39;87&#39;,
+  &#39;36&#39;,
+  &#39;90&#39;,
+  &#39;45&#39;,
+  &#39;29&#39;,
+  &#39;5&#39;,
+  &#39;3&#39;,
+  &#39;43&#39;,
+  &#39;33&#39;,
+  &#39;19&#39;,
+  &#39;1&#39;,
+  &#39;25&#39;,
+  &#39;76&#39;,
+  &#39;90&#39;,
+  &#39;75&#39;,
+  &#39;55&#39;,
+  &#39;53&#39;,
+  &#39;60&#39;],
+ [&#39;40&#39;,
+  &#39;82&#39;,
+  &#39;59&#39;,
+  &#39;48&#39;,
+  &#39;63&#39;,
+  &#39;75&#39;,
+  &#39;65&#39;,
+  &#39;18&#39;,
+  &#39;29&#39;,
+  &#39;8&#39;,
+  &#39;89&#39;,
+  &#39;1&#39;,
+  &#39;23&#39;,
+  &#39;13&#39;,
+  &#39;64&#39;,
+  &#39;63&#39;,
+  &#39;15&#39;,
+  &#39;91&#39;,
+  &#39;97&#39;,
+  &#39;33&#39;,
+  &#39;86&#39;,
+  &#39;57&#39;,
+  &#39;47&#39;,
+  &#39;45&#39;,
+  &#39;96&#39;,
+  &#39;73&#39;,
+  &#39;96&#39;,
+  &#39;5&#39;,
+  &#39;35&#39;,
+  &#39;41&#39;,
+  &#39;90&#39;,
+  &#39;6&#39;,
+  &#39;68&#39;,
+  &#39;73&#39;,
+  &#39;23&#39;,
+  &#39;25&#39;,
+  &#39;24&#39;,
+  &#39;25&#39;,
+  &#39;64&#39;,
+  &#39;8&#39;,
+  &#39;25&#39;,
+  &#39;20&#39;,
+  &#39;48&#39;,
+  &#39;22&#39;,
+  &#39;93&#39;,
+  &#39;7&#39;,
+  &#39;59&#39;,
+  &#39;29&#39;,
+  &#39;87&#39;,
+  &#39;17&#39;,
+  &#39;33&#39;,
+  &#39;48&#39;,
+  &#39;16&#39;,
+  &#39;91&#39;,
+  &#39;T&#39;,
+  &#39;19&#39;,
+  &#39;2&#39;,
+  &#39;23&#39;,
+  &#39;56&#39;,
+  &#39;77&#39;,
+  &#39;23&#39;,
+  &#39;99&#39;,
+  &#39;12&#39;,
+  &#39;37&#39;,
+  &#39;55&#39;,
+  &#39;60&#39;],
+ [&#39;88&#39;,
+  &#39;38&#39;,
+  &#39;20&#39;,
+  &#39;30&#39;,
+  &#39;1&#39;,
+  &#39;77&#39;,
+  &#39;19&#39;,
+  &#39;42&#39;,
+  &#39;95&#39;,
+  &#39;70&#39;,
+  &#39;70&#39;,
+  &#39;14&#39;,
+  &#39;27&#39;,
+  &#39;96&#39;,
+  &#39;5&#39;,
+  &#39;11&#39;,
+  &#39;85&#39;,
+  &#39;83&#39;,
+  &#39;91&#39;,
+  &#39;0&#39;,
+  &#39;88&#39;,
+  &#39;11&#39;,
+  &#39;94&#39;,
+  &#39;80&#39;,
+  &#39;42&#39;,
+  &#39;87&#39;,
+  &#39;94&#39;,
+  &#39;73&#39;,
+  &#39;44&#39;,
+  &#39;62&#39;,
+  &#39;74&#39;,
+  &#39;10&#39;,
+  &#39;5&#39;,
+  &#39;29&#39;,
+  &#39;18&#39;,
+  &#39;43&#39;,
+  &#39;62&#39;,
+  &#39;11&#39;,
+  &#39;11&#39;,
+  &#39;61&#39;,
+  &#39;77&#39;,
+  &#39;68&#39;,
+  &#39;90&#39;,
+  &#39;63&#39;,
+  &#39;83&#39;,
+  &#39;58&#39;,
+  &#39;41&#39;,
+  &#39;41&#39;,
+  &#39;96&#39;,
+  &#39;61&#39;,
+  &#39;57&#39;,
+  &#39;35&#39;,
+  &#39;21&#39;,
+  &#39;47&#39;,
+  &#39;4&#39;,
+  &#39;d&#39;,
+  &#39;11&#39;,
+  &#39;40&#39;,
+  &#39;23&#39;,
+  &#39;58&#39;,
+  &#39;94&#39;,
+  &#39;64&#39;,
+  &#39;94&#39;,
+  &#39;6&#39;,
+  &#39;92&#39;,
+  &#39;51&#39;],
+ [&#39;72&#39;,
+  &#39;92&#39;,
+  &#39;11&#39;,
+  &#39;92&#39;,
+  &#39;62&#39;,
+  &#39;13&#39;,
+  &#39;10&#39;,
+  &#39;56&#39;,
+  &#39;70&#39;,
+  &#39;89&#39;,
+  &#39;16&#39;,
+  &#39;27&#39;,
+  &#39;53&#39;,
+  &#39;26&#39;,
+  &#39;91&#39;,
+  &#39;34&#39;,
+  &#39;32&#39;,
+  &#39;34&#39;,
+  &#39;42&#39;,
+  &#39;75&#39;,
+  &#39;47&#39;,
+  &#39;59&#39;,
+  &#39;23&#39;,
+  &#39;23&#39;,
+  &#39;34&#39;,
+  &#39;17&#39;,
+  &#39;20&#39;,
+  &#39;7&#39;,
+  &#39;98&#39;,
+  &#39;30&#39;,
+  &#39;64&#39;,
+  &#39;40&#39;,
+  &#39;98&#39;,
+  &#39;77&#39;,
+  &#39;74&#39;,
+  &#39;39&#39;,
+  &#39;75&#39;,
+  &#39;94&#39;,
+  &#39;55&#39;,
+  &#39;46&#39;,
+  &#39;32&#39;,
+  &#39;96&#39;,
+  &#39;33&#39;,
+  &#39;22&#39;,
+  &#39;46&#39;,
+  &#39;80&#39;,
+  &#39;30&#39;,
+  &#39;71&#39;,
+  &#39;41&#39;,
+  &#39;14&#39;,
+  &#39;49&#39;,
+  &#39;40&#39;,
+  &#39;66&#39;,
+  &#39;84&#39;,
+  &#39;40&#39;,
+  &#39;4&#39;,
+  &#39;z&#39;,
+  &#39;20&#39;,
+  &#39;52&#39;,
+  &#39;73&#39;,
+  &#39;40&#39;,
+  &#39;29&#39;,
+  &#39;52&#39;,
+  &#39;19&#39;,
+  &#39;29&#39;,
+  &#39;1&#39;],
+ [&#39;80&#39;,
+  &#39;55&#39;,
+  &#39;68&#39;,
+  &#39;59&#39;,
+  &#39;49&#39;,
+  &#39;84&#39;,
+  &#39;54&#39;,
+  &#39;59&#39;,
+  &#39;48&#39;,
+  &#39;63&#39;,
+  &#39;67&#39;,
+  &#39;53&#39;,
+  &#39;80&#39;,
+  &#39;75&#39;,
+  &#39;68&#39;,
+  &#39;6&#39;,
+  &#39;33&#39;,
+  &#39;33&#39;,
+  &#39;4&#39;,
+  &#39;67&#39;,
+  &#39;82&#39;,
+  &#39;7&#39;,
+  &#39;99&#39;,
+  &#39;94&#39;,
+  &#39;57&#39;,
+  &#39;42&#39;,
+  &#39;7&#39;,
+  &#39;77&#39;,
+  &#39;70&#39;,
+  &#39;40&#39;,
+  &#39;57&#39;,
+  &#39;57&#39;,
+  &#39;40&#39;,
+  &#39;41&#39;,
+  &#39;51&#39;,
+  &#39;85&#39;,
+  &#39;87&#39;,
+  &#39;29&#39;,
+  &#39;96&#39;,
+  &#39;56&#39;,
+  &#39;11&#39;,
+  &#39;6&#39;,
+  &#39;48&#39;,
+  &#39;63&#39;,
+  &#39;10&#39;,
+  &#39;39&#39;,
+  &#39;90&#39;,
+  &#39;68&#39;,
+  &#39;34&#39;,
+  &#39;38&#39;,
+  &#39;0&#39;,
+  &#39;90&#39;,
+  &#39;41&#39;,
+  &#39;78&#39;,
+  &#39;16&#39;,
+  &#39;19&#39;,
+  &#39;66&#39;,
+  &#39;r&#39;,
+  &#39;30&#39;,
+  &#39;58&#39;,
+  &#39;37&#39;,
+  &#39;89&#39;,
+  &#39;61&#39;,
+  &#39;61&#39;,
+  &#39;76&#39;,
+  &#39;45&#39;],
+ [&#39;70&#39;,
+  &#39;9&#39;,
+  &#39;52&#39;,
+  &#39;79&#39;,
+  &#39;19&#39;,
+  &#39;98&#39;,
+  &#39;74&#39;,
+  &#39;11&#39;,
+  &#39;15&#39;,
+  &#39;51&#39;,
+  &#39;17&#39;,
+  &#39;39&#39;,
+  &#39;81&#39;,
+  &#39;41&#39;,
+  &#39;32&#39;,
+  &#39;28&#39;,
+  &#39;35&#39;,
+  &#39;53&#39;,
+  &#39;23&#39;,
+  &#39;18&#39;,
+  &#39;60&#39;,
+  &#39;84&#39;,
+  &#39;39&#39;,
+  &#39;27&#39;,
+  &#39;95&#39;,
+  &#39;68&#39;,
+  &#39;2&#39;,
+  &#39;47&#39;,
+  &#39;51&#39;,
+  &#39;43&#39;,
+  &#39;46&#39;,
+  &#39;39&#39;,
+  &#39;17&#39;,
+  &#39;41&#39;,
+  &#39;98&#39;,
+  &#39;15&#39;,
+  &#39;34&#39;,
+  &#39;76&#39;,
+  &#39;75&#39;,
+  &#39;7&#39;,
+  &#39;1&#39;,
+  &#39;96&#39;,
+  &#39;74&#39;,
+  &#39;90&#39;,
+  &#39;49&#39;,
+  &#39;73&#39;,
+  &#39;15&#39;,
+  &#39;46&#39;,
+  &#39;42&#39;,
+  &#39;40&#39;,
+  &#39;75&#39;,
+  &#39;55&#39;,
+  &#39;77&#39;,
+  &#39;53&#39;,
+  &#39;2&#39;,
+  &#39;35&#39;,
+  &#39;46&#39;,
+  &#39;4&#39;,
+  &#39;h&#39;,
+  &#39;51&#39;,
+  &#39;11&#39;,
+  &#39;74&#39;,
+  &#39;13&#39;,
+  &#39;47&#39;,
+  &#39;81&#39;,
+  &#39;36&#39;],
+ [&#39;75&#39;,
+  &#39;12&#39;,
+  &#39;2&#39;,
+  &#39;58&#39;,
+  &#39;16&#39;,
+  &#39;45&#39;,
+  &#39;26&#39;,
+  &#39;1&#39;,
+  &#39;48&#39;,
+  &#39;74&#39;,
+  &#39;27&#39;,
+  &#39;73&#39;,
+  &#39;65&#39;,
+  &#39;93&#39;,
+  &#39;75&#39;,
+  &#39;94&#39;,
+  &#39;0&#39;,
+  &#39;98&#39;,
+  &#39;66&#39;,
+  &#39;26&#39;,
+  &#39;11&#39;,
+  &#39;0&#39;,
+  &#39;21&#39;,
+  &#39;63&#39;,
+  &#39;36&#39;,
+  &#39;0&#39;,
+  &#39;60&#39;,
+  &#39;94&#39;,
+  &#39;54&#39;,
+  &#39;78&#39;,
+  &#39;33&#39;,
+  &#39;19&#39;,
+  &#39;13&#39;,
+  &#39;26&#39;,
+  &#39;48&#39;,
+  &#39;66&#39;,
+  &#39;27&#39;,
+  &#39;39&#39;,
+  &#39;4&#39;,
+  &#39;27&#39;,
+  &#39;96&#39;,
+  &#39;19&#39;,
+  &#39;32&#39;,
+  &#39;7&#39;,
+  &#39;24&#39;,
+  &#39;51&#39;,
+  &#39;85&#39;,
+  &#39;36&#39;,
+  &#39;15&#39;,
+  &#39;46&#39;,
+  &#39;28&#39;,
+  &#39;64&#39;,
+  &#39;40&#39;,
+  &#39;72&#39;,
+  &#39;28&#39;,
+  &#39;80&#39;,
+  &#39;35&#39;,
+  &#39;90&#39;,
+  &#39;2&#39;,
+  &#39;m&#39;,
+  &#39;99&#39;,
+  &#39;91&#39;,
+  &#39;70&#39;,
+  &#39;47&#39;,
+  &#39;85&#39;,
+  &#39;49&#39;],
+ [&#39;68&#39;,
+  &#39;16&#39;,
+  &#39;0&#39;,
+  &#39;31&#39;,
+  &#39;44&#39;,
+  &#39;34&#39;,
+  &#39;85&#39;,
+  &#39;12&#39;,
+  &#39;53&#39;,
+  &#39;43&#39;,
+  &#39;59&#39;,
+  &#39;51&#39;,
+  &#39;10&#39;,
+  &#39;42&#39;,
+  &#39;91&#39;,
+  &#39;42&#39;,
+  &#39;92&#39;,
+  &#39;19&#39;,
+  &#39;3&#39;,
+  &#39;73&#39;,
+  &#39;15&#39;,
+  &#39;33&#39;,
+  &#39;94&#39;,
+  &#39;50&#39;,
+  &#39;81&#39;,
+  &#39;97&#39;,
+  &#39;66&#39;,
+  &#39;11&#39;,
+  &#39;52&#39;,
+  &#39;87&#39;,
+  &#39;26&#39;,
+  &#39;36&#39;,
+  &#39;24&#39;,
+  &#39;92&#39;,
+  &#39;26&#39;,
+  &#39;2&#39;,
+  &#39;83&#39;,
+  &#39;64&#39;,
+  &#39;12&#39;,
+  &#39;12&#39;,
+  &#39;64&#39;,
+  &#39;76&#39;,
+  &#39;41&#39;,
+  &#39;14&#39;,
+  &#39;18&#39;,
+  &#39;95&#39;,
+  &#39;46&#39;,
+  &#39;8&#39;,
+  &#39;7&#39;,
+  &#39;41&#39;,
+  &#39;37&#39;,
+  &#39;34&#39;,
+  &#39;20&#39;,
+  &#39;47&#39;,
+  &#39;93&#39;,
+  &#39;21&#39;,
+  &#39;90&#39;,
+  &#39;26&#39;,
+  &#39;8&#39;,
+  &#39;80&#39;,
+  &#39;X&#39;,
+  &#39;90&#39;,
+  &#39;84&#39;,
+  &#39;53&#39;,
+  &#39;80&#39;,
+  &#39;1&#39;],
+ [&#39;70&#39;,
+  &#39;15&#39;,
+  &#39;70&#39;,
+  &#39;62&#39;,
+  &#39;65&#39;,
+  &#39;32&#39;,
+  &#39;53&#39;,
+  &#39;3&#39;,
+  &#39;22&#39;,
+  &#39;57&#39;,
+  &#39;86&#39;,
+  &#39;74&#39;,
+  &#39;61&#39;,
+  &#39;89&#39;,
+  &#39;96&#39;,
+  &#39;40&#39;,
+  &#39;27&#39;,
+  &#39;32&#39;,
+  &#39;12&#39;,
+  &#39;70&#39;,
+  &#39;66&#39;,
+  &#39;57&#39;,
+  &#39;4&#39;,
+  &#39;93&#39;,
+  &#39;57&#39;,
+  &#39;69&#39;,
+  &#39;36&#39;,
+  &#39;86&#39;,
+  &#39;38&#39;,
+  &#39;99&#39;,
+  &#39;3&#39;,
+  &#39;45&#39;,
+  &#39;42&#39;,
+  &#39;78&#39;,
+  &#39;61&#39;,
+  &#39;44&#39;,
+  &#39;88&#39;,
+  &#39;61&#39;,
+  &#39;61&#39;,
+  &#39;82&#39;,
+  &#39;26&#39;,
+  &#39;25&#39;,
+  &#39;53&#39;,
+  &#39;59&#39;,
+  &#39;53&#39;,
+  &#39;54&#39;,
+  &#39;59&#39;,
+  &#39;51&#39;,
+  &#39;17&#39;,
+  &#39;95&#39;,
+  &#39;24&#39;,
+  &#39;22&#39;,
+  &#39;69&#39;,
+  &#39;19&#39;,
+  &#39;36&#39;,
+  &#39;3&#39;,
+  &#39;91&#39;,
+  &#39;87&#39;,
+  &#39;85&#39;,
+  &#39;40&#39;,
+  &#39;13&#39;,
+  &#39;i&#39;,
+  &#39;60&#39;,
+  &#39;44&#39;,
+  &#39;35&#39;,
+  &#39;92&#39;],
+ [&#39;29&#39;,
+  &#39;65&#39;,
+  &#39;93&#39;,
+  &#39;3&#39;,
+  &#39;73&#39;,
+  &#39;70&#39;,
+  &#39;63&#39;,
+  &#39;28&#39;,
+  &#39;44&#39;,
+  &#39;87&#39;,
+  &#39;91&#39;,
+  &#39;97&#39;,
+  &#39;56&#39;,
+  &#39;71&#39;,
+  &#39;91&#39;,
+  &#39;85&#39;,
+  &#39;16&#39;,
+  &#39;68&#39;,
+  &#39;96&#39;,
+  &#39;70&#39;,
+  &#39;93&#39;,
+  &#39;61&#39;,
+  &#39;62&#39;,
+  &#39;13&#39;,
+  &#39;59&#39;,
+  &#39;31&#39;,
+  &#39;26&#39;,
+  &#39;10&#39;,
+  &#39;61&#39;,
+  &#39;67&#39;,
+  &#39;97&#39;,
+  &#39;10&#39;,
+  &#39;82&#39;,
+  &#39;88&#39;,
+  &#39;32&#39;,
+  &#39;45&#39;,
+  &#39;15&#39;,
+  &#39;94&#39;,
+  &#39;98&#39;,
+  &#39;21&#39;,
+  &#39;71&#39;,
+  &#39;86&#39;,
+  &#39;92&#39;,
+  &#39;84&#39;,
+  &#39;0&#39;,
+  &#39;62&#39;,
+  &#39;47&#39;,
+  &#39;19&#39;,
+  &#39;59&#39;,
+  &#39;53&#39;,
+  &#39;79&#39;,
+  &#39;42&#39;,
+  &#39;16&#39;,
+  &#39;32&#39;,
+  &#39;55&#39;,
+  &#39;66&#39;,
+  &#39;79&#39;,
+  &#39;39&#39;,
+  &#39;52&#39;,
+  &#39;27&#39;,
+  &#39;84&#39;,
+  &#39;44&#39;,
+  &#39;p&#39;,
+  &#39;84&#39;,
+  &#39;49&#39;,
+  &#39;78&#39;],
+ [&#39;77&#39;,
+  &#39;98&#39;,
+  &#39;39&#39;,
+  &#39;6&#39;,
+  &#39;26&#39;,
+  &#39;16&#39;,
+  &#39;86&#39;,
+  &#39;11&#39;,
+  &#39;24&#39;,
+  &#39;88&#39;,
+  &#39;39&#39;,
+  &#39;39&#39;,
+  &#39;76&#39;,
+  &#39;67&#39;,
+  &#39;51&#39;,
+  &#39;68&#39;,
+  &#39;52&#39;,
+  &#39;69&#39;,
+  &#39;72&#39;,
+  &#39;89&#39;,
+  &#39;49&#39;,
+  &#39;70&#39;,
+  &#39;73&#39;,
+  &#39;35&#39;,
+  &#39;83&#39;,
+  &#39;31&#39;,
+  &#39;73&#39;,
+  &#39;17&#39;,
+  &#39;80&#39;,
+  &#39;66&#39;,
+  &#39;89&#39;,
+  &#39;76&#39;,
+  &#39;1&#39;,
+  &#39;31&#39;,
+  &#39;6&#39;,
+  &#39;84&#39;,
+  &#39;28&#39;,
+  &#39;24&#39;,
+  &#39;86&#39;,
+  &#39;39&#39;,
+  &#39;16&#39;,
+  &#39;14&#39;,
+  &#39;78&#39;,
+  &#39;87&#39;,
+  &#39;44&#39;,
+  &#39;81&#39;,
+  &#39;62&#39;,
+  &#39;82&#39;,
+  &#39;23&#39;,
+  &#39;96&#39;,
+  &#39;76&#39;,
+  &#39;60&#39;,
+  &#39;58&#39;,
+  &#39;39&#39;,
+  &#39;42&#39;,
+  &#39;74&#39;,
+  &#39;95&#39;,
+  &#39;19&#39;,
+  &#39;99&#39;,
+  &#39;16&#39;,
+  &#39;2&#39;,
+  &#39;71&#39;,
+  &#39;32&#39;,
+  &#39;r&#39;,
+  &#39;30&#39;,
+  &#39;65&#39;],
+ [&#39;52&#39;,
+  &#39;38&#39;,
+  &#39;49&#39;,
+  &#39;63&#39;,
+  &#39;33&#39;,
+  &#39;37&#39;,
+  &#39;18&#39;,
+  &#39;60&#39;,
+  &#39;99&#39;,
+  &#39;27&#39;,
+  &#39;47&#39;,
+  &#39;0&#39;,
+  &#39;32&#39;,
+  &#39;42&#39;,
+  &#39;86&#39;,
+  &#39;28&#39;,
+  &#39;93&#39;,
+  &#39;26&#39;,
+  &#39;26&#39;,
+  &#39;88&#39;,
+  &#39;60&#39;,
+  &#39;44&#39;,
+  &#39;38&#39;,
+  &#39;95&#39;,
+  &#39;2&#39;,
+  &#39;27&#39;,
+  &#39;81&#39;,
+  &#39;3&#39;,
+  &#39;24&#39;,
+  &#39;69&#39;,
+  &#39;3&#39;,
+  &#39;49&#39;,
+  &#39;5&#39;,
+  &#39;82&#39;,
+  &#39;7&#39;,
+  &#39;94&#39;,
+  &#39;52&#39;,
+  &#39;55&#39;,
+  &#39;28&#39;,
+  &#39;77&#39;,
+  &#39;98&#39;,
+  &#39;8&#39;,
+  &#39;20&#39;,
+  &#39;90&#39;,
+  &#39;46&#39;,
+  &#39;20&#39;,
+  &#39;39&#39;,
+  &#39;16&#39;,
+  &#39;30&#39;,
+  &#39;13&#39;,
+  &#39;94&#39;,
+  &#39;9&#39;,
+  &#39;58&#39;,
+  &#39;83&#39;,
+  &#39;7&#39;,
+  &#39;73&#39;,
+  &#39;17&#39;,
+  &#39;33&#39;,
+  &#39;71&#39;,
+  &#39;60&#39;,
+  &#39;50&#39;,
+  &#39;84&#39;,
+  &#39;14&#39;,
+  &#39;64&#39;,
+  &#39;4&#39;,
+  &#39;23&#39;],
+ [&#39;51&#39;,
+  &#39;70&#39;,
+  &#39;63&#39;,
+  &#39;34&#39;,
+  &#39;84&#39;,
+  &#39;97&#39;,
+  &#39;80&#39;,
+  &#39;31&#39;,
+  &#39;41&#39;,
+  &#39;82&#39;,
+  &#39;15&#39;,
+  &#39;35&#39;,
+  &#39;93&#39;,
+  &#39;25&#39;,
+  &#39;62&#39;,
+  &#39;31&#39;,
+  &#39;87&#39;,
+  &#39;18&#39;,
+  &#39;28&#39;,
+  &#39;74&#39;,
+  &#39;4&#39;,
+  &#39;80&#39;,
+  &#39;87&#39;,
+  &#39;97&#39;,
+  &#39;9&#39;,
+  &#39;78&#39;,
+  &#39;40&#39;,
+  &#39;56&#39;,
+  &#39;43&#39;,
+  &#39;28&#39;,
+  &#39;12&#39;,
+  &#39;25&#39;,
+  &#39;32&#39;,
+  &#39;94&#39;,
+  &#39;41&#39;,
+  &#39;95&#39;,
+  &#39;26&#39;,
+  &#39;76&#39;,
+  &#39;86&#39;,
+  &#39;94&#39;,
+  &#39;88&#39;,
+  &#39;71&#39;,
+  &#39;72&#39;,
+  &#39;72&#39;,
+  &#39;15&#39;,
+  &#39;93&#39;,
+  &#39;1&#39;,
+  &#39;47&#39;,
+  &#39;55&#39;,
+  &#39;41&#39;,
+  &#39;12&#39;,
+  &#39;23&#39;,
+  &#39;23&#39;,
+  &#39;46&#39;,
+  &#39;99&#39;,
+  &#39;77&#39;,
+  &#39;63&#39;,
+  &#39;12&#39;,
+  &#39;18&#39;,
+  &#39;63&#39;,
+  &#39;55&#39;,
+  &#39;2&#39;,
+  &#39;0&#39;,
+  &#39;58&#39;,
+  &#39;25&#39;,
+  &#39;Q&#39;]]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="n">data_lines</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">data_lines</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">data_lines</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="n">data_lines</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span>
+</code></pre></div>
+
+</div>
+
+<div class="output_wrapper" markdown="1">
+<div class="output" markdown="1">
+
+
+<div class="output_area" markdown="1">
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;http&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="nb">len</span><span class="p">(</span><span class="n">data_lines</span><span class="p">)</span>
+</code></pre></div>
+
+</div>
+
+<div class="output_wrapper" markdown="1">
+<div class="output" markdown="1">
+
+
+<div class="output_area" markdown="1">
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>66</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+<span class="k">for</span> <span class="n">row_num</span><span class="p">,</span> <span class="n">data</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">data_lines</span><span class="p">):</span>
+    <span class="c1">#print(&#39;row_num:&#39;, row_num)</span>
+    <span class="c1">#print(&#39;data:&#39;, data)</span>
+
+    <span class="nb">str</span> <span class="o">=</span> <span class="nb">str</span> <span class="o">+</span> <span class="n">data</span><span class="p">[</span><span class="n">row_num</span><span class="p">]</span>
+</code></pre></div>
+
+</div>
+
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="nb">str</span>
+</code></pre></div>
+
+</div>
+
+<div class="output_wrapper" markdown="1">
+<div class="output" markdown="1">
+
+
+<div class="output_area" markdown="1">
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;https://drive.google.com/open?id=1G6SEgg018UB4_4xsAJJ5TdzrhmXipr4Q&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+<div class="cell border-box-sizing text_cell rendered">
+<p><div class="inner_cell" markdown="1">
+<div class="text_cell_render border-box-sizing rendered_html" markdown="1"></p>
+<h2>Task Two: Download the PDF from the Google Drive link and find the phone number that is in the document.</h2>
+<p></div>
+</div></p>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+</div>
+</div>
+<div class="highlight"><pre><span></span><code><span class="mf">223.223</span><span class="o">.</span><span class="mi">2334</span>
+<span class="sa">r</span><span class="s1">&#39;\d</span><span class="si">{3}</span><span class="s1">.\d</span><span class="si">{3}</span><span class="s1">.\d</span><span class="si">{4}</span><span class="s1">&#39;</span>
+</code></pre></div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">google_drive_downloader</span> <span class="kn">import</span> <span class="n">GoogleDriveDownloader</span> <span class="k">as</span> <span class="n">gdd</span>
+</code></pre></div>
+
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="n">gdd</span><span class="o">.</span><span class="n">download_file_from_google_drive</span><span class="p">(</span><span class="n">file_id</span><span class="o">=</span><span class="s1">&#39;1G6SEgg018UB4_4xsAJJ5TdzrhmXipr4Q&#39;</span><span class="p">,</span><span class="n">dest_path</span><span class="o">=</span><span class="s1">&#39;./testpdf.pdf&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+</div>
+
+<div class="output_wrapper" markdown="1">
+<div class="output" markdown="1">
+
+
+<div class="output_area" markdown="1">
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Downloading 1G6SEgg018UB4_4xsAJJ5TdzrhmXipr4Q into ./testpdf.pdf... Done.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+</div>
+</div>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">PyPDF2</span>
+</code></pre></div>
+
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;testpdf.pdf&#39;</span><span class="p">,</span><span class="s1">&#39;rb&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="n">pdf_reader</span> <span class="o">=</span> <span class="n">PyPDF2</span><span class="o">.</span><span class="n">PdfFileReader</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+</code></pre></div>
+
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="n">pdf_reader</span><span class="o">.</span><span class="n">numPages</span>
+</code></pre></div>
+
+</div>
+
+<div class="output_wrapper" markdown="1">
+<div class="output" markdown="1">
+
+
+<div class="output_area" markdown="1">
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>17</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="n">page</span> <span class="o">=</span> <span class="n">pdf_reader</span><span class="o">.</span><span class="n">getPage</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</code></pre></div>
+
+</div>
+
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="n">Info</span> <span class="o">=</span> <span class="n">page</span><span class="o">.</span><span class="n">extractText</span><span class="p">()</span>
+</code></pre></div>
+
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="n">Message</span> <span class="o">=</span> <span class="n">pdf_reader</span><span class="o">.</span><span class="n">getPage</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">extractText</span><span class="p">()</span>
+</code></pre></div>
+
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="c1">#print(Message)</span>
+</code></pre></div>
+
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">re</span>
+</code></pre></div>
+
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="n">pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;\d</span><span class="si">{3}</span><span class="s1">.\d</span><span class="si">{3}</span><span class="s1">.\d</span><span class="si">{4}</span><span class="s1">&#39;</span>
+</code></pre></div>
+
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="n">text</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">pdf_reader</span><span class="o">.</span><span class="n">numPages</span><span class="p">):</span>
+
+    <span class="n">Message</span> <span class="o">=</span> <span class="n">pdf_reader</span><span class="o">.</span><span class="n">getPage</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="o">.</span><span class="n">extractText</span><span class="p">()</span>
+
+    <span class="n">text</span> <span class="o">=</span> <span class="n">text</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="n">Message</span>
+</code></pre></div>
+
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="c1">#print(text)</span>
+</code></pre></div>
+
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
+</code></pre></div>
+
+</div>
+
+<div class="output_wrapper" markdown="1">
+<div class="output" markdown="1">
+
+
+<div class="output_area" markdown="1">
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;505.503.4455&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="n">pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;\d</span><span class="si">{3}</span><span class="s1">&#39;</span>
+</code></pre></div>
+
+</div>
+
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="nb">list</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">finditer</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">text</span><span class="p">))</span>
+</code></pre></div>
+
+</div>
+
+<div class="output_wrapper" markdown="1">
+<div class="output" markdown="1">
+
+
+<div class="output_area" markdown="1">
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&lt;re.Match object; span=(655, 658), match=&#39;000&#39;&gt;,
+ &lt;re.Match object; span=(17805, 17808), match=&#39;000&#39;&gt;,
+ &lt;re.Match object; span=(35059, 35062), match=&#39;000&#39;&gt;,
+ &lt;re.Match object; span=(41808, 41811), match=&#39;505&#39;&gt;,
+ &lt;re.Match object; span=(41812, 41815), match=&#39;503&#39;&gt;,
+ &lt;re.Match object; span=(41816, 41819), match=&#39;445&#39;&gt;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
+</code></pre></div>
+
+</div>
+
+<div class="output_wrapper" markdown="1">
+<div class="output" markdown="1">
+
+
+<div class="output_area" markdown="1">
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;000&#39;, &#39;000&#39;, &#39;000&#39;, &#39;505&#39;, &#39;503&#39;, &#39;445&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
+</code></pre></div>
+
+</div>
+
+<div class="output_wrapper" markdown="1">
+<div class="output" markdown="1">
+
+
+<div class="output_area" markdown="1">
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;re.Match object; span=(655, 658), match=&#39;000&#39;&gt;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</code></pre></div>
+
+</div>
+
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+</div>
+
+</div>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.d710d30a.min.js"></script>
+      <script src="../../assets/javascripts/bundle.5532dfb7.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: ["tabs"],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.7a2ea5ba.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+        <script src="../../javascripts/extra.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+    
+  </body>
+</html>
