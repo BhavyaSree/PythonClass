@@ -65,7 +65,8 @@ nav:
   - Generators: 24.generators.md
   - Web Scraping: 26.web-scraping.md
   - Emails: 27.emails.md
-  - NumPy: 28.NumPy.md
+  - NumPy-1: 28.numpy-1.md
+  - NumPy-2: 29.numpy-2.md
   - Assesments:
     - Statements: 6.statements-assesment.md
     - Functions: 8.functions-assesment.md
@@ -102,6 +103,7 @@ nav:
     - PDF Files: Notebooks/22.pdf-files.ipynb
     - PDF and CSV Exercise: Notebooks/23.pdf-and-csv-puzzle-exercise.ipynb
     - Emails: Notebooks/24.emails.ipynb
-    - NumPy-Arrays: Notebooks/25.numpy.ipynb
+    - NumPy-1: Notebooks/25.numpy-1.ipynb
+    - Numpy-2: Notebooks/26.numpy-2.ipynb
   - Resources:
     - Tools Used: external-resources/index.md
