@@ -67,6 +67,7 @@ nav:
   - Emails: 27.emails.md
   - NumPy-1: 28.numpy-1.md
   - NumPy-2: 29.numpy-2.md
+  - NumPy-3: 30.numpy-3.md
   - Assesments:
     - Statements: 6.statements-assesment.md
     - Functions: 8.functions-assesment.md
@@ -104,6 +105,7 @@ nav:
     - PDF and CSV Exercise: Notebooks/23.pdf-and-csv-puzzle-exercise.ipynb
     - Emails: Notebooks/24.emails.ipynb
     - NumPy-1: Notebooks/25.numpy-1.ipynb
-    - Numpy-2: Notebooks/26.numpy-2.ipynb
+    - NumPy-2: Notebooks/26.numpy-2.ipynb
+    - NumPy-3: Notebooks/27.numpy-3.ipynb
   - Resources:
     - Tools Used: external-resources/index.md
