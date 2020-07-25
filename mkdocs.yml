@@ -107,5 +107,6 @@ nav:
     - NumPy-1: Notebooks/25.numpy-1.ipynb
     - NumPy-2: Notebooks/26.numpy-2.ipynb
     - NumPy-3: Notebooks/27.numpy-3.ipynb
+    - NumPy-Exercise: Notebooks/28.numpy-exercise.ipynb
   - Resources:
     - Tools Used: external-resources/index.md
