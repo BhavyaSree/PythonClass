@@ -19,7 +19,7 @@
     
     
       
-        <title>Web Scraping - Python Class</title>
+        <title>Pandas - Panel - Python Class</title>
       
     
     
@@ -82,7 +82,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Web Scraping
+              Pandas - Panel
             
           </span>
         </div>
@@ -539,18 +539,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-    <a href="./" title="Web Scraping" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../26.web-scraping/" title="Web Scraping" class="md-nav__link">
       Web Scraping
     </a>
-    
   </li>
 
     
@@ -642,11 +635,18 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../34.pandas-panel/" title="Pandas - Panel" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+    <a href="./" title="Pandas - Panel" class="md-nav__link md-nav__link--active">
       Pandas - Panel
     </a>
+    
   </li>
 
     
@@ -1464,167 +1464,9 @@
                   
                 
                 
-                  <h1>Web Scraping</h1>
+                  <h1>Pandas - Panel</h1>
                 
-                <p>Web scraping is a general term for techniques involving automating the gathering of data from a website.  </p>
-<div class="admonition example">
-<p class="admonition-title">Web scraping examples</p>
-<p>Downloading Images<br />
-Copying the Information  </p>
-</div>
-<h2>Rules of Web Scraping</h2>
-<ul>
-<li>Always try to get permission before scrapping.</li>
-<li>If you make too many scraping attempts or requests your IP address may get blocked!</li>
-<li>Some sites automatically block scraping software.</li>
-</ul>
-<h2>Limitations of web Scraping</h2>
-<ul>
-<li>In general every website is unique, which means every web scraping script is unique.</li>
-<li>A slight change or update to a website may completely break your web scraping script.</li>
-</ul>
-<h2>How website works??</h2>
-<p>When a browser loads a website, the gets to see the "front-end" of the website.<br />
-Browser will be converting the html code to the readable information and displays it.  </p>
-<p>Main front end components of a website are  <br />
-* HTML<br />
-* CSS<br />
-* JAVA SCRIPT   </p>
-<p>HTML is used to create the basic structure and content of a webpage.<br />
-CSS is used for the design and style of a webpage, where elements are placed and how it works.<br />
-JavaScript is used to define the interactive elements of a webpage.  </p>
-<p>Python can view these HTML and CSS elements programatically, and then extract information from the website.  </p>
-<h3>HTML</h3>
-<ul>
-<li>HTML is Hypertext Markup Language and is present on every website on the internet.   </li>
-<li>We can right-click on the website and select 'View page source' to get the HTML code of that page.  </li>
-</ul>
-<div class="admonition example">
-<p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span> Title on Browser Tab <span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span> Website Header <span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span> Some paragraph <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</code></pre></div>
-
-</div>
-<h3>CSS</h3>
-<ul>
-<li>CSS stands for Cascading style sheets.</li>
-<li>CSS gives 'style' to a website, such as changing colors and fonts</li>
-<li>CSS uses tags to define what html elements will be styled.</li>
-</ul>
-<div class="admonition example 1">
-<p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span> <span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;styles.css&quot;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span> Some title <span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&#39;para2&#39;</span><span class="p">&gt;</span> Some Text <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="p">#</span><span class="nn">para2</span> <span class="p">{</span>
-  <span class="k">color</span><span class="p">:</span> <span class="kc">red</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div>
-
-</div>
-<div class="admonition example 2">
-<p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span> <span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;styles.css&quot;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span> Some title <span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;cool&#39;</span><span class="p">&gt;</span> Some Text <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="p">.</span><span class="nc">cool</span> <span class="p">{</span>
-  <span class="k">color</span><span class="p">:</span> <span class="kc">red</span><span class="p">;</span>
-  <span class="k">font-family</span><span class="p">:</span> <span class="n">verdana</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div>
-
-</div>
-<div class="admonition example">
-<p class="admonition-title">CSS File</p>
-<div class="highlight"><pre><span></span><code><span class="nt">p</span> <span class="p">{</span>
-  <span class="k">color</span><span class="p">:</span> <span class="kc">red</span><span class="p">;</span>
-  <span class="k">font-family</span><span class="p">:</span> <span class="n">courier</span><span class="p">;</span>
-  <span class="k">font-size</span><span class="p">:</span> <span class="mi">160</span><span class="kt">%</span>
-<span class="p">}</span>
-
-<span class="p">.</span><span class="nc">someclass</span> <span class="p">{</span>
-  <span class="k">color</span><span class="p">:</span> <span class="kc">green</span><span class="p">;</span>
-  <span class="k">font-family</span><span class="p">:</span> <span class="n">verdana</span><span class="p">;</span>
-  <span class="k">font-size</span><span class="p">:</span> <span class="mi">200</span><span class="kt">%</span>      
-<span class="p">}</span>
-
-<span class="p">#</span><span class="nn">someid</span> <span class="p">{</span>
-  <span class="k">color</span><span class="p">:</span> <span class="kc">blue</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div>
-
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>HTML contains the information.<br />
-CSS contains the styling.<br />
-We can use HTML and CSS tags to locate specific information on a page.  </p>
-</div>
-<ul>
-<li>To Web Scrape with python we can use the BeautifulSoup and requests libraries.</li>
-<li>These are external libraries outside of python so we need to install them with either conda or pip at the command line.
-<code>pip install requests</code>
-<code>pip install lxml</code>
-<code>pip install bs4</code></li>
-</ul>
-<h3>Web Scraping syntax</h3>
-<table>
-<thead>
-<tr>
-<th>Syntax</th>
-<th>Match Results</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>soup.select('div')</td>
-<td>All elements with 'div' tag</td>
-</tr>
-<tr>
-<td>soup.select('#some_id')</td>
-<td>Elements containing id='some_id'</td>
-</tr>
-<tr>
-<td>soup.select('.some_class')</td>
-<td>Elements containing class='some_class'</td>
-</tr>
-<tr>
-<td>soup.select('div span')</td>
-<td>Any element named span within a division element</td>
-</tr>
-<tr>
-<td>soup.select('div &gt; span)</td>
-<td>Any elements named span directly within a div element, with nothing in between.</td>
-</tr>
-</tbody>
-</table>
+                
                 
               
               

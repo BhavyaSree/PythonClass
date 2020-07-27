@@ -19,7 +19,7 @@
     
     
       
-        <title>Web Scraping - Python Class</title>
+        <title>Pandas - Series - Python Class</title>
       
     
     
@@ -82,7 +82,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Web Scraping
+              Pandas - Series
             
           </span>
         </div>
@@ -539,18 +539,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-    <a href="./" title="Web Scraping" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../26.web-scraping/" title="Web Scraping" class="md-nav__link">
       Web Scraping
     </a>
-    
   </li>
 
     
@@ -618,11 +611,18 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../32.pandas-series/" title="Pandas - Series" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+    <a href="./" title="Pandas - Series" class="md-nav__link md-nav__link--active">
       Pandas - Series
     </a>
+    
   </li>
 
     
@@ -1464,167 +1464,148 @@
                   
                 
                 
-                  <h1>Web Scraping</h1>
+                  <h1>Pandas - Series</h1>
                 
-                <p>Web scraping is a general term for techniques involving automating the gathering of data from a website.  </p>
+                <p>Series is a one-dimensional labeled array capable of holding data of any type (integer, string, float, python objects, etc.). The axis labels are collectively called index.  </p>
+<h2>pandas.series</h2>
+<p><code>pandas.Series( data, index, dtype, copy)</code></p>
 <div class="admonition example">
-<p class="admonition-title">Web scraping examples</p>
-<p>Downloading Images<br />
-Copying the Information  </p>
+<p class="admonition-title">Create an empty series</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">()</span>
+<span class="nb">print</span> <span class="n">s</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">Series</span><span class="p">([],</span> <span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span><span class="p">)</span>
+</code></pre></div>
+
 </div>
-<h2>Rules of Web Scraping</h2>
-<ul>
-<li>Always try to get permission before scrapping.</li>
-<li>If you make too many scraping attempts or requests your IP address may get blocked!</li>
-<li>Some sites automatically block scraping software.</li>
-</ul>
-<h2>Limitations of web Scraping</h2>
-<ul>
-<li>In general every website is unique, which means every web scraping script is unique.</li>
-<li>A slight change or update to a website may completely break your web scraping script.</li>
-</ul>
-<h2>How website works??</h2>
-<p>When a browser loads a website, the gets to see the "front-end" of the website.<br />
-Browser will be converting the html code to the readable information and displays it.  </p>
-<p>Main front end components of a website are  <br />
-* HTML<br />
-* CSS<br />
-* JAVA SCRIPT   </p>
-<p>HTML is used to create the basic structure and content of a webpage.<br />
-CSS is used for the design and style of a webpage, where elements are placed and how it works.<br />
-JavaScript is used to define the interactive elements of a webpage.  </p>
-<p>Python can view these HTML and CSS elements programatically, and then extract information from the website.  </p>
-<h3>HTML</h3>
-<ul>
-<li>HTML is Hypertext Markup Language and is present on every website on the internet.   </li>
-<li>We can right-click on the website and select 'View page source' to get the HTML code of that page.  </li>
-</ul>
+<h3>Create a Series from ndarray</h3>
+<p>If data is an ndarray, then index passed must be of the same length. If no index is passed, then by default index will be range(n) where n is array length, i.e., [0,1,2,3…. range(len(array))-1].</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span> Title on Browser Tab <span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span> Website Header <span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span> Some paragraph <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">])</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">0</span>   <span class="n">a</span>
+    <span class="mi">1</span>   <span class="n">b</span>
+    <span class="mi">2</span>   <span class="n">c</span>
+    <span class="mi">3</span>   <span class="n">d</span>
+    <span class="n">dtype</span><span class="p">:</span> <span class="nb">object</span>
 </code></pre></div>
 
-</div>
-<h3>CSS</h3>
-<ul>
-<li>CSS stands for Cascading style sheets.</li>
-<li>CSS gives 'style' to a website, such as changing colors and fonts</li>
-<li>CSS uses tags to define what html elements will be styled.</li>
-</ul>
-<div class="admonition example 1">
-<p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span> <span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;styles.css&quot;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span> Some title <span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&#39;para2&#39;</span><span class="p">&gt;</span> Some Text <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="p">#</span><span class="nn">para2</span> <span class="p">{</span>
-  <span class="k">color</span><span class="p">:</span> <span class="kc">red</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div>
-
-</div>
-<div class="admonition example 2">
-<p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span> <span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;styles.css&quot;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span> Some title <span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;cool&#39;</span><span class="p">&gt;</span> Some Text <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="p">.</span><span class="nc">cool</span> <span class="p">{</span>
-  <span class="k">color</span><span class="p">:</span> <span class="kc">red</span><span class="p">;</span>
-  <span class="k">font-family</span><span class="p">:</span> <span class="n">verdana</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div>
-
+<p>We did not pass any index, so by default, it assigned the indexes ranging from 0 to len(data)-1, i.e., 0 to 3.</p>
 </div>
 <div class="admonition example">
-<p class="admonition-title">CSS File</p>
-<div class="highlight"><pre><span></span><code><span class="nt">p</span> <span class="p">{</span>
-  <span class="k">color</span><span class="p">:</span> <span class="kc">red</span><span class="p">;</span>
-  <span class="k">font-family</span><span class="p">:</span> <span class="n">courier</span><span class="p">;</span>
-  <span class="k">font-size</span><span class="p">:</span> <span class="mi">160</span><span class="kt">%</span>
-<span class="p">}</span>
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">])</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="mi">100</span><span class="p">,</span><span class="mi">101</span><span class="p">,</span><span class="mi">102</span><span class="p">,</span><span class="mi">103</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">100</span>  <span class="n">a</span>
+    <span class="mi">101</span>  <span class="n">b</span>
+    <span class="mi">102</span>  <span class="n">c</span>
+    <span class="mi">103</span>  <span class="n">d</span>
+    <span class="n">dtype</span><span class="p">:</span> <span class="nb">object</span>
+</code></pre></div>
 
-<span class="p">.</span><span class="nc">someclass</span> <span class="p">{</span>
-  <span class="k">color</span><span class="p">:</span> <span class="kc">green</span><span class="p">;</span>
-  <span class="k">font-family</span><span class="p">:</span> <span class="n">verdana</span><span class="p">;</span>
-  <span class="k">font-size</span><span class="p">:</span> <span class="mi">200</span><span class="kt">%</span>      
-<span class="p">}</span>
-
-<span class="p">#</span><span class="nn">someid</span> <span class="p">{</span>
-  <span class="k">color</span><span class="p">:</span> <span class="kc">blue</span><span class="p">;</span>
-<span class="p">}</span>
+<p>We passed the index values here. Now we can see the customized indexed values in the output.</p>
+</div>
+<h3>Create a Series from dict</h3>
+<p>A dict can be passed as input and if no index is specified, then the dictionary keys are taken in a sorted order to construct index. If index is passed, the values in data corresponding to the labels in the index will be pulled out.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p><div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span> <span class="p">:</span> <span class="mf">0.</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span> <span class="p">:</span> <span class="mf">1.</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span> <span class="p">:</span> <span class="mf">2.</span><span class="p">}</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="mf">0.0</span>
+    <span class="n">b</span> <span class="mf">1.0</span>
+    <span class="n">c</span> <span class="mf">2.0</span>
+    <span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span>
+</code></pre></div>
+Dictionary keys are used to construct index.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p><div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span> <span class="p">:</span> <span class="mf">0.</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span> <span class="p">:</span> <span class="mf">1.</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span> <span class="p">:</span> <span class="mf">2.</span><span class="p">}</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">b</span> <span class="mf">1.0</span>
+    <span class="n">c</span> <span class="mf">2.0</span>
+    <span class="n">d</span> <span class="n">NaN</span>
+    <span class="n">a</span> <span class="mf">0.0</span>
+    <span class="n">dtype</span><span class="p">:</span> <span class="n">float64</span>
+</code></pre></div>
+Index order is persisted and the missing element is filled with NaN (Not a Number).</p>
+</div>
+<h3>Create a series from scaler</h3>
+<p>If data is a scalar value, an index must be provided. The value will be repeated to match the length of index.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">0</span>  <span class="mi">5</span>
+    <span class="mi">1</span>  <span class="mi">5</span>
+    <span class="mi">2</span>  <span class="mi">5</span>
+    <span class="mi">3</span>  <span class="mi">5</span>
+    <span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span>
 </code></pre></div>
 
 </div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>HTML contains the information.<br />
-CSS contains the styling.<br />
-We can use HTML and CSS tags to locate specific information on a page.  </p>
+<h3>Accessing Data from Series with Position</h3>
+<p>Data in the series can be accessed similar to that in an ndarray.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">],</span><span class="n">index</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">])</span>
+
+<span class="c1">#retrieve the first element</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">1</span>
+<span class="c1">#retrieve the first three element</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">[:</span><span class="mi">3</span><span class="p">])</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span>  <span class="mi">1</span>
+    <span class="n">b</span>  <span class="mi">2</span>
+    <span class="n">c</span>  <span class="mi">3</span>
+    <span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span>
+<span class="c1">#retrieve the last three element</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">:])</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">c</span>  <span class="mi">3</span>
+    <span class="n">d</span>  <span class="mi">4</span>
+    <span class="n">e</span>  <span class="mi">5</span>
+    <span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span>
+</code></pre></div>
+
 </div>
-<ul>
-<li>To Web Scrape with python we can use the BeautifulSoup and requests libraries.</li>
-<li>These are external libraries outside of python so we need to install them with either conda or pip at the command line.
-<code>pip install requests</code>
-<code>pip install lxml</code>
-<code>pip install bs4</code></li>
-</ul>
-<h3>Web Scraping syntax</h3>
-<table>
-<thead>
-<tr>
-<th>Syntax</th>
-<th>Match Results</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>soup.select('div')</td>
-<td>All elements with 'div' tag</td>
-</tr>
-<tr>
-<td>soup.select('#some_id')</td>
-<td>Elements containing id='some_id'</td>
-</tr>
-<tr>
-<td>soup.select('.some_class')</td>
-<td>Elements containing class='some_class'</td>
-</tr>
-<tr>
-<td>soup.select('div span')</td>
-<td>Any element named span within a division element</td>
-</tr>
-<tr>
-<td>soup.select('div &gt; span)</td>
-<td>Any elements named span directly within a div element, with nothing in between.</td>
-</tr>
-</tbody>
-</table>
+<h3>Retrieve Data Using Label (Index)</h3>
+<p>A Series is like a fixed-size dict in that you can get and set values by index label.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">],</span><span class="n">index</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">])</span>
+
+<span class="c1">#retrieve a single element</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">])</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">1</span>
+<span class="c1">#retrieve multiple elements</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">[[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">]])</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span>  <span class="mi">1</span>
+    <span class="n">c</span>  <span class="mi">3</span>
+    <span class="n">d</span>  <span class="mi">4</span>
+    <span class="n">dtype</span><span class="p">:</span> <span class="n">int64</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="s1">&#39;f&#39;</span><span class="p">])</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="ne">KeyError</span><span class="p">:</span> <span class="s1">&#39;f&#39;</span>
+</code></pre></div>
+
+</div>
                 
               
               
