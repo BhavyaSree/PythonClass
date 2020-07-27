@@ -109,21 +109,21 @@ nav:
       - NumPy-3: Notebooks/27.numpy-3.ipynb
       - NumPy-Exercise: Notebooks/28.numpy-exercise.ipynb
     - Input Files:
-      - blue_color.png: Notebooks/blue_color.png
-      - example.csv: Notebooks/example.csv
-      - example.jpg: Notebooks/example.jpg
-      - find_the_link.csv: Notebooks/find_the_link.csv
-      - Info.txt: Notebooks/Info.txt
-      - mask.png: Notebooks/mask.png
-      - new_computer: Notebooks/new_computer.jpg
-      - new_file.csv: Notebooks/new_file.csv
-      - pencils.jpg: Notebooks/pencils.jpg
-      - red_color.jpg: Notebooks/red_color.jpg
-      - red_save.jpg: Notebooks/red_save.jpg
-      - testpdf.pdf: Notebooks/testpdf.pdf
-      - Trump.jpg: Notebooks/Trump.jpg
-      - word_matrix.png: Notebooks/word_matrix.png
-      - Working_Business_Proposal.pdf: Notebooks/Working_Business_Proposal.pdf
+      - blue_color.png: Inputs/blue_color.png
+      - example.csv: Inputs/example.csv
+      - example.jpg: Inputs/example.jpg
+      - find_the_link.csv: Inputs/find_the_link.csv
+      - Info.txt: Inputs/Info.txt
+      - mask.png: Inputs/mask.png
+      - new_computer: Inputs/new_computer.jpg
+      - new_file.csv: Inputs/new_file.csv
+      - pencils.jpg: Inputs/pencils.jpg
+      - red_color.jpg: Inputs/red_color.jpg
+      - red_save.jpg: Inputs/red_save.jpg
+      - testpdf.pdf: Inputs/testpdf.pdf
+      - Trump.jpg: Inputs/Trump.jpg
+      - word_matrix.png: Inputs/word_matrix.png
+      - Working_Business_Proposal.pdf: Inputs/Working_Business_Proposal.pdf
   - Assesments:
     - Statements: 6.statements-assesment.md
     - Functions: 8.functions-assesment.md
