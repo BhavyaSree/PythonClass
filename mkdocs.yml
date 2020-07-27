@@ -68,45 +68,62 @@ nav:
   - NumPy-1: 28.numpy-1.md
   - NumPy-2: 29.numpy-2.md
   - NumPy-3: 30.numpy-3.md
+  - Practice:
+    - Notebooks:
+      - Day 1: Notebooks/Day1.ipynb 
+      - Day 2: Notebooks/Day2.ipynb 
+      - Day 3: Notebooks/Day3.ipynb
+      - TicTacToe : Notebooks/TicTacToe.ipynb
+      - Object Oriented : Notebooks/Classes,attributes&methods.ipynb
+      - Assesment Solutions: Notebooks/FinalAssesment.ipynb
+      - Binary Search: Notebooks/01.binary-search.ipynb
+      - Sequential Search: Notebooks/02.sequential-search.ipynb
+      - Bubble Sort: Notebooks/03.bubble-sort.ipynb
+      - Selection Sort: Notebooks/04.selection-sort.ipynb
+      - Fibonacci Sequence: Notebooks/05.fibonacci-sequence.ipynb
+      - Prime Factors: Notebooks/06.prime-factors.ipynb
+      - Binary and Decimal Conversions: Notebooks/07.binary,decimal.ipynb
+      - Turtle: Notebooks/08.turtle.ipynb
+      - Generating Password: Notebooks/09.password-generator.ipynb
+      - Count Vowels: Notebooks/10.count-vowels.ipynb
+      - Palindrome: Notebooks/11.palindrome.ipynb
+      - Count words: Notebooks/12.count-words-in-a-string.ipynb
+      - Downward Half Pyramid: Notebooks/13.half-pyramid.ipynb
+      - Pyramid: Notebooks/14.pyramid.ipynb
+      - Frequency of words: Notebooks/15.frequency-of-words.ipynb
+      - Web Scraping: Notebooks/16.web-scraping.ipynb
+      - Web Scraping - Books: Notebooks/17.books-scrape.ipynb
+      - Web Scraping - Quotes: Notebooks/18.scrape-quotes.ipynb
+      - Images: Notebooks/19.images.ipynb
+      - Images - Exercise: Notebooks/20.image-exercise.ipynb
+      - CSV Files: Notebooks/21.csv-files.ipynb
+      - PDF Files: Notebooks/22.pdf-files.ipynb
+      - PDF and CSV Exercise: Notebooks/23.pdf-and-csv-puzzle-exercise.ipynb
+      - Emails: Notebooks/24.emails.ipynb
+      - NumPy-1: Notebooks/25.numpy-1.ipynb
+      - NumPy-2: Notebooks/26.numpy-2.ipynb
+      - NumPy-3: Notebooks/27.numpy-3.ipynb
+      - NumPy-Exercise: Notebooks/28.numpy-exercise.ipynb
+    - Input Files:
+      - blue_color.png: Notebooks/blue_color.png
+      - example.csv: Notebooks/example.csv
+      - example.jpg: Notebooks/example.jpg
+      - find_the_link.csv: Notebooks/find_the_link.csv
+      - Info.txt: Notebooks/Info.txt
+      - mask.png: Notebooks/mask.png
+      - new_computer: Notebooks/new_computer.jpg
+      - new_file.csv: Notebooks/new_file.csv
+      - pencils.jpg: Notebooks/pencils.jpg
+      - red_color.jpg: Notebooks/red_color.jpg
+      - red_save.jpg: Notebooks/red_save.jpg
+      - testpdf.pdf: Notebooks/testpdf.pdf
+      - Trump.jpg: Notebooks/Trump.jpg
+      - word_matrix.png: Notebooks/word_matrix.png
+      - Working_Business_Proposal.pdf: Notebooks/Working_Business_Proposal.pdf
   - Assesments:
     - Statements: 6.statements-assesment.md
     - Functions: 8.functions-assesment.md
     - TicTacToe Project: 12.tic-tac-toe.md
     - Final: 25.final-assesment.md
-  - Notebooks:
-    - Day 1: Notebooks/Day1.ipynb 
-    - Day 2: Notebooks/Day2.ipynb 
-    - Day 3: Notebooks/Day3.ipynb
-    - TicTacToe : Notebooks/TicTacToe.ipynb
-    - Object Oriented : Notebooks/Classes,attributes&methods.ipynb
-    - Assesment Solutions: Notebooks/FinalAssesment.ipynb
-    - Binary Search: Notebooks/01.binary-search.ipynb
-    - Sequential Search: Notebooks/02.sequential-search.ipynb
-    - Bubble Sort: Notebooks/03.bubble-sort.ipynb
-    - Selection Sort: Notebooks/04.selection-sort.ipynb
-    - Fibonacci Sequence: Notebooks/05.fibonacci-sequence.ipynb
-    - Prime Factors: Notebooks/06.prime-factors.ipynb
-    - Binary and Decimal Conversions: Notebooks/07.binary,decimal.ipynb
-    - Turtle: Notebooks/08.turtle.ipynb
-    - Generating Password: Notebooks/09.password-generator.ipynb
-    - Count Vowels: Notebooks/10.count-vowels.ipynb
-    - Palindrome: Notebooks/11.palindrome.ipynb
-    - Count words: Notebooks/12.count-words-in-a-string.ipynb
-    - Downward Half Pyramid: Notebooks/13.half-pyramid.ipynb
-    - Pyramid: Notebooks/14.pyramid.ipynb
-    - Frequency of words: Notebooks/15.frequency-of-words.ipynb
-    - Web Scraping: Notebooks/16.web-scraping.ipynb
-    - Web Scraping - Books: Notebooks/17.books-scrape.ipynb
-    - Web Scraping - Quotes: Notebooks/18.scrape-quotes.ipynb
-    - Images: Notebooks/19.images.ipynb
-    - Images - Exercise: Notebooks/20.image-exercise.ipynb
-    - CSV Files: Notebooks/21.csv-files.ipynb
-    - PDF Files: Notebooks/22.pdf-files.ipynb
-    - PDF and CSV Exercise: Notebooks/23.pdf-and-csv-puzzle-exercise.ipynb
-    - Emails: Notebooks/24.emails.ipynb
-    - NumPy-1: Notebooks/25.numpy-1.ipynb
-    - NumPy-2: Notebooks/26.numpy-2.ipynb
-    - NumPy-3: Notebooks/27.numpy-3.ipynb
-    - NumPy-Exercise: Notebooks/28.numpy-exercise.ipynb
   - Resources:
     - Tools Used: external-resources/index.md
