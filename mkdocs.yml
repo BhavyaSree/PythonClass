@@ -71,7 +71,6 @@ nav:
   - Pandas: 31.pandas.md
   - Pandas - Series: 32.pandas-series.md
   - Pandas - DataFrame: 33.pandas-dataframe.md
-  - Pandas - Panel: 34.pandas-panel.md
   - Practice:
     - Notebooks:
       - Day 1: Notebooks/Day1.ipynb 
