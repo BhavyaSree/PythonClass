@@ -103,10 +103,16 @@ nav:
       - PDF Files: Notebooks/22.pdf-files.ipynb
       - PDF and CSV Exercise: Notebooks/23.pdf-and-csv-puzzle-exercise.ipynb
       - Emails: Notebooks/24.emails.ipynb
-      - NumPy-1: Notebooks/25.numpy-1.ipynb
-      - NumPy-2: Notebooks/26.numpy-2.ipynb
-      - NumPy-3: Notebooks/27.numpy-3.ipynb
-      - NumPy-Exercise: Notebooks/28.numpy-exercise.ipynb
+      - NumPy - 1: Notebooks/25.numpy-1.ipynb
+      - NumPy - 2: Notebooks/26.numpy-2.ipynb
+      - NumPy - 3: Notebooks/27.numpy-3.ipynb
+      - NumPy - Exercise: Notebooks/28.numpy-exercise.ipynb
+      - Pandas - Intro: Notebooks/29.pandas.ipynb
+      - Pandas - DataFrames: Notebooks/30.pandas-dataframes.ipynb
+      - Pandas - MultiIndex: Notebooks/31.pandas-MultiIndex.ipynb
+      - Pandas - GroupBy: Notebooks/32.pandas-groupby.ipynb
+      - Pandas - Concatenate, Merge, Join: Notebooks/33.pandas-concatenate,merge,join.ipynb
+      - Pandas - Missing Data: Notebooks/34.pandas-missingData.ipynb
     - Input Files:
       - blue_color.png: Inputs/blue_color.png
       - example.csv: Inputs/example.csv
