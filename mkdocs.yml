@@ -113,6 +113,11 @@ nav:
       - Pandas - GroupBy: Notebooks/32.pandas-groupby.ipynb
       - Pandas - Concatenate, Merge, Join: Notebooks/33.pandas-concatenate,merge,join.ipynb
       - Pandas - Missing Data: Notebooks/34.pandas-missingData.ipynb
+      - Pandas - Operations: Notebooks/35.pandas-operations.ipynb
+      - Pandas - Data_IO: Notebooks/36.Data_IO.ipynb
+      - Pandas - pandas-plotting: Notebooks/37.pandas-plotting.ipynb
+      - Pandas - Exercise1: Notebooks/38.pandas-Exercise1.ipynb
+      - Pandas - Exercise2: Notebooks/39.pandas-Exercise2.ipynb
     - Input Files:
       - blue_color.png: Inputs/blue_color.png
       - example.csv: Inputs/example.csv
@@ -129,6 +134,10 @@ nav:
       - Trump.jpg: Inputs/Trump.jpg
       - word_matrix.png: Inputs/word_matrix.png
       - Working_Business_Proposal.pdf: Inputs/Working_Business_Proposal.pdf
+      - df1: Inputs/df1
+      - df2: Inputs/df2
+      - Salaries: Inputs/Salaries
+      - Ecommerce Purchases: Inputs/Ecommerce Purchases
   - Assesments:
     - Statements: 6.statements-assesment.md
     - Functions: 8.functions-assesment.md
